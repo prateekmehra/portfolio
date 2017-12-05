@@ -5,7 +5,7 @@ body { background-color: #1c1e1c; width: 860px; margin: 40px auto 80px 40px; pos
 
 a { color: #fff; font-size: 20px; }
 
-.category, .title { font-weight: bold; font-size: 24px;}
+.category, .title { font-weight: bold; font-size: 12px;}
  
 
 header .site-title { letter-spacing: 1px; line-height: 1; margin-bottom: 40px; }
