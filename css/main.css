@@ -8,7 +8,7 @@ a { color: #fff; font-size: 20px; }
 .category, .title { font-weight: bold; font-size: 24px;}
  
 
-header .site-title { font-size: 45px; letter-spacing: 1px; line-height: 1; margin-bottom: 40px; }
+header .site-title.a { font-size: 45px; letter-spacing: 1px; line-height: 1; margin-bottom: 40px; }
 header .site-title a { text-decoration: none; }
 header nav { float: left; max-width: 200px; line-height: 1.8; }
 header nav ul { margin: 0 0 20px 0; padding: 0; list-style: none; }
