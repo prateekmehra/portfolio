@@ -1,12 +1,12 @@
 /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
 html { min-width: 1000px; }
 
-body {  width: 860px; margin: 40px auto 80px 40px; position: relative; font-family: 'Josefin Sans', Helvetica, Arial, sans-serif; font-size: 12px; color: #fff; line-height: 1.6; }
+body { background-color: #1c1e1c; width: 860px; margin: 40px auto 80px 40px; position: relative; font-family: 'Josefin Sans', Helvetica, Arial, sans-serif; font-size: 12px; color: #fff; line-height: 1.6; }
 
 a { color: #fff; font-size: 20px; }
 
 .category, .title { font-weight: bold; font-size: 24px;}
-.sidebar { background-color: #1c1e1c; } 
+ 
 
 header .site-title { font-size: 45px; letter-spacing: 1px; line-height: 1; margin-bottom: 40px; }
 header .site-title a { text-decoration: none; }
@@ -16,7 +16,7 @@ header nav a { text-decoration: none; }
 
 .grid { text-align: justify; }
 
-.page-content { margin-left: 220px; }
+.page-content { margin-left: 220px; background-color: #fff; }
 .page-content .category { font-size: 24px; margin: 30px 0 30px 0; width: 100%; }
 .page-content .category:first-child { font-size: 24px; margin: 0 0 30px 0; }
 .page-content .tile, .page-content .tile-wide { display: inline-block; margin: 0px 0 30px 0; text-align: center; }
