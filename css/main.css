@@ -5,7 +5,8 @@ body { background-color: #1c1e1c; width: 860px; margin: 40px auto 80px 40px; pos
 
 a { color: #fff; }
 
-.category, .title { font-weight: bold; }
+.category, .title { font-weight: bold; font-size: 24px;}
+.category:first-child { font-size: 20px;}
 
 header .site-title { font-size: 45px; letter-spacing: 1px; line-height: 1; margin-bottom: 40px; }
 header .site-title a { text-decoration: none; }
