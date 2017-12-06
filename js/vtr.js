@@ -21,12 +21,10 @@ $(function(){
 	});
 
 owl.hover(function(){
-	console.log("hover");
 	owl.trigger('stop.owl.autoplay')
 });
 
 owl.on('mouseout',function(){
-	console.log("mouseout");
 	owl.trigger('play.owl.autoplay',[3000]);
 });
 
