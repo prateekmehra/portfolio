@@ -1,4 +1,5 @@
 $(function(){
+	var src=[];
 	for (var i=0;i<=11;i++)
 		src.push('./images/photography/p'+i+'.jpg');		
 							

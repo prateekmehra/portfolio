@@ -1,4 +1,5 @@
 $(function(){
+	var src=[];
 	for (var i=0;i<=17;i++)
 		src.push('./images/interiors/i'+i+'.jpg');
 
