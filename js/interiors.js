@@ -17,5 +17,5 @@ var src = [ '/portfolio/images/interiors/i1.jpg',
 			'/portfolio/images/interiors/i17.jpg', 
 			'/portfolio/images/interiors/i18.jpg'
 			];
-
-$('#mybook').onebook(src,{OPTIONS});
+var options  = {};
+$('#mybook').onebook(src,options);
