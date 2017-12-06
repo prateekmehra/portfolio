@@ -18,4 +18,4 @@ var src = [ '/portfolio/images/interiors/i1.jpg',
 			'/portfolio/images/interiors/i18.jpg'
 			];
 var options  = {};
-$('#mybook').onebook(src,options);
+$('#mybook').onebook(src);
