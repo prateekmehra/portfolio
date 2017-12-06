@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta charset="utf-8">
+
+	<title>PRATEEK MEHRA</title>
+	<meta name="description" content="2017 Portfolio Prateek Mehra">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="canonical" href="https://prateekmehra.github.io/portfolio/">
+
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/jquery.onebook3d-2.33.js"></script>
+	<script>
+
+		$(function(){
+			var src = [ './images/interiors/i0.jpg',
+				'./images/interiors/i1.jpg', 
+				'./images/interiors/i2.jpg',
+				'./images/interiors/i3.jpg', 
+				'./images/interiors/i4.jpg',
+				'./images/interiors/i5.jpg', 
+				'./images/interiors/i6.jpg',
+				'./images/interiors/i7.jpg', 
+				'./images/interiors/i8.jpg',
+				'./images/interiors/i9.jpg', 
+				'./images/interiors/i10.jpg',
+				'./images/interiors/i11.jpg', 
+				'./images/interiors/i12.jpg',
+				'./images/interiors/i13.jpg', 
+				'./images/interiors/i14.jpg',
+				'./images/interiors/i15.jpg', 
+				'./images/interiors/i16.jpg',
+				'./images/interiors/i17.jpg', 
+				'./images/interiors/i18.jpg'
+				];				
+						
+			
+			
+			$('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:0, pageColor: 'rgb(128, 128, 128)', cesh:true});
+			
+		});
+
+	</script>
+		
+		
+</head>
+
+	<body>
+		<header>
+			<div class="site-title"><a href="/portfolio/">PRATEEK MEHRA</a></div>
+			<nav>
+				
+				<div class="category">Experience</div>
+				<ul>
+					<li><a href="/portfolio/VS">Virtual Stylist</a></li>
+					<li><a href="/portfolio/VS">Nexus</a></li>
+				</ul>
+			
+				<div class="category">Education</div>
+				<ul>
+					<li><a href="/portfolio/virtual-trial-room">Virtual Trial Room</a></li>
+					<li><a href="/portfolio/high-on-graphs">Virtual Trial Room</a></li>
+				</ul>
+			
+				<div class="category">Projects</div>
+				<ul>
+					<li><a href="/portfolio/HOG">HighOnGraphs</a></li>      
+				</ul>
+					
+				<div class="category">Design</div>
+				<ul>
+					<li><a href="/portfolio/interiors">Interiors</a></li>
+					<li><a href="/portfolio/graphic">Graphic</a></li>
+					<li><a href="/portfolio/photography">Photography</a></li>
+				</ul>
+		
+				<div class="category"><a href="/portfolio/about-and-resume">About</a></div>
+				<div class="category"><a href="/portfolio/"></a></div>
+				<div class="category"><a href="/portfolio/css/main.css"></a></div>	
+			</nav>
+		</header>
+
+		<div class="page-content">
+			<div class="grid">
+				<div id="photobook"></div>
+				<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
+				<div class="tile"></div>
+			</div>
+		</div>
+		
+		<footer class="site-footer"></footer>
+	</body>
+</html>
