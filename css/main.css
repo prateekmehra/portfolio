@@ -26,7 +26,7 @@ header nav a { text-decoration: none; }
 .page-content .tile { width: 300px; }
 .page-content .tile-wide { width: 100%; }
 .page-content ul { margin: 0; padding: 0; list-style: none; }
-.page-content .pres { float:right; width:400px; margin: 0 10px 0 100px;}
+.page-content .pres { float:right; width:400px; margin: 90px 0 50px 100px;}
 
 footer { margin-left: 220px; max-width: 640px; }
 footer .year { margin: 30px 0 0 0; color: #bbb; }
