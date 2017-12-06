@@ -7,16 +7,41 @@
 	<title>PRATEEK MEHRA</title>
 	<meta name="description" content="2017 Portfolio Prateek Mehra">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/portfolio/css/main.css">
+	<link rel="stylesheet" href="css/main.css">
 	<link rel="canonical" href="https://prateekmehra.github.io/portfolio/">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-	<script src="js/jquery.mousewheel.min.js"></script>
-	<script src="js/three.min.js"></script>
-	<script src="js/jquery.onebook3d.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
-	<script type="text/javascript" src="js/interiors.js"></script>
+
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.11/jquery.mousewheel.min.js"></script>
+	<script type="text/javascript" src="./js/jquery.onebook3d.min.js"></script>
+	<script>
+
+		$(function(){
+			var src = [ './images/interiors/i1.jpg', './images/interiors/i2.jpg',
+				'./images/interiors/i3.jpg', 
+				'./images/interiors/i4.jpg',
+				'./images/interiors/i5.jpg', 
+				'./images/interiors/i6.jpg',
+				'./images/interiors/i7.jpg', 
+				'./images/interiors/i8.jpg',
+				'./images/interiors/i9.jpg', 
+				'./images/interiors/i10.jpg',
+				'./images/interiors/i11.jpg', 
+				'./images/interiors/i12.jpg',
+				'./images/interiors/i13.jpg', 
+				'./images/interiors/i14.jpg',
+				'./images/interiors/i15.jpg', 
+				'./images/interiors/i16.jpg',
+				'./images/interiors/i17.jpg', 
+				'./images/interiors/i18.jpg'
+				];				
+						
+			
+			
+			$('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#222222 url(./images/interiors/bg.jpg)', flip:'soft', border:25, cesh:false});
+			
+		});
+
+	</script>
 		
 		
 </head>
@@ -61,8 +86,10 @@
 
 		<div class="page-content">
 			<div class="grid">
-				<div style="padding:30px;">
-					<div id="mybook" style="height: 381px;"></div>
+				<div style="width:800px;background:#eeeeee;margin:50px auto;border-radius:20px;">
+				  <div style="padding:30px;">
+				    <div id="photobook" style="height:100px;"></div>
+				  </div>
 				</div>
 				<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
 				<div class="tile"></div>
