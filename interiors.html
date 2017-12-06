@@ -11,6 +11,10 @@
 	<link rel="canonical" href="https://prateekmehra.github.io/portfolio/">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.mousewheel.min.js"></script>
+	<script src="js/three.min.js"></script>
+	<script src="js/jquery.onebook3d2.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 		
 		
@@ -56,92 +60,7 @@
 
 	<div class="page-content">
 			<div class="grid">
-
-				<div class="row">
-					<div class="col-md-12">
-						<div id="Carousel" class="carousel slide" data-ride="carousel">
-						 
-						<ol class="carousel-indicators">
-						    <li data-target="#Carousel" data-slide-to="0" class="active"></li>
-						    <li data-target="#Carousel" data-slide-to="1"></li>
-						    <li data-target="#Carousel" data-slide-to="2"></li>
-						</ol>
-						 
-						<!-- Carousel items -->
-						<div class="carousel-inner">
-						 
-						<div class="item active">
-							<div class="row">
-							  <div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i1.jpg" alt="Image" style="max-width:100%;"></a></div>
-							  <div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i2.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-						 
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i3.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i4.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-						 
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i5.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i6.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i7.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i8.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i9.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i10.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i11.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i12.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i13.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i14.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i15.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i16.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-
-						<div class="item">
-							<div class="row">
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i17.jpg" alt="Image" style="max-width:100%;"></a></div>
-								<div class="col-md-6"><a href="#" class="thumbnail"><img src="/portfolio/images/interiors/i18.jpg" alt="Image" style="max-width:100%;"></a></div>
-							</div><!--.row-->
-						</div><!--.item-->
-						 
-						</div><!--.carousel-inner-->
-						  <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
-						  <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
-						</div><!--.Carousel-->    
-					</div>
-				</div>
-				
-	
+				<div id="mybook"></div>
 		<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
 		<div class="tile"></div>
 
