@@ -1,15 +1,15 @@
 $(function(){
-var src = [];
-for (var i=0;i<=17;i++)
-	src.push('./images/interiors/i'+i+'.jpg');
-	
-for (var i=0;i<=4;i++)
-	src.push('./images/graphic/g'+i+'.jpg');
+	var src = [];
+	for (var i=0;i<=17;i++)
+		src.push('./images/interiors/i'+i+'.jpg');
+		
+	for (var i=0;i<=4;i++)
+		src.push('./images/graphic/g'+i+'.jpg');
 
-src.push('./images/interiors/i18.jpg');				
-			
-for (var i=0;i<=9;i++)
-	src.push('./images/photography/p'+i+'.jpg');	
+	src.push('./images/interiors/i18.jpg');				
+				
+	for (var i=0;i<=11;i++)
+		src.push('./images/photography/p'+i+'.jpg');	
 
-$('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
+	$('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
 });
