@@ -373,7 +373,7 @@ var OneBook3D = {
 	},	
 	prepareBookSize:function(){
 		this.WINSIZE = {width:$(window).width(),height:$(window).height()};	
-		console.log(this.$TARGET);
+		console.log(this.$TARGET.offset());
 		this.TARGETSIZE = this.$TARGET?{left:this.$TARGET.offset().left,top:0,width:this.$TARGET.width(),height:100}:false;
 		this.ZOOMSIZE = {height:this.WINSIZE.height,width:this.WINSIZE.width,top:0,left:0};
 	},
