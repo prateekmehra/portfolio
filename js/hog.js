@@ -4,6 +4,8 @@ function onYouTubeIframeAPIReady() {
     videoId: 'RTu6kkNqxY4', // YouTube Video ID
     width: 880,               // Player width (in px)
     height: 316,              // Player height (in px)
+    origin: "https://www.youtube.com",
+    widget_referrer: "https://www.youtube.com",
     playerVars: {
       autoplay: 1,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
@@ -14,6 +16,7 @@ function onYouTubeIframeAPIReady() {
       cc_load_policy: 0, // Hide closed captions
       iv_load_policy: 3,  // Hide the Video Annotations
       autohide: 0         // Hide video controls when playing
+
     },
     events: {
       onReady: function(e) {
