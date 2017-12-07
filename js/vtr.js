@@ -28,10 +28,10 @@ $(function(){
 		owl.trigger('play.owl.autoplay',[3000]);
 	});
 
-	$('#main-image').owlCarousel({
-	items:1,
-	lazyLoad:true
-	});
+	// $('#main-image').owlCarousel({
+	// items:1,
+	// lazyLoad:true
+	// });
 
 	$('#image-tray').owlCarousel({
 	items:5,
