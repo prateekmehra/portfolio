@@ -6,14 +6,13 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('pres', {
-    height: '315',
-    width: '400',
+    width: '550',
     videoId: '88Ycy5-oYzI',
     playerVars: {
-      autoplay: 1,        // Auto-play the video on load
+      autoplay: 0,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
       showinfo: 0,        // Hide the video title
-      modestbranding: 1,  // Hide the Youtube Logo
+      modestbranding: 0,  // Hide the Youtube Logo
       loop: 1,            // Run the video in a loop
       fs: 1,              // Hide the full screen button
       cc_load_policy: 1, // Hide closed captions
@@ -35,6 +34,7 @@ $(function(){
 	$('#image-tray').owlCarousel({
 		items:1,
 		lazyLoad:true,
+		loop:true,
 		autoplay:true,
 		autoplayTimeout:3000,
 		autoplayHoverPause:true,
