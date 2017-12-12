@@ -17,8 +17,8 @@ header nav a { text-decoration: none; }
 .grid { text-align: justify; }
 
 .page-content { margin-left: 220px; width: 100% }
-.page-content .category { font-size: 12px; margin: 30px 0 30px 0; width: 100%; }
-.page-content .category:first-child { font-size: 12px; margin: 0 0 30px 0; }
+.page-content .category { font-size: 16px; margin: 30px 0 30px 0; width: 100%; }
+.page-content .category:first-child { font-size: 16px; margin: 0 0 30px 0; }
 .page-content .tile, .page-content .tile-wide { display: inline-block; margin: 0px 0 30px 0; text-align: center; }
 .page-content .tile a, .page-content .tile-wide a { text-decoration: none; }
 .page-content .tile .title, .page-content .tile-wide .title { font-weight: bold; margin: 6px 0 4px 0; }
