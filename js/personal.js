@@ -1,3 +1,4 @@
+
 var tag = document.createElement('script');
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -5,10 +6,10 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
 var player;
 function onYouTubeIframeAPIReady() {
-  player = new YT.Player('pres', {
-    videoId: 'G7-st4Wc2aU',
+  player = new YT.Player('musicvid', {
+    videoId: 'POeBrwje2DY',
     playerVars: {
-      autoplay: 1,        // Auto-play the video on load
+      autoplay: 0,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
       showinfo: 0,        // Hide the video title
       modestbranding: 0,  // Hide the Youtube Logo
