@@ -25,19 +25,85 @@
 	<header id="head"></header>
 
 	<div class="page-content">
-		
-		
 		<div class="title">Chronos</div>
-<!-- 		<div class="pres" style="margin-bottom: 480px;" >
-			<div id="pres" class="owl-carousel owl-theme" ></div>
-		</div> -->
-		<iframe src="https://www.icloud.com/keynote/0RB1bGT9EUs7FW1V6oP7hhlug?embed=true" width="640" height="500" frameborder="0" allowfullscreen="1" referrer="no-referrer"></iframe>
-		<div class="overview">
-			<article>
+		<div  id="pres" class="pres" style="margin-bottom: 800px"></div>
+		<article>
 			<p>
-			I wrote a scheduler service capable of authorizing tenant applications 
+			I wrote a high risk, scalable scheduler service capable of authorizing and responding to client applications requests for scheduling tasks by hitting back a URL with specified methods, headers, and payloads. Tasks could be scheduled to be recurring or non-recurring depending on the requirement of the client.   
 			</p>
-		</div>
+
+			<p>
+				<strong>APIs:</strong><br>
+				1. <strong>GET</strong> /get-jobs<br>
+				2. <strong>POST/PUT</strong> /schedule-job<br>
+				3. <strong>POST/PUT</strong> /reschedule-job<br>
+				4. <strong>POST/PUT</strong> /unschedule-job<br>
+			</p>
+
+			
+			<p>
+				<strong>APIs for scheduling:</strong>
+			</p>
+			<p>
+				<em>1. Non-Recurring Schedule: POST {host}:{port}/v1/schedule</em>
+			</p>
+			<div class="highlighter-rouge">
+				<hr>
+				<pre class="highlight"><code><strong>HEADERS</strong>
+{"Authentication": "[Signed Bearer Token]"}
+
+<strong>BODY</strong>
+{  "schedule" : {
+        "recurring" : "false",
+        "frequency": { "date" : "(2016, 01, 31, 13, 24, 00)" }
+    },
+    "job": {
+        "endpoint": "http://contour.myntra.com/contour/stories/publish",
+        "method": "POST",  // supports GET, POST, PUT
+        "payload": {
+            "title": "Hello",
+            "image": "http://www.someurl.com/image.jpg"
+        } (optional),
+        "headers": {
+            "Content-Type": "application/json",
+            "Accept": "application/json",
+            "Authentication": "...",
+        } (optional),
+    },
+    "id": "[unique job ID] (optional)" // preferably uuid
+}</code></pre>
+			<hr>
+			<br>
+			<p>
+				<em>2. Recurring Schedule(CRON): POST {host}:{port}/v1/schedule</em>
+			</p>
+			<div class="highlighter-rouge">
+				<hr>
+				<pre class="highlight"><code><strong>HEADERS</strong>
+{"Authentication": "<Signed Bearer Token>"}
+
+<strong>BODY</strong>
+{  "schedule": {
+        "frequency": {
+            "year": "*",
+            "month": "*",
+            "day": "*",
+            "week": "*",
+            "day_of_week": "*",
+            "hour": "*",
+            "minute": "*/1"
+        },
+        "recurring": "true"
+    },   
+    "job": {…},
+    "id": "<unique job ID> (optional)" // preferably uuid
+}
+
+}</code></pre>
+			<hr>
+			</div>
+		</article>
+	</div>
 		
 		<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
 		<div class="tile"></div>
