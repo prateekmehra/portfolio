@@ -6,11 +6,11 @@
     var player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('pres', {
-        height: '315',
-        width: '400',
+        width: '100%',
+        height: '900',
         videoId: 'RTu6kkNqxY4',
         playerVars: {
-          autoplay: 1,        // Auto-play the video on load
+          autoplay: 0,        // Auto-play the video on load
           controls: 1,        // Show pause/play buttons in player
           showinfo: 0,        // Hide the video title
           modestbranding: 0,  // Hide the Youtube Logo

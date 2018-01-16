@@ -6,7 +6,8 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('pres', {
-    width: '550',
+    width: '1280',
+    height: '720',
     videoId: '88Ycy5-oYzI',
     playerVars: {
       autoplay: 0,        // Auto-play the video on load

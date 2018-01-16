@@ -6,9 +6,11 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('pres', {
+    width:'960',
+    height:'720',
     videoId: 'G7-st4Wc2aU',
     playerVars: {
-      autoplay: 1,        // Auto-play the video on load
+      autoplay: 0,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
       showinfo: 0,        // Hide the video title
       modestbranding: 0,  // Hide the Youtube Logo

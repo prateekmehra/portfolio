@@ -30,44 +30,45 @@
 </head>
 <body>
 
-	<header id="head"></header>
+	<header id="head">
+	</header>
 
 	<div class="page-content">
-		
-		
-		<div class="title">High On Graphs</div>
-		<div class="pres" id="pres" style="margin-bottom: 1000px;">
-			<!-- <iframe id="player" src="https://www.youtube.com/embed/RTu6kkNqxY4?enablejsapi=1&origin=https://prateekmehra.github.io" frameborder="0"></iframe>
-		 --></div>
-		<div class="overview">
-			<article>
-			<p>
-			This project aimed at solving the problem of visualizing and querying large graph datasets.
-			</p>
-			<p>
-				<img src="./images/hog/hog-title.jpg" style="width:500px"/>
-			</p>
+		<div class="index-grid">
+			<div class="tile-wide immersive">
+				<div class="center-padded compressed-centered40">
+	    			<div class="title large-title">High On Graphs</div>
+					<p>
+					<img src="./images/hog/hog-title.jpg" />
+					This project aimed at solving the problem of visualizing and querying large graph datasets.
+					</p>
+				</div>
+			</div>
 			
-			<p>
-			After experimenting with existing community detection techniques like SNAP, METIS and iGraph, we came up with a <em>Community Detection Algorithm</em> based on influential nodes of the graph to hierarchically cluster it.
-			<hr>
-				<img src="./images/hog/algo.jpg" style="width:500px" />
-				<em> Community Detection Algorithm Explained</em>
-			<hr>
-			</p>
-			<br>
-			<p>
-			Looking at the limitations of state of the art visualizations viz. NodeXL and Gephi, we decided to come up with our own version of a browser-native visualization written in D3.js.
-			<hr>
-				<img src="./images/hog/convex-hull-2.jpg" style="width:500px" />
-				<em> Convex Hulls used in visualizing Clusters</em>
-			<hr>
-			</p>
-			</article><br>
+			<div class="tile-wide dark immersive">
+				<div  id="pres""></div>
+				<div class="title">
+				Demo
+				</div>
+			</div>
+			
+			<div class="tile-wide immersive">
+				<div class="center-padded compressed-centered60">
+					<article>
+						<p>After experimenting with existing community detection techniques like SNAP, METIS and iGraph, we came up with a <em>Community Detection Algorithm</em> based on influential nodes of the graph to hierarchically cluster it.</p>
+
+						<img src="./images/hog/algo.jpg" />
+						<em> Community Detection Algorithm Explained</em>
+						<br><br>
+						<p>Looking at the limitations of state of the art visualizations viz. NodeXL and Gephi, we decided to come up with our own version of a browser-native visualization written in D3.js.</p>
+						
+						<img src="./images/hog/convex-hull-2.jpg" />
+						<em> Convex Hulls used in visualizing Clusters</em>
+					</article>
+
+				</div>
 		</div>
 		
-		<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
-		<div class="tile"></div>
 
 	</div>
 	<footer class="site-footer">
