@@ -1,8 +1,6 @@
 $(function(){
 	$("#head").load("nav.html"); 
-});
-
-var map = {
+	var map = {
 	"about":"about",
 	"personal":"personal",
 	"index":"projects",
@@ -20,3 +18,5 @@ var page = path.split("/");
 $("#nav-"+map[page[page.length-2]]).addClass("active");
 console.log($("#nav-"+map[page[page.length-2]]));
 console.log(map[page[page.length-2]]);
+});
+
