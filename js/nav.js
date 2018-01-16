@@ -18,8 +18,8 @@ $(window).load(function(){
 	"":"portfolio"
 	}
 	var path = window.location.pathname;
-	var page = path.split("/");
-	var nav_id ="#nav-"+map[page[page.length-1]];
+	var page = path.split("/").pop();
+	var nav_id ="#nav-"+map[page];
 	$(nav_id).addClass("active");
 	console.log(nav_id);
 	console.log($(nav_id));
