@@ -6,6 +6,8 @@ $(window).load(function(){
 	var map = {
 	"about":"about",
 	"personal":"personal",
+	"projects":"projects",
+	"design":"design",
 	"index":"projects",
 	"chronos":"projects",
 	"go-classroom":"projects",
