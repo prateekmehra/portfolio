@@ -14,11 +14,12 @@ $(window).load(function(){
 	"graphic":"design", 
 	"interiors":"design",
 	"photography":"design",
-	"portfolio":"portfolio"
+	"portfolio":"portfolio",
+	"":"portfolio"
 	}
 	var path = window.location.pathname;
 	var page = path.split("/");
-	var nav_id ="#nav-"+map[page[page.length-2]];
+	var nav_id ="#nav-"+map[page[page.length-1]];
 	$(nav_id).addClass("active");
 	console.log(nav_id);
 	console.log($(nav_id));
