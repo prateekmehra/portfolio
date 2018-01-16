@@ -18,3 +18,5 @@ var map = {
 var path = window.location.pathname;
 var page = path.split("/");
 $("#nav-"+map[page[page.length-2]]).addClass("active");
+console.log($("#nav-"+map[page[page.length-2]]));
+console.log(map[page[page.length-2]]);
