@@ -8,6 +8,8 @@ var player;
 function onYouTubeIframeAPIReady() {
   player = new YT.Player('musicvid', {
     videoId: 'POeBrwje2DY',
+    width:'1280',
+    height:'720',
     playerVars: {
       autoplay: 0,        // Auto-play the video on load
       controls: 1,        // Show pause/play buttons in player
