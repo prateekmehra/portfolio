@@ -1,5 +1,8 @@
 $(function(){
 	$("#head").load("nav.html"); 
+});
+
+$(window).load(function(){
 	var map = {
 	"about":"about",
 	"personal":"personal",
@@ -12,11 +15,12 @@ $(function(){
 	"interiors":"design",
 	"photography":"design",
 	"portfolio":"portfolio"
-}
-var path = window.location.pathname;
-var page = path.split("/");
-$("#nav-"+map[page[page.length-2]]).addClass("active");
-console.log($("#nav-"+map[page[page.length-2]]));
-console.log(map[page[page.length-2]]);
+	}
+	var path = window.location.pathname;
+	var page = path.split("/");
+	var nav_id ="#nav-"+map[page[page.length-2]];
+	$(nav_id).addClass("active");
+	console.log(nav_id);
+	console.log($(nav_id));
 });
 
