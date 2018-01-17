@@ -23,3 +23,4 @@ $("#grid").load(function() {
 	console.log("boo");
 	console.log($('div[id$="_icons_panel"]'));
 });
+
