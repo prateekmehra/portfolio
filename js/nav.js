@@ -24,5 +24,7 @@ $("#menu").ready(function(){
 	var page = path.split("/").pop();
 	var nav_id ="#nav-"+map[page];
 	$(nav_id).addClass("active");
+	console.log(nav_id);
+	console.log($(nav_id));
 });
 
