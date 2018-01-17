@@ -2,7 +2,7 @@ $(function(){
 	$("#head").load("nav.html"); 
 });
 
-$("#menu").load(.load(function(){
+$(window).load(.load(function(){
 	var map = {
 	"about":"about",
 	"personal":"personal",
