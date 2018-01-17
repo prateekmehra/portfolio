@@ -2,7 +2,7 @@ $(function(){
 	$("#head").load("nav.html"); 
 });
 
-$(window).load(.load(function(){
+$("#menu").load(function(){
 	var map = {
 	"about":"about",
 	"personal":"personal",
@@ -22,8 +22,5 @@ $(window).load(.load(function(){
 	var path = window.location.pathname;
 	var page = path.split("/").pop();
 	var nav_id ="#nav-"+map[page];
-	$(nav_id).addClass("active");
-	console.log(nav_id);
-	console.log($(nav_id));
 });
 
