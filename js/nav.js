@@ -1,5 +1,6 @@
 $(function(){
 	$("#head").load("nav.html"); 
+	$("#footer").load("nav.html"); 
 });
 
 $(window).load(function(){

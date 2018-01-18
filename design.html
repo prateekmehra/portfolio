@@ -22,6 +22,8 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		
 		<script src="js/lib/onebook/jquery.mousewheel.min.js"></script>
 		<script src="js/lib/onebook/three.min.js"></script>
 		<script src="js/lib/onebook/jquery.onebook3d-2.33.js"></script>
@@ -35,19 +37,16 @@
 
 	<div class="page-content">	
 		<div class="index-grid">
-			<div class="tile-wide  center-padded-little">
-				
-			</div>
 			<div class="tile-wide immersive">
 
 				<div style="padding:10px;">
 
-					<div class="tile-wide ">
-															<ul class="menu">
-					<li class="menu-item"><div id="i-menu" class="title" onclick="reload_photobook('i')">Interiors</div></li>
-					<li class="menu-item"><div id="g-menu" class="title" onclick="reload_photobook('g')">Graphic</div></li>
-					<li class="menu-item"><div id="p-menu" class="title" onclick="reload_photobook('p')">Photography</div></li>
-				</ul>
+					<div class="tile-wide">
+					<ul class="menu">
+						<li class="menu-item"><div id="i-menu" class="title mini-title" onclick="reload_photobook('i')">Interiors</div></li>
+						<li class="menu-item"><div id="g-menu" class="title mini-title" onclick="reload_photobook('g')">Graphic</div></li>
+						<li class="menu-item"><div id="p-menu" class="title mini-title" onclick="reload_photobook('p')">Photography</div></li>
+					</ul>
 								<div id="photobook" style="margin-top:-50px;margin-right:0px"></div>
 								<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
 								<div class="tile"></div>

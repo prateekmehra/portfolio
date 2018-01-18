@@ -12,7 +12,7 @@ $(function(){
 	items:1,
 	lazyLoad:true,
 	loop:true,
-	margin:10,
+	margin:100,
 	autoplay:true,
     autoplayTimeout:3000,
     autoplayHoverPause:true,

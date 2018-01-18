@@ -7,8 +7,8 @@ a { color: #252B33; font-family: BebasNeueRegular, Helvetica Neue, arial, sans-s
 
 .category, .title { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 3.438rem; font-weight: normal; }
 header .logo { max-width: 70px; float: left; margin-left: 50px; }
-header .site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 50px 0px 50px 180px;}
-header .site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 30px; text-align: center; }
+.site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 50px 0px 50px 180px;}
+.site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 30px; text-align: center; }
 header nav { float:right;  line-height: 1.8; margin: 50px 0px 50px 50px; }
 header nav ul { margin: 0; padding: 0; list-style-type: none; }
 header nav ul li {display: inline; }
@@ -18,7 +18,27 @@ header nav a:hover { color: #465160; border-bottom-style: solid; border-bottom-w
 .grid { text-align: justify; }
 .index-grid { text-align: center; display: block;}
 
+.tint {	
+  position: relative;
+  margin: 0px;
+  margin: 0px;
+  cursor: pointer;
+}
 
+.tint:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0, 0.2);
+  transition: all .2s linear;
+}
+
+.tint:hover:before { background: none; }
+.tint:focus:before { background: none; }
 
 .page-content {  width: 100%; height:100%; margin:auto; display: block; text-align: center; margin-right: 30px;}
 .page-content .category { font-size: 3.438rem; margin: 30px 0 30px 0; width: 100%; }
@@ -26,7 +46,7 @@ header nav a:hover { color: #465160; border-bottom-style: solid; border-bottom-w
 .page-content .tile-wide { background-color: #F3F5F6; display:block; margin: 20px; text-align: center; }
 .page-content .tile a, .page-content .tile-wide a { text-decoration: none; }
 .page-content .tile .title, .page-content .tile-wide .title { font-weight: normal; margin: 6px 0 4px 0; }
-.page-content .tile .tags, .page-content .tile-wide .tags { color: #bbb; }
+.page-content .tile .tags, .page-content .tile-wide .tags { color: #999; }
 .page-content .tile { width: 45%; padding: 0 0px 20px 0px; }
 .page-content .tile-wide { padding: 0 0px 20px 0px; }
 .page-content .tile img { width:100%; height: 500px; object-fit: cover; }
@@ -36,12 +56,17 @@ header nav a:hover { color: #465160; border-bottom-style: solid; border-bottom-w
 .page-content .center-img {display: block;	margin-left: auto; margin-right: auto;}
 .page-content .dark { background-color: #252B33; color:#F3F5F6;}
 .page-content .dark a {color: #F3F5F6;}
+.page-content .light a {color: #252B33;}
+.page-content .padded { padding:10px 0px 10px 0px; }
+.page-content .centered { margin:0px; text-align: center; vertical-align: middle; }
 .page-content .center-padded { padding:150px 200px 150px 200px; margin: 0px; }
 .page-content .center-padded-little { padding:20px 100px 20px 100px; margin: 0px; }
+.page-content .box-text { line-height: 1.5; padding:250px 0px 150px 0px; }
 .page-content .compressed-centered20 {width: 20%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered40 {width: 40%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered60 {width: 60%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .large-title {width: 100%; height: 100%; margin:auto; font-size: 80px;line-height: 1.5}
+.page-content .mini-title {width: 100%; height: 100%; margin:auto; font-size: 30px;line-height: 1.5}
 .page-content .immersive {padding: 0; margin: 0;}
 .page-content .left-align {text-align: left;}
 .page-content .menu { margin: 0; padding: 0; list-style-type: none;  display: inline; }
@@ -49,10 +74,11 @@ header nav a:hover { color: #465160; border-bottom-style: solid; border-bottom-w
 .page-content .menu-item .title {display: inline;}
 .page-content .menu-item .active-item {color: #EE5250}
 .page-content .menu-item :hover {color: #FF5250}
-footer { margin-left: 220px; max-width: 640px; }
-footer .year { margin: 30px 0 0 0; color: #bbb; }
-footer .overview { font-weight: bold; text-decoration: none; display: inline-block; margin: 60px 0 60px 0; text-align: center; width: 100%; }
 
+.site-footer .overview { font-weight: bold; text-decoration: none; float:right;margin: 30px; padding: 10px 10px; text-align: center; }
+.site-footer nav { float:left;  line-height: 1.8; margin: 30px; }
+.site-footer nav ul { margin: 0; padding: 0; list-style-type: none; }
+.site-footer nav ul li {display: inline; padding: 0px 10px;}
 img { max-width: 100%; }
 
 .carousel {
