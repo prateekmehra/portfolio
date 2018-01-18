@@ -6,9 +6,9 @@ html, body { touch-action: manipulation; }
 a { color: #252B33; font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 1.500rem;font-weight: normal; }
 
 .category, .title { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 3.438rem; font-weight: normal; }
-header .logo { max-width: 70px; float: left; margin-left: 50px; }
-.site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 50px 0px 50px 180px;}
-.site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 30px; text-align: center; }
+header .logo { max-width: 50px; float: left; margin-left: 70px; margin-top:20px;}
+.site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 65px 0px 50px 50px;}
+.site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 20px; text-align: center; }
 header nav { float:right;  line-height: 1.8; margin: 50px 0px 50px 50px; }
 header nav ul { margin: 0; padding: 0; list-style-type: none; }
 header nav ul li {display: inline; }
@@ -24,9 +24,10 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
   margin: 0px;
   cursor: pointer;
 }
-@media screen and (min-width: 480px) {
-	header .logo {width:50px; margin-top: 20px; }
-    .site-title {margin: 50px 0px 50px 50px ;}
+
+@media screen and (min-width: 1000px) {
+	header .logo  { max-width:70px; margin-top: 0px; }
+    .site-title {margin: 65px 0px 50px 180px ;}
     .site-title a{font-size:25px;}
 }
 
