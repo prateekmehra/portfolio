@@ -17,7 +17,8 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 .active {border-bottom-style: solid; border-bottom-width:2px; padding-bottom: 1px; }
 .grid { text-align: justify; }
 .index-grid { text-align: center; display: block;}
-#musicvid { width: 1000px; }
+#musicvid, #pres { width: 1000px; }
+#slides { max-width: 949px; }
 
 .tint {	
   position: relative;
@@ -62,14 +63,14 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 .page-content .light a {color: #252B33;}
 .page-content .padded { padding:10px 0px 10px 0px; }
 .page-content .centered { margin:0px; text-align: center; vertical-align: middle; }
-.page-content .center-padded { padding:150px 200px 150px 200px; margin: 0px; }
+.page-content .center-padded { padding: 50px 200px 150px 200px; margin: 0px; }
 .page-content .center-padded-little { padding:20px 100px 20px 100px; margin: 0px; }
-.page-content .box-text { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; line-height: 1.5; padding:150px 25px 150px 25px; font-size: 3rem; font-weight: normal; margin: 6px 0 4px 0; text-align: center; vertical-align: middle;}
+.page-content .box-text { font-family: BebasNeuing:1eRegular, Helvetica Neue, arial, sans-serif; line-height: 1.5; padding:150px 25px 150px 25px; font-size: 3rem; font-weight: normal; margin: 6px 0 4px 0; text-align: center; vertical-align: middle;}
 .page-content .compressed-centered20 {width: 20%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered40 {width: 40%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered60 {width: 60%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
-.page-content .large-title {width: 100%; height: 100%; margin:auto; font-size: 80px;line-height: 1.5}
-.page-content .mini-title {width: 100%; height: 100%; margin:auto; font-size: 30px;line-height: 1.5}
+.page-content .large-title {width: 100%; height: 100%; margin:auto; font-size: 60px;line-height: 1.5}
+.page-content .mini-title {width: 100%; height: 100%; margin:auto; font-size: 20px;line-height: 1.5}
 .page-content .immersive {padding: 0; margin: 0;}
 .page-content .left-align {text-align: left;}
 .page-content .menu { margin: 0; padding: 0; list-style-type: none;  display: inline; }
@@ -212,8 +213,11 @@ background: #428bca;
 	header .logo { max-width:70px; margin-top: 0px; }
     .site-title {margin: 65px 0px 50px 180px ;}
     .site-title a{font-size:25px;}
-    #musicvid { width: 1280px; }
+    #musicvid, #pres { width: 1280px; }
+    #slides { width: 949px; height: 100%; margin:auto;}
     .page-content .box-text { font-size: 3.438rem; }
+    .title .large-title {  font-size: 3.438rem;  }
+    .title .mini-title {  font-size: 30px;  }
 }
 
 

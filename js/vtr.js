@@ -5,7 +5,7 @@ $(function(){
 	for (var i=1;i<=45;i++)
 		src.push('<img class="owl-lazy" data-src="./images/vtr/carousel/compressed/vtr'+i+'.jpg"  style="width:949px" alt="">');
 
-	 $('#pres').append(src);
+	 $('#slides').append(src);
 	var owl = $('.owl-carousel.owl-theme');
 
 	owl.owlCarousel({
