@@ -24,9 +24,10 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
   margin: 0px;
   cursor: pointer;
 }
-
-@media only screen and (max-width: 479px){
-    .site-title { font-size: 25px; margin: 50px 0px 50px 50px; }
+@media screen and (min-width: 480px) {
+	header .logo {width:50px; margin-top: 20px; }
+    .site-title {margin: 50px 0px 50px 50px ;}
+    .site-title a{font-size:25px;}
 }
 
 @media (hover:hover) {
