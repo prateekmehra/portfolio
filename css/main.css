@@ -13,7 +13,7 @@ header nav { float:right;  line-height: 1.8; margin: 50px 0px 50px 50px; }
 header nav ul { margin: 0; padding: 0; list-style-type: none; }
 header nav ul li {display: inline; }
 header nav a { font-size: 1.500rem; font-weight: normal; line-height: 2.25rem;  text-decoration: none; margin: 50px 20px 50px 20px;}
-header nav a :hover { color: #465160; border-bottom-style: solid; border-bottom-width: 2px; padding-bottom: 1px;}}
+header nav a:hover { color: #465160; border-bottom-style: solid; border-bottom-width: 2px; padding-bottom: 1px;}
 .active {border-bottom-style: solid; border-bottom-width:2px; padding-bottom: 1px;}
 .grid { text-align: justify; }
 .index-grid { text-align: center; display: block;}
