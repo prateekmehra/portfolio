@@ -17,6 +17,7 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 .active {border-bottom-style: solid; border-bottom-width:2px; padding-bottom: 1px; }
 .grid { text-align: justify; }
 .index-grid { text-align: center; display: block;}
+#musicvid { width: 1000px; }
 
 .tint {	
   position: relative;
@@ -29,6 +30,7 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 	header .logo { max-width:70px; margin-top: 0px; }
     .site-title {margin: 65px 0px 50px 180px ;}
     .site-title a{font-size:25px;}
+    #musicvid { width: 1280px; }
 }
 
 @media (hover:hover) {
