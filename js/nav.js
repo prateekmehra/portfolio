@@ -3,7 +3,6 @@ $(function(){
 });
 
 $(window).load(function(){
-	console.log("hello")
 	var map = {
 	"about":"about",
 	"personal":"personal",
@@ -25,6 +24,5 @@ $(window).load(function(){
 	var page = path.split("/").pop();
 	var nav_id ="#nav-"+map[page];
 	$(nav_id).addClass("active");
-	console.log($(nav_id));
 });
 
