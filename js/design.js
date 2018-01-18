@@ -27,11 +27,20 @@ var create_event_listeners = function(){
 		book =  $("div[id$='_stage']")[0];
 		next = 	$("div[title='Next']").parent()[0];
 		prev = 	$("div[title='Prev']").parent()[0];
+		
 		book.addEventListener("click", update_section_name);
 		book.addEventListener("wheel", update_section_name);
 		book.addEventListener("touchmove", update_section_name);
+		book.addEventListener("touchstart", update_section_name);
+		book.addEventListener("touchend", update_section_name);
+		
 		next.addEventListener("mouseup", update_section_name);
+		next.addEventListener("touchstart", update_section_name);
+		next.addEventListener("touchend", update_section_name);
+		
 		prev.addEventListener("mouseup", update_section_name);
+		prev.addEventListener("touchstart", update_section_name);
+		peev.addEventListener("touchend", update_section_name);
 	}
 var update_section_name = function(){
 		if (Number($("[id$='_page_numbers'] span").text().split("/")[0]) >= 13){
