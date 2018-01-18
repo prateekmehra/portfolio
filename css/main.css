@@ -1,7 +1,7 @@
 /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
 html { min-width: 1000px; }
-
 body {  background: #e9edef; margin: 40px 0px 80px 0px; position: relative; font-family: CallunaLghtRegular, Georgia, serif; font-size: 1.188rem; color: #252B33;  font-weight: 400;}
+html, body { touch-action: manipulation; }
 
 a { color: #252B33; font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 1.500rem;font-weight: normal; }
 
