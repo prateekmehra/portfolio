@@ -29,6 +29,7 @@ var create_event_listeners = function(){
 		prev = 	$("div[title='Prev']").parent()[0];
 		book.addEventListener("click", update_section_name);
 		book.addEventListener("wheel", update_section_name);
+		book.addEventListener("touchmove", update_section_name);
 		next.addEventListener("mouseup", update_section_name);
 		prev.addEventListener("mouseup", update_section_name);
 	}
