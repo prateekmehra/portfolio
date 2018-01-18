@@ -65,7 +65,7 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 .page-content .centered { margin:0px; text-align: center; vertical-align: middle; }
 .page-content .center-padded { padding: 50px 200px 150px 200px; margin: 0px; }
 .page-content .center-padded-little { padding:20px 100px 20px 100px; margin: 0px; }
-.page-content .box-text { font-family: BebasNeuing:1eRegular, Helvetica Neue, arial, sans-serif; line-height: 1.5; padding:150px 25px 150px 25px; font-size: 3rem; font-weight: normal; margin: 6px 0 4px 0; text-align: center; vertical-align: middle;}
+.page-content .box-text { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; line-height: 1.5; padding:150px 25px 150px 25px; font-size: 3rem; font-weight: normal; margin: 6px 0 4px 0; text-align: center; vertical-align: middle;}
 .page-content .compressed-centered20 {width: 20%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered40 {width: 40%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
 .page-content .compressed-centered60 {width: 60%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
