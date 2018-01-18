@@ -34,46 +34,46 @@ var create_event_listeners = function(){
 	}
 var update_section_name = function(){
 		if (Number($("[id$='_page_numbers'] span").text().split("/")[0]) >= 13){
-			$("#i-menu").removeClass("large-title");
-			$("#g-menu").removeClass("large-title");
-			$("#p-menu").removeClass("large-title");
-			$("#p-menu").addClass("large-title");
+			$("#i-menu").removeClass("active-item");
+			$("#g-menu").removeClass("active-item");
+			$("#p-menu").removeClass("active-item");
+			$("#p-menu").addClass("active-item");
 		}
 		else if (Number($("[id$='_page_numbers'] span").text().split("/")[0]) >= 10){
-			$("#i-menu").removeClass("large-title");
-			$("#g-menu").removeClass("large-title");
-			$("#p-menu").removeClass("large-title");
-			$("#g-menu").addClass("large-title");
+			$("#i-menu").removeClass("active-item");
+			$("#g-menu").removeClass("active-item");
+			$("#p-menu").removeClass("active-item");
+			$("#g-menu").addClass("active-item");
 		}
 		else if (Number($("[id$='_page_numbers'] span").text().split("/")[0]) >= 1){
-			$("#i-menu").removeClass("large-title");
-			$("#g-menu").removeClass("large-title");
-			$("#p-menu").removeClass("large-title");
-			$("#i-menu").addClass("large-title");
+			$("#i-menu").removeClass("active-item");
+			$("#g-menu").removeClass("active-item");
+			$("#p-menu").removeClass("active-item");
+			$("#i-menu").addClass("active-item");
 		}
 		else{
-			$("#i-menu").removeClass("large-title");
-			$("#g-menu").removeClass("large-title");
-			$("#p-menu").removeClass("large-title");
+			$("#i-menu").removeClass("active-item");
+			$("#g-menu").removeClass("active-item");
+			$("#p-menu").removeClass("active-item");
 		}
 	};
 
 var reload_photobook = function(arr){
-	$("#i-menu").removeClass("large-title");
-	$("#g-menu").removeClass("large-title");
-	$("#p-menu").removeClass("large-title");
+	$("#i-menu").removeClass("active-item");
+	$("#g-menu").removeClass("active-item");
+	$("#p-menu").removeClass("active-item");
 
 	if(arr=='i'){
 		$('#photobook').onebook(src,{startPage: 2,skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
-		$("#i-menu").addClass("large-title");
+		$("#i-menu").addClass("active-item");
 	}
 	if(arr=='g'){
 		$('#photobook').onebook(src,{startPage: 20,skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
-		$("#g-menu").addClass("large-title");
+		$("#g-menu").addClass("active-item");
 	}
 	if(arr=='p'){
 		$('#photobook').onebook(src,{startPage: 26,skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
-		$("#p-menu").addClass("large-title");
+		$("#p-menu").addClass("active-item");
 	}
 
 	setTimeout(create_event_listeners,1000);
