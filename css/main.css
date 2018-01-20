@@ -23,8 +23,7 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
 .tint {	
   position: relative;
   margin: 0px;
-  margin: 0px;
-  cursor: pointer;
+    z-index: 1;
 }
 
 
@@ -37,10 +36,12 @@ header nav a:hover { color: #465160;  transition: all .3s linear;}
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0,0,0, 0.2);
-  transition: all .2s linear;
+  background: rgba(0,0,0, 0.3);
+  transition: all .4s linear;
+  opacity: 1; 
+  z-index: 10;
 }
-.tint:hover:before { content: normal; background: none; }
+.tint:hover:before { opacity: 0; z-index: -1; background: none;}
 }
 
 
@@ -211,7 +212,7 @@ background: #428bca;
 
 	@media screen and (min-width: 1000px) {
 	header .logo { max-width:70px; margin-top: 0px; }
-    .site-title {margin: 65px 0px 50px 180px ;}
+    .site-title {margin: 65px 0px 50px 140px ;}
     .site-title a{font-size:25px;}
     #musicvid, #pres { width: 1280px; }
     #slides { width: 949px; height: 100%; margin:auto;}
