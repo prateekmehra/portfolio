@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+		<title>d3.js Canvas Parallel Coordinates - Chris Evans</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="http://underscorejs.org/underscore-min.js"></script>
+		<script src="/js/lib/d3.parcoords.js"></script>
+		<script src="/js/lib/d3.underscore.math.js"></script>
+		<script src="/js/lib/d3.divgrid.js"></script>
+		<script src="/js/lib/radarchart.js"></script>
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/1.3.0/d3-legend.js" charset="utf-8"></script>
+
+		<link href="/css/d3.parcoords.css" rel="stylesheet">
+		<link href="/css/bigdata.parallelcoordinates.css" rel="stylesheet">
+
+		<script type="text/javascript" src="/js/bigdata.parallelcoordinates.js"></script>
+		<script type="text/javascript" src="/js/bigdata.radarchart.js"></script>
+		<script type="text/javascript" src="/js/multiselect_dropdown.js"></script>
+
+		<script type="text/javascript" src="/js/filters/filter_data.js"></script>
+		<script type="text/javascript" src="/js/filters/reset_filters.js"></script>
+
+		<script type="text/javascript" src="/js/filters/make_filter.js"></script>
+		<script type="text/javascript" src="/js/filters/transmission_filter.js"></script>
+		<script type="text/javascript" src="/js/filters/vclass_filter.js"></script>
+		<script type="text/javascript" src="/js/filters/cylinder_filter.js"></script>
+	</head>
+
+	<body>
+		
+		<div class="container">
+			<div class="filters">
+				<div>
+					<dl class="dropdown" id="makeMenu"> 
+						<dt>
+							<a href="#">
+								<span class="hida" id="makeHida">Make</span>    
+								<p class="multiSel" id="makeMultiSel"></p>  
+							</a>
+						</dt>
+						<dd>
+							<div class="multiSelect" id="makeMultiSelect">
+
+								 <ul id="make_ul"></ul>
+							</div>
+						</dd>
+						
+					</dl>
+				</div>
+
+				<div>
+					<dl class="dropdown" id="transmissionMenu"> 
+						<dt>
+							<a href="#">
+								<span class="hida" id="transmissionHida">Transmission</span>    
+								<p class="multiSel" id="transmissionMultiSel"></p>  
+							</a>
+						</dt>
+						<dd>
+							<div class="multiSelect" id="transmissionMultiSelect">
+								 <ul id="transmission_ul"></ul>
+							</div>
+						</dd>
+					</dl>
+				</div>		
+
+				<div>
+					<dl class="dropdown" id="vclassMenu"> 
+						<dt>
+							<a href="#">
+								<span class="hida" id="vclassHida">Vehicle Class</span>    
+								<p class="multiSel" id="vclassMultiSel"></p>  
+							</a>
+						</dt>
+						<dd>
+							<div class="multiSelect" id="vclassMultiSelect">
+								 <ul id="vclass_ul"></ul>
+							</div>
+						</dd>
+					</dl>
+				</div>		
+			
+				<div>
+					<dl class="dropdown" id="cylinderMenu"> 
+						<dt>
+							<a href="#">
+								<span class="hida" id="cylinderHida">Cylinder</span>    
+								<p class="multiSel" id="cylinderMultiSel"></p>  
+							</a>
+						</dt>
+						<dd>
+							<div class="multiSelect" id="cylinderMultiSelect">
+								 <ul id="cylinder_ul"></ul>
+							</div>
+						</dd>
+						
+					</dl>
+				</div>
+				<div>
+					<button class="filter">Filter</button>	
+					<button class="reset-data">Reset</button>
+				</div>
+			</div>
+
+			<div id="wrapperx2">
+				<div id="wrapper" class="parcoords">
+				</div>
+				<div id="pc_buttons">
+					<button class="keep-data">Keep</button>
+					<button class="exclude-data">Exclude</button>
+				</div>
+			</div>
+			
+
+			<div id="radarChart" class="radarchart"></div>
+	
+			<script>
+				var color = d3.scale.category20();
+					// .range(["#EDC951","#CC333F","#00A0B0", "#DAF7A6", "#581845", "#033c99", "#34a99a" ]);
+					
+				var radarChartOptions = {
+					width: 1000,
+					height: 700,
+					color: color
+				};
+
+				radarChart = RadarChart();
+
+				d3.select('#radarChart')
+					.call(radarChart);
+
+				radarChart.options(radarChartOptions).update();
+
+			</script>
+			<div id="grid"></div>
+			<div class="floating"><span>Filter down vehicles to start comparing. <br>(less than 20)</span></div>
+		</div>
+	</body>
+</html>
