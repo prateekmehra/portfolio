@@ -1,7 +1,7 @@
 var cylinders_to_filter = [];
 
 
-d3.csv('../data/vehicles_data_processed.csv', function(data) {
+d3.csv('/virtual-auto-expo/vehicles_data_processed.csv', function(data) {
 
 	var cylinders = data
 				.map(data => data.cylinders)

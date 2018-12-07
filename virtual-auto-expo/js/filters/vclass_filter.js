@@ -1,7 +1,7 @@
 var vclasses_to_filter = [];
 
 
-d3.csv('../data/vehicles_data_processed.csv', function(data) {
+d3.csv('/virtual-auto-expo/vehicles_data_processed.csv', function(data) {
 
 	var vclasses = data
 				.map(data => data.vehicle_class)
