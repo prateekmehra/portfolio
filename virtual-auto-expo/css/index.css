@@ -49,14 +49,10 @@ body {
 }
 
 .desc{
-	display         : flex;
-
-	margin-top      : 50px;
-	margin-right    : 115px;
-	margin-left     : 115px;
-
-	align-items     : center;
-	justify-content : center;
+	margin-top: 50px;
+	display   : inline-flex;
+	text-align: center;
+	width: 309px;
 }
 
 .bp1{
@@ -91,11 +87,21 @@ button {
 	
 }
 
-@media screen and (max-width: 1200px) {
-	.desc{
-	margin-top      : 30px;
-	margin-right    : 90px;
-	margin-left     : 90px;
+span {
+  display: inline-block;
+  text-align: center;
+  margin:  0 auto;
+
 }
-	
+
+.button_holder{
+	display: block;
+}
+
+
+@media screen and (max-width: 1200px)  and (min-width: 1000px){
+	.desc{
+		margin-top      : 30px;
+		width: 285px;
+		}
 }
