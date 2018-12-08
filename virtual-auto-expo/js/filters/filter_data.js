@@ -1,7 +1,7 @@
 var filters = {};	
 var filtered_data;
 
-d3.csv('/virtual-auto-expo/vehicles_data_processed.csv', function(data) {
+d3.csv('/virtual-auto-expo/data/vehicles_data_processed.csv', function(data) {
 
 	d3.select(".filter")
 	.on("click", function() {
