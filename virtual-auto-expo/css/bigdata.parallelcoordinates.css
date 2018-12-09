@@ -32,6 +32,7 @@ text {
 #wrapper {
   height: 500px;
 }
+
 #title {
 	font-size   : 24px;
 	font-weight : 100;
@@ -80,7 +81,7 @@ button:hover {
 }
 
 /* data table styles */
-#grid {color:white; clear: both; position:relative; left: -25px; top: -50px; height: 100px; z-index: 3000;}
+#grid {color:white; clear: both; position:relative; left: -25px; height: 100px; z-index: 3000;}
 
 .row { clear: left; font-size: 14px; line-height: 18px; height: 20px; margin: 5px; width:100%; display: none; text-align: center; }
 
@@ -159,7 +160,6 @@ a {
   padding: 20px 20px 10px 10px;
   overflow: hidden;
   border: 0;
-  width: 270px;
   height: 44px;
 
 }
@@ -319,3 +319,156 @@ g.cell.hover {text-shadow: -1px 1px 8px #ffc, 1px -1px 8px #fff;}
 .col-13 {
   width: 150px;
 }
+
+.disclaimer{
+  color: #FFF;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 2065px) and (min-width: 1655px)  {
+  .filter_wrapper{
+    max-width: 300px;
+  }
+  .filte_button_wrapper{
+    max-width: 540px;
+  }
+  .dropdown dt a {
+    max-width: 270px;
+    min-width: 270px;
+  }
+
+  .floating {
+    z-index: 20000000;
+    top: -475px;  
+    float: right;
+    color: #000;
+    position: relative;
+    margin-right: 532px;
+    font-weight: bold;
+    text-align: center;
+}
+}
+
+@media screen and (max-width: 1655px) and (min-width: 1552px) {
+  .keep-data, .exclude-data {
+    max-width: 190px;
+  }
+  .filter_wrapper{
+    max-width: 300px;
+  }
+  .filte_button_wrapper{
+    max-width: 540px;
+  }
+  .dropdown dt a {
+    max-width: 270px;
+    min-width: 270px;
+  }
+
+  .filter, .reset-data {
+    max-width: 150px;
+  }
+
+  #grid {
+    top: 70px;
+    left: -5px;
+  }
+
+  .header, .row {
+    font-size: 12px;
+  }
+
+  .cell {
+    width: 110px;
+  }
+
+  .col-1{
+    width:  70px;
+  }
+
+  .col-2{
+    width:  60px;
+  }
+
+  .col-3, .col-4 {
+    width:  130px;
+  }
+
+  .col-13 {
+    width: 140px;
+  }
+
+  .floating {
+    top: -437px;
+    margin-right: 503px;
+
+}
+}
+
+@media screen and (max-width: 1552px) and (min-width: 1270px) {
+  .keep-data, .exclude-data {
+    max-width: 190px;
+  }
+  .filter_wrapper{
+    max-width: 300px;
+  }
+  .filte_button_wrapper{
+    max-width: 540px;
+  }
+  .dropdown dt a, .dropdown dd div ul {
+    max-width: 220px;
+    min-width: 220px;
+    height: 40px;
+  }
+
+  .filter, .reset-data {
+    max-width: 100px;
+  }
+
+  #grid {
+    left: -5px;
+  }
+
+  .header, .row {
+    font-size: 10px;
+  }
+
+  .cell {
+    width: 90px;
+  }
+
+  .col-1{
+    width:  50px;
+  }
+
+  .col-2{
+    width:  40px;
+  }
+
+  .col-3, .col-4 {
+    width:  110px;
+  }
+
+  .col-13 {
+    width: 120px;
+  }
+
+  .floating{
+    top: -435px;
+    margin-right: 358px;
+    font-size: 14px;
+  }
+
+}
+
+@media screen and (max-width: 1270px) {
+  .filter_wrapper{
+    max-width: 180px;
+  }
+  .dropdown dt a {
+    width: 180px;
+  }
+  .filter, .reset-data {
+  max-width: 90px;
+}
+}
+

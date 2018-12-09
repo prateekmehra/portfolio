@@ -3,7 +3,7 @@ var dataset;
 var nest;
 var _temp;
 
-var labelMap = {'make': 'Make','model' : 'Model','year': 'Year','mpg_combined': 'MPG Combined','emission_rating': 'Emission Rating','engine_hp': 'Engine HP','price': 'Price*', 'vehicle_class' : 'Class', 'cylinders': 'Cylinders', 'transmission_details': 'Transmission','mpg_city': 'MPG(City)','mpg_highway':'MPG(Highway)', 'engine_displ':'Engine Disp.', 'fuel_type': 'Fuel Type'}
+var labelMap = {'make': 'Make','model' : 'Model','year': 'Year','mpg_combined': 'MPG Combined','emission_rating': 'Emission Rating','engine_hp': '*Engine HP','price': '**Price', 'vehicle_class' : 'Class', 'cylinders': 'Cylinders', 'transmission_details': 'Transmission','mpg_city': 'MPG(City)','mpg_highway':'MPG(Highway)', 'engine_displ':'Engine Disp.', 'fuel_type': 'Fuel Type'}
 
 d3.csv('/virtual-auto-expo/data/vehicles_data_processed.csv', function(data) {
 	dataset = data;

@@ -26,13 +26,13 @@ function RadarChart() {
 
       minRadius: 80,
 
-      // resize: true, 
+        // resize: true, 
       // Margins for the SVG
       margins: {
          top: 100, 
          right: 120, 
          bottom: 100, 
-         left: -250
+         left: window.outerWidth >= 1450 ?  -250 :  window.outerWidth >= 1200 ? -100 : -50 
       },
 
       circles: { 
@@ -71,7 +71,7 @@ function RadarChart() {
          display: true,
          symbol: 'circle', // 'circle', 'cross', 'diamond', 'triangle-up', 'triangle-down'
          toggle: 'triangle-down',
-         position: { x: 700, y: 50 }
+         position: { x: window.outerWidth >= 1450 ?  700 :  500, y: 50 }
       },
 
       class: "rc",
