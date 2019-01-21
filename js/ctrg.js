@@ -259,7 +259,7 @@ $(window).scroll(function(){
 
 
 $(function(){
-	$('body').css({'overflow':'hidden'});
+	// $('body').css({'overflow':'hidden'});
 	
 	var src = [];
 	for (var i=1;i<=3;i++)
