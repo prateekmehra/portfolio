@@ -1,0 +1,95 @@
+/*
+------------------------------------------------------------
+FONTS
+------------------------------------------------------------
+*/
+         	
+@font-face {
+    font-family: CallunaBold;
+    src: url('./webfonts/calluna-bold-webfont.eot');
+    src: url('./webfonts/calluna-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-bold-webfont.woff') format('woff'),
+         url('./webfonts/calluna-bold-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-bold-webfont.svg#CallunaBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaBoldItalic;
+    src: url('./webfonts/calluna-boldit-webfont.eot');
+    src: url('./webfonts/calluna-boldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-boldit-webfont.woff') format('woff'),
+         url('./webfonts/calluna-boldit-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-boldit-webfont.svg#CallunaBoldItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaItalic;
+    src: url('./webfonts/calluna-it-webfont.eot');
+    src: url('./webfonts/calluna-it-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-it-webfont.woff') format('woff'),
+         url('./webfonts/calluna-it-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-it-webfont.svg#CallunaItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaLghtRegular;
+    src: url('./webfonts/calluna-light-webfont.eot');
+    src: url('./webfonts/calluna-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-light-webfont.woff') format('woff'),
+         url('./webfonts/calluna-light-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-light-webfont.svg#CallunaLghtRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaRegular;
+    src: url('./webfonts/calluna-regular-webfont.eot');
+    src: url('./webfonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-regular-webfont.woff') format('woff'),
+         url('./webfonts/calluna-regular-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-regular-webfont.svg#CallunaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaSmBdRegular;
+    src: url('./webfonts/calluna-semibold-webfont.eot');
+    src: url('./webfonts/calluna-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-semibold-webfont.woff') format('woff'),
+         url('./webfonts/calluna-semibold-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-semibold-webfont.svg#CallunaSmBdRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CallunaSmBdItalic;
+    src: url('./webfonts/calluna-semiboldit-webfont.eot');
+    src: url('./webfonts/calluna-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/calluna-semiboldit-webfont.woff') format('woff'),
+         url('./webfonts/calluna-semiboldit-webfont.ttf') format('truetype'),
+         url('./webfonts/calluna-semiboldit-webfont.svg#CallunaSmBdItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: BebasNeueRegular;
+    src: url('./webfonts/BebasNeue-webfont.eot');
+    src: url('./webfonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./webfonts/BebasNeue-webfont.woff') format('woff'),
+         url('./webfonts/BebasNeue-webfont.ttf') format('truetype'),
+         url('./webfonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
