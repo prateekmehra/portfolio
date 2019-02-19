@@ -250,6 +250,10 @@ PAGE CONTENT
     width: 50%;
 }
 
+.page-content .aboutme {
+    margin-top: 14vh;
+}
+
 .page-content .tile {
     background-color       : #FFFFFF;
     text-align             : center;

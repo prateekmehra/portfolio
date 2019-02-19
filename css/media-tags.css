@@ -44,7 +44,7 @@ MEDIA TAGS
 
     .page-content .center-padded {
         margin: 0px;
-        padding: 50px 0px 50px 0px;
+        padding: 50px 100px 50px 100px;
     }
 
     .page-content .compressed-centered20 {
@@ -56,7 +56,7 @@ MEDIA TAGS
     }
 
     .page-content .compressed-centered60 {
-        width: 80%;
+        width: 70%;
         font-size: 1rem;
     }
 }
@@ -181,14 +181,14 @@ MEDIA TAGS
         display: block;
     }
 
-    .page-content .banner-split {
+   /*  .page-content .banner-split {
     display: block;
     width: 100%;
-}
+    } */
 
-    .page-content .half {
+    /* .page-content .half {
         width: 100%;
-    }
+    } */
 
     .page-content .compressed-centered20 {
         width: 60%;
@@ -326,7 +326,7 @@ MEDIA TAGS
 
     .page-content .compressed-centered60 {
         width: 90%;
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .page-content .mini-title {
@@ -491,6 +491,11 @@ MEDIA TAGS
 
     .page-content .half {
         width: 100%;
+    }
+
+    .page-content .aboutme {
+        margin-top: 0vh;
+        margin-bottom: 14vh;
     }
 
     .page-content .compressed-centered20 {
