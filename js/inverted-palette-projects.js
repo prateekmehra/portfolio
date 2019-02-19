@@ -10,6 +10,13 @@ function updatePalette(h){
 		$(".arrow").css({"color":colorArr[h%2]});
 		$("#go-back").css({"border":"2px solid " + colorArr[h%2]})
 	}
+	else{
+		$(".navLink").css({"color":colorArr[0]});
+		$("#el_pDo0vxjT-X").css({"fill":colorArr[0]});
+		$("#menuToggle span").css({"background":colorArr[0]});
+		$(".arrow").css({"color":colorArr[0]});
+		$("#go-back").css({"border":"2px solid " + colorArr[0]});
+	}
 }
 
 
