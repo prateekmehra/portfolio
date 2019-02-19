@@ -16,6 +16,15 @@ $(function(){
 
 	src.push('./images/logo.jpg');		
 
-	$('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
+	// $('#photobook').onebook(src,{skin:['light','dark'], bgDark:'#1e1c1e', flip:'soft', border:5, pageColor: 'rgb(128, 128, 128)', cesh:true});
+
+	$(document).ready(function(){
+
+		$(".project").hover3d({
+			selector: ".project__card",
+			perspective: 2500,
+			sensitivity: 30,
+		});
+});
 });
 	

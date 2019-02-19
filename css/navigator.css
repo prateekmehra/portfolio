@@ -7,7 +7,7 @@
 #navigator {
     position: fixed;
     top: 50%;
-    right: 45px;
+    right: 4.45rem;
     display: none;
     z-index: 90;
     -ms-transform: translate(0, -50%); /* IE 9 */
@@ -31,12 +31,7 @@
     padding: 0 10px 0 10px;
 }
 
-@media (hover: none) {
-   .navLink:link .navTag, .navLink:link .navTag {
-       max-width: 0;
-       padding: 0;
-   }
-}
+
 
 .navLinkBox {
     position: absolute;
@@ -59,9 +54,12 @@
     padding: 0;
     line-height: 30px;
     height: 30px;
-    max-width: 0;
+    max-width: 0px;
     white-space: nowrap;
-
+    font-family: Lato, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    font-style: italic;
     -webkit-transition: max-width 0.35s, padding 0.35s;
     -moz-transition: max-width 0.35s, padding 0.35s;
     transition: max-width 0.35s, padding 0.35s;

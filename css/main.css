@@ -1,225 +1,685 @@
-/* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
-html { min-width: 1000px; }
-body {  background: #e9edef; margin: 40px 0px 80px 0px; position: relative; font-family: CallunaLghtRegular, Georgia, serif; font-size: 1.188rem; color: #252B33;  font-weight: 400;}
-html, body { touch-action: manipulation; }
+html { 
+    height: 100%; 
+}
 
-a { color: #252B33; font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 1.500rem;font-weight: normal; }
+html, body {
+    touch-action : manipulation;
+}
 
-.category, .title { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; font-size: 3.438rem; font-weight: normal; }
-header .logo { max-width: 50px; float: left; margin-left: 50px; margin-top:30px;}
-.site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 65px 0px 50px 50px;}
-.site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 20px; text-align: center; }
-header nav { float:right;  line-height: 1.8; margin: 50px 0px 50px 50px; }
-header nav ul { margin: 0; padding: 0; list-style-type: none; }
-header nav ul li {display: inline; }
-header nav a { font-size: 1.500rem; font-weight: normal; line-height: 2.25rem;  text-decoration: none; margin: 50px 20px 50px 20px;}
-header nav a:hover { color: #465160;  transition: all .3s linear;}
-.active {border-bottom-style: solid; border-bottom-width:2px; padding-bottom: 1px; }
+body {
+    background:  #111 /* url("/images/home/bg/mainbg9.gif")  */ no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family : Open Sans, sans-serif;
+    font-size   : 1.17rem;
+    font-weight : 500;
+    color       : #FFFFFF;
+    margin: 0;
+    min-height: 100%;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+img {
+    max-width : 100%;
+}
+
+a {
+    font-family     : Lato, sans-serif;
+    font-weight     : normal;
+    color           : #FFFFFF;
+    text-decoration : none;
+}
+
+p {
+    margin: 0px;
+}
+
+.site-nav {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: none;
+    z-index: 100000;
+    text-align: center;
+}
+
+
+/*
+------------------------------------------------------------
+SITE INDEX HEAD
+------------------------------------------------------------
+*/
+
+.site-title {
+    display        : inline-block;
+
+    width          : 100%;
+    margin         : 50px 10px 50px 0px;
+
+    font-family    : Lato, sans-serif;
+    font-size      : 50px;
+    font-weight    : 400;
+    letter-spacing : 1px;
+    line-height    : 1;
+    text-align     : center;
+    text-align     : center;
+}
+
+.site-title a {
+    font-size       : 30px;
+    font-weight     : 100;
+    text-align      : center;
+    text-decoration : none;
+}
+
+.category, .title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1rem;
+    font-weight    : 100;
+    text-transform : uppercase;
+}
+
+
+.category, .large-title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1.5rem;
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+
+.active {
+    padding-bottom      : 1px;
+
+    border-bottom-style : solid;
+    border-bottom-width : 2px;
+}
+
 .grid { text-align: justify; }
-.index-grid { text-align: center; display: block;}
+
+.index-grid {
+    display    : block;
+    text-align : center;
+    background: inherit;
+    padding-bottom: 120px;
+    z-index: 1000;
+}
+
 #musicvid, #pres { width: 1000px; }
+
 #slides { max-width: 949px; }
 
-.tint {	
-  position: relative;
-  margin: 0px;
-    z-index: 1;
+.tint {
+    position : relative;
+    z-index  : 1;
+
+    margin   : 0px;
+}
+
+.vertical-text {
+    transform        : rotate(90deg);
+    transform-origin : left top 0;
 }
 
 
-@media (hover:hover) {
-.tint:before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0,0,0, 0.1);
-  transition: all .4s linear;
-  opacity: 1; 
-  z-index: 10;
-}
-.tint:hover:before { opacity: 0; z-index: -1; background: none;}
+
+/*
+------------------------------------------------------------
+PAGE CONTENT
+------------------------------------------------------------
+*/
+
+.scroll-X {
+    animation-name             : scroll-bounce-X;
+    animation-duration         : 5s;
+    animation-delay            : .5s; 
+    animation-iteration-count  : infinite;
+    transition-timing-function : cubic-bezier(.37,.01,0,.98);
 }
 
+.scroll-XR {
+    animation-name             : scroll-bounce-XR;
+    animation-duration         : 5s;
+    animation-iteration-count  : infinite;
+    transition-timing-function : cubic-bezier(.37,.01,0,.98);
+}
 
-.page-content {  width: 100%; height:100%; margin:auto; display: block; text-align: center; margin-right: 30px;}
-.page-content .category { font-size: 3.438rem; margin: 20px 0; width: 100%; }
-.page-content .tile   { background-color: #F3F5F6; display: inline-grid; margin: 20px; text-align: center; }
-.page-content .tile-wide { background-color: #F3F5F6; display:block; margin: 20px; text-align: center; }
-.page-content .tile a, .page-content .tile-wide a { text-decoration: none; }
-.page-content .tile .title, .page-content .tile-wide .title { font-weight: normal; margin: 6px 0 4px 0; }
-.page-content .tile .tags, .page-content .tile-wide .tags { color: #ccc; }
-.page-content .tile { width: 40%; padding: 0 0px 20px 0px; }
-.page-content .tile-wide { padding: 0 0px 20px 0px; }
-.page-content .tile img { width:100%; height: 370px; object-fit: cover; }
-.page-content .tile-wide img { width:100%; object-fit: fill; }
-.page-content ul { margin: 0; padding: 0; list-style: none; }
-.page-content .pres { float:right; width:400px; margin: 90px 0 50px 100px;}
-.page-content .center-img {display: block;	margin-left: auto; margin-right: auto;}
-.page-content .dark { background-color: #252B33; color:#F3F5F6;}
-.page-content .dark a {color: #F3F5F6;}
-.page-content .light a {color: #252B33;}
-.page-content .padded { padding:10px 0px 10px 0px; }
-.page-content .centered { margin:0px; text-align: center; vertical-align: middle; }
-.page-content .center-padded { padding: 50px 200px 150px 200px; margin: 0px; }
-.page-content .center-padded-little { padding:20px 100px 20px 100px; margin: 0px; }
-.page-content .box-text { font-family: BebasNeueRegular, Helvetica Neue, arial, sans-serif; line-height: 1.5; padding:150px 25px 150px 25px; font-size: 3rem; font-weight: normal; margin: 6px 0 4px 0; text-align: center; vertical-align: middle;}
-.page-content .compressed-centered20 {width: 20%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
-.page-content .compressed-centered40 {width: 40%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
-.page-content .compressed-centered60 {width: 60%; display: block; margin: auto;  font-size: 1.500rem; line-height: 1.75;}
-.page-content .large-title {width: 100%; height: 100%; margin:auto; font-size: 60px;line-height: 1.5}
-.page-content .mini-title {width: 100%; height: 100%; margin:auto; font-size: 20px;line-height: 1.5}
-.page-content .immersive {padding: 0; margin: 0;}
-.page-content .left-align {text-align: left;}
-.page-content .menu { margin: 0; padding: 0; list-style-type: none;  display: inline; }
-.page-content .menu-item { cursor: pointer; display: inline; font-size: 1.500rem; font-weight: normal;  text-decoration: none; margin: 0px 40px 0px 40px;}
-.page-content .menu-item .title {display: inline;}
-.page-content .menu-item .active-item {color: #EE5250}
-.page-content .menu-item :hover {color: #FF5250; transition: all .3s linear;}
+.scroll-Y {
+    animation-name             : scroll-bounce-Y;
+    animation-duration         : 5s;
+    animation-delay            : 1s; 
+    animation-iteration-count  : infinite;
+    transition-timing-function : cubic-bezier(.37,.01,0,.98);
+}
 
-.site-footer .overview { text-decoration: none; float:right;margin: 30px; padding: 10px 10px; text-align: center; }
-.site-footer nav { float:left;  line-height: 1.8; margin: 30px; }
-.site-footer nav ul { margin: 0; padding: 0; list-style-type: none; }
-.site-footer nav ul li {display: inline; padding: 0px 10px;}
-img { max-width: 100%; }
+.scroll-YR {
+    animation-name             : scroll-bounce-YR;
+    animation-duration         : 5s;
+
+    animation-iteration-count  : infinite;
+    transition-timing-function : cubic-bezier(.37,.01,0,.98);
+}
+
+.h-line{
+    width:      50vw;
+    border-top:  1px solid;
+    position: fixed;
+    display: block;
+}
+
+.h-line.above {
+    margin-top: 17vh;
+    margin-left: 20vw;
+}
+
+.h-line.below{
+    margin-left: 20vw;
+    margin-top: 82vh;
+}
+
+.v-line{
+    height:      100vh;
+    border-right:  1px solid;
+    position: fixed;
+    display: block;
+}
+
+.v-line.left{
+    margin-left: 36vw;
+    margin-top: 50vh;
+}
+
+.v-line.right{
+    margin-left: 64vw;
+    margin-bottom: 50vh;
+}
+
+
+.show-overlay{
+    display: block;
+}
+
+#portfolio {
+    width: 100%;
+    height: 100%;
+}
+
+#palette {
+    -webkit-transition: background 1s ease-in-out;
+    -ms-transition: background 1s ease-in-out;
+    transition: background 1s ease-in-out;
+}
+
+.page-content {
+    display    : block;
+
+    height     : 100%;
+    width      : 100%;
+    margin     : auto;
+
+    text-align : center;
+    position: absolute;
+    background: inherit;
+}
+
+.page-content .category {
+    width     : 100%;
+    margin    : 20px 0;
+
+    font-size : 3.438rem;
+}
+
+.page-content .category .mini-title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1.2rem;
+    font-weight    : 400;
+    text-transform : uppercase;
+}
+
+.page-content .banner-split {
+    display: inline-flex;
+    width: 100%;
+}
+
+.page-content .half{
+    width: 50%;
+}
+
+.page-content .tile {
+    background-color       : #FFFFFF;
+    text-align             : center;
+
+    color:#111111; 
+    display: inline-grid; 
+    margin    : 20px;
+}
+
+.page-content .tile-wide {
+    display          : block;
+
+    margin           : 20px;
+
+    background-color : #FFFFFF;
+    color            : #111111;
+    text-align       : center;  
+}
+
+.page-content .scrollto {
+    padding-top: 6vh;
+}
+
+.page-content .post-background{
+    background: rgba(29, 29, 29, 0.81);
+    box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.51);
+}
+
+.page-content .post-button-holder {
+    z-index: 1000;
+    margin-top: -100px;
+    padding-bottom: 80px;
+}
+
+
+.page-content .tile a, .page-content .tile-wide a {
+    color           : #111111;
+    text-decoration : none;
+}
+
+.page-content .tile .page-title, .page-content .tile-wide .page-title {
+    margin      : 6px 0 4px 0;
+    font-weight : 100;
+}
+
+.page-content .tile .title, .page-content .tile-wide .title {
+    margin      : 6px 0 4px 0;
+    font-weight : 400;
+}
+
+.page-content .tile .tags, .page-content .tile-wide .tags {
+    color : #000;
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    font-weight: 400;
+
+}
+
+.page-content .tile {
+    width   : 80%;
+    height: 100%;
+    padding : 0 0px 20px 0px;
+}
+
+.page-content .tile-wide {
+    padding : 0 0px 20px 0px;
+}
+
+.page-content .tile img {
+    height     : 370px;
+    width      : 100%;
+
+    object-fit : cover;
+}
+
+.page-content .tile-wide img {
+    width      : 100%;
+    /* object-fit : fill; */
+}
+
+.page-content ul {
+    margin     : 0;
+    padding    : 0;
+
+    list-style : none;
+}
+
+.page-content .pres {
+    float  : right;
+
+    width  : 400px;
+    margin : 90px 0 50px 100px;
+}
+
+.page-content .center-img {
+    display      : block;
+
+    margin-right : auto;
+    margin-left  : auto;
+}
+.page-content .transparent{
+    background:none;
+    color: #FFF;
+}
+
+.page-content .translucent{
+    background:#FFFFFF6e;
+    color: #111111;
+}
+
+.page-content .dark {
+    background-color : #111111;
+    color            : #FFFFFF;
+}
+
+.page-content .light {
+    background-color : #FFFFFF;
+    color            : #111111;
+}
+
+.page-content .dark a {
+    color : #FFFFFF;
+}
+
+.page-content .light a {
+    color : #111111;
+}
+
+.page-content .transparent a {
+    color : #FFFFFF;
+}
+
+.page-content .padded {
+    padding : 10px 0px 10px 0px;
+}
+
+.page-content .centered {
+    vertical-align : middle;
+
+    margin         : 0px;
+
+    text-align     : center;
+}
+
+.page-content .center-padded {
+    margin  : 0px;
+    padding : 50px 200px 150px 200px;
+}
+
+.page-content .center-padded-little {
+    margin  : 0px;
+    padding : 20px 100px 20px 100px;
+}
+
+.page-content .box-text {
+    vertical-align : middle;
+
+    margin         : 6px 0 4px 0;
+    padding        : 150px 25px 150px 25px;
+
+    font-size      : 3rem;
+    font-weight    : normal;
+    line-height    : 1.5;
+    text-align     : center;
+}
+
+.page-content .compressed-centered20 {
+    display     : block;
+
+    width       : 20%;
+    margin      : auto;
+
+    font-size   : 1.2rem;
+    line-height : 1.75;
+}
+
+.page-content .compressed-centered40 {
+    display     : block;
+
+    width       : 40%;
+    margin      : auto;
+
+    font-size   : 1.2rem;
+    line-height : 1.75;
+}
+
+.page-content .compressed-centered60 {
+    display     : block;
+
+    width       : 60%;
+    margin      : auto;
+
+    font-size   : 1.2rem;
+    line-height : 1.75;
+}
+
+.page-content .large-title {
+    height      : 100%;
+    width       : 100%;
+    margin      : auto;
+
+    font-size   : 60px;
+    line-height : 1.5;
+}
+
+.page-content .mini-title {
+    height      : 100%;
+    width       : 100%;
+    margin      : auto;
+
+    font-size   : 2.4rem;
+    line-height : 1.5;
+}
+
+
+.page-content .immersive {
+    margin  : 0;
+    padding : 0;
+}
+
+.page-content .left-align {
+    text-align : left;
+}
+
+.page-content .menu {
+    display         : inline;
+
+    margin          : 0;
+    padding         : 0;
+
+    list-style-type : none;
+}
+
+.page-content .menu-item {
+    display         : inline;
+
+    margin          : 0px 30px 0px 0px;
+
+    cursor          : pointer;
+    font-size       : 1.500rem;
+    font-weight     : normal;
+    text-decoration : none;
+}
+
+.page-content .menu-item .title {
+    display : inline;
+}
+
+.page-content .menu-item .active-item {
+    color : #EE5250;
+}
+
+.page-content .menu-item :hover {
+    color      : #FF5250;
+    transition : all .3s linear;
+}
 
 .carousel {
-    margin-bottom: 0;
-    padding: 0 40px 30px 40px;
+    margin-bottom : 0;
+    padding       : 0 40px 30px 40px;
 }
+
 /* The controlsy */
 .carousel-control {
-	left: -12px;
-    height: 40px;
-	width: 40px;
-    background: none repeat scroll 0 0 #222222;
-    border: 4px solid #FFFFFF;
-    border-radius: 23px 23px 23px 23px;
-    margin-top: 90px;
+    left          : -12px;
+
+    height        : 40px;
+    width         : 40px;
+    margin-top    : 90px;
+
+    background    : none repeat scroll 0 0 #222222;
+    border        : 4px solid #FFFFFF;
+    border-radius : 23px 23px 23px 23px;
 }
+
 .carousel-control.right {
-	right: -12px;
+    right : -12px;
 }
+
 /* The indicators */
 .carousel-indicators {
-	right: 50%;
-	top: auto;
-	bottom: -10px;
-	margin-right: -19px;
+    top          : auto;
+    right        : 50%;
+    bottom       : -10px;
+
+    margin-right : -19px;
 }
+
 /* The colour of the indicators */
 .carousel-indicators li {
-	background: #cecece;
+    background : #cecece;
 }
+
 .carousel-indicators .active {
-background: #428bca;
+    background : #428bca;
 }
 
-/* @group Typography */
-   
-   /* @group Custom Webfonts */
-         	
-	@font-face {
-	    font-family: CallunaBold;
-	    src: url('./webfonts/calluna-bold-webfont.eot');
-	    src: url('./webfonts/calluna-bold-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-bold-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-bold-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-bold-webfont.svg#CallunaBold') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaBoldItalic;
-	    src: url('./webfonts/calluna-boldit-webfont.eot');
-	    src: url('./webfonts/calluna-boldit-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-boldit-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-boldit-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-boldit-webfont.svg#CallunaBoldItalic') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaItalic;
-	    src: url('./webfonts/calluna-it-webfont.eot');
-	    src: url('./webfonts/calluna-it-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-it-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-it-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-it-webfont.svg#CallunaItalic') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaLghtRegular;
-	    src: url('./webfonts/calluna-light-webfont.eot');
-	    src: url('./webfonts/calluna-light-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-light-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-light-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-light-webfont.svg#CallunaLghtRegular') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaRegular;
-	    src: url('./webfonts/calluna-regular-webfont.eot');
-	    src: url('./webfonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-regular-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-regular-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-regular-webfont.svg#CallunaRegular') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaSmBdRegular;
-	    src: url('./webfonts/calluna-semibold-webfont.eot');
-	    src: url('./webfonts/calluna-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-semibold-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-semibold-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-semibold-webfont.svg#CallunaSmBdRegular') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: CallunaSmBdItalic;
-	    src: url('./webfonts/calluna-semiboldit-webfont.eot');
-	    src: url('./webfonts/calluna-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/calluna-semiboldit-webfont.woff') format('woff'),
-	         url('./webfonts/calluna-semiboldit-webfont.ttf') format('truetype'),
-	         url('./webfonts/calluna-semiboldit-webfont.svg#CallunaSmBdItalic') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
-	
-	@font-face {
-	    font-family: BebasNeueRegular;
-	    src: url('./webfonts/BebasNeue-webfont.eot');
-	    src: url('./webfonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-	         url('./webfonts/BebasNeue-webfont.woff') format('woff'),
-	         url('./webfonts/BebasNeue-webfont.ttf') format('truetype'),
-	         url('./webfonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
-	    font-weight: normal;
-	    font-style: normal;
-	}
+.grid-img-config{
+   height:406px; 
+   object-fit: contain;
+}
 
-	@media screen and (min-width: 1000px) {
-	header .logo { max-width:50px; margin-top: 30px; }
-    .site-title {margin: 65px 0px 50px 140px ;}
-    .site-title a{font-size:25px;}
-    #musicvid, #pres { width: 1280px; }
-    #slides { width: 949px; height: 100%; margin:auto;}
-    .page-content .box-text { font-size: 3.438rem; }
-    .title .large-title {  font-size: 3.438rem;  }
-    .title .mini-title {  font-size: 30px;  }
+.postimg {
+    display: block;
+}
+
+.postimgm {
+    display: none;
+}
+
+.imgzoom {
+    animation-name             : background-zoom;
+    animation-duration         : 30s; 
+    animation-iteration-count  : infinite;
+    transition-timing-function : ease-in-out;
 }
 
 
-	
+/*
+------------------------------------------------------------
+ANIMATIONS
+------------------------------------------------------------
+*/
+
+.hover-in{
+    transition: .3s ease-out;
+}
+.hover-out{
+    transition: .3s ease-in;
+}
+
+@keyframes scroll-bounce-Y {
+    0% {
+        -webkit-transform : translateY(-100%) scaleY(0);
+        transform         : translateY(-100%) scaleY(0);
+    }
+
+    60% {
+        -webkit-transform : translateY(-50%) scaleY(1);
+        transform         : translateY(-50%) scaleY(1);
+    }
+
+    80% {
+        -webkit-transform : translateY(0) scaleY(0);
+        transform         : translateY(0) scaleY(0);
+    }
+
+    100% {
+        -webkit-transform : translateY(-100%) scaleY(0);
+        transform         : translateY(-100%) scaleY(0);
+    }
+}
+
+@keyframes scroll-bounce-YR {
+    0% {
+        -webkit-transform : translateY(100%) scaleY(0);
+        transform         : translateY(100%) scaleY(0);
+    }
+
+    60% {
+        -webkit-transform : translateY(0%) scaleY(1);
+        transform         : translateY(0%) scaleY(1);
+    }
+
+    80% {
+        -webkit-transform : translateY(-50%) scaleY(1);
+        transform         : translateY(-50%) scaleY(1);
+    }
+
+    100% {
+        -webkit-transform : translateY(-100%) scaleY(0);
+        transform         : translateY(-100%) scaleY(0);
+    }
+}
+
+@keyframes scroll-bounce-X {
+    0% {
+        -webkit-transform : translateX(-100%) scaleX(0);
+        transform         : translateX(-100%) scaleX(0);
+    }
+
+    50% {
+        -webkit-transform : translateX(0%) scaleX(1);
+        transform         : translateX(0%) scaleX(1);
+    }
+
+    100% {
+        -webkit-transform : translateX(100%) scaleX(0);
+        transform         : translateX(100%) scaleX(0);
+    }
+}
+
+@keyframes scroll-bounce-XR {
+    0% {
+        -webkit-transform : translateX(100%) scaleX(0);
+        transform         : translateX(100%) scaleX(0);
+    }
+
+    50% {
+        -webkit-transform : translateX(0%) scaleX(1);
+        transform         : translateX(0%) scaleX(1);
+    }
+
+    100% {
+        -webkit-transform : translateX(-100%) scaleX(0);
+        transform         : translateX(-100%) scaleX(0);
+    }
+}
+
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+
+
+

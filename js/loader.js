@@ -1,9 +1,15 @@
 $(function(){
-$(window).load(function(){
-		$('.loading-overlay').delay(200).fadeOut('slow');	
-		$('body').delay(2000).queue(function (next) { 
-			$(this).css({'overflow':'visible'});	
-			next();
+	$(window).ready(function(){
+		setTimeout(function(){
+            $('.loading-overlay').fadeOut('slow');
+       		},2000);
+				
+			$('body').queue(function (next) { 
+				$(this).css({'overflow':'visible'});	
+				next();
+			});
+			console.log($("#menuToggle input").is(':checked'));
+			$("#menuToggle input").prop('checked', false);
+			console.log($("#menuToggle input").is(':checked'));
 		});
-	});
 });

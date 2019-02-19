@@ -1,45 +1,42 @@
-var tag = document.createElement('script');
-tag.src = "https://www.youtube.com/iframe_api";
-var firstScriptTag = document.getElementsByTagName('script')[0];
-firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+function isScrolledIntoView(elem)
+{
+  var docViewTop = $(window).scrollTop();
+  var docViewBottom = docViewTop + $(window).height();
 
-var player;
-function onYouTubeIframeAPIReady() {
-  player = new YT.Player('pres', {
-    width: '1280',
-    height: '720',
-    videoId: '88Ycy5-oYzI',
-    playerVars: {
-      autoplay: 0,        // Auto-play the video on load
-      controls: 1,        // Show pause/play buttons in player
-      showinfo: 0,        // Hide the video title
-      modestbranding: 0,  // Hide the Youtube Logo
-      loop: 1,            // Run the video in a loop
-      fs: 1,              // Hide the full screen button
-      cc_load_policy: 1, // Hide closed captions
-      iv_load_policy: 3,  // Hide the Video Annotations
-      autohide: 0         // Hide video controls when playing
+  var elemTop = $(elem).offset().top;
+  var elemBottom = elemTop + $(elem).height();
 
-    },
-    events: {
-      'onReady': onPlayerReady,
-    }
+  return !((docViewBottom < elemTop) || ( elemBottom < docViewTop));
+}
+
+
+$(window).load(function(){
+    $('.storyboard-video').on({
+      click:  function(e){
+       e.currentTarget.play();
+      },
+      mouseenter:  function(e){
+       e.currentTarget.muted = false;
+      },
+      mouseout:  function(e){
+        e.currentTarget.muted = true;
+      }
   });
-}
 
-function onPlayerReady(event) {
-  player.setVolume(100);
-}
-
-$(function(){
-	$('#image-tray').owlCarousel({
-		items:1,
-		lazyLoad:true,
-		loop:true,
-		autoplay:true,
-		autoplayTimeout:3000,
-		autoplayHoverPause:true,
-		nav:true,
-		dots:false
-	});
 });
+
+
+
+$(document).ready(function(){
+    
+    // $(window).scroll(function(){
+    //   if(!isScrolledIntoView($('#designProcess')[0])){
+    //       $("#designProcess").attr("src", "/images/go/designProcess/designProcess.gif");
+    //     }
+    // });
+});
+
+
+
+
+

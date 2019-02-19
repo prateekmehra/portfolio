@@ -1,0 +1,30 @@
+/*
+------------------------------------------------------------
+BLURRED BOX
+------------------------------------------------------------
+*/
+
+
+.blurred-box{
+  position: relative;
+
+}
+
+.blurred-box:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+    top: 0; right: 0; left: 0;
+    filter: blur(10px);
+    /* -webkit-filter: blur(10px); */
+    -webkit-backdrop-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    background: url("/images/home/bg/mainbg8.jpg")  no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

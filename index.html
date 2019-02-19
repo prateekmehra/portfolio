@@ -2,17 +2,41 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/pace.min.js"></script>
+		<script type="text/javascript" src="js/loader.js"></script>
+		<link rel="stylesheet" href="css/loading-pace.css">
+
 		<meta charset="utf-8">
 
-		<title>Prateek Mehra - Portfolio 2017</title>
-		<meta name="description" content="2017 Portfolio Prateek Mehra">
+		<title>Prateek Mehra - Portfolio 2019</title>
+		<meta name="description" content="2019 Portfolio Prateek Mehra">
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/navigator.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animations/logo.css">
+		<link rel="stylesheet" href="css/animations/owlcarousel/animate.css">
+		<link rel="stylesheet" href="css/hamburger.css">
+		<link rel="stylesheet" href="css/loading-overlay.css">
+		<link rel="stylesheet" href="css/go-back.css">
 
-		<link rel="stylesheet" href="./css/main.css">
-		<link rel="stylesheet" href="./css/fonts.css">
+		<link rel="stylesheet" href="css/site-intro.css">
+		<link rel="stylesheet" href="css/animated-button.css">
+		<link rel="stylesheet" href="css/blurred-box.css">
+		<link rel="stylesheet" href="css/flip-cards.css">
+		<link rel="stylesheet" href="css/media-tags.css">
+
+		
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
 		<link rel="canonical" href="https://prateekmehra.github.io">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script> -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -21,115 +45,381 @@
 		  gtag('config', 'UA-111513297-1');
 		</script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<script src="js/lib/onebook/jquery.mousewheel.min.js"></script>
-		<script src="js/lib/onebook/three.min.js"></script>
-		<script src="js/lib/onebook/jquery.onebook3d-2.33.js"></script>
+
+
+		
+		
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/lib/jqueryEasing.js"></script>
+		<script src="js/lib/jquery.hover3d.min.js"></script>
+		
+		
+		<script type="text/javascript" src="js/hamburger.js"></script>
+		<script type="text/javascript" src="js/navigator.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/background.js"></script>
 		<script type="text/javascript" src="js/footer.js"></script>
+		
 </head>
 <body>
-
-	<header id="head">
-		<div>
-			<div class="logo"><a href="/"><img src="./images/Logo.png"></img></a></div>
-			<div class="site-title"><a href="/">Prateek Mehra's Portfolio.</a></div>
-			<nav>
-				<ul id="menu">
-					<li ><a href="/" id="nav-portfolio" class="active">Home</a></li>
-					<li ><a href="/projects" id="nav-projects">Projects</a></li>
-					<li><a href="/design" id="nav-design">Design</a></li>
-					<li><a href="/personal" id="nav-personal">Personal</a></li>
-					<li><a href="/about" id="nav-about">About</a></li>
-				</ul>
-			</nav>
+	<div class="site-nav">
+		<div class="site-logo-holder">
+			<div class="site-logo-background">
+			<div class="logo site-logo">
+				<a href="/">
+					<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet"  id="el_bsZm_3-afd">
+						<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
+							<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
+							<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
+							<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
+							<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
+							<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
+							<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
+						</g>
+					</svg>
+				</a>
+			</div>
 		</div>
-	</header>
+		</div>
+		<div class="site-title"></div>
+		<nav role="navigation">
+		  <div id="menuToggle">
+		    <input type="checkbox" />
+		    
+		    <span></span>
+		    <span></span>
+		    <span></span>
+		  </div>
+		</nav>
+	</div>
 
-	<div class="page-content">
-		<div class="index-grid">
-			<div class=" padded">
-				<div class="category">Projects</div>
 
-				<div class="tile tint dark">
-					<a href="/clothing-the-recycling-gap">
-						<img src="./images/ctrg/banner/banner-background.jpg" ></img>
-						<div class="title">Clothing The Recycling Gap</div>
+	<div id="menu-overlay">
+		<ul id="menu">
+			<a href="/"><li>Home</li></a>
+			<a href="/about"><li>About Me</li></a>
+			<a href="/downloads/prateekmehra-resume.pdf"><li>Resume</li></a>
+	  	</ul>
+	  </div>
+
+
+	<div class="page-content" id="top">
+		<div id="line-animation-holder">
+			<div class="h-line above scroll-X"></div>
+			<div class="v-line left scroll-Y"></div>
+			<div class="h-line below scroll-XR"></div>
+			<div class="v-line right scroll-YR"></div>
+		</div>
+
+
+		<div class="loading-overlay" id="overlay">
+			<div class="loading-logo-holder">
+				<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet" id="loading-logo">
+					<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
+						<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
+						<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
+						<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
+						<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
+						<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
+						<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
+					</g>
+				</svg>
+			</div>
+			<div id="loading-ripple"></div>
+		</div>
+
+		<div class="site-intro">
+			<div id="intro-box">
+				<div class="tile-wide immersive transparent">
+					<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+						<div class="flipper">
+							<div class="front">
+								<div class="tile box-text compressed-centered20" id="intro-text">
+									<div class="intro-header">
+										<span id="ux"> Prateek Mehra</span>
+										<hr>
+										<div id="brand">UX Designer</div>
+									</div>
+								</div>
+							</div>
+						    <div class="back">
+								<div class="tile box-text compressed-centered20" id="intro-text-back">
+									<p><em>
+									I’m a passionate designer in the Pacific Northwest crafting delightful experiences centered in human needs.</em></p>
+									</p>
+									<br>
+									<hr>
+									<br>
+									<div id="brand">Prateek Mehra</div>
+								</div>
+							</div>
+					    </div>
+					</div>
+				</div>
+			</div>
+		
+
+			<div class="intro-out-all">
+				<div class="intro-out-box">
+					<div class="intro-out-scroll"></div>
+					<div class="vertical-text intro-out-text">PORTFOLIO</div>
+				</div>	
+
+				<div class="site-intro-out">
+					<a href="#portfolio">
+						<div class="arrow">
+							<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M33 42 L50 58 L66 42" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
+							</svg>
+						</div>
 					</a>
-					<div class="tags">Research, Design, Prototyping</div>
+				</div>
+			</div>
+		</div>
+
+
+	<div id="portfolio">
+		<div id="go-back">
+			<a href="#top">
+				<div class="arrow">
+					<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+					<path d="M33 42 L50 58 L66 42" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
+					</svg>
+				</div>
+			</a>
+		</div>
+
+		<div id="navigator">
+		    <a id="nav1" class="navLink hi hello" href="#p1">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Recycle</div>
+		    </a>
+		    <a id="nav2" class="navLink hi" href="#p2">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Go! Classroom</div>
+		    </a>
+		    <a id="nav3" class="navLink hi" href="#p3">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Virtual Trail Room</div>
+		    </a>
+		    <a id="nav4" class="navLink hi" href="#p4">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">HighOnGraphs</div>
+		    </a>
+		    <a id="nav5" class="navLink hi" href="#p5">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Chronos</div>
+		    </a>
+		   <!--  <a id="nav6" class="navLink hi" href="#p6">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Videos</div>
+		    </a>
+		    <a id="nav7" class="navLink hi" href="#p7">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Flora Drift</div>
+		    </a>
+		    <a id="nav8" class="navLink hi" href="#p8">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Here is Today</div>
+		    </a>
+		    <a id="nav9" class="navLink hi" href="#p9">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">World Food Clock</div>
+		    </a>
+		    <a id="nav10" class="navLink hi" href="#p10">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Kollektiv</div>
+		    </a> -->
+		</div>
+
+		<div id="palette" class="index-grid">
+				<div id="p1" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60">
+						<div class="project">
+							<div class="project__card">
+								<img src="/images/home/posts/ctrg.png" class="postimg" style="height:100%; object-fit: contain;">
+								<img src="/images/home/posts/ctrg-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+							</div>
+						</div>
+						<div class="post-button-holder">
+							<section class="animated-button">
+							  <a href="/clothing-the-recycling-gap">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+						</div>
+					</div>
+				</div>
+			
+
+				<div id="p2" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60">
+						<div class="project">
+							<div class="project__card">
+								<img src="/images/home/posts/go.png" class="postimg" style="height:100%; object-fit: contain;">
+								<img src="/images/home/posts/go-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+							</div>
+						</div>
+						<div class="post-button-holder">
+							<section class="animated-button">
+							  <a href="/go-classroom">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+						</div>
+					</div>
 				</div>
 
-				<div class="tile tint dark">
-					<a href="/go-classroom">
-						<img src="./images/go/go-title.jpg" ></img>
-						<div class="title">Go! Classroom</div>
-					</a>
-					<div class="tags">Design, Prototyping, Engineering</div>
-				</div>
-				
-				<div class="tile tint dark">
-					<a href="/virtual-trial-room">
-						<img src="./images/vtr/vtr-title.jpg" ></img>
-						<div class="title">Virtual Trial Room</div>
-					</a>
-					<div class="tags">Research</div>
-				</div>
-
-				<div class="tile tint dark">
-					<a href="/high-on-graphs">
-						<img src="./images/hog/hog-title.jpg"  ></img>
-						<div class="title">HighOnGraphs</div>
-					</a>
-					<div class="tags">Research</div>
-				</div>
-
-
-
-				<div class="tile tint dark">
-					<a href="/chronos">
-						<img src="./images/chronos/chronos-title.jpg" ></img>
-						<div class="title">Chronos</div>
-					</a>
-					<div class="tags">Engineering, Programming</div>
+				<div id="p3" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60">
+						<div class="project">
+							<div class="project__card">
+								<img src="/images/home/posts/vtr.png" class="postimg" style="height:100%; object-fit: contain;">
+								<img src="/images/home/posts/vtr-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+							</div>
+						</div>
+						<div class="post-button-holder">
+							<section class="animated-button">
+							  <a href="/virtual-trial-room">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+						</div>
+					</div>
 				</div>
 
+				<div id="p4" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60">
+						<div class="project">
+							<div class="project__card">
+								<img src="/images/home/posts/hog.png" class="postimg" style="height:100%; object-fit: contain;">
+								<img src="/images/home/posts/hog-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+							</div>
+						</div>
+						<div class="post-button-holder">
+							<section class="animated-button">
+							  <a href="/high-on-graphs">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+						</div>
+					</div>
+				</div>
+
+				<div id="p5" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60">
+						<div class="project">
+							<div class="project__card">
+								<img src="/images/home/posts/chronos.png" class="postimg" style="height:100%; object-fit: contain;">
+								<img src="/images/home/posts/chronos-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+							</div>
+						</div>
+						<div class="post-button-holder">
+							<section class="animated-button">
+							  <a href="/chronos">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+						</div>
+					</div>
+				</div>
 			</div>
 
+			<!-- <div class="padded">
+				<div id="p6" class="scrollto"></div>
+				<div class="tile-wide immersive transparent center-padded-little">	
+					<div class="compressed-centered60 post-background">
+						<div class="center-padded-little">
+							<div class="category mini-title">DESIGN</div>
+							<div class="tags">Interiors, Graphic and Photography</div>
+							<br>
+								
+							<img src="./images/chronos/chronos-title.jpg" class="grid-img-config">
+							<div class="left-align">
+								<p><em>
+								A high risk, scalable scheduler service capable of authorizing and responding to client applications scheduling requests.</em>
+								</p>
+							</div>
 
-
-		<div class="light padded">
-		<div class="category">Design</div>
+							<section class="animated-button">
+							  <a href="/clothing-the-recycling-gap">
+							    <span class="text">View Project</span>
+							    <span class="line -right"></span>
+							    <span class="line -top"></span>
+							    <span class="line -left"></span>
+							    <span class="line -bottom"></span>
+							  </a>
+							</section>
+							<br>
+						</div>
+					</div>
+				</div> -->
+				<!-- <div class="category" id="design">Design</div>
 				<div style="padding:100px;margin:0px 100px">
-								<div id="photobook" style="margin-right:0px; margin-top: -150px;"></div>
-								<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
+					<div id="photobook" style="margin-right:0px; margin-top: -150px;"></div> -->
+					<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
+				<!-- </div>
+			</div>
+
+			<div class="padded">
+				<div class="category" id="personal">Personal</div>
+				<div class="tile tint dark">
+					<a href="/personal">
+						<img src="./images/video2.jpg" ></img>
+						<div class="title">Parichay</div>
+					</a>
+					<div class="tags">Community Work, Photography</div>
 				</div>
+				<div class="tile tint dark">
+					<a href="/personal">
+						<img src="./images/video1.jpg" ></img>
+						<div class="title">When Will I See You Again?</div>
+					</a>
+					<div class="tags">Videography</div>
+				</div>
+			</div> -->
+		
+
+			<footer class="site-footer"></footer>
 			</div>
 		</div>
-		<div class="padded">
-		<div class="category">Personal</div>
-			<div class="tile tint dark">
-				<a href="/personal">
-					<img src="./images/video2.jpg" ></img>
-					<div class="title">Parichay</div>
-				</a>
-				<div class="tags">Community Work, Photography</div>
-			</div>
+</div>
 
-			<div class="tile tint dark">
-				<a href="/personal">
-					<img src="./images/video1.jpg" ></img>
-					<div class="title">When Will I See You Again?</div>
-				</a>
-				<div class="tags">Videography</div>
-			</div>
-		</div>
-	
-
-	<footer class="site-footer">
-	</footer>
-
-
-  </body>
+</body>
 </html>

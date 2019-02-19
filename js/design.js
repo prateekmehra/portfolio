@@ -40,7 +40,7 @@ var create_event_listeners = function(){
 		
 		prev.addEventListener("mouseup", update_section_name);
 		prev.addEventListener("touchstart", update_section_name);
-		peev.addEventListener("touchend", update_section_name);
+		prev.addEventListener("touchend", update_section_name);
 	}
 var update_section_name = function(){
 		if (Number($("[id$='_page_numbers'] span").text().split("/")[0]) >= 13){
@@ -88,6 +88,5 @@ var reload_photobook = function(arr){
 
 	setTimeout(create_event_listeners,1000);
 };
-
 
 

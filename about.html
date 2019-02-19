@@ -2,16 +2,40 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script type="text/javascript" src="js/lib/pace.min.js"></script>
+		<script type="text/javascript" src="js/loader.js"></script>
+		<link rel="stylesheet" href="css/loading-pace.css">
+
 		<meta charset="utf-8">
 
-		<title>Prateek Mehra - Portfolio 2017</title>
-		<meta name="description" content="2017 Portfolio Prateek Mehra">
+		<title>Prateek Mehra - Portfolio 2019</title>
+		<meta name="description" content="2019 Portfolio Prateek Mehra">
+		<meta name="viewport" content="width=device-width">
+		
+		<link rel="stylesheet" href="css/main.css">
+		
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/navigator.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/animations/logo.css">
+		<link rel="stylesheet" href="css/animations/owlcarousel/animate.css">
+		<link rel="stylesheet" href="css/hamburger.css">
+		<link rel="stylesheet" href="css/loading-overlay.css">
+		<link rel="stylesheet" href="css/go-back.css">
+		<link rel="stylesheet" href="css/animations/background-zoom.css">
 
-		<link rel="stylesheet" href="./css/main.css">
-		<link rel="canonical" href="https://prateekmehra.github.io./">
+		<link rel="stylesheet" href="css/site-intro.css">
+		<link rel="stylesheet" href="css/animated-button.css">
+		<link rel="stylesheet" href="css/media-tags.css">
+
+		
+		<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway"> -->
+		<link rel="canonical" href="https://prateekmehra.github.io">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script> -->
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
@@ -21,61 +45,294 @@
 		</script>
 
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+		
+		
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		<script type="text/javascript" src="js/about.js"></script>
+		<script type="text/javascript" src="js/design.js"></script>
+		<script type="text/javascript" src="js/lib/jqueryEasing.js"></script>
+		<!-- <script src="js/lib/jquery.hover3d.min.js"></script> -->
+		
+		
+		<script type="text/javascript" src="js/hamburger.js"></script>
+		<script type="text/javascript" src="js/navigator.js"></script>
+		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/background.js"></script>
 		<script type="text/javascript" src="js/footer.js"></script>
+		<script type="text/javascript" src="js/palette-projects.js"></script>
+
+		<script src="js/lib/onebook/jquery.mousewheel.min.js"></script>
+		<script src="js/lib/onebook/three.min.js"></script>
+		<script src="js/lib/onebook/jquery.onebook3d-2.33.js"></script>
+		<script type="text/javascript" src="js/design.js"></script>
+		<script type="text/javascript" src="js/personal.js"></script>
+		<script type="text/javascript" src="js/footer.js"></script>
+		
 </head>
 <body>
-
-	<header id="head">
-		<div>
-			<div class="logo"><a href="./"><img src="./images/Logo.png"></img></a></div>
-			<div class="site-title"><a href="./">Prateek Mehra's Portfolio.</a></div>
-			<nav>
-				<ul id="menu">
-					<li ><a href="./" id="nav-portfolio">Home</a></li>
-					<li ><a href="./projects" id="nav-projects">Projects</a></li>
-					<li><a href="./design" id="nav-design">Design</a></li>
-					<li><a href="./personal" id="nav-personal">Personal</a></li>
-					<li><a href="./about" id="nav-about" class="active">About</a></li>
-				</ul>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.11';
+	fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<div class="site-nav">
+			<div class="site-logo-holder">
+				<div class="site-logo-background">
+				<div class="logo site-logo">
+					<a href="/">
+						<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet"  id="el_bsZm_3-afd">
+							<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
+								<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
+								<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
+								<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
+								<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
+								<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
+								<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
+							</g>
+						</svg>
+					</a>
+				</div>
+			</div>
+			</div>
+			<div class="site-title"></div>
+			<nav role="navigation">
+			  <div id="menuToggle">
+			    <input type="checkbox" />
+			    
+			    <span></span>
+			    <span></span>
+			    <span></span>
+			  </div>
 			</nav>
 		</div>
-	</header>
 
-	<div class="page-content">
-		<div class="index-grid">
 
-			<div class="tile-wide dark" style="display: inline-flex; padding: 0px; margin: 0px; width: 100%;">
-				<div style="width: 50%;" class="tint">
-				
-						<img src="./images/me.jpg" style="height:100%; object-fit: cover;"></img>
-					
-				</div>
-				<div class="tint" style="width:50%; height: 100%;">
-					<div class="box-text" >
-						<p>Passionate about creating meaningful technology <br><em>and</em><br>
-						Obsessed with design</p>
+		<div id="menu-overlay">
+			<ul id="menu">
+				<a href="/"><li>Home</li></a>
+				<a href="/about"><li>About Me</li></a>
+				<a href="/downloads/prateekmehra-resume.pdf"><li>Resume</li></a>
+			</ul>
+		</div>
+
+
+	<div class="page-content" id="top">
+		<div class="loading-overlay" id="overlay">
+			<div class="loading-logo-holder">
+				<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet" id="loading-logo">
+					<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
+						<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
+						<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
+						<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
+						<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
+						<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
+						<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
+					</g>
+				</svg>
+			</div>
+			<div id="loading-ripple"></div>
+		</div>
+		
+		
+		<div class="site-intro" style="height: auto;">
+			<div id="intro-box" style="margin-top: 0; margin-bottom: 0;">
+				<div class="tile-wide immersive transparent">
+					<div class="banner-split">
+						<div class="parallax imgzoom half" style=" height: 0;padding-top: 56.36%; background: url('/images/prat.jpg') no-repeat; background-size: cover;"></div>
+						<div class="half" style="margin-top: 14vh;">
+							<div class="center-padded-little">
+								<div class="compressed-centered60">
+									<div class="intro-header">
+										<div id="brand left-align">
+											<p class="title">About Me</p>
+										</div>
+									</div>
+									<br><br>
+									<div class="brand left-align">
+										<p>I'm a graduate student currently pursuing a Master's in Human Centered Design and Engineering at the University of Washington, Seattle. In my previous life I have studied Computer Science and Engineering and have worked as a software engineer.
+										</p>
+										<br>
+										<p>Learn more about how I got into design and my experiments with it in my personal life in the sections to follow. Look at my education, skills, work experience and accomplishments in my resumé.</p>
+										<br>
+										<div class="centered">
+											<section class="animated-button">
+											  <a href="/downloads/prateekmehra-resume.pdf">
+											    <span class="text">View Resumé</span>
+											    <span class="line -right"></span>
+											    <span class="line -top"></span>
+											    <span class="line -left"></span>
+											    <span class="line -bottom"></span>
+											  </a>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="tile-wide immersive tint">
-				<div class="compressed-centered40 center-padded">
-					<p class="mini-title padded">
-						Hi, I am Prateek. With a background in computer science from India and a keen interest in design, I am enthusiastic to explore the future of <em>human-machine interaction, data analytics</em> &  <em>visualization.</em>
-						<br>
-					</p>
-					<p class="mini-title">
-						<br>
-					Learn more about my education, experience and accomplishments in <a href="downloads/prateekmehra-resume-7.12.17.pdf"><br>my Resume (PDF).</a>
-					</p>
+			<div class="intro-out-all">
+				<div class="intro-out-box">
+					<div class="intro-out-scroll"></div>
+					<div class="vertical-text intro-out-text" style="right: -120px;bottom: 114px;">PERSONAL</div>
+				</div>	
+
+				<div class="site-intro-out">
+					<a href="#portfolio">
+						<div class="arrow">
+							<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path d="M33 42 L50 58 L66 42" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
+							</svg>
+						</div>
+					</a>
 				</div>
 			</div>
-		</div>		
-	</div>
-    <footer class="site-footer"></footer>
+		</div>
 
+		<div id="portfolio">
+			<div id="go-back">
+				<a href="#top">
+					<div class="arrow">
+						<svg viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path d="M33 42 L50 58 L66 42" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
+						</svg>
+					</div>
+				</a>
+			</div>
+
+			<div id="navigator">
+		    <a id="nav1" class="navLink hi hello" href="#p1">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">My Story</div>
+		    </a>
+		    <a id="nav2" class="navLink hi" href="#p2">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Experiments with Design</div>
+		    </a>
+		    <a id="nav3" class="navLink hi" href="#p3">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Videography</div>
+		    </a>
+		</div>
+
+			<div class="index-grid">
+				
+				<div class="tile-wide immersive dark tint">
+					<div id="p1" class="scrollto"></div>
+					<div class="center-padded left-align">
+						<div class="compressed-centered60">
+							<br>
+							<div class="intro-header">
+								<div id="brand">
+									<p class="title">My Story</p>
+								</div>
+							</div>
+								
+
+							<div class="title mini-title">How I got into Design</div>
+							<div class="tags"><span style="background-color: #FFF">1 minute read</span></div>
+							<br>
+							
+							My rendevous with design happened back in 2012 when I was completing my undergrad in CSE. I decided to take up the project of designing my parents' house back in India. I devoted two years of my life designing every nook and corner of this house, from the layouts to most of the customized furniture pieces. The process made me fall in love with Design. I had found <em>my passion</em>.
+							<br><br>
+
+							A year after joining Myntra as a Software Engineer, I quit my job to venture into the domain of design because <em>I simply couldn't resist it</em>. I tried to find good programs for furniture design in India but as luck had it, I couldn't find any programs that matched my requirements. Meanwhile, I took up an internship with an interior designer thinking that could help me get my foot into the door but that didn't work out as I had expected. 
+							<br><br>
+
+							Next, I decided to try my own furniture design venture. I setup a small team of carpenters, painters and upholsterers and designed and manufactured some furniture pieces to sell online. While designing the website for this venture, I quickly realised what I was missing in this entire process.
+
+							<br><br>
+							<em>| There it was, my <b>aha</b> moment!</em>
+							<br><br>
+
+							I was missing technology, my beautiful code. As much as I fell in love with design, my life's work had been in technology and I had loved it as much as my love for design till this very moment. Here, I decided I wanted to be working at the cusp of Design and Technology, right at the sweet spot.  
+
+							<br><br>And I think you know what happened next :)
+							<br><br>
+							<em><b>PS: If you want to see what really got me into design, I have it compiled into a book for you to flip through right under this note. Go ahead, get a peek!</b></em>
+						</div>
+					</div>
+				</div>
+
+				
+				<div class="tile-wide immersive tint">
+					<div id="p2" class="scrollto"></div>
+					<div style="padding:10px;">
+						<div class="tile-wide center-padded left-align">
+							<div class="compressed-centered60">
+								<div class="intro-header">
+									<div id="brand">
+										<p class="title">EXPERIMENTS WITH DESIGN</p>
+									</div>
+								</div>
+								<br>
+								<ul class="menu">
+									<li class="menu-item"><div id="i-menu" class="title mini-title" onclick="reload_photobook('i')">Interiors</div></li>
+									<li class="menu-item"><div id="g-menu" class="title mini-title" onclick="reload_photobook('g')">Graphic</div></li>
+									<li class="menu-item"><div id="p-menu" class="title mini-title" onclick="reload_photobook('p')">Photography</div></li>
+								</ul>
+							</div>
+							<div id="photobook" class=""></div>
+							<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
+							<div class="tile"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="tile-wide immersive dark tint">
+					<div id="p3" class="scrollto"></div>
+					<div class="center-padded-little left-align">
+		    			<div class="compressed-centered60">
+		    				<div class="intro-header">
+								<div id="brand">
+									<p class="title">Videography</p>
+								</div>
+							</div>
+
+							<br><br>
+							
+							<p>
+								I have always been passionate about film making and have tried to capture important moments in my life for me and people around me in these short presentations/movies. Here is a selection of my work demonstrating my self-taught understanding of stopmotion and greenscreening video production techniques.
+							</p>
+						</div>
+					</div>
+					<br><br>
+					<div class="fb-video" data-href="https://www.facebook.com/prateek.mehra/videos/vb.1038143603/3697350145846/?type=3" data-width="1000" data-show-text="false"><blockquote cite="https://www.facebook.com/prateek.mehra/videos/3697350145846/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/prateek.mehra/videos/3697350145846/">Parichay. Life.</a><p></p>Posted by <a href="https://www.facebook.com/prateek.mehra">Prateek Mehra</a> on Sunday, 10 June 2012</blockquote></div>
+					<br>
+					<div class="center-padded-little left-align">
+		    			<div class="compressed-centered60">
+							<div class="left-align padded">
+								<p><em>
+									I compiled this short memoire for my students at Parichay, an NGO in Delhi, with photos and videos taken over my teaching tenure there, using my phone/digital camera to leave with them everlasting memories of our time together.  
+
+								</em></p>
+							</div>
+						</div>
+					</div>
+					<br><br><br>
+					<div id="musicvid"></div>
+						<div class="center-padded-little left-align">
+		    			<div class="compressed-centered60">
+							<div class="left-align padded">
+							<p><em>
+								I created this short music video for Adele's cover of Lady Antebellum's Need You Now. We used stop-motion and greenscreeing techniques to depect this heart warming story. From conceptualizing to shooting to editing, this entire project was accomplished overnight.   
+							</em></p>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+	<footer class="site-footer"></footer>
+	</div>
   </body>
+
 </html>

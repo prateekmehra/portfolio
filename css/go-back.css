@@ -1,0 +1,38 @@
+#go-back {
+    display       : none;
+    position      : fixed;
+    right         : 4.45rem;
+    bottom        : 10%;
+    z-index       : 40;
+
+    height        : 3rem;
+    width         : 3rem;
+
+    cursor        : pointer;
+    border        : 2px solid;
+    border-radius : 50%;
+    transform: rotate(180deg);
+}
+
+#go-back:hover {
+    transform        : rotate(180deg) scale(1.1, 1.1);
+    transition       : transform 0.2s linear;
+    -webkit-transition   : transform 0.2s linear;
+    transition-delay : 0s;
+    
+}
+
+#go-back:hover > .arrow {
+    transition       : transform 0s;
+    transition-delay : 0s;
+    transform        : scale(0.9,0.9);
+}
+
+.arrow > svg {
+    position     : relative;
+
+    height       : 100%;
+    width        : 100%;
+
+    stroke-width: 2.5px;
+}

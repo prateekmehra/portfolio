@@ -15,7 +15,7 @@ $(function(){
         }, 900, 'easeInOutQuint', function(){
 
             // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
+            // window.location.hash = hash;
 
             scrollCalculate();
             });
@@ -23,7 +23,7 @@ $(function(){
     });
  
 
-    posts = $('a[href^="#"]');
+    posts = $('.scrollto');
     document.addEventListener('scroll',function(e){scrollCheck(e);},false);
     scrollCalculate();
 
@@ -52,10 +52,13 @@ function scrollCheck(e) {
 
 function scrollCalculate() {
     updateNavigatorVisibility();
+    
+    
     getCurrentProject();
+
     if (projectChanged) {
         updateNavLinks();
-
+        updatePalette(projectIndex);
         projectChanged = false;
     }
 }
@@ -67,10 +70,7 @@ function getCurrentProject() {
     projectIndex = -1;
     var screen = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
     for (var h = 0; h<posts.length; h++) {
-        var top = posts[h].offsetTop;
-        top -= screen * 0.4;
-
-        if (screen>=top) {
+        if($(posts[h]).isInViewport()){
             projectIndex = h;
         }
     }
