@@ -110,7 +110,7 @@ SITE INDEX HEAD
     z-index: 1000;
 }
 
-#musicvid, #pres { width: 1000px; }
+#musicvid, #pres { width: 100%; }
 
 #slides { max-width: 949px; }
 

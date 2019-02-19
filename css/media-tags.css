@@ -83,13 +83,13 @@ MEDIA TAGS
         height: 100vh;
     }
 
-    #intro-text, #intro-text-back {
+/*     #intro-text, #intro-text-back {
         padding: 300px 25px 300px 25px;
     }
 
     #intro-text-back {
         font-size: 25px;
-    }
+    } */
     
     .page-content .compressed-centered20 {
         width: 40%;
@@ -112,9 +112,9 @@ MEDIA TAGS
         display: none;
     }
 
-    #intro-text, #intro-text-back {
+    /* #intro-text, #intro-text-back {
         margin-top: -2vh;
-    }
+    } */
 
     .page-content .center-padded {
         margin: 0px;
@@ -165,13 +165,13 @@ MEDIA TAGS
         padding-top: 0;
     }
 
-    #intro-text, #intro-text-back {
+   /*  #intro-text, #intro-text-back {
         padding: 300px 25px 300px 25px;
     }
 
     #intro-text-back {
         font-size: 25px;
-    }
+    } */
 
     .postimgm {
         display: none;
@@ -287,13 +287,13 @@ MEDIA TAGS
         padding-top: 0;
     }
 
-    #intro-text, #intro-text-back {
+   /*  #intro-text, #intro-text-back {
         padding: 300px 25px 300px 25px;
     }
 
     #intro-text-back {
         font-size: 25px;
-    }
+    } */
 
     .vertical-text.intro-out-text {
         font-size: 1.2rem;
@@ -468,9 +468,9 @@ MEDIA TAGS
         padding-top: 0;
     }
 
-    #intro-text-back {
+   /*  #intro-text-back {
         padding: 103px 25px 324px 25px;
-    }
+    } */
 
     #ux {
         font-size: 25px;
@@ -562,13 +562,13 @@ MEDIA TAGS
 
 @media only screen and (width: 768px) {
    /* default iPad screens */
-   #intro-text, #intro-text-back {
+  /*  #intro-text, #intro-text-back {
         margin-top: -2vh;
     }
 
     #intro-text-back {
     padding: 200px 25px 400px 25px;
-}
+} */
 
     .vertical-text.intro-out-text {
         font-size: 1rem;
