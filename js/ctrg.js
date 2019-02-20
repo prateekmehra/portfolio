@@ -196,7 +196,6 @@ $(document).ready(function(){
 					var awareness_data = {
 							labels: ["Aware", "Unaware"],
 							datasets: [{
-								label: ["Aware", "Unaware"],
 								backgroundColor: ['#84C0C6', '#1a1d20'],
 								borderColor: ['#84C0C6', '#1a1d20'] ,
 								data: [50, 50],
@@ -224,7 +223,6 @@ $(document).ready(function(){
 					var awareness_data = {
 							labels: ["Aware", "Unaware"],
 							datasets: [{
-								label: ["Aware", "Unaware"],
 								backgroundColor: ['#84C0C6', '#1a1d20'],
 								borderColor: ['#84C0C6', '#1a1d20'] ,
 								data: [81, 19],
@@ -252,7 +250,6 @@ $(document).ready(function(){
 					var motivation_data = {
 							labels: ["Convience", "Other"],
 							datasets: [{
-								label: ["More Convience", "Other Motivations"],
 								backgroundColor: ['#84C0C6', '#1a1d20'],
 								borderColor: ['#84C0C6', '#1a1d20'] ,
 								data: [77, 23],
@@ -280,7 +277,6 @@ $(document).ready(function(){
 					var awareness_data = {
 							labels: ["Aware", "Unaware"],
 							datasets: [{
-								label: ["Aware", "Unaware"],
 								backgroundColor: ['#84C0C6', '#1a1d20'],
 								borderColor: ['#84C0C6', '#1a1d20'] ,
 								data: [22, 78],

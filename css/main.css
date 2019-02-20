@@ -4,6 +4,7 @@ html {
 
 html, body {
     touch-action : manipulation;
+    overflow-x: hidden;
 }
 
 body {
@@ -124,6 +125,12 @@ SITE INDEX HEAD
 .vertical-text {
     transform        : rotate(90deg);
     transform-origin : left top 0;
+}
+
+.intro-box-dimensions{
+    width: 386px;
+    height: 425px;
+    margin: 0 auto;
 }
 
 

@@ -602,3 +602,9 @@ MEDIA TAGS
         padding: 50px 0px 50px 0px;
     }
 }
+
+@media only screen and  (max-width: 385px) {
+    .flip-container{
+        width: 90%;
+    }
+    }
