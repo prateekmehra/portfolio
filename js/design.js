@@ -10,7 +10,7 @@ var src = [];
 
 	src.push('./images/blank.jpg');				
 				
-	for (var i=0;i<=11;i++)
+	for (var i=0;i<=9;i++)
 		src.push('./images/photography/p'+i+'.jpg');
 
 	src.push('./images/logo.jpg');
