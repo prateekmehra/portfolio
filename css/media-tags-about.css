@@ -287,6 +287,11 @@ MEDIA TAGS
         padding-top: 0;
     }
 
+    .page-content .aboutme {
+        margin-top: 0;
+    }
+
+
    /*  #intro-text, #intro-text-back {
         padding: 300px 25px 300px 25px;
     }
@@ -412,6 +417,7 @@ MEDIA TAGS
 
     .loading-logo-holder {
         width: 40px;
+        margin-left: 46vw;
     }
 
     #loading-ripple {
@@ -435,7 +441,7 @@ MEDIA TAGS
     }
 
     .site-intro-out {
-        right: 45vw;
+        right: 4vw;
         bottom: 4%;
         height: 2rem;
         width: 2rem;
@@ -456,11 +462,11 @@ MEDIA TAGS
     }
 
     #menu li {
-        font-size: 40px;
+        font-size: 20px;
     }
 
     #menu li:hover {
-        font-size: 60px;
+        font-size: 40px;
     }
 
     .page-content .scrollto {   
@@ -495,7 +501,7 @@ MEDIA TAGS
 
     .page-content .aboutme {
         margin-top: 0vh;
-        margin-bottom: 14vh;
+        /* margin-bottom: 14vh; */
     }
 
     .page-content .compressed-centered20 {
