@@ -36,20 +36,6 @@ p{
 }
 
 
-
-.site-nav {
-    position: fixed;
-    width: 100%;
-    height: 90px;
-    background: none;
-    z-index: 100000;
-    text-align: center;
-}
-
-
-
-
-
 /*
 ------------------------------------------------------------
 SITE INDEX HEAD
