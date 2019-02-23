@@ -79,9 +79,9 @@ $(window).load(function(){
 $(document).ready(function(){
 		
 		$(window).scroll(function(){
-			if(!isScrolledIntoView($('#designProcess')[0])){
-					$("#designProcess").attr("src", "/images/ctrg/designProcess/DesignProcessT2.gif");
-				}
+			// if(!isScrolledIntoView($('#designProcess')[0])){
+			// 		$("#designProcess").attr("src", "/images/ctrg/designProcess/DesignProcessT2.gif");
+			// 	}
 
 			if(isScrolledIntoView($('#donateChart')[0]) && isScrolledIntoView($('#recycleChart')[0])){
 				if (isCanvasBlank($('#donateChart')[0]) && isCanvasBlank($('#recycleChart')[0])){
