@@ -36,14 +36,14 @@
 		<link rel="canonical" href="https://prateekmehra.github.io">
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
+		<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
 		<script>
 		  window.dataLayer = window.dataLayer || [];
 		  function gtag(){dataLayer.push(arguments);}
 		  gtag('js', new Date());
 
 		  gtag('config', 'UA-111513297-1');
-		</script>
+		</script> -->
 
 
 
@@ -65,6 +65,7 @@
 </head>
 <body>
 	<div class="site-nav">
+
 		<div class="site-logo-holder">
 			<div class="site-logo-background">
 			<div class="logo site-logo">
@@ -80,6 +81,10 @@
 						</g>
 					</svg>
 				</a>
+				<audio id="music" loop muted>
+					<source src="/audio/music1.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
 			</div>
 		</div>
 		</div>
@@ -87,8 +92,7 @@
 		<nav role="navigation">
 		  <div id="menuToggle">
 		    <input type="checkbox" />
-		    
-		    <span></span>
+		    <span></span>		
 		    <span></span>
 		    <span></span>
 		  </div>
@@ -105,11 +109,27 @@
 	  </div>
 
 
+	<div id="music-control" onclick="musicMaker(this)">
+		<img src="/images/home/equinot1.gif" id="no_music" style="width: 21px;height: 52px;position:absolute; cursor: pointer;">
+		<img src="/images/home/equi1.gif" id="yes_music" style="display:none;width: 21px;height: 52px;position:absolute; cursor: pointer;">
+	</div>
+
+
 	<div class="page-content" id="top">
 		<div id="line-animation-holder">
 			<div class="h-line above scroll-X"></div>
-			<div class="v-line left scroll-Y"></div>
+			<div class="h-line scroll-XR line-hidden-x"></div>
+			<div class="h-line scroll-X line-hidden-x"></div>
+			<div class="h-line scroll-XR line-hidden-x"></div>
+			<div class="h-line scroll-X line-hidden-x"></div>
+			<div class="h-line scroll-XR line-hidden-x"></div>
 			<div class="h-line below scroll-XR"></div>
+			<div class="v-line left scroll-Y"></div>
+			<div class="v-line scroll-YR line-hidden-y"></div>
+			<div class="v-line scroll-Y line-hidden-y"></div>
+			<div class="v-line scroll-YR line-hidden-y"></div>
+			<div class="v-line scroll-Y line-hidden-y"></div>
+			<div class="v-line scroll-YR line-hidden-y"></div>
 			<div class="v-line right scroll-YR"></div>
 		</div>
 
@@ -150,7 +170,7 @@
 
 							</div>
 						    <div class="back intro-box-dimensions">
-						    	<img src="/images/home/intro-back.png" />
+						    	<img src="/images/home/intro-back.png" id="intro-text-back"/>
 								<!-- <div class="tile box-text compressed-centered20" id="intro-text-back">
 									<p><em>
 									I’m a passionate designer in the Pacific Northwest crafting delightful experiences centered in human needs.</em></p>

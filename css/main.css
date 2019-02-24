@@ -126,6 +126,15 @@ SITE INDEX HEAD
     margin: 0 auto;
 }
 
+#music-control{
+    position: absolute;
+    left: 4rem;
+    bottom: 9%;
+    width: 21px;
+    height: 52px;
+    z-index: 100;
+}
+
 
 
 /*
@@ -137,7 +146,7 @@ PAGE CONTENT
 .scroll-X {
     animation-name             : scroll-bounce-X;
     animation-duration         : 5s;
-    animation-delay            : .5s; 
+/*     animation-delay            : .5s; */ 
     animation-iteration-count  : infinite;
     transition-timing-function : cubic-bezier(.37,.01,0,.98);
 }
@@ -152,7 +161,7 @@ PAGE CONTENT
 .scroll-Y {
     animation-name             : scroll-bounce-Y;
     animation-duration         : 5s;
-    animation-delay            : 1s; 
+/*     animation-delay            : 1s;  */
     animation-iteration-count  : infinite;
     transition-timing-function : cubic-bezier(.37,.01,0,.98);
 }
@@ -169,7 +178,6 @@ PAGE CONTENT
     width:      50vw;
     border-top:  1px solid;
     position: fixed;
-    display: block;
 }
 
 .h-line.above {
@@ -197,6 +205,16 @@ PAGE CONTENT
 .v-line.right{
     margin-left: 64vw;
     margin-bottom: 50vh;
+}
+
+.line-hidden-x{
+    display: none;
+    margin-left: 20vw;
+}
+
+.line-hidden-y{
+    display: none;
+    margin-top: 50vh;
 }
 
 

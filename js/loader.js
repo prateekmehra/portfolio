@@ -8,8 +8,6 @@ $(function(){
 				$(this).css({'overflow-y':'visible'});	
 				next();
 			});
-			console.log($("#menuToggle input").is(':checked'));
 			$("#menuToggle input").prop('checked', false);
-			console.log($("#menuToggle input").is(':checked'));
 		});
 });

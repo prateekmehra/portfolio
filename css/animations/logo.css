@@ -85,7 +85,7 @@ LOGO
 66.67%{-webkit-transform: translate(0px, 0px) translate(0px, 0px) translate(-3650px, 0px);transform: translate(0px, 0px) translate(0px, 0px) translate(-3650px, 0px);}
 100%{-webkit-transform: translate(0px, 0px) translate(0px, 0px) translate(-7300px, 0px);transform: translate(0px, 0px) translate(0px, 0px) translate(-7300px, 0px);}}
 #el_bsZm_3-afd * {  -webkit-animation-duration: 13s;animation-duration: 0s;animation-iteration-count: 1;-webkit-animation-timing-function: cubic-bezier(0, 0, 1, 1);animation-timing-function: cubic-bezier(0, 0, 1, 1); animation-play-state: paused;}
-svg#el_bsZm_3-afd:hover *{ animation-play-state: running;  animation-iteration-count: infinite; animation-duration: 3s;}
+svg#el_bsZm_3-afd:hover *, svg#el_bsZm_3-afd.hover *{ animation-play-state: running;  animation-iteration-count: infinite; animation-duration: 3s;}
 #el_RhePzVXa68_D2MshhEiG{-webkit-animation-name: el_RhePzVXa68_D2MshhEiG_Animation;animation-name: el_RhePzVXa68_D2MshhEiG_Animation;-webkit-transform: translate(0px, 0px) translate(0px, 0px) translate(3650px, 0px);transform: translate(0px, 0px) translate(0px, 0px) translate(3650px, 0px);}
 #el_I42O7XnN7o_r0EGpbukH{-webkit-animation-name: el_I42O7XnN7o_r0EGpbukH_Animation;animation-name: el_I42O7XnN7o_r0EGpbukH_Animation;-webkit-transform: translate(0px, 0px) translate(0px, 0px) translate(0px, 0px);transform: translate(0px, 0px) translate(0px, 0px) translate(0px, 0px);}
 #el_h7ndiCniAZ_uQ8qWl-yM{-webkit-animation-name: el_h7ndiCniAZ_uQ8qWl-yM_Animation;animation-name: el_h7ndiCniAZ_uQ8qWl-yM_Animation;-webkit-transform: translate(0px, 0px) translate(0px, 0px) translate(7300px, 0px);transform: translate(0px, 0px) translate(0px, 0px) translate(7300px, 0px);}

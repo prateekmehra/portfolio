@@ -468,6 +468,10 @@ MEDIA TAGS
         font-size: 40px;
     }
 
+    #music-control {
+        display: none;
+    }
+
     .page-content .scrollto {   
         height: 10px;
         padding-top: 0;
@@ -611,5 +615,9 @@ MEDIA TAGS
 @media only screen and  (max-width: 385px) {
     .flip-container{
         width: 90%;
+    }
+
+    #music-control {
+        display: none;
     }
     }

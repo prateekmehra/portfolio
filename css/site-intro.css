@@ -194,4 +194,11 @@ SITE INTRO
     /* color:  #111;
     background:  rgba(255, 255, 255, 1);
     padding-bottom: 276px; */
+    -webkit-animation : 1s fadein 3s forwards;
+    animation         : 1s fadein 3s forwards;
+    animation-name             : pulse;
+    animation-duration         : 10s;
+    animation-delay            : 4s;
+    animation-iteration-count  : infinite;
+    transition-timing-function : cubic-bezier(.37,.01,0,.98);
 }
