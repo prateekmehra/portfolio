@@ -1,3 +1,4 @@
+var firstClick = true;
 $(function(){
 	var src = [];
 	src.push('./images/cover.jpg');
@@ -32,13 +33,24 @@ $(function(){
 			sensitivity: 30,
 		});
 
+	$(document).on('click', function(){
+		if(firstClick){
+			$('#no_music').toggle();
+			$('#yes_music').toggle();
+			firstClick = false;
+		}
+	});
 		
 
 		
 		$('.flip-container.intro-box-dimensions').hover(
 			function(){
 				$("#music")[0].volume = 0;
-				document.getElementById('music').muted = false;
+				$("#music")[0].muted = false;
+				if($('#yes_music').is(':visible')){
+					$("#music")[0].play();
+				}
+
 				var vol_in = setInterval(function() 
 				{ 
 					if($('#music')[0].volume < 0.5){
@@ -124,7 +136,7 @@ $(function(){
 			
 			$('svg#el_bsZm_3-afd:hover *, svg#el_bsZm_3-afd.hover *')
 			.css({"animation-duration":"3s", "animation-play-state": "running", "animation-iteration-count":"infinite"})
-			.delay(1000)
+			.delay(10)
 			.queue(function(next) { 
 				document.getElementById('music').muted = true;
 				$(this).removeAttr("style");
