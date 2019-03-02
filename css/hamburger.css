@@ -12,7 +12,7 @@
 
 #menuToggle
 {
-  display: block;
+  display: none;
   position: absolute;
   top: 50px;
   right: 4.45rem;
@@ -167,3 +167,46 @@
     -webkit-animation : 1s  fadeIn 1s forwards;
     animation         : 1s  fadeIn 1s forwards;
 } */
+
+#horizontal-menu {
+    display: block;
+    position: absolute;
+    top: 43px;
+    right: 3.45rem;
+    z-index: 2;
+    pointer-events: all;
+}
+
+#horizontal-menu a {
+    padding: 10px;
+    font-size: 1rem;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 2px;
+}
+
+#horizontal-menu a:hover{
+  font-size: 20px;
+}
+
+.horizontal-enter{
+    -webkit-animation : 0.5s  lightSpeedIn forwards;
+    animation         : 0.5s  lightSpeedIn forwards;
+}
+.horizontal-exit{
+    -webkit-animation : 0.2s  lightSpeedOut forwards;
+    animation         : 0.2s  lightSpeedOut forwards;
+}
+
+.hamburger-enter{
+    -webkit-animation : 1s  wobble forwards;
+    animation         : 1s  wobble forwards;
+}
+.hamburger-exit{
+    -webkit-animation : 0.7s  bouceOut forwards;
+    animation         : 0.7s  bounceOut forwards;
+}
+
+
+

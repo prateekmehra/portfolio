@@ -1,8 +1,8 @@
 
 $(function(){
-	$(window).ready(function(){
+	$(window).load(function(){
 		$("#menuToggle").click(function(){
-			if ($("#menuToggle input").is(':checked')){
+			if ($("#menuToggle").children(':input').is(':checked')){
 				$("#menu-overlay").removeClass('hidden').addClass('visible');
 				$("#menu-overlay").show();
 				/* color logo and arrow white over hamburger overlay */
@@ -13,7 +13,6 @@ $(function(){
 			}
 			else{
 				$("#menu-overlay").removeClass('visible').addClass('hidden');
-				// .hide();
 				updatePalette(projectIndex);
 			}
 		});

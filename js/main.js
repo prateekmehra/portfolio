@@ -180,3 +180,18 @@ function addLines(firstEle, secondEle, allLines, cssProp){
 		i = i + 1;
 	});
 }
+
+function showHiddenProjects(){
+	$('#hidden-projects-loader').css('display','inline-block');
+	setTimeout(function(){
+		$('#visible-projects').append($('#hidden-projects').html());
+		$('#navigator').append($('#hidden-navigator').html());
+		scrollInit();
+		navInit();
+		$('#hidden-projects').remove();
+		$('#hidden-navigator').remove();
+		$('#hidden-projects-button').remove();
+		$('#hidden-projects-loader').css('display','none');
+	}, 1000);
+
+}

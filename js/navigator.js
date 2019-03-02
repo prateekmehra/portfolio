@@ -2,11 +2,38 @@ var navBar;
 var navLinks = [];
 var portfolio_visibility = false;
 
+var hamburger, horizontal_menu;
+var hamburger_visibility = false;
+
 function navInit() {
     navBar = document.getElementById('navigator');
-    navLinks = document.getElementsByClassName('navLink');
-
+    navLinks = $('#navigator > .navLink');
     updateNavLinks();
+}
+
+function updateHamburgerVisibility() {
+    horizontal_menu = document.getElementById('horizontal-menu');
+    hamburger = document.getElementById('menuToggle');
+
+    if ($('#portfolio').isIn50Viewport()){
+        if(!$(hamburger).hasClass('hamburger-enter')){
+            $(hamburger).removeClass('hamburger-exit').addClass('hamburger-enter');
+            $(horizontal_menu).removeClass('horizontal-enter').addClass('horizontal-exit');
+            $(hamburger).css('display', 'block');
+            
+        }
+
+        hamburger_visibility = true;
+    }else{
+        if(hamburger_visibility == true){
+            $(hamburger).addClass('hamburger-exit').removeClass('hamburger-enter');
+            $(horizontal_menu).addClass('horizontal-enter').removeClass('horizontal-exit');
+            $(hamburger).css('display', 'none');
+            $(horizontal_menu).css('display', 'block'); 
+        }
+        hamburger_visibility = false;
+    }
+
 }
 
 
@@ -49,8 +76,7 @@ $.fn.isIn50Viewport = function () {
 
     let viewportTop = $(window).scrollTop();
     let viewportBottom = viewportTop + $(window).height();
-
-    return elementTop - viewportTop < $(window).height()/2;
+    return viewportBottom - elementTop >= $(window).height()/100;
 };
 
 function updateNavLinks() {
@@ -65,4 +91,9 @@ function updateNavLinks() {
 
 $(document).ready(function(){
         navInit();
+    });
+
+
+$(window).load(function(){
+        updateHamburgerVisibility();
     });

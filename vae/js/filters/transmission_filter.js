@@ -1,7 +1,7 @@
 var transmissions_to_filter = [];
 
 
-d3.csv('/virtual-auto-expo/data/vehicles_data_processed.csv', function(data) {
+d3.csv('/vae/data/vehicles_data_processed.csv', function(data) {
 
 	var transmissions = data
 				.map(data => data.transmission)

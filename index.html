@@ -27,9 +27,9 @@
 
 		<link rel="stylesheet" href="css/site-intro.css">
 		<link rel="stylesheet" href="css/animated-button.css">
-		<link rel="stylesheet" href="css/blurred-box.css">
 		<link rel="stylesheet" href="css/flip-cards.css">
 		<link rel="stylesheet" href="css/media-tags-index.css">
+		<link rel="stylesheet" href="css/animations/loading-ripple.css">
 
 		
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
@@ -47,6 +47,7 @@
 
 
 
+
 		
 		
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
@@ -57,62 +58,24 @@
 		
 		<script type="text/javascript" src="js/hamburger.js"></script>
 		<script type="text/javascript" src="js/navigator.js"></script>
-		<script type="text/javascript" src="js/scroll.js"></script>
+		<script type="text/javascript" src="js/index-scroll.js"></script>
 		<script type="text/javascript" src="js/background.js"></script>
 		<script type="text/javascript" src="js/footer.js"></script>
 		<script type="text/javascript" src="js/flip-cards.js"></script>
 		
 </head>
 <body>
-	<div class="site-nav">
-
-		<div class="site-logo-holder">
-			<div class="site-logo-background">
-			<div class="logo site-logo">
-				<a href="/">
-					<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet"  id="el_bsZm_3-afd">
-						<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
-							<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
-							<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
-							<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
-							<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
-							<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
-							<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
-						</g>
-					</svg>
-				</a>
-				<audio id="music" loop muted>
-					<source src="/audio/music1.mp3" type="audio/mpeg">
-					Your browser does not support the audio element.
-				</audio>
-			</div>
-		</div>
-		</div>
-		<div class="site-title"></div>
-		<nav role="navigation">
-		  <div id="menuToggle">
-		    <input type="checkbox" />
-		    <span></span>		
-		    <span></span>
-		    <span></span>
-		  </div>
-		</nav>
+	<div id="global-nav">
+		<script>
+			$("#global-nav").load("site-nav.html");
+		</script>
 	</div>
 
 
-	<div id="menu-overlay">
-		<ul id="menu">
-			<a href="/"><li>Home</li></a>
-			<a href="/about"><li>About Me</li></a>
-			<a href="/downloads/prateekmehra-resume.pdf"><li>Résumé</li></a>
-	  	</ul>
-	  </div>
-
-
-	<div id="music-control" onclick="musicMaker(this)">
+	<!-- <div id="music-control" onclick="musicMaker(this)">
 		<img src="/images/home/equinot1.gif" id="no_music" style="width: 40px;height: 52px;position:absolute; cursor: pointer;">
 		<img src="/images/home/equi1.gif" id="yes_music" style="display:none;width: 40px;height: 52px;position:absolute; cursor: pointer;">
-	</div>
+	</div> -->
 
 
 	<div class="page-content" id="top">
@@ -133,7 +96,6 @@
 			<div class="v-line right scroll-YR"></div>
 		</div>
 
-
 		<div class="loading-overlay" id="overlay">
 			<div class="loading-logo-holder">
 				<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet" id="loading-logo">
@@ -149,6 +111,7 @@
 			</div>
 			<div id="loading-ripple"></div>
 		</div>
+		
 
 		<div class="site-intro">
 			<div id="intro-box">
@@ -223,54 +186,37 @@
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Recycle</div>
 		    </a>
-		    <a id="nav2" class="navLink hi" href="#p2">
+		    <a id="nav1" class="navLink hi" href="#p2">
+		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
+		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
+		        <div class="navTag bg sub">Virtual Auto Expo</div>
+		    </a>
+		    <a id="nav2" class="navLink hi" href="#p3">
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Go! Classroom</div>
 		    </a>
-		    <a id="nav3" class="navLink hi" href="#p3">
+		  </div>
+		  <div id="hidden-navigator">
+		    <a id="nav3" class="navLink hi" href="#p4">
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Virtual Trail Room</div>
 		    </a>
-		    <a id="nav4" class="navLink hi" href="#p4">
+		    <a id="nav4" class="navLink hi" href="#p5">
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">HighOnGraphs</div>
 		    </a>
-		    <a id="nav5" class="navLink hi" href="#p5">
+		    <a id="nav5" class="navLink hi" href="#p6">
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Chronos</div>
 		    </a>
-		   <!--  <a id="nav6" class="navLink hi" href="#p6">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Videos</div>
-		    </a>
-		    <a id="nav7" class="navLink hi" href="#p7">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Flora Drift</div>
-		    </a>
-		    <a id="nav8" class="navLink hi" href="#p8">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Here is Today</div>
-		    </a>
-		    <a id="nav9" class="navLink hi" href="#p9">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">World Food Clock</div>
-		    </a>
-		    <a id="nav10" class="navLink hi" href="#p10">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Kollektiv</div>
-		    </a> -->
 		</div>
 
 		<div id="palette" class="index-grid">
+			<div id="visible-projects">
 				<div id="p1" class="scrollto"></div>
 				<a href="/clothing-the-recycling-gap">
 					<div class="tile-wide immersive transparent center-padded-little">	
@@ -295,9 +241,33 @@
 						</div>
 					</div>
 				</a>
-			
 
 				<div id="p2" class="scrollto"></div>
+				<a href="/clothing-the-recycling-gap">
+					<div class="tile-wide immersive transparent center-padded-little">	
+						<div class="compressed-centered60">
+							<div class="project">
+								<div class="project__card">
+									<img src="/images/home/posts/vae.png" class="postimg" style="height:100%; object-fit: contain;">
+									<img src="/images/home/posts/vae-m.png" class="postimgm" style="height:100%; object-fit: contain;">
+								</div>
+							</div>
+							<div class="post-button-holder">
+								<section class="animated-button">
+									<a href="/virtual-auto-expo">
+										<span class="text">View Project</span>
+										<span class="line -right"></span>
+										<span class="line -top"></span>
+										<span class="line -left"></span>
+										<span class="line -bottom"></span>
+									</a>
+								</section>
+							</div>
+						</div>
+					</div>
+				</a>
+
+				<div id="p3" class="scrollto"></div>
 				<a href="/go-classroom">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -321,8 +291,29 @@
 						</div>
 					</div>
 				</a>
+			</div>
 
-				<div id="p3" class="scrollto"></div>
+			<div id="hidden-projects-button" onclick="showHiddenProjects(); $(this).hide();" >
+				<br>
+				<br>
+				<br>
+				<section class="animated-button" style="margin-top:-20px;">
+					<a>
+						<span class="text">Load Other Projects</span>
+						<span class="line -right"></span>
+						<span class="line -top"></span>
+						<span class="line -left"></span>
+						<span class="line -bottom"></span>	
+					</a>
+				</section>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div id="hidden-projects-loader" class="lds-ripple"><div></div><div></div></div>
+
+			<div id="hidden-projects">
+				<div id="p4" class="scrollto"></div>
 				<a href="/virtual-trial-room">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -347,7 +338,7 @@
 					</div>
 				</a>
 
-				<div id="p4" class="scrollto"></div>
+				<div id="p5" class="scrollto"></div>
 				<a href="/high-on-graphs">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -372,7 +363,7 @@
 					</div>
 				</a>
 
-				<div id="p5" class="scrollto"></div>
+				<div id="p6" class="scrollto"></div>
 				<a href="/chronos">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -397,66 +388,10 @@
 					</div>
 				</a>
 			</div>
-
-
-			<!-- <div class="padded">
-				<div id="p6" class="scrollto"></div>
-				<div class="tile-wide immersive transparent center-padded-little">	
-					<div class="compressed-centered60 post-background">
-						<div class="center-padded-little">
-							<div class="category mini-title">DESIGN</div>
-							<div class="tags">Interiors, Graphic and Photography</div>
-							<br>
-								
-							<img src="./images/chronos/chronos-title.jpg" class="grid-img-config">
-							<div class="left-align">
-								<p><em>
-								A high risk, scalable scheduler service capable of authorizing and responding to client applications scheduling requests.</em>
-								</p>
-							</div>
-
-							<section class="animated-button">
-							  <a href="/clothing-the-recycling-gap">
-							    <span class="text">View Project</span>
-							    <span class="line -right"></span>
-							    <span class="line -top"></span>
-							    <span class="line -left"></span>
-							    <span class="line -bottom"></span>
-							  </a>
-							</section>
-							<br>
-						</div>
-					</div>
-				</div> -->
-				<!-- <div class="category" id="design">Design</div>
-				<div style="padding:100px;margin:0px 100px">
-					<div id="photobook" style="margin-right:0px; margin-top: -150px;"></div> -->
-					<!-- Dummy trailing tile so sub-grid with only two tiles span over 100% width -->
-				<!-- </div>
-			</div>
-
-			<div class="padded">
-				<div class="category" id="personal">Personal</div>
-				<div class="tile tint dark">
-					<a href="/personal">
-						<img src="./images/video2.jpg" ></img>
-						<div class="title">Parichay</div>
-					</a>
-					<div class="tags">Community Work, Photography</div>
-				</div>
-				<div class="tile tint dark">
-					<a href="/personal">
-						<img src="./images/video1.jpg" ></img>
-						<div class="title">When Will I See You Again?</div>
-					</a>
-					<div class="tags">Videography</div>
-				</div>
-			</div> -->
-		
-
-			<footer class="site-footer"></footer>
-			</div>
 		</div>
+		<footer class="site-footer"></footer>
+		<!-- </div> -->
+	</div>
 </div>
 
 </body>

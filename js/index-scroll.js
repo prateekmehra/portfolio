@@ -31,7 +31,7 @@ function scrollInit(){
         } // End if
     });
 
-    posts = $('.scrollto');
+    posts = $('#visible-projects > .scrollto');
     document.addEventListener('scroll',function(e){scrollCheck(e);},false);
     
     $(window).load(function(){
