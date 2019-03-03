@@ -21,7 +21,6 @@ $(function(){
 
 	$(document).load(function(){
 		document.getElementById('music').volume = 0;
-		
 	});
 
 	$(document).ready(function(){
@@ -186,6 +185,11 @@ function showHiddenProjects(){
 	setTimeout(function(){
 		$('#visible-projects').append($('#hidden-projects').html());
 		$('#navigator').append($('#hidden-navigator').html());
+		$(".project").hover3d({
+			selector: ".project__card",
+			perspective: 2500,
+			sensitivity: 30,
+		});
 		scrollInit();
 		navInit();
 		$('#hidden-projects').remove();
