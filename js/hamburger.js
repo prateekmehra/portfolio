@@ -4,6 +4,8 @@ $(function(){
 		$("#menuToggle").click(function(){
 			if ($("#menuToggle").children(':input').is(':checked')){
 				$("#menu-overlay").removeClass('hidden').addClass('visible');
+				$('body').addClass('noscroll');
+				$('html').addClass('noscroll');
 				$("#menu-overlay").show();
 				/* color logo and arrow white over hamburger overlay */
 				$("#el_pDo0vxjT-X").css({"fill":"rgb(255,255,255)"});
@@ -13,6 +15,8 @@ $(function(){
 			}
 			else{
 				$("#menu-overlay").removeClass('visible').addClass('hidden');
+				$('body').removeClass('noscroll');
+				$('html').removeClass('noscroll');
 				updatePalette(projectIndex);
 			}
 		});

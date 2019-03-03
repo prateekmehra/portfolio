@@ -9,6 +9,10 @@
  * prefixes.
  */
 
+ html.noscroll, body.noscroll {
+    overflow:  hidden;
+}
+
 
 #menuToggle
 {
