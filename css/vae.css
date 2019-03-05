@@ -90,6 +90,7 @@ SITE INDEX HEAD
 .index-grid {
     display    : block;
     text-align : center;
+    overflow-x: hidden;
 }
 
 #musicvid, #pres { width: 1000px; }

@@ -102,6 +102,7 @@ SITE INDEX HEAD
     background: inherit;
     padding-bottom: 120px;
     z-index: 1000;
+    overflow-x: hidden;
 }
 
 #musicvid, #pres { width: 100%; }
