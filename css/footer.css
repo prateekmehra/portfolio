@@ -3,12 +3,13 @@
 }
 
 .site-footer .overview {
-    padding            : 10px 10px;
+    /* padding            : 10px 10px; */
 
     text-align         : center;
     text-decoration    : none;
 
     float:right;margin : 30px;
+    font-size: 1rem;
 }
 
 .site-footer nav {
@@ -17,6 +18,7 @@
     margin      : 30px;
 
     line-height : 1.8;
+    font-size: 1rem;
 }
 
 .site-footer nav ul {

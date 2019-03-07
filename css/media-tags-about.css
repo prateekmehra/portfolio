@@ -392,6 +392,15 @@ MEDIA TAGS
 
     #navigator {
         right: 10px;
+        display: none !important;
+    }
+
+    #horizontal-menu {
+        display: none !important;
+    }
+
+    #menuToggle {
+        display: block !important;
     }
 
     .navLink {
