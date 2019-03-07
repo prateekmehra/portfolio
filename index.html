@@ -65,7 +65,7 @@
 		<script type="text/javascript" src="js/flip-cards.js"></script>
 		
 </head>
-<body>
+<body id="palette">
 	<div id="global-nav">
 		<script>
 			$("#global-nav").load("site-nav.html");
@@ -77,7 +77,6 @@
 		<img src="/images/home/equinot1.gif" id="no_music" style="width: 40px;height: 52px;position:absolute; cursor: pointer;">
 		<img src="/images/home/equi1.gif" id="yes_music" style="display:none;width: 40px;height: 52px;position:absolute; cursor: pointer;">
 	</div> -->
-
 
 	<div class="page-content" id="top">
 		<div id="line-animation-holder">
@@ -117,7 +116,7 @@
 		<div class="site-intro">
 			<div id="intro-box">
 				<div class="tile-wide immersive transparent">
-					<div class="flip-container intro-box-dimensions" ontouchstart="this.classList.toggle('hover');">
+					<div class="flip-container intro-box-dimensions" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
 						<div class="flipper">
 							<div class="front intro-box-dimensions">
 								<!-- <div> -->
@@ -204,7 +203,7 @@
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Virtual Trail Room</div>
 		    </a>
-		    <a id="nav4" class="navLink hi" href="#p5">
+		    <!-- <a id="nav4" class="navLink hi" href="#p5">
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">HighOnGraphs</div>
@@ -213,10 +212,10 @@
 		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 		        <div class="navTag bg sub">Chronos</div>
-		    </a>
+		    </a> -->
 		</div>
 
-		<div id="palette" class="index-grid">
+		<div class="index-grid">
 			<div id="visible-projects">
 				<div id="p1" class="scrollto"></div>
 				<a href="/clothing-the-recycling-gap">
@@ -298,13 +297,9 @@
 				<br>
 				<br>
 				<br>
-				<section class="animated-button" style="margin-top:-20px;">
+				<section style="margin-top:-20px; cursor: pointer; text-transform: uppercase;">
 					<a>
-						<span class="text">Load Other Projects</span>
-						<span class="line -right"></span>
-						<span class="line -top"></span>
-						<span class="line -left"></span>
-						<span class="line -bottom"></span>	
+						<p>Still Wanna See More?</p>
 					</a>
 				</section>
 				<br>
@@ -339,7 +334,7 @@
 					</div>
 				</a>
 
-				<div id="p5" class="scrollto"></div>
+				<!-- <div id="p5" class="scrollto"></div>
 				<a href="/high-on-graphs">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -363,8 +358,8 @@
 						</div>
 					</div>
 				</a>
-
-				<div id="p6" class="scrollto"></div>
+ -->
+				<!-- <div id="p6" class="scrollto"></div>
 				<a href="/chronos">
 					<div class="tile-wide immersive transparent center-padded-little">	
 						<div class="compressed-centered60">
@@ -387,13 +382,12 @@
 							</div>
 						</div>
 					</div>
-				</a>
+				</a> -->
 			</div>
 		</div>
 		<footer class="site-footer"></footer>
 		<!-- </div> -->
 	</div>
 </div>
-
 </body>
 </html>

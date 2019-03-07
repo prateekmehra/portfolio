@@ -15,25 +15,27 @@ function updateHamburgerVisibility() {
     horizontal_menu = document.getElementById('horizontal-menu');
     hamburger = document.getElementById('menuToggle');
 
-    if ($('#portfolio').isIn50Viewport()){
-        if(!$(hamburger).hasClass('hamburger-enter')){
-            $(hamburger).removeClass('hamburger-exit').addClass('hamburger-enter');
-            $(horizontal_menu).removeClass('horizontal-enter').addClass('horizontal-exit');
-            $(hamburger).css('display', 'block');
-            
-        }
+    if(window.innerWidth>480){
 
-        hamburger_visibility = true;
-    }else{
-        if(hamburger_visibility == true){
-            $(hamburger).addClass('hamburger-exit').removeClass('hamburger-enter');
-            $(horizontal_menu).addClass('horizontal-enter').removeClass('horizontal-exit');
-            $(hamburger).css('display', 'none');
-            $(horizontal_menu).css('display', 'block'); 
+        if ($('#portfolio').isIn50Viewport()){
+            if(!$(hamburger).hasClass('hamburger-enter')){
+                $(hamburger).removeClass('hamburger-exit').addClass('hamburger-enter');
+                $(horizontal_menu).removeClass('horizontal-enter').addClass('horizontal-exit');
+                $(hamburger).css('display', 'block');
+                
+            }
+
+            hamburger_visibility = true;
+        }else{
+            if(hamburger_visibility == true ){
+                $(hamburger).addClass('hamburger-exit').removeClass('hamburger-enter');
+                $(horizontal_menu).addClass('horizontal-enter').removeClass('horizontal-exit');
+                $(hamburger).css('display', 'none');
+                $(horizontal_menu).css('display', 'block'); 
+            }
+            hamburger_visibility = false;
         }
-        hamburger_visibility = false;
     }
-
 }
 
 

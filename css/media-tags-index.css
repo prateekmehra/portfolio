@@ -387,12 +387,23 @@ MEDIA TAGS
 
     #navigator {
         right: 10px;
+        display: none !important;
+    }
+
+    #horizontal-menu {
+        display: none !important;
+    }
+
+    #menuToggle {
+        display: block !important;
     }
 
     .navLink {
         height: 40px;
         width: 40px;
     }
+
+
 
     /* #logo, .number, .number2, .toolIcon {
         display : none;
@@ -496,7 +507,7 @@ MEDIA TAGS
     .page-content .banner-split {
     display: block;
     width: 100%;
-}
+    }
 
     .page-content .half {
         width: 100%;
@@ -517,7 +528,7 @@ MEDIA TAGS
 
     .page-content .compressed-centered60 {
         width: 100%;
-        font-size: 2rem;
+        font-size: 0rem;
     }
 
     .page-content .mini-title {
@@ -536,7 +547,7 @@ MEDIA TAGS
 
     .page-content .category, .title {
     font-size: 1.5rem;
-}
+    }
 
     /* .page-content .tile-wide img {
         height: 161px;

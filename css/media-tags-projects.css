@@ -452,6 +452,7 @@ MEDIA TAGS
     #menuToggle span {
         width: 25px;
         height: 1.5px;
+        transform-origin: 4px 0px;
     }
 
     #menu {
