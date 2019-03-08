@@ -4,7 +4,6 @@ html {
 
 html, body {
     touch-action : manipulation;
-    overflow-x: hidden;
 }
 
 body {
@@ -102,7 +101,6 @@ SITE INDEX HEAD
     background: inherit;
     padding-bottom: 120px;
     z-index: 1000;
-    overflow-x: hidden;
 }
 
 #musicvid, #pres { width: 100%; }

@@ -320,6 +320,10 @@ MEDIA TAGS
     .page-content .half {
         width: 100%;
     }
+    
+    #photo-holder{
+        padding-top: 65vh !important; 
+    }
 
     .page-content .compressed-centered20 {
         width: 60%;
@@ -510,6 +514,10 @@ MEDIA TAGS
 
     .page-content .half {
         width: 100%;
+    }
+
+    #photo-holder{
+        padding-top: 75vh !important; 
     }
 
     .page-content .aboutme {
