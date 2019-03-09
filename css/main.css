@@ -497,6 +497,10 @@ PAGE CONTENT
     text-align : left;
 }
 
+.page-content .right-align {
+    text-align : right;
+}
+
 .page-content .menu {
     display         : inline;
 
@@ -608,7 +612,9 @@ PAGE CONTENT
 
 .project__card  :hover {
     box-shadow: 10px 10px 20px 0 rgba(17, 17, 17, 0.28);
+    cursor: pointer;
 }
+
 
 /*
 ------------------------------------------------------------
