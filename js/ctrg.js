@@ -106,7 +106,7 @@ $(document).ready(function(){
 						display: true,
 						position: 'bottom',
 						text: 'DONATE',
-						fontColor: '#F3F5F6',
+						fontColor: '#FFFFFF',
 						fontFamily: "'Raleway'"
 					};
 
@@ -116,12 +116,14 @@ $(document).ready(function(){
 						onComplete: function() {
 								ctx = $('#donateChart')[0].getContext('2d');
 							    ctx.font = "100 7rem Lato";
-							    ctx.fillStyle = "#F3F5F6";
+							    ctx.fillStyle = "#FFFFFF";
 							    ctx.textBaseline = "middle";
-					        	ctx.fillText( "93", donate_canvas.width/6.5 , donate_canvas.height/4.25);
+					        	ctx.fillText( "93", donate_canvas.width/7, donate_canvas.height/4.25, donate_canvas.width/2);
+					        	ctx.textAlign = "center"; 
 					        	ctx.font = "100 2rem Lato";
 					        	ctx.textBaseline = "top";
-					        	ctx.fillText( "%", donate_canvas.width/3.1 , donate_canvas.height/4.25);
+					        	ctx.fillText( "%", donate_canvas.width/3.1, donate_canvas.height/4.25);
+					        	ctx.textAlign = "center"; 
 					    	}
 						}
 
@@ -154,7 +156,7 @@ $(document).ready(function(){
 							display: true,
 							position: 'bottom',
 							text: 'RECYCLE',
-							fontColor: '#F3F5F6',
+							fontColor: '#FFFFFF',
 							fontFamily: "'Raleway'"
 						};
 
@@ -162,7 +164,7 @@ $(document).ready(function(){
 								onComplete: function() {
 									ctx = $('#recycleChart')[0].getContext('2d');
 								    ctx.font = "100 7rem Lato";
-								    ctx.fillStyle = "#F3F5F6";
+								    ctx.fillStyle = "#FFFFFF";
 								    ctx.textBaseline = "middle";
 						        	ctx.fillText( "20", recycle_canvas.width/6.5 , recycle_canvas.height/4.25);
 						        	ctx.font = "100 2rem Lato";
