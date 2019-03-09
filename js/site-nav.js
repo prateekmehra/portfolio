@@ -1,0 +1,1 @@
+document.getElementById(window.location.pathname.split('/')[1]).css('display', 'none');
