@@ -1,13 +1,14 @@
 $(function(){
 	$(window).load(function(){
 
-		var selector = '.'+window.location.pathname.split('/')[1]+'-nav';
-		$("#horizontal-menu").children(selector).each(function( index, element ) {
-		    $(element).css('display','none');
+		var selector = 'a.nav-'+window.location.pathname.split('/')[1];
+		$("#horizontal-menu").find(selector).each(function( index, element ) {
+		    $(element).addClass('active-nav');
 		});
-		$("#menu").children(selector).each(function( index, element ) {
-		    $(element).css('display','none');
+		$("#menu").find(selector).each(function( index, element ) {
+		    $(element).addClass('active-nav');
 		});
+		
 
 	});
 });

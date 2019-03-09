@@ -159,13 +159,13 @@
   letter-spacing: 5px;
 }
 
-#menu li:hover { 
-  /* transform: translate(5%, 0); */
-  /* transition: all 0.1s cubic-bezier(0.77,0.2,0.05,1.0); */
+/* #menu > .text:hover { 
+  transform: translate(5%, 0);
+  transition: all 0.1s cubic-bezier(0.77,0.2,0.05,1.0);
   font-weight: normal;
   font-size: 50px;
-  /* -webkit-transition: all 0.1s cubic-bezier(0.77,0.2,0.05,1.0); */
-}
+  -webkit-transition: all 0.1s cubic-bezier(0.77,0.2,0.05,1.0);
+} */
 
 /* .hamburger-in {
     -webkit-animation : 1s  fadeIn 1s forwards;

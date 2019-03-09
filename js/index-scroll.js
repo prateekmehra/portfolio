@@ -1,5 +1,7 @@
 $(function(){
-    scrollInit();
+    $(window).load(function(){
+        scrollInit();
+    });
 });
 
 var posts = [];
@@ -34,9 +36,8 @@ function scrollInit(){
     posts = $('#visible-projects > .scrollto');
     document.addEventListener('scroll',function(e){scrollCheck(e);},false);
     
-    $(window).load(function(){
         scrollCalculate();
-    });
+    
 }
 
 

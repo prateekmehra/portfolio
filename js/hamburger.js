@@ -8,7 +8,7 @@ $(function(){
 				$('html').addClass('noscroll');
 				$("#menu-overlay").show();
 				/* color logo and arrow white over hamburger overlay */
-				$("#el_pDo0vxjT-X").css({"fill":"rgb(255,255,255)"});
+				$("#el_pDo0vxjT-X").css({"fill":"rgb(255,255,255)", "stroke":"rgb(255,255,255)"});
 				$("#menuToggle span").css({"background":"rgb(255,255,255)"});
 				$(".arrow").css({"color":"rgb(255,255,255)"});
 				$("#go-back").css({"color":"rgb(255,255,255)"});
