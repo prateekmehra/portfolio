@@ -1,4 +1,5 @@
 $(function(){
 	var selector = '.'+window.location.pathname.split('/')[1]+'-nav';
-	$(selector).css('display', 'none');
+	$("#horizontal-menu").children(selector).css('display', 'none');
+	$("#menuToggle").children(selector).css('display', 'none');
 });
