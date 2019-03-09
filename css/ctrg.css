@@ -216,7 +216,9 @@ PAGE CONTENT
 
 .page-content .tile .title, .page-content .tile-wide .title {
     margin      : 6px 0 4px 0;
-    font-weight : 700;
+    font-weight : 400;
+    letter-spacing: 1px;
+    line-height: 1.5;
 }
 
 .page-content .tile .tags, .page-content .tile-wide .tags {
@@ -399,6 +401,11 @@ PAGE CONTENT
 .page-content .immersive {
     margin  : 0;
     padding : 0;
+}
+
+.page-content .key-focus {
+    line-height: 2; 
+    font-style: oblique;
 }
 
 .page-content .left-align {

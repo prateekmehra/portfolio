@@ -115,12 +115,12 @@ $(document).ready(function(){
 					options_donate.animation =  {
 						onComplete: function() {
 								ctx = $('#donateChart')[0].getContext('2d');
-							    ctx.font = "100 7rem Lato";
+							    ctx.font = "100 85pt Lato";
 							    ctx.fillStyle = "#FFFFFF";
 							    ctx.textBaseline = "middle";
 					        	ctx.fillText( "93", donate_canvas.width/7, donate_canvas.height/4.25, donate_canvas.width/2);
 					        	ctx.textAlign = "center"; 
-					        	ctx.font = "100 2rem Lato";
+					        	ctx.font = "100 25pt Lato";
 					        	ctx.textBaseline = "top";
 					        	ctx.fillText( "%", donate_canvas.width/3.1, donate_canvas.height/4.25);
 					        	ctx.textAlign = "center"; 
@@ -163,11 +163,11 @@ $(document).ready(function(){
 					options_recycle.animation =  {
 								onComplete: function() {
 									ctx = $('#recycleChart')[0].getContext('2d');
-								    ctx.font = "100 7rem Lato";
+								    ctx.font = "100 85pt Lato";
 								    ctx.fillStyle = "#FFFFFF";
 								    ctx.textBaseline = "middle";
 						        	ctx.fillText( "20", recycle_canvas.width/6.5 , recycle_canvas.height/4.25);
-						        	ctx.font = "100 2rem Lato";
+						        	ctx.font = "100 25pt Lato";
 						        	ctx.textBaseline = "top";
 						        	ctx.fillText( "%", recycle_canvas.width/3.1 , recycle_canvas.height/4.25);
 							    }
