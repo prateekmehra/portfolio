@@ -4,7 +4,7 @@ $(window).load(function(){
 	$("#horizontal-menu").children(selector).each(function( index, element ) {
 	    $(element).css('display','none');
 	});
-	$("#menuToggle").children(selector).each(function( index, element ) {
+	$("#menu-overlay").children(selector).each(function( index, element ) {
 	    $(element).css('display','none');
 	});
 
