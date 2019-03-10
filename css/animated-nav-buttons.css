@@ -36,6 +36,12 @@ ANIMATED BUTTON
     cursor: pointer;
 }
 
+.animated-nav-button a.active-nav .text{
+  font-size: 1.2rem;
+}
+
+
+
 .animated-nav-button a:after {
   position: absolute;
   content: '';
@@ -58,7 +64,7 @@ ANIMATED BUTTON
   left: calc(0.7em * 1.2);
   right: calc(0.7em * 1.2);
   height: 1px;
-  background:  #FFF;
+  background:  #eee;
   transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s;
@@ -94,6 +100,7 @@ ANIMATED BUTTON
   transition: -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
+  cursor: pointer;
 }
 .animated-nav-button a:hover:after,
 .animated-nav-button a:active:after {
@@ -106,11 +113,13 @@ ANIMATED BUTTON
   transition: right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
+  cursor: pointer;
 }
 .animated-nav-button a:hover .line,
 .animated-nav-button a:active .line {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
+  cursor: pointer;
 }
 
 .animated-nav-button a:hover .line.-bottom,
@@ -120,4 +129,5 @@ ANIMATED BUTTON
   transition: transform 0.2s cubic-bezier(0, 0.53, 0.29, 1) , -webkit-transform 0.2s cubic-bezier(0, 0.53, 0.29, 1) ;
   -webkit-transform-origin: left;
           transform-origin: left;
+  cursor: pointer;
 }
