@@ -227,7 +227,7 @@ $(document).ready(function(){
 							datasets: [{
 								backgroundColor: ['#84C0C6', '#1a1d20'],
 								borderColor: ['#84C0C6', '#1a1d20'] ,
-								data: [81, 19],
+								data: [19, 81],
 							}]
 						}
 
