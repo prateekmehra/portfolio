@@ -1,5 +1,6 @@
 var firstClick = true;
 $(function(){
+	$("#line-animation-holder").hide();
 	var src = [];
 	src.push('./images/cover.jpg');
 	src.push('./images/blank.jpg');
@@ -57,6 +58,8 @@ $(function(){
 	   				}
 					else clearInterval(vol_in);  
 				}, 100);
+
+				$("#line-animation-holder").show();
 				
 				$('#el_bsZm_3-afd').attr("class", "hover");	
 				$('svg#el_bsZm_3-afd:hover *, svg#el_bsZm_3-afd.hover *')
@@ -101,6 +104,8 @@ $(function(){
 				
 			
 		},function(){
+
+			$("#line-animation-holder").hide();
 			$("#music").animate({volume: 0}, 1000);
 			
 			

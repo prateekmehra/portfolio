@@ -47,7 +47,7 @@ function updateNavigatorVisibility() {
             $(navBar).css('display', 'inline-block');
             $("#go-back").addClass("transform-go-back");
             $("#go-back").css({display: 'block'});
-            $("#line-animation-holder").css({display: 'none'});
+            // $("#line-animation-holder").css({display: 'none'});
         }
 
         portfolio_visibility = true;
@@ -55,7 +55,7 @@ function updateNavigatorVisibility() {
         if(portfolio_visibility == true){
             $(navBar).css('display', 'none');
             $("#go-back").css({display: 'none'});
-            $("#line-animation-holder").css({display: 'block'});
+            // $("#line-animation-holder").css({display: 'block'});
         }
         portfolio_visibility = false;
     }
