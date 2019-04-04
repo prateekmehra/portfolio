@@ -1,0 +1,555 @@
+
+/* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
+html { min-width: 1000px; }
+
+html, body {
+    touch-action : manipulation;
+}
+
+body {
+    background  : #111111;
+    font-family : Open Sans, sans-serif;
+    font-size   : 1.17rem;
+    font-weight : 400;
+    color: #FFFFFF;
+    margin: 0;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    text-rendering:optimizeLegibility;
+}
+
+img {
+    max-width : 100%;
+}
+
+a {
+    font-family     : Lato, sans-serif;
+    font-weight     : normal;
+    color           : #FFFFFF;
+    text-decoration : none;
+}
+
+p{
+    margin: 0px;
+}
+
+/*
+------------------------------------------------------------
+SITE INDEX HEAD
+------------------------------------------------------------
+*/
+
+.site-title { letter-spacing: 1px; line-height: 1; display:inline-block; margin: 65px 0px 50px 50px; font-family: CallunaLghtRegular, Georgia, serif; }
+.site-title a { text-decoration: none; font-family: CallunaLghtRegular, Georgia, serif; font-size: 20px; text-align: center; color: #252B33}
+/* .site-title {
+    display        : inline-block;
+
+    width          : 100%;
+    margin         : 50px 10px 50px 0px;
+
+    font-family    : Lato, sans-serif;
+    font-size      : 50px;
+    font-weight    : 400;
+    letter-spacing : 1px;
+    line-height    : 1;
+    text-align     : center;
+    text-align     : center;
+}
+
+.site-title a {
+    font-size       : 30px;
+    font-weight     : 100;
+    text-align      : center;
+    text-decoration : none;
+} */
+
+.category, .title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1rem;
+    text-transform : uppercase;
+    color: #339d76;
+}
+
+.category, .large-title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1.5rem;
+    text-transform : uppercase;
+}
+
+/* .active {
+    padding-bottom      : 1px;
+
+    border-bottom-style : solid;
+    border-bottom-width : 2px;
+} */
+
+.grid { text-align: justify; }
+
+.index-grid {
+    display    : block;
+    text-align : center;
+    overflow-x: hidden;
+}
+
+#musicvid, #pres { width: 1000px; }
+
+#slides { max-width: 949px; }
+
+.tint {
+    position : relative;
+    z-index  : 1;
+
+    margin   : 0px;
+}
+
+.vertical-text {
+    transform        : rotate(90deg);
+    transform-origin : left top 0;
+}
+
+@media (hover:hover) {
+    .tint:before {
+        content    : "";
+
+        position   : absolute;
+        display    : block;
+        top        : 0;
+        right      : 0;
+        bottom     : 0;
+        left       : 0;
+        z-index    : 10;
+
+        opacity    : 1;
+        background : rgba(0,0,0, 0.1);
+
+        transition : all .4s linear;
+    }
+    .tint:hover:before {
+        z-index    : -1;
+
+        opacity    : 0;
+        background : none;
+    }
+}
+
+/*
+------------------------------------------------------------
+PAGE CONTENT
+------------------------------------------------------------
+*/
+#portfolio {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+#palette {
+    -webkit-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+#portfolio:visible > #navigator {
+    display : inline-block;
+}
+
+.page-content {
+    display    : block;
+
+    height     : 100%;
+    width      : 100%;
+    margin     : auto;
+
+    text-align : center;
+}
+
+.page-content .overview-right{
+    padding : 6% 26% 6% 26%;
+}
+
+.page-content .category {
+    width     : 100%;
+    margin    : 20px 0;
+
+    font-size : 3.438rem;
+}
+
+.page-content .banner {
+    display: inline-flex;
+    width: 100%;
+}
+
+.page-content .banner-split {
+    display: inline-flex;
+    width: 100%;
+}
+
+.page-content .half{
+    width: 50%;
+}
+
+
+.page-content .tile   {
+    background-color       : #FFFFFF;
+    text-align             : center;
+
+    color:#111; display:
+    inline-grid; margin    : 20px;
+    box-shadow: #0000004a 1px 7px 22px 2px;
+}
+
+.page-content .tile-wide {
+    display          : block;
+
+    margin           : 20px;
+
+    background-color : #FFFFFF;
+    color            : #111;
+    text-align       : center;
+    /* box-shadow: #0000004a 1px 7px 22px 2px; */
+}
+
+.page-content .tile a, .page-content .tile-wide a {
+    color           : #111;
+    text-decoration : none;
+}
+
+.page-content .tile .page-title, .page-content .tile-wide .page-title {
+    margin      : 6px 0 4px 0;
+    font-weight : 300;
+    color:  #339d76;
+    text-indent: -4px;
+}
+
+.page-content .tile .title, .page-content .tile-wide .title {
+    margin      : 6px 0 4px 0;
+    font-weight : 700;
+}
+
+.page-content .tile .tags, .page-content .tile-wide .tags {
+    color : #ccc;
+}
+
+.page-content .tile {
+    width   : 80%;
+    height: 100%;
+    padding : 0 0px 20px 0px;
+}
+
+.page-content .tile-wide {
+    padding : 0 0px 20px 0px;
+}
+
+.page-content .tile img {
+    height     : 370px;
+    width      : 100%;
+
+    object-fit : cover;
+}
+
+.page-content .tile-wide img {
+    width      : 100%;
+    object-fit : fill;
+}
+
+.page-content ul {
+    margin     : 0;
+    padding    : 0;
+
+    list-style : none;
+}
+
+.page-content .styled-ul {
+    margin     : 0;
+    padding-left    : 20px;
+
+    list-style : circle;
+}
+
+.page-content .pres {
+    float  : right;
+
+    width  : 400px;
+    margin : 90px 0 50px 100px;
+}
+
+.page-content .center-img {
+    display      : block;
+
+    margin-right : auto;
+    margin-left  : auto;
+}
+.page-content .transparent{
+    background:rgba(0,0,0,0);
+    color: rgba(0,0,0,0);
+}
+
+.page-content .dark {
+    background-color : #111;
+    color            : #FFFFFF;
+}
+
+.page-content .light {
+    background-color : #FFFFFF;
+    color            : #111;
+}
+
+.page-content .dark a {
+    color : #FFFFFF;
+}
+
+.page-content .light a {
+    color : #111;
+}
+
+.page-content .transparent a {
+    color : #FFFFFF;
+}
+
+.page-content .padded {
+    padding : 10px 0px 10px 0px;
+}
+
+.page-content .centered {
+    vertical-align : middle;
+
+    margin         : 0px;
+
+    text-align     : center;
+}
+
+.page-content .center-padded {
+    margin  : 0px;
+    padding : 50px 200px 50px 200px;
+}
+
+.page-content .center-padded-little {
+    margin  : 0px;
+    padding : 20px 100px 20px 100px;
+}
+
+.page-content .box-text {
+    vertical-align : middle;
+
+    margin         : 6px 0 4px 0;
+    padding        : 150px 25px 150px 25px;
+
+    font-size      : 3rem;
+    font-weight    : 300;
+    line-height    : 1.5;
+    text-align     : center;
+}
+
+.page-content .compressed-centered20 {
+    display     : block;
+
+    width       : 20%;
+    margin      : auto;
+
+    font-size   : 1rem;
+    line-height : 1.75;
+}
+
+.page-content .compressed-centered40 {
+    display     : block;
+
+    width       : 40%;
+    margin      : auto;
+
+    font-size   : 1rem;
+    line-height : 1.75;
+}
+
+.page-content .compressed-centered60 {
+    display     : block;
+
+    width       : 60%;
+    margin      : auto;
+
+    font-size   : 1.17rem;
+    line-height : 1.75;
+}
+
+.page-content .large-title {
+    height      : 100%;
+    width       : 100%;
+    margin      : auto;
+
+    font-size   : 60px;
+    line-height : 1.5;
+}
+
+.medium-title {
+    font-family    : Lato, sans-serif;
+    font-size      : 1.4rem;
+    font-weight    : 100;
+    text-transform : uppercase;
+}
+
+.page-content .mini-title {
+    height      : 100%;
+    width       : 100%;
+    margin      : auto;
+
+    font-size   : 1.4rem;
+    line-height : 1.5;
+}
+
+.page-content .mini-text {
+    height      : 100%;
+    width       : 100%;
+    margin      : auto;
+
+    font-size   : 0.9rem;
+}
+
+.page-content .immersive {
+    margin  : 0;
+    padding : 0;
+}
+
+.page-content .key-focus {
+    line-height: 2; 
+    font-style: oblique;
+}
+
+.page-content .left-align {
+    text-align : left;
+}
+
+.page-content .center-align {
+    text-align : center;
+}
+
+.page-content .right-align {
+    text-align : right;
+}
+
+.page-content .justfiy-align {
+    text-align : justify;
+}
+
+.page-content .menu {
+    display         : inline;
+
+    margin          : 0;
+    padding         : 0;
+
+    list-style-type : none;
+}
+
+.page-content .menu-item {
+    display         : inline;
+
+    margin          : 0px 40px 0px 40px;
+
+    cursor          : pointer;
+    font-size       : 1.500rem;
+    font-weight     : normal;
+    text-decoration : none;
+}
+
+.page-content .menu-item .title {
+    display : inline;
+}
+
+.page-content .menu-item .active-item {
+    color : #EE5250;
+}
+
+.page-content .menu-item :hover {
+    color      : #FF5250;
+    transition : all .3s linear;
+}
+
+.carousel {
+    margin-bottom : 0;
+    padding       : 0 40px 30px 40px;
+}
+
+/* The controlsy */
+.carousel-control {
+    left          : -12px;
+
+    height        : 40px;
+    width         : 40px;
+    margin-top    : 90px;
+
+    background    : none repeat scroll 0 0 #222222;
+    border        : 4px solid #FFFFFF;
+    border-radius : 23px 23px 23px 23px;
+}
+
+.carousel-control.right {
+    right : -12px;
+}
+
+/* The indicators */
+.carousel-indicators {
+    top          : auto;
+    right        : 50%;
+    bottom       : -10px;
+
+    margin-right : -19px;
+}
+
+/* The colour of the indicators */
+.carousel-indicators li {
+    background : #cecece;
+}
+
+.carousel-indicators .active {
+    background : #428bca;
+}
+
+.owl-theme .owl-nav [class*=owl-]{
+    border-radius: 0 !important;
+    font-weight: 300 !important;
+
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.84%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoWrapper:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: block;
+}
+
+/* Adding hover effect to pseudo element */
+.videoWrapper:hover:after {
+  content: none;
+}
+
+.imgzoom {
+    animation-name             : background-zoom;
+    animation-duration         : 30s; 
+    animation-iteration-count  : infinite;
+    transition-timing-function : ease-in-out;
+}
+
+.video-container{
+    width: 100%;
+    overflow:hidden;
+    display:block;
+    
+}
