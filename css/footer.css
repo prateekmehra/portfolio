@@ -32,3 +32,15 @@
     display : inline;
     padding : 0px 10px;
 }
+
+.other-project {
+    cursor: pointer;
+}
+
+.other-project :hover {
+    box-shadow: 10px 10px 20px 0 rgba(17, 17, 17, 0.28);
+    transform: scale(1.05);
+    transition : all 0.2s linear;
+
+    
+}
