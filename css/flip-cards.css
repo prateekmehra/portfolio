@@ -7,15 +7,24 @@ FLIP CARDS
 
 /* entire container, keeps perspective */
 .flip-container {
+    z-index: 1000;
+    position: relative;
     perspective: 1000px;
     -webkit-backface-visibility: hidden;
-  backface-visibility:         hidden;
+    backface-visibility:         hidden;
+}
+
+.flip-container:hover + .ripple, .flip-container.hover + .ripple  {
+    display: none;
 }
 
 /* flip the pane when hovered */
 .flip-container:hover .flipper, .flip-container.hover .flipper {
     transform: rotateY(180deg);
 }
+
+
+
 
 .flip-container, .front, .back {
 }

@@ -1,0 +1,45 @@
+#project-nav {
+  background-color: #FFFFFF;
+  overflow: hidden;
+  width: 480px;
+  height: 6vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius: 20px;
+  display: block;
+  line-height: 4vh;
+  text-align: center;
+  transition: top .5s linear;
+}
+
+.raise {
+  z-index: 10000;
+}
+
+.not-sticky {
+  border: 1px solid #eee;
+}
+
+.sticky {
+  position: fixed;
+  top: 4vh;
+  width: 100%;
+  box-shadow: 0px 0px 20px 0px #00000017;
+}
+
+#project-nav .active-nav .text {
+  color: #5A72CF !important;
+}
+
+#project-nav .text:hover {
+  color: #101646 !important;
+  }
+
+
+@media only screen and  (max-width: 480px) {
+  #project-nav {
+    font-size: 8px; 
+  }
+
+}

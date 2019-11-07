@@ -1,0 +1,2044 @@
+.section-hero {
+    position: relative
+}
+
+.section-hero .content-container {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    min-height: 650px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    top: 0;
+    text-align: center
+}
+
+.section-hero .content-container .copy-block {
+    margin-top: 0.8em
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .content-container {
+        height:auto;
+        min-height: initial
+    }
+
+    .section-hero .content-container .headline-wrapper {
+        height: 100vh;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
+    }
+
+    .section-hero .content-container .hero-eyebrow,.section-hero .content-container .hero-headline {
+        margin-left: auto;
+        margin-right: auto
+    }
+}
+
+.section-hero .content-container .hero-headline {
+    margin-top: 16px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .content-container .hero-headline {
+        margin-top:11px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .content-container .hero-headline {
+        margin-top:7px;
+        max-width: 70%
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 735px) {
+    .section-hero .content-container .hero-headline {
+        max-width:none
+    }
+}
+
+.section-hero .content-container .typography-intro-elevated {
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 640px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .content-container .typography-intro-elevated {
+        max-width:470px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .content-container .typography-intro-elevated {
+        max-width:90%
+    }
+}
+
+/* .section-hero .content-container .violator {
+    color: #fff;
+    border-color: #fff;
+    margin-top: 55px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .content-container .violator {
+        margin-top:52px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .content-container .violator {
+        margin-top:39px
+    }
+} */
+
+.section-hero .scrim {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: 100% 100%;
+    pointer-events: none;
+    z-index: 1;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_scrim__eb4w2ksdezee_large.png")
+}
+
+.section-hero .sticky-container {
+    
+    margin-top: -20px;
+    height: calc(2480px + 80vh);
+    
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container {
+        height:calc(1830px + 100vh)
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container {
+        height:calc(1410px + 150vh)
+    }
+}
+
+.section-hero .sticky-container .sticky-content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    height: 2480px;
+    /* margin-left: -399px; */
+
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .sticky-content {
+        height:1830px;
+    /*     margin-left: -399px; */
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .sticky-content {
+        height:1410px;
+       /*  margin-left: -134px; */
+        margin-top: -100px;
+    }
+}
+
+.section-hero .sticky-container .sticky-content .background {
+    width: 100%;
+    height: 200vh;
+    top: 0;
+    position: absolute;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+    will-change: opacity
+}
+
+.section-hero .sticky-container .sticky-content .background.background-light {
+    background-color: #fff
+}
+
+.section-hero .sticky-container .sticky-content .background.background-dark {
+    background-color: #000
+}
+
+.section-hero .sticky-container .sticky-content.dark .device-anchor .dark,.section-hero .sticky-container .sticky-content.dark .background-dark {
+    opacity: 0.999
+}
+
+.section-hero .sticky-container .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+    margin-left: -32vw;
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .hero {
+        margin-left: -43vw;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .hero {
+        margin-left: -24vw;
+    }
+}
+
+.section-hero .sticky-container .device-anchor {
+    width: 306px;
+    height: 607px;
+    position: relative;
+    left: 0;
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-anchor {
+        width:199px;
+        height: 390px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-anchor {
+        width:181px;
+        height: 357px
+    }
+}
+
+.section-hero .sticky-container .device-anchor .device-container {
+    will-change: opacity;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s
+}
+
+.section-hero .sticky-container .device {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.section-hero .sticky-container .device .video-container,.section-hero .sticky-container .device figure {
+    position: absolute;
+    top: 0;
+    left: 0
+}
+
+.screen.video-container.waiting-to-start {
+    transform: translate(40px, 20px);
+}
+
+@media only screen and (max-width: 1068px) {
+    .screen.video-container.waiting-to-start {
+        transform: translate(40px, 34px);
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .screen.video-container.waiting-to-start {
+        transform: translate(40px, 18px);
+    }
+}
+
+.section-hero .sticky-container .device video {
+    width: 262px;
+    height: 568px;  
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device video {
+        width:170px;
+        height: 368px;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device video {
+        width:156px;
+        height: 338px;
+
+    }
+}
+
+.section-hero .sticky-container .device.horizontal .screen {
+    top: 21px;
+    left: 22px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.horizontal .screen {
+        top:15px;
+        left: 13px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.horizontal .screen {
+        top:14px;
+        left: 14px;
+    }
+}
+
+.section-hero .sticky-container .device.vertical .screen {
+    top: 17px;
+    left: 22px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.vertical .screen {
+        top:13px;
+        left: 15px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.vertical .screen {
+        top:12px;
+        left: 12px
+    }
+}
+
+.section-hero .sticky-container .device.item-0 {
+    top: -673px;
+    left: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-0 {
+        top:-438px;
+        left: 0
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-0 {
+        top:-399px;
+        left: 0
+    }
+}
+
+.section-hero .sticky-container .device.item-1 {
+    top: 0;
+    left: 0
+}
+
+.section-hero .sticky-container .device.item-2 {
+    top: 672px;
+    left: 0
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-2 {
+        top:438px;
+        left: 0
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-2 {
+        top:399px;
+        left: 0
+    }
+}
+
+.section-hero .sticky-container .device.item-3 {
+    top: -366px;
+    left: 370px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-3 {
+        top:-255px;
+        left: 243px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-3 {
+        top:-249px;
+        left: 216px
+    }
+}
+
+.section-hero .sticky-container .device.item-4 {
+    top: 306px;
+    left: 370px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-4 {
+        top:183px;
+        left: 243px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-4 {
+        top:150px;
+        left: 216px
+    }
+}
+
+.section-hero .sticky-container .device.item-5 {
+    top: 977px;
+    left: 370px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-5 {
+        top:621px;
+        left: 243px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-5 {
+        top:548px;
+        left: 216px
+    }
+}
+
+.section-hero .sticky-container .device.item-6 {
+    top: -367px;
+    left: -1107px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-6 {
+        top:-692px;
+        left: 239px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-6 {
+        top:-648px;
+        left: 216px
+    }
+}
+
+.section-hero .sticky-container .device.item-7 {
+    top: -250px;
+    left: 740px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-7 {
+        top:-178px;
+        left: 485px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-7 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-8 {
+    top: 422px;
+    left: 740px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-8 {
+        top: 260px;
+        left: 485px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-8 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-9 {
+    top: 21px;
+    left: 1111px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-9 {
+        top:-1px;
+        left: 727px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-9 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-10 {
+    top: 693px;
+    left: 1111px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-10 {
+        top:437px;
+        left: 727px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-10 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-12 {
+    top: 1093px;
+    left: 741px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-12 {
+        top:698px;
+        left: 485px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-12 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-13 {
+    top: 1093px;
+    left: 1112px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-13 {
+        top:698px;
+        left: 719px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-13 {
+        top:625px;
+        left: 647px
+    }
+}
+
+.section-hero .sticky-container .device.item-14 {
+    top: -93px;
+    left: -737px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-14 {
+        top:-77px;
+        left: -479px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-14 {
+        top:-86px;
+        left: -435px
+    }
+}
+
+.section-hero .sticky-container .device.item-15 {
+    top: -367px;
+    left: -369px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-15 {
+        top:-250px;
+        left: -242px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-15 {
+        top:-250px;
+        left: -214px
+    }
+}
+
+.section-hero .sticky-container .device.item-16 {
+    top: -673px;
+    left: -737px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-16 {
+        top:-438px;
+        left: -484px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-16 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-17 {
+    top: 306px;
+    left: -370px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-17 {
+        top:183px;
+        left: -242px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-17 {
+        top:150px;
+        left: -214px
+    }
+}
+
+.section-hero .sticky-container .device.item-18 {
+    top: 306px;
+    left: -1105px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-18 {
+        top:182px;
+        left: -723px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-18 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-19 {
+    top: 705px;
+    left: -737px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-19 {
+        top:442px;
+        left: -484px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-19 {
+        display:none
+    }
+}
+
+.section-hero .sticky-container .device.item-20 {
+    top: 978px;
+    left: -370px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-20 {
+        top:622px;
+        left: -242px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-20 {
+        top:548px;
+        left: -214px
+    }
+}
+
+.section-hero .sticky-container .device.item-21 {
+    top: 21px;
+    left: -737px
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device.item-21 {
+        top:0;
+        left: -484px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device.item-21 {
+        display:none
+    }
+}
+
+
+
+
+
+ .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+    width: 778px;
+    height: 462px;
+    background-size: 778px 462px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/hardware/hero_horizontal_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+     .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_horizontal_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+     .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+        width:506px;
+        height: 300px;
+        background-size: 506px 300px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_horizontal_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+     .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_horizontal_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+     .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+        width:464px;
+        height: 276px;
+        background-size: 464px 276px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_horizontal_small.png")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+     .section-hero .sticky-container .device-container.dark .horizontal .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_horizontal_small_2x.png")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .vertical .hardware {
+    width: 416px;
+    height: 704px;
+    background-size: 416px 704px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/hardware/hero_vert_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .vertical .hardware {
+        width:272px;
+        height: 460px;
+        background-size: 272px 460px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .vertical .hardware {
+        width:248px;
+        height: 420px;
+        background-size: 248px 420px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_small.png")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_small_2x.png")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-0 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/onboarding_3_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-0 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_3_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-0 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/onboarding_3_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-0 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_3_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-0 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/onboarding_3_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-0 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_3_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-2 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/recycle_3_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-2 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_3_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-2 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_3_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-2 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_3_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-2 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_3_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-2 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_3_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-3 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/pickup_6_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-3 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_6_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-3 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/pickup_6_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-3 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_6_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-3 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/pickup_6_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-3 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_6_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-4 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/onboarding_1_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-4 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_1_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-4 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/onboarding_1_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-4 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_1_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-4 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/onboarding_1_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-4 .screen {
+        background-image:url("/images/ctrg/preview/screen/onboarding_1_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-5 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/search_4_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-5 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_4_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-5 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/search_4_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-5 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_4_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-5 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/search_4_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-5 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_4_small_2x.jpg")
+    }
+}
+
+/* .section-hero .sticky-container .device-container.dark .item-6 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/search_4_.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-6 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-6 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-6 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-6 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_small.jpg")
+    }
+} 
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-6 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_small_2x.jpg")
+    }
+} */
+
+.section-hero .sticky-container .device-container.dark .item-7 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/dropoff_5_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-7 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_5_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-7 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/dropoff_5_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-7 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_5_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-7 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/dropoff_5_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-7 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_5_small_2x.jpg")
+    }
+}   
+
+.section-hero .sticky-container .device-container.dark .item-8 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/profile_1_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-8 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-8 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_1_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-8 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-8 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_1_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-8 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-9 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/recycle_1_spanish_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-9 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_spanish_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-9 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_1_spanish_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-9 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_spanish_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-9 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_1_spanish_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-9 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_spanish_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-10 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/profile_2_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-10 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_2_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-10 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_2_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-10 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_2_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-10 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_2_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-10 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_2_small_2x.jpg")
+    }
+}
+
+
+.section-hero .sticky-container .device-container.dark .item-12 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/discover_1_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-12 .screen {
+        background-image:url("/images/ctrg/preview/screen/discover_1_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-12 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/discover_1_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-12 .screen {
+        background-image:url("/images/ctrg/preview/screen/discover_1_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-12 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/discover_1_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-12 .screen {
+        background-image:url("/images/ctrg/preview/screen/discover_1_small_2x.jpg")
+    }
+}
+
+/* .section-hero .sticky-container .device-container.dark .item-13 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-13 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-13 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-13 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-13 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-13 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-14 .screen {
+    width: 630px;
+    height: 292px;
+    background-size: 630px 292px;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-14 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-14 .screen {
+        width:410px;
+        height: 190px;
+        background-size: 410px 190px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-14 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-14 .screen {
+        width:374px;
+        height: 174px;
+        background-size: 374px 174px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-14 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_small_2x.jpg")
+    }
+} */
+
+.section-hero .sticky-container .device-container.dark .item-15 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/dropoff_3_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-15 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_3_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-15 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/dropoff_3_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-15 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_3_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-15 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/dropoff_3_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-15 .screen {
+        background-image:url("/images/ctrg/preview/screen/dropoff_3_small_2x.jpg")
+    }
+}
+
+/* .section-hero .sticky-container .device-container.dark .item-16 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-16 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-16 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-16 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-16 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-16 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_small_2x.jpg")
+    }
+} */
+
+.section-hero .sticky-container .device-container.dark .item-17 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/pickup_tracking_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-17 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_tracking_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-17 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/pickup_tracking_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-17 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_tracking_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-17 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/pickup_tracking_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-17 .screen {
+        background-image:url("/images/ctrg/preview/screen/pickup_tracking_small_2x.jpg")
+    }
+}
+
+/* .section-hero .sticky-container .device-container.dark .item-18 .screen {
+    width: 630px;
+    height: 292px;
+    background-size: 630px 292px;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-18 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-18 .screen {
+        width:410px;
+        height: 190px;
+        background-size: 410px 190px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-18 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-18 .screen {
+        width:374px;
+        height: 174px;
+        background-size: 374px 174px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-18 .screen {
+        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_small_2x.jpg")
+    }
+} */
+
+.section-hero .sticky-container .device-container.dark .item-19 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/search_1_spanish_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-19 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_1_spanish_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-19 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/search_1_spanish_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-19 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_1_spanish_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-19 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/search_1_spanish_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-19 .screen {
+        background-image:url("/images/ctrg/preview/screen/search_1_spanish_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-20 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/recycle_1_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-20 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-20 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_1_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-20 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-20 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/recycle_1_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-20 .screen {
+        background-image:url("/images/ctrg/preview/screen/recycle_1_small_2x.jpg")
+    }
+}
+
+.section-hero .sticky-container .device-container.dark .item-21 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/screen/profile_1_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-21 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .device-container.dark .item-21 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_1_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-21 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .device-container.dark .item-21 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/screen/profile_1_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .device-container.dark .item-21 .screen {
+        background-image:url("/images/ctrg/preview/screen/profile_1_small_2x.jpg")
+    }
+}
+
+
+
+.section-hero .sticky-container .hero-device.item-1 {
+    width: 306px;
+    margin-right: -306px;
+    height: 607px;
+    top: initial;
+    left: initial;
+    position: relative;
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .hero-device.item-1 {
+        width:199px;
+        margin-right: -199px;
+        height: 390px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .hero-device.item-1 {
+        width:181px;
+        margin-right: -181px;
+        height: 357px
+    }
+}
+
+.section-hero .sticky-container .hero-device.item-1 .hardware {
+    width: 416px;
+    height: 704px;
+    background-size: 416px 704px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/hardware/hero_vert_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .section-hero .sticky-container .hero-device.item-1 .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .hero-device.item-1 .hardware {
+        width:272px;
+        height: 460px;
+        background-size: 272px 460px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .hero-device.item-1 .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .hero-device.item-1 .hardware {
+        width:248px;
+        height: 420px;
+        background-size: 248px 420px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_small.png")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    .section-hero .sticky-container .hero-device.item-1 .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_small_2x.png")
+    }
+}
+
+.section-hero .sticky-container .hero-device.item-1 .screen {
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/background_large.jpg");
+    width: 262px;
+    height: 568px;
+    background-size: 200% 100%
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .hero-device.item-1 .screen {
+        background-repeat:no-repeat;
+        background-image: url("/images/ctrg/preview/background_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .hero-device.item-1 .screen {
+        background-repeat:no-repeat;
+        background-image: url("/images/ctrg/preview/background_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    .section-hero .sticky-container .hero-device.item-1 .screen {
+        width:170px;
+        height: 368px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .section-hero .sticky-container .hero-device.item-1 .screen {
+        width:156px;
+        height: 338px
+    }
+}
+
+html.no-hero-animation .section-hero {
+    overflow: hidden;
+    margin-top: -51px
+}
+
+html.no-hero-animation.touch .section-hero {
+    margin-top: -52px
+}
+
+html.no-hero-animation .section-hero .content-container {
+    width: 100%;
+    height: 100vh;
+    position: static;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/background_large.jpg");
+    background-size: cover;
+    z-index: 99;
+    background-position: 50% 100%
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .content-container {
+        background-image:url("/images/ctrg/preview/background_large.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    html.no-hero-animation .section-hero .content-container {
+        background-repeat:no-repeat;
+        background-image: url("/images/ctrg/preview/background_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .content-container {
+        background-image:url("/images/ctrg/preview/background_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html.no-hero-animation .section-hero .content-container {
+        background-repeat:no-repeat;
+        background-image: url("/images/ctrg/preview/background_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .content-container {
+        background-image:url("/images/ctrg/preview/background_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    html.no-hero-animation .section-hero .content-container {
+        background-position:25% center
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html.no-hero-animation .section-hero .content-container {
+        background-position:center
+    }
+}
+
+html.no-hero-animation .section-hero .content-container .section-content {
+    width: 100%
+}
+
+html.no-hero-animation .section-hero .content-container .headline-wrapper {
+    display: block;
+    height: auto
+}
+
+html.no-hero-animation.touch .section-hero .content-container {
+    height: 101vh
+}
+
+html.no-hero-animation .section-hero .sticky-container {
+    height: auto;
+    margin-top: -949.75px
+}
+
+@media only screen and (max-width: 1068px) {
+    html.no-hero-animation .section-hero .sticky-container {
+        margin-top:-624px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html.no-hero-animation .section-hero .sticky-container {
+        margin-top:-483px
+    }
+}
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content {
+    visibility: visible;
+    overflow: visible;
+    position: relative;
+    height: auto
+}
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
+    position: relative;
+    z-index: -1;
+    min-height: 2800px
+}
+
+@media only screen and (max-width: 1068px) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
+        min-height:1830px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
+        min-height:1520px
+    }
+}
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device {
+    z-index: 99
+}
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+    background-image: url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        background-image: url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+    html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+        background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_small_2x.jpg")
+    }
+}
+
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content .device-anchor .dark,html.no-hero-animation .section-hero .sticky-container .sticky-content .background-dark {
+    pointer-events: none;
+    opacity: 1
+}
+
+html.no-hero-animation .section-hero .sticky-container .sticky-content .background-dark {
+    z-index: -1
+}
+
+.page-overview .device-container.dark.hide {
+    display: none
+}
+
+.page-overview .device-container.dark.show {
+    display: block
+}
+
+
+.page-overview .section-dark-mode .section-content {
+    position: relative
+}
+
+.page-overview .section-dark-mode .section-headline {
+    margin-left: 50px
+}
+
+@media only screen and (max-width: 1068px) {
+    .page-overview .section-dark-mode .section-headline {
+        margin-bottom:27px;
+        margin-right: 335px;
+        margin-left: 35px
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .page-overview .section-dark-mode .section-headline {
+        margin-bottom:24px;
+        margin-right: 30px;
+        margin-left: 30px
+    }
+}

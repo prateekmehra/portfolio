@@ -5,237 +5,177 @@ FONTS
 */
          	
 
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Regular.eot');
+    src: local('./webfonts/CeraPro-Regular'),
+        url('./webfonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Regular.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Regular.woff') format('woff'),
+        url('./webfonts/CeraPro-Regular.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Regular.svg#./webfonts/CeraPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-ThinItalic.eot');
+    src: local('./webfonts/CeraPro-ThinItalic'),
+        url('./webfonts/CeraPro-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-ThinItalic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-ThinItalic.woff') format('woff'),
+        url('./webfonts/CeraPro-ThinItalic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-ThinItalic.svg#./webfonts/CeraPro-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Thin.eot');
+    src: local('./webfonts/CeraPro-Thin'),
+        url('./webfonts/CeraPro-Thin.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Thin.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Thin.woff') format('woff'),
+        url('./webfonts/CeraPro-Thin.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Thin.svg#./webfonts/CeraPro-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Bold.eot');
+    src: local('./webfonts/CeraPro-Bold'),
+        url('./webfonts/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Bold.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Bold.woff') format('woff'),
+        url('./webfonts/CeraPro-Bold.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Bold.svg#./webfonts/CeraPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-MediumItalic.eot');
+    src: local('./webfonts/CeraPro-MediumItalic'),
+        url('./webfonts/CeraPro-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-MediumItalic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-MediumItalic.woff') format('woff'),
+        url('./webfonts/CeraPro-MediumItalic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-MediumItalic.svg#./webfonts/CeraPro-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-BlackItalic.eot');
+    src: local('./webfonts/CeraPro-BlackItalic'),
+        url('./webfonts/CeraPro-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-BlackItalic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-BlackItalic.woff') format('woff'),
+        url('./webfonts/CeraPro-BlackItalic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-BlackItalic.svg#./webfonts/CeraPro-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Medium.eot');
+    src: local('./webfonts/CeraPro-Medium'),
+        url('./webfonts/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Medium.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Medium.woff') format('woff'),
+        url('./webfonts/CeraPro-Medium.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Medium.svg#./webfonts/CeraPro-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-BoldItalic.eot');
+    src: local('./webfonts/CeraPro-BoldItalic'),
+        url('./webfonts/CeraPro-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-BoldItalic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-BoldItalic.woff') format('woff'),
+        url('./webfonts/CeraPro-BoldItalic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-BoldItalic.svg#./webfonts/CeraPro-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Light.eot');
+    src: local('./webfonts/CeraPro-Light'),
+        url('./webfonts/CeraPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Light.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Light.woff') format('woff'),
+        url('./webfonts/CeraPro-Light.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Light.svg#./webfonts/CeraPro-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-LightItalic.eot');
+    src: local('./webfonts/CeraPro-LightItalic'),
+        url('./webfonts/CeraPro-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-LightItalic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-LightItalic.woff') format('woff'),
+        url('./webfonts/CeraPro-LightItalic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-LightItalic.svg#./webfonts/CeraPro-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Regular.eot');
+    src: local('./webfonts/CeraPro-Regular'),
+        url('./webfonts/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Regular.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Regular.woff') format('woff'),
+        url('./webfonts/CeraPro-Regular.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Regular.svg#./webfonts/CeraPro-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Italic.eot');
+    src: local('./webfonts/CeraPro-Italic'),
+        url('./webfonts/CeraPro-Italic.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Italic.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Italic.woff') format('woff'),
+        url('./webfonts/CeraPro-Italic.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Italic.svg#./webfonts/CeraPro-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Cera Pro';
+    src: url('./webfonts/CeraPro-Black.eot');
+    src: local('./webfonts/CeraPro-Black'),
+        url('./webfonts/CeraPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('./webfonts/CeraPro-Black.woff2') format('woff2'),
+        url('./webfonts/CeraPro-Black.woff') format('woff'),
+        url('./webfonts/CeraPro-Black.ttf') format('truetype'),
+        url('./webfonts/CeraPro-Black.svg#./webfonts/CeraPro-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i');
 
-/* @font-face {
-    font-family: CallunaBold;
-    src: url('./webfonts/calluna-bold-webfont.eot');
-    src: url('./webfonts/calluna-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-bold-webfont.woff') format('woff'),
-         url('./webfonts/calluna-bold-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-bold-webfont.svg#CallunaBold') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaBoldItalic;
-    src: url('./webfonts/calluna-boldit-webfont.eot');
-    src: url('./webfonts/calluna-boldit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-boldit-webfont.woff') format('woff'),
-         url('./webfonts/calluna-boldit-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-boldit-webfont.svg#CallunaBoldItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaItalic;
-    src: url('./webfonts/calluna-it-webfont.eot');
-    src: url('./webfonts/calluna-it-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-it-webfont.woff') format('woff'),
-         url('./webfonts/calluna-it-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-it-webfont.svg#CallunaItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaLghtRegular;
-    src: url('./webfonts/calluna-light-webfont.eot');
-    src: url('./webfonts/calluna-light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-light-webfont.woff') format('woff'),
-         url('./webfonts/calluna-light-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-light-webfont.svg#CallunaLghtRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaRegular;
-    src: url('./webfonts/calluna-regular-webfont.eot');
-    src: url('./webfonts/calluna-regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-regular-webfont.woff') format('woff'),
-         url('./webfonts/calluna-regular-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-regular-webfont.svg#CallunaRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaSmBdRegular;
-    src: url('./webfonts/calluna-semibold-webfont.eot');
-    src: url('./webfonts/calluna-semibold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-semibold-webfont.woff') format('woff'),
-         url('./webfonts/calluna-semibold-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-semibold-webfont.svg#CallunaSmBdRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CallunaSmBdItalic;
-    src: url('./webfonts/calluna-semiboldit-webfont.eot');
-    src: url('./webfonts/calluna-semiboldit-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/calluna-semiboldit-webfont.woff') format('woff'),
-         url('./webfonts/calluna-semiboldit-webfont.ttf') format('truetype'),
-         url('./webfonts/calluna-semiboldit-webfont.svg#CallunaSmBdItalic') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: BebasNeueRegular;
-    src: url('./webfonts/BebasNeue-webfont.eot');
-    src: url('./webfonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
-         url('./webfonts/BebasNeue-webfont.woff') format('woff'),
-         url('./webfonts/BebasNeue-webfont.ttf') format('truetype'),
-         url('./webfonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-} */
-
-
-/* @font-face {
-font-family: 'Marat Sans Regular';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Regular'), url('./webfonts/Marat Sans Regular.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Italic'), url('./webfonts/Marat Sans Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Thin';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Thin'), url('./webfonts/Marat Sans Thin.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Thin Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Thin Italic'), url('./webfonts/Marat Sans Thin Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans ExtraLight';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans ExtraLight'), url('./webfonts/Marat Sans ExtraLight.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans ExtraLight Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans ExtraLight Italic'), url('./webfonts/Marat Sans ExtraLight Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Light';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Light'), url('./webfonts/Marat Sans Light.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Light Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Light Italic'), url('./webfonts/Marat Sans Light Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Medium';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Medium'), url('./webfonts/Marat Sans Medium.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Medium Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Medium Italic'), url('./webfonts/Marat Sans Medium Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans DemiBold';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans DemiBold'), url('./webfonts/Marat Sans DemiBold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans DemiBold Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans DemiBold Italic'), url('./webfonts/Marat Sans DemiBold Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Bold';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Bold'), url('./webfonts/Marat Sans Bold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Bold Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Bold Italic'), url('./webfonts/Marat Sans Bold Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans ExtraBold';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans ExtraBold'), url('./webfonts/Marat Sans ExtraBold.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans ExtraBold Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans ExtraBold Italic'), url('./webfonts/Marat Sans ExtraBold Italic.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Black';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Black'), url('./webfonts/Marat Sans Black.woff') format('woff');
-}
-
-
-@font-face {
-font-family: 'Marat Sans Black Italic';
-font-style: normal;
-font-weight: normal;
-src: local('./webfonts/Marat Sans Black Italic'), url('./webfonts/Marat Sans Black Italic.woff') format('woff');
-} */

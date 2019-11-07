@@ -11,7 +11,7 @@ ANIMATED BUTTON
 }
 .animated-nav-button a {
   color: white;
-  padding: 0.2em calc(0.7em * 1.2);
+  padding: 0.2em calc(0.5em * 1.2);
   display: inline-block;
   border: 1px solid transparent;
   position: relative;
@@ -20,8 +20,9 @@ ANIMATED BUTTON
   letter-spacing: 0.07em;
 }
 .animated-nav-button a .text {
-  font-family: Lato, sans-serif;
+  font-family: Cera Pro, sans-serif;
   font-size: 1rem;
+  font-weight: bold;
   text-transform: uppercase;    
   -webkit-transform: translate3d(0, 0.2em, 0);
           transform: translate3d(0, 0.2em, 0);
@@ -29,6 +30,7 @@ ANIMATED BUTTON
   transition: -webkit-transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
+  color: #B3B3B3;
 }
 .animated-nav-button a .text:hover{
     color: #FFF;
@@ -60,11 +62,11 @@ ANIMATED BUTTON
 .animated-nav-button a.active-nav:after {
   position: absolute;
   content: '';
-  bottom: -1px;
-  left: calc(0.7em * 1);
-  right: calc(0.7em * 1);
-  height: 1px;
-  background:  #eee;
+  bottom: -2px;
+  left: calc(1.3em * 1);
+  right: calc(1.3em * 1);
+  height: 3px;
+  background:  #007bff;
   transition: right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s;
@@ -74,7 +76,7 @@ ANIMATED BUTTON
 
 .animated-nav-button .line {
   position: absolute;
-  background: #eee;
+  /* background: #eee; */
 }
 
 .animated-nav-button .line.-bottom {
@@ -93,16 +95,20 @@ ANIMATED BUTTON
   -webkit-transform-origin: right;
           transform-origin: right;
 }
-.animated-nav-button a:hover .text,
-.animated-nav-button a:active .text {
-  -webkit-transform: translate3d(0, 0, 0);
+.animated-nav-button a:hover .text{
+  cursor: pointer;
+}
+
+.animated-nav-button a.nav-.active-nav .text{
+  color:  #FFFFFF;
+  /* -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   transition: -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
-  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
-  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s; */
+  
 }
-.animated-nav-button a:hover:after,
+/* .animated-nav-button a:hover:after,
 .animated-nav-button a:active:after {
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
@@ -114,8 +120,8 @@ ANIMATED BUTTON
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
   cursor: pointer;
-}
-.animated-nav-button a:hover .line,
+} */
+/* .animated-nav-button a:hover .line,
 .animated-nav-button a:active .line {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
@@ -130,4 +136,4 @@ ANIMATED BUTTON
   -webkit-transform-origin: left;
           transform-origin: left;
   cursor: pointer;
-}
+} */
