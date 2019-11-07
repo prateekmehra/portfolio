@@ -141,16 +141,21 @@ $(document).ready(function(){
 
 				options_donate.animation =  {
 					onComplete: function() {
+						var ppi = 1;
+
+						if(window.devicePixelRatio == 1)
+							ppi = 2;
+
 						if(window.innerWidth > 480 && window.innerWidth > window.innerHeight){
 							ctx = $('#donateChart')[0].getContext('2d');
 						    ctx.font = getFont(donate_canvas, fontSizeBig);
 						    ctx.fillStyle = "#101646";
 						    ctx.textBaseline = "middle";
-				        	ctx.fillText( "93", donate_canvas.width/6, donate_canvas.height/4.25);
+				        	ctx.fillText( "93", ppi * donate_canvas.width/6, ppi * donate_canvas.height/4.25);
 				        	ctx.textAlign = "center"; 
 				        	ctx.font = getFont(donate_canvas, fontSizeSmall);
 				        	ctx.textBaseline = "top";
-				        	ctx.fillText( "%", donate_canvas.width/3.1, donate_canvas.height/4.25);
+				        	ctx.fillText( "%", ppi * donate_canvas.width/3.1, ppi * donate_canvas.height/4.25);
 				        	ctx.textAlign = "center"; 
 				        }
 				    }
@@ -191,6 +196,11 @@ $(document).ready(function(){
 
 				options_recycle.animation =  {
 					onComplete: function() {
+						var ppi = 1;
+
+						if(window.devicePixelRatio == 1)
+							ppi = 2;
+
 						if(window.innerWidth > 480 && window.innerWidth > window.innerHeight){
 							document.fonts.load('100pt "Cera Pro"').then(function(){
 								console.log('hey');
@@ -198,10 +208,10 @@ $(document).ready(function(){
 							    ctx.font = getFont(recycle_canvas, fontSizeBig);
 							    ctx.fillStyle = "#101646";
 							    ctx.textBaseline = "middle";
-					        	ctx.fillText( "20", recycle_canvas.width/6, recycle_canvas.height/4.25);
+					        	ctx.fillText( "20", ppi * recycle_canvas.width/6, ppi * recycle_canvas.height/4.25);
 					        	ctx.font = getFont(recycle_canvas, fontSizeSmall);
 					        	ctx.textBaseline = "top";
-					        	ctx.fillText( "%", recycle_canvas.width/3.2, recycle_canvas.height/4.25);
+					        	ctx.fillText( "%", ppi * recycle_canvas.width/3.2, ppi * recycle_canvas.height/4.25);
 					        });
 				        }
 				    }
