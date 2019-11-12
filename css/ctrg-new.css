@@ -618,13 +618,11 @@ PAGE CONTENT
 .no-shadow{
     transition: all 1s ease;
     box-shadow: none;
-
-    /* transition-delay:  2s; */
 }
 
 .focus-border{
     border-radius: 20px;
-    border: 1px solid #eee;
+    /* border: 1px solid #eee; */
 }
 
 .chart{

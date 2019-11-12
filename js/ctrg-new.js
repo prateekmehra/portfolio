@@ -101,15 +101,15 @@ $(document).ready(function(){
 		
 	$(window).scroll(function(){
 
-		//only the class elements in view
-		$('.focus-border').filter(function(){
-		    return $(this).inView();
-		}).removeClass('no-shadow').addClass('img-shadow');
+		// //only the class elements in view
+		// $('.focus-border').filter(function(){
+		//     return $(this).inView();
+		// }).removeClass('no-shadow').addClass('img-shadow');
 
-		//only the class elements not in view
-		$('.focus-border').filter(function(){
-		    return !$(this).inView();
-		}).removeClass('img-shadow').addClass('no-shadow');
+		// //only the class elements not in view
+		// $('.focus-border').filter(function(){
+		//     return !$(this).inView();
+		// }).removeClass('img-shadow').addClass('no-shadow');
 			
 		if(isScrolledIntoView($('#donateChart')[0]) && isScrolledIntoView($('#recycleChart')[0])){
 			if (isCanvasBlank($('#donateChart')[0]) && isCanvasBlank($('#recycleChart')[0])){
