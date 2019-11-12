@@ -77,14 +77,14 @@ function projectNavInit() {
 }
 
 function updateProjectNavLinks() {
-	if (projectIndex >= 1){
+	if (projectIndex >= 2){
 		$(".nav-process").parent().addClass("active-nav");
 		$(".nav-details").parent().removeClass("active-nav");
 		$(".nav-tldr").parent().removeClass("active-nav");
 		$('.dropbtn').html('Design Process <i class="fa fa-caret-down"></i>');
 	}
 
-	else if (projectIndex == 0){
+	else if (projectIndex <= 1){
 		$(".nav-details").parent().addClass("active-nav");
 		$(".nav-process").parent().removeClass("active-nav");
 		$(".nav-tldr").parent().removeClass("active-nav");
