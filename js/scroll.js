@@ -1,5 +1,9 @@
-$(function(){
+$(window).ready(function(){
     scrollInit();
+});
+
+$(window).load(function(){
+    projectNavScrollInit();
 });
 
 var posts = [];
@@ -33,7 +37,36 @@ function scrollInit(){
 
     posts = $('.scrollto');
     document.addEventListener('scroll',function(e){scrollCheck(e);},false);
-    
+    $(window).load(function(){
+        scrollCalculate();
+    });
+}
+
+function porjectNavScrollInit(){
+    $('#project-nav a[href^="#"]').on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 900, 'easeInOutQuint', function(){
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            // window.location.hash = hash;
+                scrollCalculate();
+            });
+        } // End if
+    });
+
+    posts = $('.scrollto');
+    document.addEventListener('scroll',function(e){scrollCheck(e);},false);
     $(window).load(function(){
         scrollCalculate();
     });
@@ -62,6 +95,7 @@ function scrollCalculate() {
 
     if (projectChanged) {
         updateNavLinks();
+        updateProjectNavLinks();
 
         updatePalette(projectIndex);
         projectChanged = false;

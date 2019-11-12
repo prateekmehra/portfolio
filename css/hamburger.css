@@ -18,7 +18,7 @@
 {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 27px;
   right: 4.45rem;
   
   z-index: 2;
@@ -132,7 +132,7 @@
     right: 0;
     bottom: 0;
     /* background: none; Black background with opacity */
-    z-index: 10000; /* Specify a stack order in case you're using a different order for other elements */
+    z-index: 10002; /* Specify a stack order in case you're using a different order for other elements */
     cursor: pointer; /* Add a pointer on hover */
     background: rgba(17, 17, 17, 0.99);
     
@@ -175,7 +175,7 @@
 #horizontal-menu {
     display: block;
     position: absolute;
-    top: 43px;
+    top: 16px;
     right: 3.45rem;
     z-index: 2;
     pointer-events: all;

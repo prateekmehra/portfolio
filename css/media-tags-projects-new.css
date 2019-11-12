@@ -37,6 +37,10 @@ MEDIA TAGS
 }
 
 @media only screen and (max-width: 1440px) and (max-height: 1024px) and  (orientation:landscape){
+     #portfolio {
+        margin-top: -15vh;
+    }
+
     .page-content .compressed-centered20 {
         width: 40%;
     }
@@ -52,6 +56,10 @@ MEDIA TAGS
 
 @media only screen and (max-width: 1440px) and (min-width: 1024px) and (orientation:portrait){
         /* styles for browsers larger than 1440px; */
+    #portfolio {
+        margin-top: -15vh;
+    }
+
     .h-line.above {
         width: 75vw;
         margin-top: 17vh;
@@ -98,8 +106,9 @@ MEDIA TAGS
 /* different techniques for iPad screening */
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape){
-
-
+    #portfolio {
+        margin-top: -17vh;
+    }
 
     .h-line.above {
         width: 75vw;
@@ -119,11 +128,6 @@ MEDIA TAGS
     .v-line.left {
         margin-left: 14vw;
         height: 100vh;
-    }
-
-    #menuToggle span {
-        width: 25px;
-        height: 1.5px;
     }
 
     #menu {
@@ -218,6 +222,9 @@ MEDIA TAGS
 
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait){
+    #portfolio {
+        margin-top: -17vh;
+    }
 
     .h-line.above {
         width: 75vw;
@@ -239,14 +246,9 @@ MEDIA TAGS
         height: 100vh;
     }
 
-    #menuToggle span {
-        width: 25px;
-        height: 2px;
-    }
-
     #menu {
         margin-left: -5vw;
-        margin-top: 50vh;
+        margin-top: 41vh;
     }
 
     #menu li:hover {
@@ -359,6 +361,11 @@ MEDIA TAGS
 
 
 @media only screen and  (max-width: 480px) {
+
+    #portfolio{
+        margin-top: -47vh;
+    }
+
     .navLink:link .navTag, .navLink:link .navTag {
        max-width: 0;
        padding: 0;
@@ -442,8 +449,8 @@ MEDIA TAGS
     }
 
     #menuToggle span {
-        width: 25px;
-        height: 1.5px;
+/*         width: 25px;
+        height: 1.5px; */
         transform-origin: 4px 0px;
     }
 
@@ -569,7 +576,7 @@ MEDIA TAGS
     #project-nav {
         top: 0vh;
         width: 100vw;
-        height: 6vh;
+        height: 7vh;
         border-radius: 0px;
 
     }
@@ -589,6 +596,18 @@ MEDIA TAGS
 
     #rewards_reflection {
         margin-left: -10px;
+    }
+
+    .site-logo-holder{
+        display: none;
+    }
+
+    #project-nav .animated-nav-button {
+        padding-bottom: 8px;
+    }
+
+    #project-nav .animated-nav-button a .text{
+        font-size: 12px;
     }
 }
 
@@ -643,10 +662,6 @@ MEDIA TAGS
 
   .column-3 {
     width: 50%;
-  }
-
-  #portfolio{
-    margin-top: -7vh !important;
   }
 
   .control {

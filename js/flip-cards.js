@@ -4,19 +4,19 @@ $(document).ready(function(){
 		hovered=true;
 	});
 
-	 var timerId = setInterval(function(){
+	 // var timerId = setInterval(function(){
 
-       if(hovered){
-           clearInterval(timerId);
-       }
-       else{
-       		$(".flip-container").addClass('hover');
-       		setTimeout(function(){
-       			$(".flip-container").removeClass('hover');
-       		},1000);
-       }
+  //      if(hovered){
+  //          clearInterval(timerId);
+  //      }
+  //      else{
+  //      		$(".flip-container").addClass('hover');
+  //      		setTimeout(function(){
+  //      			$(".flip-container").removeClass('hover');
+  //      		},1000);
+  //      }
 
-    }, 10000);
+  //   }, 10000);
 
 	
 });

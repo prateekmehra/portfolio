@@ -152,6 +152,7 @@ PAGE CONTENT
     height: 100%;
     display: inline-block;
     position: relative;
+    margin-top: -20vh
 }
 
 #palette {

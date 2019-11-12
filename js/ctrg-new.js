@@ -442,18 +442,11 @@ $(function(){
 		owl.trigger('stop.owl.autoplay')
 	});
 
-	var tl1 = new TimelineLite( {paused: true, onReverseComplete: pause_tl1, onComplete: pause_tl1} ),
-	tl2 = new TimelineLite( {paused: true, onReverseComplete: pause_tl2, onComplete: pause_tl2} ),
-	tl3 = new TimelineLite ( {paused: true, onReverseComplete: pause_tl3, onComplete: pause_tl3} );﻿
-	
-	var play_video = 0;
-	var play_rewards_vid = 0;
-	
-	$(window).scroll( function(){
+	$(window).scroll(function(){
 
-	 	$('#rewards_reflection').each(function(){
+	 	$('#load-in-viewport').each(function(){
 		    if ($(this).inView() && play_rewards_vid==0) {
-		        $(this)[0].play();
+		        $("#rewards_reflection")[0].play();
 		        play_rewards_vid = 1;
 
 		        $('.count').each(function () {
@@ -471,49 +464,56 @@ $(function(){
 		     }
 		    else if (!$(this).inView()){
 				play_rewards_vid = 0;
-				$(this)[0].pause();
-				$(this)[0].currentTime = 0;
+				$("#rewards_reflection")[0].pause();
+				$("#rewards_reflection")[0].currentTime = 0;
 		    	}
 			})
-	  
-	  var st = $(this).scrollTop();
+	 });
+
+	var tl1 = new TimelineLite( {paused: true, onReverseComplete: pause_tl1, onComplete: pause_tl1} ),
+	tl2 = new TimelineLite( {paused: true, onReverseComplete: pause_tl2, onComplete: pause_tl2} ),
+	tl3 = new TimelineLite ( {paused: true, onReverseComplete: pause_tl3, onComplete: pause_tl3} );﻿
 	
-		  var ht = window.innerHeight;
-		   if( st < ht && st > 0 ){
-		        windowScroll = st/ht;
-		        tl1.progress( windowScroll );
-		        tl2.progress( windowScroll );
-		        tl3.progress( windowScroll * 2 );
-		    }
-		   else if(st <= 0){
-		    	tl1.reverse();
-		    	tl2.reverse();
-		    	tl3.reverse();
-		    }
-		    else{
-		    	tl1.play();
-		        tl2.play();
-		        tl3.play();
-		    }
+	var play_video = 0;
+	var play_rewards_vid = 0;
+	
+	$(window).scroll( function(){
+	 	
+	 	var st = $(this).scrollTop();
+		var ht = window.innerHeight;
 
-		    if (st > 900){
-		    	$(".sticky-content.light").removeClass("light").stop(true,true).addClass("dark", 1000);
-		    	$(".screen.video-container.waiting-to-start").show();
+	   if( st < ht && st > 0 ){
+	        windowScroll = st/ht;
+	        tl1.progress( windowScroll );
+	        tl2.progress( windowScroll );
+	        tl3.progress( windowScroll * 2 );
+	    }
+	   else if(st <= 0){
+	    	tl1.reverse();
+	    	tl2.reverse();
+	    	tl3.reverse();
+	    }
+	    else{
+	    	tl1.play();
+	        tl2.play();
+	        tl3.play();
+	    }
 
-		    	
-
-		    	if (play_video == 0){
-		    		$('#preview-video').get(0).play();
-		    		play_video = 1;
-		    	}
-		    }
-		    else{
-		    	play_video = 0;
-		    	$(".screen.video-container.waiting-to-start").hide();
-		    	$('#preview-video').get(0).currentTime = 0;
-
-		    	$(".sticky-content.dark").removeClass("dark").stop(true,true).addClass("light", 1000);
-		    }
+	    if (st > 900){
+	    	$(".sticky-content.light").removeClass("light").stop(true,true).addClass("dark", 1000);
+	    	$(".screen.video-container.waiting-to-start").show();
+	    	
+	    	if (play_video == 0){
+	    		$('#preview-video').get(0).play();
+	    		play_video = 1;
+	    	}
+	    }
+	    else{
+	    	play_video = 0;
+	    	$(".screen.video-container.waiting-to-start").hide();
+	    	$('#preview-video').get(0).currentTime = 0;
+	    	$(".sticky-content.dark").removeClass("dark").stop(true,true).addClass("light", 1000);
+	    }
 		
 	});
 
