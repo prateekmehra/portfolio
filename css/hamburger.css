@@ -201,6 +201,7 @@
 .horizontal-exit{
     -webkit-animation : 0.2s  lightSpeedOut forwards;
     animation         : 0.2s  lightSpeedOut forwards;
+    display: none !important;
 }
 
 .hamburger-enter{
