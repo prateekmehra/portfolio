@@ -274,12 +274,16 @@
 .section-hero .sticky-container .device video {
     width: 262px;
     height: 568px;  
+    position: absolute;
+    top: -5px;
 }
 
 @media only screen and (max-width: 1068px) {
     .section-hero .sticky-container .device video {
         width:170px;
         height: 368px;
+        position: absolute;
+        top: -20px;
     }
 }
 
@@ -287,6 +291,8 @@
     .section-hero .sticky-container .device video {
         width:156px;
         height: 338px;
+        position: absolute;
+        top: -4px;
 
     }
 }
