@@ -64,11 +64,12 @@ $(document).ready(function(){
 	    .to('#flipper', 1, {className:"-=flip-container"}, "+=5")
 	    .to('#intro-text', 1, {className:"-=anim-front"})
 	    .to('#intro-text-back', 1, {className:"-=anim-back"})
-	    .to(".panel-1", 100, {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
+	    .to(".panel-1", 100, {clipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)", webkitClipPath:"polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)"})
 	    
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#portfolio", duration: 600, offset: 700})
 		.setTween(tween)
+		// .addIndicators({name: "start"})
 		.addTo(controller);
 
 
@@ -91,6 +92,7 @@ $(document).ready(function(){
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#portfolio", duration: 300, offset: 1100})
 		.setTween(tween)
+		// .addIndicators({name: "before-scroll"})
 		.addTo(controller);
 
 
