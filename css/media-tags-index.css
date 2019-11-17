@@ -270,7 +270,7 @@ MEDIA TAGS
 
     #menuToggle span {
         width: 25px;
-        height: 1.5px;
+        height: 2px;
     }
 
     #menu {
@@ -461,10 +461,10 @@ MEDIA TAGS
         display: none;
     }
 
-    #menuToggle span {
+    /* #menuToggle span {
         width: 25px;
         height: 1.5px;
-    }
+    } */
 
     #menu {
         margin-left: -10vw;
@@ -625,7 +625,13 @@ MEDIA TAGS
 
 @media only screen and  (max-width: 385px) {
     .flip-container{
-        width: 90%;
+        width: 80%;
+    }
+
+    .ripple{
+        width: 80%;
+        height: 333.08px;
+        bottom: 12vh;
     }
 
     #music-control {
