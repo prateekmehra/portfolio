@@ -1,0 +1,67 @@
+.list-grid-toggle {
+ /*  display: none; */
+  position: absolute;
+  top: 50px;
+  right: 6.45rem;
+  
+  z-index: 2;
+  transition: all 0.15s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 2;
+  pointer-events: all;
+}
+
+
+
+.icon {
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+.icon-bar {
+  position: relative;
+  width: 40px;
+  height: 10px;
+  margin: 0 auto 5px auto;
+  background: #ecf0f1;
+  transition: all 0.15s ease;
+}
+.icon-bar:last-child {
+  margin-bottom: 0;
+}
+.icon-bar:before, .icon-bar:after {
+  position: absolute;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: #ecf0f1;
+  content: '';
+  opacity: 0;
+  transition: all 0.15s ease;
+}
+.icon-bar:before {
+  left: -15px;
+}
+.icon-bar:after {
+  right: -15px;
+}
+
+.icon-grid .icon-bar {
+  width: 10px;
+}
+.icon-grid .icon-bar:before, .icon-grid .icon-bar:after {
+  opacity: 1;
+}
+.icon-grid .icon-bar:before {
+  left: 0;
+  -webkit-transform: translateX(-15px);
+          transform: translateX(-15px);
+}
+.icon-grid .icon-bar:after {
+  right: 0;
+  -webkit-transform: translateX(15px);
+          transform: translateX(15px);
+}
