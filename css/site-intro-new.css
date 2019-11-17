@@ -3,6 +3,8 @@
 SITE INTRO
 ------------------------------------------------------------
 */
+
+/* Logo + Nav */
 .site-nav {
     position: fixed;
     width: 100%;
@@ -15,14 +17,12 @@ SITE INTRO
 
 
 .site-intro {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 
 .site-logo {
-    /*  width: 60px;
-     margin-top: 20px;
-     margin-left: 38%; */
     width: 20px;
     margin-top: -8px;
     margin-left: 11px;
@@ -34,15 +34,12 @@ SITE INTRO
     text-align: left;
 }
 
-
 .site-logo-background{
-    /* background: rgb(17, 17, 17); */
     width: 60px;
-    margin: 40px;
+    margin: 17px 40px;
     height: 60px;
     padding: 10px;
     pointer-events: all;
-    /* box-shadow: 0px -1px 20px 4px rgba(0, 0, 0, 0.33); */
 }
 
 #intro-box {
@@ -52,82 +49,17 @@ SITE INTRO
     left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
-
     display: block;
-    
 }
 
-#intro-logo {
-
-    margin-left: 37%;
-    
+.intro-box-dimensions{
+    width: 386px;
+    height: 425px;
+    margin: 0 auto;
 }
 
-#intro-description {
-    float: right;
-    display:  inline-block;
 
-}
-
-.intro-header {
-
-    display:  inline-block;
-    font-weight: 100;
-    font-size: 50px;
-    letter-spacing: 5px;
-    font-family: Raleway;
-    line-height: 1;
-    text-transform: uppercase;
-    
-    
-}
-
-#intro-big {
-    font-size       : 44px;
-    font-weight     : 100;
-    display: inline-block;
-    float: left;
-}
-
-.intro-text { 
-    font-weight: 100;
-    font-size: 20px;
-    line-height: 1;
-    font-family     : Raleway, sans-serif;
-    text-align: left;
-}
-
-.site-intro-out {
-    position      : absolute;
-    right         : 4.45rem;
-    bottom        : 10%;
-    z-index       : 40;
-
-    height        : 3rem;
-    width         : 3rem;
-
-    cursor        : pointer;
-    border        : 2px solid;
-    border-radius : 50%;
-}
-
-.intro-out-all {
-    opacity: 0;
-    -webkit-animation : 2s fadein 4s forwards;
-    animation         : 2s fadein 4s forwards;
-}
-
-.site-intro-out:hover{
-    transition       : transform 0.2s linear;
-    transition-delay : 0s;
-    transform        : scale(1.1, 1.1);
-}
-
-.site-intro-out:hover > .arrow {
-    transition       : transform 0s;
-    transition-delay : 0s;
-    transform        : scale(0.9,0.9);
-}
+/* go-back arrow */
 
 .arrow > svg {
     position     : relative;
@@ -138,71 +70,107 @@ SITE INTRO
     stroke-width : 2.5px;
 }
 
-.intro-out-box{
-    position : absolute;
-    right    : 6rem;
-    bottom   : 15%;
-}
 
-.intro-out-text{
-    position : absolute;
-    right    : -130px;
-    bottom   : 120px;
-}
+/* Box */
 
-.intro-out-scroll {
-    height                     : 93px;
-    width                      : 1px;
-    padding                    : 0;
-
-    border-left                : 2px solid;
-
-    animation-name             : scroll-bounce-Y;
-    animation-duration         : 4s;
-    animation-iteration-count  : infinite;
-    transition-timing-function : cubic-bezier(.37,.01,0,.98);
-}
-
-#ux {
-    opacity: 0;
-    font-family: Raleway;
-    font-weight: 600;
-    font-size: 31px;
-    letter-spacing: 1px;
-    text-align: left;
-    -webkit-animation : 2s fadein 4s forwards;
-    animation         : 2s fadein 4s forwards;
-}
-
-#brand {
-    opacity: 0;
-    font-size: 20px;
-     -webkit-animation : 1s fadein 5s forwards;
-    animation         : 1s fadein 5s forwards;
-}
-
-#intro-text {
-    /* background: rgba(255, 255, 255, 1);
-    color: #111; */
-    -webkit-animation : 1s fadein 3s forwards;
-    animation         : 1s fadein 3s forwards;
+.anim-front {
+   /*  -webkit-animation : fadein 3s forwards;
+    animation         : fadein 3s forwards;
     animation-name             : pulse;
     animation-duration         : 2s;
-    animation-delay            : 4s;
     animation-iteration-count  : infinite;
-    transition-timing-function : cubic-bezier(.37,.01,0,.98);
-    /* padding-bottom: 276px; */
+    transition-timing-function : cubic-bezier(.37,.01,0,.98); */
 }   
 
-#intro-text-back {
-    /* color:  #111;
-    background:  rgba(255, 255, 255, 1);
-    padding-bottom: 276px; */
-    -webkit-animation : 1s fadein 3s forwards;
-    animation         : 1s fadein 3s forwards;
+.anim-back {
+    -webkit-animation : fadein 3s forwards;
+    animation         : fadein 3s forwards;
     animation-name             : pulse;
     animation-duration         : 4s;
-    animation-delay            : 4s;
     animation-iteration-count  : infinite;
     transition-timing-function : cubic-bezier(.37,.01,0,.98);
+}
+
+
+/* Ripples */
+
+.ripple {
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    width: 386px;
+    height: 425px;
+    border-radius: 15%;
+    position:absolute;
+    animation: ripple 2s linear infinite 4s;
+    z-index: 0;
+}
+
+.ripple::before,
+.ripple::after{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    border-radius: 15%;
+    animation: ripple 2s linear infinite 1s;
+}
+
+.ripple::after {
+    animation: ripple 2s linear infinite 2s;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0.7rem rgba(100, 100, 100, 0.2);
+     
+    }
+    100% {
+        box-shadow: 0 0 0 7rem rgba(100, 100, 100, 0);
+    }
+}
+
+
+/* Scroll down -> Portfolio */
+
+.scroll-downs {
+    position: absolute;
+    right: 0;
+    bottom: 7vh;
+    left: 0;
+    margin: auto;
+    width :34px;
+    height: 55px;
+}
+.mousey {
+    width: 3px;
+    padding: 10px 15px;
+    height: 35px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    opacity: 0.75;
+    box-sizing: content-box;
+}
+.scroller {
+    width: 3px;
+    height: 10px;
+    border-radius: 25%;
+    background-color: #fff;
+    animation-name: scroll;
+    animation-duration: 2.2s;
+    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
+    animation-iteration-count: infinite;
+}
+
+.scroll-downs-text {
+    position: absolute;
+    right: 0;
+    bottom: 3vh;
+    left: 0;
+    margin: auto;
 }
