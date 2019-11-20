@@ -92,7 +92,7 @@ function timeline(){
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
 
-	.to('#go-back', 1, {display: 'block'}, 300)
+	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
 
 	.to('.item-1', 200, {left:"5vw"}, 400)
 	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 400)

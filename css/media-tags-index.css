@@ -317,7 +317,12 @@ MEDIA TAGS
         height: 500vh;
     }
 
-
+    #go-back {
+        right: 1.45rem;
+        bottom: 4%;
+        height: 2rem;
+        width: 2rem;
+    }
 }
 
 @media only screen and (width: 768px) {

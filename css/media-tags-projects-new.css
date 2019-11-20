@@ -393,22 +393,6 @@ MEDIA TAGS
         font-size: 1.5rem;
     }
 
-    /* #logo, .number, .number2, .toolIcon {
-        display : none;
-    }
-
-    #main, #topMenu, .menuBlock {
-        width : 80%;
-    }
-
-    .gallery img {
-        margin-bottom : 10px;
-    }
-
-    .double img {
-        width : calc(50% - 5px);
-    } */
-
     .loading-logo-holder {
         width: 40px;
     }
@@ -472,10 +456,6 @@ MEDIA TAGS
         padding-top: 0;
     }
 
-   /*  #intro-text-back {
-        padding: 103px 25px 324px 25px;
-    } */
-
     #ux {
         font-size: 25px;
     }
@@ -534,9 +514,6 @@ MEDIA TAGS
     font-weight: 600 !important;
     }
 
-    /* .page-content .tile-wide img {
-        height: 161px;
-    } */
 
     .page-content .center-padded-little {
         padding: 20px 20px 20px 20px;
@@ -608,6 +585,10 @@ MEDIA TAGS
 
     #project-nav .animated-nav-button a .text{
         font-size: 12px;
+    }
+
+    #horizontal-menu-left{
+        display: none;
     }
 }
 
