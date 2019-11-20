@@ -24,7 +24,32 @@ $(document).ready(function(){
 		$('#project-box .intro-box-dimensions a > .project_canvas').removeClass('add-blur');
 	});
 
+	tl1 = new TimelineMax();
+
+	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 503;
+	
+	tl1
+		.set('#portfolio', {left: '50% +=' + $('.column-right').width()/6})
+		.set('.project_canvas', {className:"+=before-scroll"}, 0)
+		.set('.item-1', {width: $('.item-1 .screen').width() + 'px', height: $('.item-1 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-2', {width: $('.item-2 .screen').width() + 'px', height: $('.item-2 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-3', {width: $('.item-3 .screen').width() + 'px', height: $('.item-3 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-4', {width: $('.item-4 .screen').width() + 'px', height: $('.item-4 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-5', {width: $('.item-5 .screen').width() + 'px', height: $('.item-5 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-6', {width: $('.item-6 .screen').width() + 'px', height: $('.item-6 .screen').height() + 'px', borderRadius: '40px'})
+		.set('.item-7', {width: $('.item-7 .screen').width()/1.1 + 'px', height: $('.item-7 .screen').height()/2 + 'px', borderRadius: '40px'})
+		.set('.panel-1', {transformOrigin: 'center', transform: 'translateX(' + panel_shift + 'px) scale(0.5)', position:'absolute'})
+		.set('.project-intro', {transformOrigin: 'center', transform: 'scale(0.8)'})
+		.set('.project_canvas', {transform: 'scale(0.5)'})
+		.set('#project-box', {top: "140px", left: "650px"})
+		.set('.hardware', {display: 'block', opacity: 1})
+		.set('.screen', {display: 'block', opacity: 1})
+
+	tl1.play();
+
 	timeline();
+
+	var prev = window.innerHeight/2 + 700;
 
 	$('.scroll-downs').on('click', function(){
 		$(window).scrollTop(window.innerHeight/2 + 700);
@@ -65,45 +90,11 @@ $(window).resize(function(){
 	timeline();
 });
 	
-var prev = window.innerHeight/2 + 700;
-
-
-
-
 
 
 	
 function timeline(){
 	var controller = new ScrollMagic.Controller();
-
-	tl1 = new TimelineMax();
-
-	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 503;
-	
-	tl1
-		.to('#portfolio', 1, {left: '50% +=' + $('.column-right').width()/6})
-		// .to('#portfolio', 1, {transformOrigin: 'center', transform: 'translateX(-50%)'})
-		.to('.project_canvas', 1, {className:"+=before-scroll"}, 0)
-		.to('.item-1', 1, {width: $('.item-1 .screen').width() + 'px', height: $('.item-1 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-2', 1, {width: $('.item-2 .screen').width() + 'px', height: $('.item-2 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-3', 1, {width: $('.item-3 .screen').width() + 'px', height: $('.item-3 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-4', 1, {width: $('.item-4 .screen').width() + 'px', height: $('.item-4 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-5', 1, {width: $('.item-5 .screen').width() + 'px', height: $('.item-5 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-6', 1, {width: $('.item-6 .screen').width() + 'px', height: $('.item-6 .screen').height() + 'px', borderRadius: '40px'}, 0)
-		.to('.item-7', 1, {width: $('.item-7 .screen').width()/1.1 + 'px', height: $('.item-7 .screen').height()/2 + 'px', borderRadius: '40px'}, 0)
-		.to('.panel-1', 1, {transformOrigin: 'center', transform: 'translateX(' + panel_shift + 'px) scale(0.5)', position:'absolute'}, 0)
-		.to('.project-intro', 1, {transformOrigin: 'center', transform: 'scale(0.8)'}, 0)
-		.to('.project_canvas', 1, {transform: 'scale(0.5)'}, 0)
-		.to('#project-box', 1, {top: "140px", left: "650px"}, 0)
-		.to('.hardware', 300, {display: 'block', opacity: 1}, 0)
-		.to('.screen', 300, {display: 'block', opacity: 1}, 0)
-
-
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: 0})
-		.setTween(tl1)
-		// .addIndicators({name: "before-scroll"})
-		.addTo(controller);
-
 
 	tl2 = new TimelineMax();
 	var panel_halfway = window.innerWidth / 1680 > 1 ? 1 : window.innerWidth / 1680;
@@ -153,6 +144,7 @@ function timeline(){
 	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 500)
 	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 500)
 	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 500)
+	
 
 	if(window.innerWidth <= 750){
 		tl2
@@ -160,21 +152,13 @@ function timeline(){
 		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 500);
 	}
 
+	tl2
+	.set('.panel', {display: 'block', opacity: 1}, 700)
+	.set('.project-intro', {overflowY: 'scroll'}, 700);
+
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 700, offset: window.innerHeight/2})
 		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
-		.addTo(controller);
-
-
-	tl3 = new TimelineMax();
-
-	tl3
-	.to('.panel', 1, {display: 'block', opacity: 1}, 0)
-	.to('.project-intro', 1, {overflowY: 'scroll'}, 0);
-	
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: window.innerHeight/2 + 700})
-		.setTween(tl3)
-		// .addIndicators({name: "showtext"})
 		.addTo(controller);
 }
 
