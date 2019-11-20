@@ -89,7 +89,8 @@ PAGE CONTENT
     margin     : auto;
 
     text-align : center;
-    height     : calc(888px + 650vh);
+    /* 700px (scroll duration) + 88px (extra footer) + row heights */
+    height     : calc(788px + 650vh);
 }
 
 .page-content .tile-wide {
