@@ -1,4 +1,5 @@
 var firstClick = true;
+var tl1, tl2, tl3; 
 
 // $(document).load(function(){
 // 	// document.getElementById('music').volume = 0;
@@ -48,11 +49,11 @@ $(window).resize(function(){
 function timeline(){
 	var controller = new ScrollMagic.Controller();
 
-	var tween = new TimelineMax();
+	tl1 = new TimelineMax({onReverseComplete: reverse_tl1});
 
 	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 503;
 	
-	tween
+	tl1
 		.to('#portfolio', 1, {left: '50% +=' + $('.column-right').width()/6})
 		// .to('#portfolio', 1, {transformOrigin: 'center', transform: 'translateX(-50%)'})
 		.to('.project_canvas', 1, {className:"+=before-scroll"}, 0)
@@ -72,16 +73,16 @@ function timeline(){
 
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: 0})
-		.setTween(tween)
+		.setTween(tl1)
 		// .addIndicators({name: "before-scroll"})
 		.addTo(controller);
 
 
-	var tween = new TimelineMax();
+	tl2 = new TimelineMax({onReverseComplete: reverse_tl2});
 	var panel_halfway = window.innerWidth / 1680 > 1 ? 1 : window.innerWidth / 1680;
 	var panel_translate = (window.innerWidth - 1680) * 0.5;
 
-	tween
+	tl2
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'})
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
@@ -126,29 +127,40 @@ function timeline(){
 	// 768px    left: 11px; top: -39px;
 
 	if(window.innerWidth <= 750){
-		tween
+		tl2
 		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 600)
 		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 600);
 	}
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 800, offset: window.innerHeight/2})
-		.setTween(tween)
+		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
 		.addTo(controller);
 
 
-	var tween = new TimelineMax();
+	tl3 = new TimelineMax({onReverseComplete: reverse_tl3});
 
-	tween
+	tl3
 	.to('.panel', 1, {display: 'block', opacity: 1}, 0)
-	.to('.project-intro', 1, {overflowY: 'scroll'}, 0);
+	// .to('.project-intro', 1, {overflowY: 'scroll'}, 0);
 	
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: window.innerHeight/2 + 800})
-		.setTween(tween)
+		.setTween(tl3)
 		// .addIndicators({name: "showtext"})
 		.addTo(controller);
 }
-	
+
+function reverse_tl1(){
+	tl1.reverse();
+}
+
+function reverse_tl2(){
+	tl2.reverse();
+}
+
+function reverse_tl3(){
+	tl3.reverse();
+}
 	
 function musicMaker(e){	
 	document.getElementById('music').play();
