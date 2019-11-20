@@ -13,6 +13,7 @@ SITE INTRO
     z-index: 100000;
     text-align: center;
     pointer-events: none;
+    top: 0;
 }
 
 
@@ -53,7 +54,7 @@ SITE INTRO
 }
 
 .intro-box-dimensions{
-    width: 386px;
+    width: 100%;
     height: 425px;
     margin: 0 auto;
 }
@@ -136,41 +137,3 @@ SITE INTRO
 }
 
 
-/* Scroll down -> Portfolio */
-
-.scroll-downs {
-    position: absolute;
-    right: 0;
-    bottom: 7vh;
-    left: 0;
-    margin: auto;
-    width :34px;
-    height: 55px;
-}
-.mousey {
-    width: 3px;
-    padding: 10px 15px;
-    height: 35px;
-    border: 2px solid #fff;
-    border-radius: 25px;
-    opacity: 0.75;
-    box-sizing: content-box;
-}
-.scroller {
-    width: 3px;
-    height: 10px;
-    border-radius: 25%;
-    background-color: #fff;
-    animation-name: scroll;
-    animation-duration: 2.2s;
-    animation-timing-function: cubic-bezier(.15,.41,.69,.94);
-    animation-iteration-count: infinite;
-}
-
-.scroll-downs-text {
-    position: absolute;
-    right: 0;
-    bottom: 3vh;
-    left: 0;
-    margin: auto;
-}

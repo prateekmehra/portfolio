@@ -33,7 +33,7 @@ ANIMATED BUTTON
   color: #B3B3B3;
 }
 .animated-nav-button a .text:hover{
-    color: #FFF;
+    color: #444;
     transition: -webkit-transform 0.5s cubic-bezier(0.2, 0, 0, 1) 0.2s;
     cursor: pointer;
 }
@@ -100,7 +100,7 @@ ANIMATED BUTTON
 }
 
 .animated-nav-button a.nav-.active-nav .text{
-  color:  #FFFFFF;
+  color:  #000;
   /* -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   transition: -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;

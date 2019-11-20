@@ -36,16 +36,19 @@ MEDIA TAGS
     }
 }
 
-@media only screen and (max-width: 1440px) and (max-height: 1024px) and  (orientation:landscape){
-    .page-content .scrollto {
-        /* height: 200px; */
-        /* padding-top: 0; */
+
+@media only screen and  (min-width: 1681px) and  (orientation:landscape){
+    .page-content .compressed-centered60 {
+        width: 1008px;
     }
 
-    .page-content .center-padded {
-        margin: 0px;
-        padding: 50px 100px 50px 100px;
+    .panel .column-right {
+        left: -140px;
     }
+}
+
+
+@media only screen and (max-width: 1440px) and (max-height: 1024px) and  (orientation:landscape){
 
     .page-content .compressed-centered20 {
         width: 40%;
@@ -56,52 +59,58 @@ MEDIA TAGS
     }
 
     .page-content .compressed-centered60 {
-        width: 70%;
-        font-size: 1rem;
+        width: 1008px;
     }
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 1024px) and  (orientation:landscape){
+    .panel .column-right {
+        left: 20px;
+    }
+
+    .page-title {
+        font-size: 56px;
+    }
+
+    .head-title {
+        font-size: 56px;
+    }
+
+    .sub-title {
+        font-size: 21px;
+    }
+
+    .box-text{
+        width: 254px;
+        font-size: 21px;
+        letter-spacing: -1px;
+    }
+
 }
 
 @media only screen and (max-width: 1440px) and (min-width: 1024px) and (orientation:portrait){
         /* styles for browsers larger than 1440px; */
-    .h-line.above {
-        width: 75vw;
-        margin-top: 17vh;
+
+    .page-title {
+        font-size: 36px;
     }
 
-    .h-line.below {
-        margin-top: 83vh;
-        width: 75vw;
+    .head-title {
+        font-size: 36px;
     }
 
-    .v-line.right {
-        height: 100vh;
-        margin-left: 86vw;
+    .sub-title {
+        font-size: 24px;
     }
 
-    .v-line.left {
-        margin-left: 14vw;
-        height: 100vh;
-    }
-
-/*     #intro-text, #intro-text-back {
-        padding: 300px 25px 300px 25px;
-    }
-
-    #intro-text-back {
-        font-size: 25px;
-    } */
-    
-    .page-content .compressed-centered20 {
-        width: 40%;
-    }
-
-    .page-content .compressed-centered40 {
-        width: 50%;
+    .box-text{
+        width: 254px;
+        font-size: 24px;
+        letter-spacing: -1px;
     }
 
     .page-content .compressed-centered60 {
-        width: 60%;
-        font-size: 1rem;
+        width: 1008px;
     }
 
     .postimgm {
@@ -112,66 +121,29 @@ MEDIA TAGS
         display: none;
     }
 
-    /* #intro-text, #intro-text-back {
-        margin-top: -2vh;
-    } */
-
-    .page-content .center-padded {
-        margin: 0px;
-        padding: 50px 0px 50px 0px;
-    }
-
-    }
+}
 
 /* different techniques for iPad screening */
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape){
 
-    .h-line.above {
-        width: 75vw;
-        margin-top: 17vh;
+     .page-title {
+        font-size: 36px;
     }
 
-    .h-line.below {
-        margin-top: 83vh;
-        width: 75vw;
+    .head-title {
+        font-size: 36px;
     }
 
-    .v-line.right {
-        height: 100vh;
-        margin-left: 86vw;
+    .sub-title {
+        font-size: 24px;
     }
 
-    .v-line.left {
-        margin-left: 14vw;
-        height: 100vh;
+    .box-text{
+        width: 254px;
+        font-size: 24px;
+        letter-spacing: -1px;
     }
-
-    #menuToggle span {
-        width: 25px;
-        height: 1.5px;
-    }
-
-    #menu {
-        margin-left: -5vw;
-    }
-
-    #menu li:hover {
-        font-size: 30px;
-    }
-
-    .page-content .scrollto {
-        height: 10px;
-        padding-top: 0;
-    }
-
-   /*  #intro-text, #intro-text-back {
-        padding: 300px 25px 300px 25px;
-    }
-
-    #intro-text-back {
-        font-size: 25px;
-    } */
 
     .postimgm {
         display: none;
@@ -181,54 +153,19 @@ MEDIA TAGS
         display: block;
     }
 
-   /*  .page-content .banner-split {
-    display: block;
-    width: 100%;
-    } */
-
-    /* .page-content .half {
-        width: 100%;
-    } */
-
-    .page-content .compressed-centered20 {
-        width: 60%;
-    }
-
-    .page-content .compressed-centered40 {
-        width: 65%;
-    }
-
     .page-content .compressed-centered60 {
-        width: 70%;
-        font-size: 1rem;
+        width: 100%;
+        font-size: 14px;
     }
 
     .page-content .center-padded {
         padding: 50px 50px 50px 50px;
     }
 
-    .page-content .mini-title {
-        font-size: 1.2rem;
+    .page-content .page-title{
+        font-size: 40px;
     }
 
-    /* .page-content .tile-wide img {
-        height: 161px;
-    } */
-
-    .page-content .center-padded-little {
-        padding: 20px 20px 20px 20px;
-    }
-
-    .page-content .tile .tags, .page-content .tile-wide .tags {
-        font-size: 0.7rem;
-    }
-
-    #go-back {
-        right: 1.45rem;
-        bottom: 4%;
-        height: 2rem;
-        width: 2rem;
-    }
 
     #menuToggle{
         right: 1.45rem;
@@ -237,6 +174,7 @@ MEDIA TAGS
     #navigator {
         right: 1.45rem;
     }
+
 }
 
 
@@ -244,60 +182,33 @@ MEDIA TAGS
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait){
 
-    body{
-        font-size: 2rem;
+    .page-title {
+        font-size: 36px;
     }
 
-    .h-line.above {
-        width: 75vw;
-        margin-top: 17vh;
+    .head-title {
+        font-size: 36px;
     }
 
-    .h-line.below {
-        margin-top: 83vh;
-        width: 75vw;
+    .sub-title {
+        font-size: 18px;
     }
 
-    .v-line.right {
-        height: 100vh;
-        margin-left: 86vw;
-    }
-
-    .v-line.left {
-        margin-left: 14vw;
-        height: 100vh;
-    }
-
-    #menuToggle span {
-        width: 25px;
-        height: 2px;
+    .box-text{
+        width: 254px;
+        font-size: 18px;
+        letter-spacing: -1px;
     }
 
     #menu {
         margin-left: -5vw;
-        margin-top: 50vh;
+        margin-top: 41vh;
     }
 
     #menu li:hover {
         font-size: 30px;
     }
 
-    .page-content .scrollto {
-        height: 10px;
-        padding-top: 0;
-    }
-
-   /*  #intro-text, #intro-text-back {
-        padding: 300px 25px 300px 25px;
-    }
-
-    #intro-text-back {
-        font-size: 25px;
-    } */
-
-    .vertical-text.intro-out-text {
-        font-size: 1.2rem;
-    }
 
     .postimgm {
         display: block;
@@ -307,66 +218,10 @@ MEDIA TAGS
         display: none;
     }
 
-    .page-content .banner-split {
-    display: block;
-    width: 100%;
-}
-
-    .page-content .half {
-        width: 100%;
-    }
-
-    .page-content .compressed-centered20 {
-        width: 60%;
-    }
-
-    .page-content .compressed-centered40 {
-        width: 80%;
-    }
 
     .page-content .compressed-centered60 {
         width: 90%;
-        font-size: 1rem;
-    }
-
-    .page-content .mini-title {
-        font-size: 2rem;
-    }
-
-    /* .page-content .tile-wide img {
-        height: 161px;
-    } */
-    .page-content .center-padded.mini-title{
-        padding: 50px 0px 50px 0px;
-        font-size: 1rem;
-    }
-
-    .page-content .overview-right{
-        padding: 0;
-        padding-top: 50px;
-    }
-
-    .page-content .category, .title {
-        font-size: 1.5rem;
-    }
-
-    .page-content .center-padded-little {
-        padding: 20px 20px 20px 20px;
-    }
-
-    .page-content .large-title {
-        font-size: 2.5rem;
-    }
-
-    .page-content .tile .tags, .page-content .tile-wide .tags {
-        font-size: 0.7rem;
-    }
-
-    #go-back {
-        right: 1.45rem;
-        bottom: 4%;
-        height: 2rem;
-        width: 2rem;
+        margin-left: 0px;
     }
 
     #menuToggle{
@@ -376,10 +231,16 @@ MEDIA TAGS
     #navigator {
         right: 1.45rem;
     }
+
+    #portfolio-holder {
+        padding-left: 0px;
+        left: -50px;
+    }
 }
 
 
 @media only screen and  (max-width: 480px) {
+
     .navLink:link .navTag, .navLink:link .navTag {
        max-width: 0;
        padding: 0;
@@ -394,8 +255,13 @@ MEDIA TAGS
         display: none !important;
     }
 
+    #horizontal-menu-left {
+        display: none !important;
+    }
+
     #menuToggle {
         display: block !important;
+        right: 1.45rem;
     }
 
     .navLink {
@@ -403,97 +269,8 @@ MEDIA TAGS
         width: 40px;
     }
 
-
-
-    /* #logo, .number, .number2, .toolIcon {
-        display : none;
-    }
-
-    #main, #topMenu, .menuBlock {
-        width : 80%;
-    }
-
-    .gallery img {
-        margin-bottom : 10px;
-    }
-
-    .double img {
-        width : calc(50% - 5px);
-    } */
-
-    .loading-logo-holder {
-        width: 40px;
-        margin-left: 46vw;
-    }
-
-    #loading-ripple {
-        height: 50vw;
-        width: 50vw;
-        margin-top: 12vh;
-        margin-left: 50%;
-    }
-
-    .site-logo-background {
-        width: 20px;
-        height: 20px;
-        margin-top: 40px;
-        margin-left: 20px;
-    }
-
-    .site-logo {
-        width: 20px;
-        margin-top: -2px;
-        margin-left: 0px;
-    }
-
     .intro-box-dimensions {
         width: 100%;
-    }
-
-    .site-intro-out {
-        right: 45vw;
-        bottom: 4%;
-        height: 2rem;
-        width: 2rem;
-    }
-
-    .intro-out-box {
-        display: none;
-    }
-
-    /* #menuToggle span {
-        width: 25px;
-        height: 1.5px;
-    } */
-
-    #menu {
-        margin-left: -10vw;
-        /* margin-top: 100vh; */
-    }
-
-    #menu li {
-        font-size: 20px;
-    }
-
-    #menu li:hover {
-        font-size: 40px;
-    }
-
-    #music-control {
-        display: none;
-    }
-
-    .page-content .scrollto {   
-        height: 10px;
-        padding-top: 0;
-    }
-
-   /*  #intro-text-back {
-        padding: 103px 25px 324px 25px;
-    } */
-
-    #ux {
-        font-size: 25px;
     }
 
     .postimgm {
@@ -504,137 +281,175 @@ MEDIA TAGS
         display: none;
     }
 
-    .page-content .banner-split {
-    display: block;
-    width: 100%;
-    }
-
-    .page-content .half {
-        width: 100%;
-    }
-
-    .page-content .aboutme {
-        margin-top: 0vh;
-        margin-bottom: 14vh;
-    }
-
-    .page-content .compressed-centered20 {
-        width: 60%;
-    }
-
-    .page-content .compressed-centered40 {
-        width: 80%;
-    }
-
-    .page-content .compressed-centered60 {
-        width: 100%;
-        font-size: 0rem;
-    }
-
-    .page-content .mini-title {
-        font-size: 1.2rem;
-    }
-
-    .page-content .center-padded.mini-title{
-        padding: 50px 0px 50px 0px;
-        font-size: 1rem;
-    }
-
-    .page-content .overview-right{
-        padding: 0;
-        padding-top: 50px;
-    }
-
-    .page-content .category, .title {
-    font-size: 1.5rem;
-    }
-
-    /* .page-content .tile-wide img {
-        height: 161px;
-    } */
-
-    .page-content .center-padded-little {
-        padding: 20px 20px 20px 20px;
-    }
-
-    .page-content .tile .tags, .page-content .tile-wide .tags {
-        font-size: 0.7rem;
-    }
-
-    #go-back {
-        right: 1.45rem;
-        bottom: 4%;
-        height: 2rem;
-        width: 2rem;
-    }
-
-    #menuToggle{
-        right: 1.45rem;
-    }
-
-    .page-content .center-padded {
-        padding: 50px 50px 50px 50px;
-    }
-
     .site-footer nav ul li {
         
         padding : 0px 7vw;
     }
+
     .site-footer .overview {
         font-size: 18px;
     }
+
+    .tile-wide {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .head-title {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+    }
+
+    .box-text{
+        width: 264px;
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+
+    .page-content {
+        height: 500vh;
+    }
+
+
 }
 
 @media only screen and (width: 768px) {
    /* default iPad screens */
-  /*  #intro-text, #intro-text-back {
-        margin-top: -2vh;
-    }
-
-    #intro-text-back {
-    padding: 200px 25px 400px 25px;
-} */
-
-    .vertical-text.intro-out-text {
-        font-size: 1rem;
-    }   
-    
-    .page-content .compressed-centered20 {
-        width: 40%;
-    }
-
-    .page-content .compressed-centered40 {
-        width: 50%;
-    }
 
     .page-content .compressed-centered60 {
-        width: 60%;
-        font-size: 1rem;
+        width: 70%;
     }
 
-    .page-content .scrollto {
-        height: 20px;
-        padding-top: 0;
-    }
-
-    .page-content .center-padded {
-        margin: 0px;
-        padding: 50px 0px 50px 0px;
+    #portfolio {
+        left: 285px;
     }
 }
 
 @media only screen and  (max-width: 385px) {
     .flip-container{
-        width: 80%;
+        width: 90%;
+    }
     }
 
-    .ripple{
-        width: 80%;
-        height: 333.08px;
-        bottom: 12vh;
+@media screen and (max-width: 750px) {
+    .column-left {
+        width: 100%;
     }
 
-    #music-control {
-        display: none;
+    .column-right {
+        width: 100%;
+        height: 10vh;
+        margin-top: 100px;
+        
     }
+
+    .panel .column-right {
+        padding: 60px;
     }
+
+    .control {
+        position: absolute;
+        margin-left: 65px;
+        width: 24px;
+        height: 24px;
+        bottom: 0px;
+    }
+
+    .page-content .compressed-centered60 {
+        width: 100%;
+        padding: 0;
+        padding-top: 20px;
+    }
+
+    .panel .page-title {
+        font-size: 32px;
+    }
+
+    .panel .box-text{
+        width: 264px;
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+
+    .panel .column-right p, .panel .column-right div {
+        margin:  auto;
+        width: 264px;
+    }
+
+    #intro-holder {
+        top: 10vh !important;
+        transform:  none !important;
+    }
+
+    #portfolio {
+        top: calc(10vh + 192px);
+        left: 50%;
+        transform: scale(0.7) translateX(-50%);
+        transform-origin: left;
+    }
+
+    #intro-holder p {
+        margin:  auto;
+        text-align: center;
+    }
+
+    #horizontal-menu{
+        right: 1.45rem;
+    }
+
+    #horizontal-menu-left {
+        left: 1.45rem;
+    }
+
+    #horizontal-menu {
+        display: none !important;
+    }
+
+    #menuToggle {
+        display: block !important;
+        right: 1.45rem;
+    }
+
+}
+
+@media screen and (max-width: 750px) and (max-height: 820px) {
+
+    #portfolio {
+        top: calc(10vh + 150px);
+        left: 50% ;
+        transform: scale(0.7) translateX(-50%) ;
+        transform-origin: left;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .head-title {
+        font-size: 32px;
+    }
+
+    .sub-title {
+        font-size: 14px;
+    }
+
+    .box-text{
+        width: 264px;
+        font-size: 14px;
+        letter-spacing: -1px;
+    }
+}
+
+@media screen and (max-width: 750px) and (max-height: 750px){
+    .panel .column-right {
+        margin-top: -10px;
+    }
+}
+

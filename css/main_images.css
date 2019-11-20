@@ -1,55 +1,8 @@
-.img-front {
-	width: 386px !important;
-	height: 425px;
-	background-size: 386px 425px;
-	background-repeat: no-repeat;
-	background-image : url("/images/home/intro-front1.png");
-	background-position: center;
-}
-
-.img-back {
-	width: 386px;
-	height: 425px;
-	background-size: 386px 425px;
-	background-repeat: no-repeat;
-	background-image : url("/images/home/intro-back1.png");
-	background-position: center;
-}
-
-
-.ctrg-text {
-    position: absolute;
-    left: 380px;
-    top: 0px;
-    width: 486px;
-    height: 290px;
-    background-size: 486px 290px;
-    background-repeat: no-repeat;
-    content : url("/images/ctrg/home/ctrg-text.png");
-    background-position: center;
-    display: none;
-}
-
 /* Before Scroll */
 .project_canvas.before-scroll.item-1 {
     top: -30px;
     left: 20px;
 }
-
-@media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-1 {
-        top:-111px;
-        left: 20px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .project_canvas.before-scroll.item-1 {
-        top:87px;
-        left: 20px;
-    }
-}
-
 
 .project_canvas.before-scroll.item-2 {
     top: -68px;
@@ -57,194 +10,56 @@
 
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-2 {
-        top:-302px;
-        left: 60px;
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.before-scroll.item-2 {
-        top:-341px;
-        left: 60px;
-    }
-} */
-
 .project_canvas.before-scroll.item-3 {
     top: 0px;
     left: 581px;
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-3 {
-        top:81px;
-        left: 454px;
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.before-scroll.item-3 {
-        top:57px;
-        left: 437px;
-    }
-} */
 
 .project_canvas.before-scroll.item-4 {
     top: 136px;
     left: 620px;
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-4 {
-        top:13px;
-        left: -7px;
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.before-scroll.item-4 {
-        top:-20px;
-        left: -34px;
-    }
-} */
-
 .project_canvas.before-scroll.item-5 {
     top: -250px;
     left: 620px
 }
-
-/* @media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-5 {
-        top:-178px;
-        left: -7px;
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.before-scroll.item-5 {
-        top:-178px;
-        left: -34px;
-    }
-} */
 
 .project_canvas.before-scroll.item-6 {
     top: -30px;
     left: 1260px;
 }
 
-/* @media only screen and (max-width: 1024px) {
-    .project_canvas.before-scroll.item-6 {
-        top: -111px;
-        left: 1005px
-    }
+.project_canvas.before-scroll.item-7 {
+    left: 110px;
+    top: 381px;
+    z-index: -1;
 }
-
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.before-scroll.item-6 {
-        top: 87px;
-        
-    }
-} */
 
 
 /* After Scroll */
-.project_canvas.after-scroll.item-1 {
+.project_canvas.after-scroll {
     top: 0px;
     left: 0
 }
 
 @media only screen and (max-width: 1024px) {
-    .project_canvas.after-scroll.item-1 {
+    .project_canvas.after-scroll {
         top:0px;
         left: 0
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .project_canvas.after-scroll.item-1 {
+@media only screen and (max-width: 750px) {
+    .project_canvas.after-scroll {
         top:0px;
         left: 0
     }
 }
 
 
-.project_canvas.after-scroll.item-2 {
-    top: 0px;
-    left: 0
-}
 
-@media only screen and (max-width: 1024px) {
-    .project_canvas.after-scroll.item-2 {
-        top:0px;
-        left: 0
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.after-scroll.item-2 {
-        top:0px;
-        left: 0
-    }
-}
-
-.project_canvas.after-scroll.item-3 {
-    top: 0px;
-    left: 0px
-}
-
-@media only screen and (max-width: 1024px) {
-    .project_canvas.after-scroll.item-3 {
-        top:0px;
-        left: 0px
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.after-scroll.item-3 {
-        top:0px;
-        left: 0px
-    }
-}
-
-.project_canvas.after-scroll.item-4 {
-    top: 0px;
-    left: 0px
-}
-
-@media only screen and (max-width: 1024px) {
-    .project_canvas.after-scroll.item-4 {
-        top:0px;
-        left: 0px
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .project_canvas.after-scroll.item-4 {
-        top:0px;
-        left: 0px
-    }
-}
-
-.project_canvas.after-scroll.item-5 {
-    top: 0px;
-    left: 0px
-}
-
-
-
-.project_canvas.after-scroll.item-6 {
-    top: 0px;
-    left: 0px
-}
-
-@media only screen and (max-width: 1024px) {
-    .project_canvas.after-scroll.item-6 {
-        top: 0px;
-        left: 0px
-    }
-}
 
 
 
@@ -254,18 +69,38 @@
 }
 
 @media only screen and (max-width: 1024px) {
-    .screen {
+    .screen.after-scroll {
         top:13px !important;
         left: 15px !important;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .screen {
+@media only screen and (max-width: 750px) {
+    .screen.after-scroll {
         top:12px !important;
         left: 12px !important;
     }
 }
+
+.ipad .screen {
+    top: 17px !important;
+    left: 22px !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .ipad .screen.after-scroll {
+        top: 22px !important;
+        left: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .ipad .screen.after-scroll {
+        top: 13px !important;
+        left: 13px !important;
+    }
+}
+
 
 
 
@@ -279,13 +114,13 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-     .hardware-phone {
+     .hardware-phone.after-scroll {
         background-image:url("/images/ctrg/preview/hardware/hero_vert_large_2x.png")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-     .hardware-phone {
+     .hardware-phone.after-scroll {
         width:272px;
         height: 460px;
         background-size: 272px 460px;
@@ -295,13 +130,13 @@
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-     .hardware-phone {
+     .hardware-phone.after-scroll {
         background-image:url("/images/ctrg/preview/hardware/hero_vert_medium_2x.png")
     }
 }
 
-@media only screen and (max-width: 768px) {
-     .hardware-phone {
+@media only screen and (max-width: 750px) {
+     .hardware-phone.after-scroll {
         width:248px;
         height: 420px;
         background-size: 248px 420px;
@@ -310,8 +145,8 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-     .hardware-phone {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+     .hardware-phone.after-scroll {
         background-image:url("/images/ctrg/preview/hardware/hero_vert_small_2x.png")
     }
 }
@@ -329,13 +164,13 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .hardware-ipad {
+    .hardware-ipad.after-scroll {
         background-image:url("/images/home/hardware/hardware_ipad_large_2x.png")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .hardware-ipad {
+    .hardware-ipad.after-scroll {
         top: 0px !important;
         left: 0px !important;
         width:678px;
@@ -347,13 +182,13 @@
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .hardware-ipad {
+    .hardware-ipad.after-scroll {
         background-image:url("/images/home/hardware/hardware_ipad_medium_2x.png")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .hardware-ipad {
+@media only screen and (max-width: 750px) {
+    .hardware-ipad.after-scroll {
         width:368px;
         height: 294px;
         background-size: 368px 294px;
@@ -362,8 +197,8 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .hardware-ipad {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .hardware-ipad.after-scroll {
         background-image:url("/images/home/hardware/hardware_ipad_small_2x.png")
     }
 }
@@ -379,13 +214,13 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-1 .screen {
+    .item-1 .screen.after-scroll {
         background-image:url("/images/home/posts/ctrg/discover_1_large_2x.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-1 .screen {
+    .item-1 .screen.after-scroll {
         width:170px;
         height: 368px;
         background-size: 170px 368px;
@@ -395,13 +230,13 @@
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-1 .screen {
+    .item-1 .screen.after-scroll {
         background-image:url("/images/home/posts/ctrg/discover_1_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-1 .screen {
+@media only screen and (max-width: 750px) {
+    .item-1 .screen.after-scroll {
         width:156px;
         height: 338px;
         background-size: 156px 338px;
@@ -410,57 +245,12 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-1 .screen {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-1 .screen.after-scroll {
         background-image:url("/images/home/posts/ctrg/discover_1_small_2x.jpg")
     }
 }
 
-.item-2 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/ctrg/preview/screen/recycle_3_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-2 .screen {
-        background-image:url("/images/ctrg/preview/screen/recycle_3_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .item-2 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/recycle_3_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-2 .screen {
-        background-image:url("/images/ctrg/preview/screen/recycle_3_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .item-2 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/recycle_3_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-2 .screen {
-        background-image:url("/images/ctrg/preview/screen/recycle_3_small_2x.jpg")
-    }
-}
 
 .item-3 .screen {
     width: 262px;
@@ -471,13 +261,13 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-3 .screen {
+    .item-3 .screen.after-scroll {
         background-image:url("/images/home/posts/cbc/cbc-mobile_large_2x.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-3 .screen {
+    .item-3 .screen.after-scroll {
         width:170px;
         height: 368px;
         background-size: 170px 368px;
@@ -487,13 +277,13 @@
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-3 .screen {
+    .item-3 .screen.after-scroll {
         background-image:url("/images/home/posts/cbc/cbc-mobile_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-3 .screen {
+@media only screen and (max-width: 750px) {
+    .item-3 .screen.after-scroll {
         width:156px;
         height: 338px;
         background-size: 156px 338px;
@@ -502,147 +292,56 @@
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-3 .screen {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-3 .screen.after-scroll {
         background-image:url("/images/home/posts/cbc/cbc-mobile_small_2x.jpg")
     }
 }
 
-.item-4 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/ctrg/preview/screen/onboarding_1_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-4 .screen {
-        background-image:url("/images/ctrg/preview/screen/onboarding_1_large_2x.jpg")
-    }
-}
-
-/* @media only screen and (max-width: 1024px) {
-    .item-4 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/onboarding_1_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-4 .screen {
-        background-image:url("/images/ctrg/preview/screen/onboarding_1_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .item-4 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/onboarding_1_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-4 .screen {
-        background-image:url("/images/ctrg/preview/screen/onboarding_1_small_2x.jpg")
-    }
-} */
-
-/* .item-5 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/ctrg/preview/screen/search_4_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-5 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1024px) {
-    .item-5 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/search_4_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-5 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    .item-5 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/search_4_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-5 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_small_2x.jpg")
-    }
-} */
 
 .item-6 .screen {
     width: 262px;
     height: 568px;
     background-size: 262px 568px;
     background-repeat: no-repeat;
-    background-image: url("/images/ctrg/preview/screen/search_4_large.jpg")
+    background-image: url("/images/home/posts/go-class/go-class_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-6 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_large_2x.jpg")
+    .item-6 .screen.after-scroll {
+        background-image:url("/images/home/posts/go-class/go-class_large_2x.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-6 .screen {
+    .item-6 .screen.after-scroll {
         width:170px;
         height: 368px;
         background-size: 170px 368px;
         background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/search_4_medium.jpg")
+        background-image: url("/images/home/posts/go-class/go-class_medium.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-6 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_medium_2x.jpg")
+    .item-6 .screen.after-scroll {
+        background-image:url("/images/home/posts/go-class/go-class_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-6 .screen {
+@media only screen and (max-width: 750px) {
+    .item-6 .screen.after-scroll {
         width:156px;
         height: 338px;
         background-size: 156px 338px;
         background-repeat: no-repeat;
-        background-image: url("/images/ctrg/preview/screen/search_4_small.jpg")
+        background-image: url("/images/home/posts/go-class/go-class_small.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-6 .screen {
-        background-image:url("/images/ctrg/preview/screen/search_4_small_2x.jpg")
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-6 .screen.after-scroll {
+        background-image:url("/images/home/posts/go-class/go-class_small_2x.jpg")
     }
 }
 
@@ -658,14 +357,14 @@
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-2 .screen {
+    .item-2 .screen.after-scroll {
         
         background-image:url("/images/home/posts/cbc/cbc-ipad_large.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-2 .screen {
+    .item-2 .screen.after-scroll {
         width: 556px;
         height: 421px;
         background-size: 556px 421px;
@@ -675,20 +374,25 @@
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-2 .screen {
+    .item-2 .screen.after-scroll {
         background-image:url("/images/home/posts/cbc/cbc-ipad_large.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-2 .screen {
+@media only screen and (max-width: 750px) {
+    .item-2 .screen.after-scroll {
         background-repeat:no-repeat;
         background-image: url("/images/home/posts/cbc/cbc-ipad_large.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-2 .screen {
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-2 .screen.after-scroll {
+        top: 13px;
+        left: 13px;
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
         background-image:url("/images/home/posts/cbc/cbc-ipad_large.jpg")
     }
 }
@@ -698,46 +402,46 @@
     width: 862px;
     height: 647px;
     background-size: 862px 647px;
-/*     width: 609px;
-    height: 457px;
-    background-size: 609px 457px; */
     background-repeat: no-repeat;
-    background-image: url("/images/home/ipad_screen_eg.jpg")
+    background-image: url("/images/home/posts/vae/vae-ipad_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-4 .screen {
+    .item-4 .screen.after-scroll {
         
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+        background-image:url("/images/home/posts/vae/vae-ipad_large_2x.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-4 .screen {
+    .item-4 .screen.after-scroll {
         width: 556px;
         height: 421px;
         background-size: 556px 421px;
         background-repeat:no-repeat;
-        background-image: url("/images/home/ipad_screen_eg.jpg")
+        background-image: url("/images/home/posts/vae/vae-ipad_medium.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-4 .screen {
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+    .item-4 .screen.after-scroll {
+        background-image:url("/images/home/posts/vae/vae-ipad_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-4 .screen {
+@media only screen and (max-width: 750px) {
+    .item-4 .screen.after-scroll {
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
         background-repeat:no-repeat;
-        background-image: url("/images/home/ipad_screen_eg.jpg")
+        background-image: url("/images/home/posts/vae/vae-ipad_small.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-4 .screen {
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-4 .screen.after-scroll {
+        background-image:url("/images/home/posts/vae/vae-ipad_small_2x.jpg")
     }
 }
 
@@ -745,45 +449,93 @@
     width: 862px;
     height: 647px;
     background-size: 862px 647px;
-/*     width: 609px;
-    height: 457px;
-    background-size: 609px 457px; */
     background-repeat: no-repeat;
-    background-image: url("/images/home/ipad_screen_eg.jpg")
+    background-image: url("/images/home/posts/porter/porter-ipad_large.jpg")
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .item-5 .screen {
+    .item-5 .screen.after-scroll {
         
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+        background-image:url("/images/home/posts/porter/porter-ipad_large_2x.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) {
-    .item-5 .screen {
+    .item-5 .screen.after-scroll {
         width: 556px;
         height: 421px;
         background-size: 556px 421px;
         background-repeat:no-repeat;
-        background-image: url("/images/home/ipad_screen_eg.jpg")
+        background-image: url("/images/home/posts/porter/porter-ipad_medium.jpg")
     }
 }
 
 @media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
-    .item-5 .screen {
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+    .item-5 .screen.after-scroll {
+        background-image:url("/images/home/posts/porter/porter-ipad_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .item-5 .screen {
+@media only screen and (max-width: 750px) {
+    .item-5 .screen.after-scroll {
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
         background-repeat:no-repeat;
-        background-image: url("/images/home/ipad_screen_eg.jpg")
+        background-image: url("/images/home/posts/porter/porter-ipad_small.jpg")
     }
 }
 
-@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
-    .item-5 .screen {
-        background-image:url("/images/home/ipad_screen_eg.jpg")
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-5 .screen.after-scroll {
+        background-image:url("/images/home/posts/porter/porter-ipad_small_2x.jpg")
+    }
+}
+
+
+.item-7 .screen {
+    width: 862px;
+    height: 647px;
+    background-size: 862px 647px;
+    background-repeat: no-repeat;
+    background-image: url("/images/home/posts/navar/navar_large.jpg")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .item-7 .screen.after-scroll {
+        
+        background-image:url("/images/home/posts/navar/navar_large_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .item-7 .screen.after-scroll {
+        width: 556px;
+        height: 421px;
+        background-size: 556px 421px;
+        background-repeat:no-repeat;
+        background-image: url("/images/home/posts/navar/navar_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
+    .item-7 .screen.after-scroll {
+        background-image:url("/images/home/posts/navar/navar_medium_2x.jpg")
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .item-7 .screen.after-scroll {
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
+        background-repeat:no-repeat;
+        background-image: url("/images/home/posts/navar/navar_small.jpg")
+    }
+}
+
+@media only screen and (max-width: 750px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 750px) and (min-resolution: 1.5dppx), only screen and (max-width: 750px) and (min-resolution: 144dpi) {
+    .item-7 .screen.after-scroll {
+        background-image:url("/images/home/posts/navar/navar_small_2x.jpg")
     }
 }
