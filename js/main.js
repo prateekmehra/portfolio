@@ -177,7 +177,7 @@ function timeline(){
 			scene.addIndicators({parent: ".scrollContent"});
 		} 
 		else {
-			add indicators (requires plugin)
+			// add indicators (requires plugin)
 			scene.addIndicators();						
 		}
 }
