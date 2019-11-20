@@ -35,10 +35,10 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 
 	if($(window).scrollTop() == 0){
-		tl2.reverse().restart();
+		tl2.restart();
 	}
 
-	if($(window).scrollTop() >= prev){
+	if($(window).scrollTop() == prev){
 		tl2.progress(1).play();
 	}
 
