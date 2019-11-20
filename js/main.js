@@ -49,7 +49,7 @@ $(window).resize(function(){
 function timeline(){
 	var controller = new ScrollMagic.Controller();
 
-	tl1 = new TimelineMax({onReverseComplete: reverse_tl1});
+	tl1 = new TimelineMax();
 
 	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 503;
 	
@@ -78,7 +78,7 @@ function timeline(){
 		.addTo(controller);
 
 
-	tl2 = new TimelineMax({onReverseComplete: reverse_tl2});
+	tl2 = new TimelineMax();
 	var panel_halfway = window.innerWidth / 1680 > 1 ? 1 : window.innerWidth / 1680;
 	var panel_translate = (window.innerWidth - 1680) * 0.5;
 
@@ -138,11 +138,11 @@ function timeline(){
 		.addTo(controller);
 
 
-	tl3 = new TimelineMax({onReverseComplete: reverse_tl3});
+	tl3 = new TimelineMax();
 
 	tl3
 	.to('.panel', 1, {display: 'block', opacity: 1}, 0)
-	// .to('.project-intro', 1, {overflowY: 'scroll'}, 0);
+	.to('.project-intro', 1, {overflowY: 'scroll'}, 0);
 	
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: window.innerHeight/2 + 800})
 		.setTween(tl3)
@@ -150,17 +150,6 @@ function timeline(){
 		.addTo(controller);
 }
 
-function reverse_tl1(){
-	tl1.reverse();
-}
-
-function reverse_tl2(){
-	tl2.reverse();
-}
-
-function reverse_tl3(){
-	tl3.reverse();
-}
 	
 function musicMaker(e){	
 	document.getElementById('music').play();
