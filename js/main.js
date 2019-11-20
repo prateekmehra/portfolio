@@ -43,6 +43,14 @@ var prev = window.innerHeight/2 + 800;
 
 $(window).scroll(function(){
 
+	if($(window).scrollTop() == 0){
+		tl2.progress(0);
+	}
+
+	if($(window).scrollTop() >= prev){
+		tl2.progress(1);
+	}
+
 	if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
 		$('body').addClass('noscroll');
 	}
