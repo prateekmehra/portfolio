@@ -35,7 +35,7 @@ $(document).ready(function(){
 	$(window).scroll(function(){
 
 	if($(window).scrollTop() == 0){
-		tl2.play(0);
+		tl2.reverse().restart();
 	}
 
 	if($(window).scrollTop() >= prev){
