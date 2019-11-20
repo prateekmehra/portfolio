@@ -58,31 +58,29 @@ $(document).ready(function(){
 	$(".arrow").css({"color":"#000"});
 
 	$(window).scroll(function(){
+		// if($(window).scrollTop() == 0){
+		// 	tl2.reverse();
+		// }
 
-	if($(window).scrollTop() == 0){
-		tl2.restart();
-	}
+		// if($(window).scrollTop() == prev){
+		// 	tl2.progress(1).play();
+		// }
 
-	if($(window).scrollTop() == prev){
-		tl2.progress(1).play();
-	}
-
-	if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
-		$('body').addClass('noscroll');
-	}
-
-	if($(window).scrollTop() >= window.innerHeight/2 + 700){
-		$('.project-intro').scrollTop($(window).scrollTop() - prev);
-	}
-
-	$('.project-intro').scroll(function(){
-		if($('.project-intro').scrollTop() == 0){
-			$(window).scrollTop(prev + $('.project-intro').scrollTop())
-			$('body').removeClass('noscroll');
+		if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
+			$('body').addClass('noscroll');
 		}
-	})
-})
 
+		if($(window).scrollTop() >= window.innerHeight/2 + 700){
+			$('.project-intro').scrollTop($(window).scrollTop() - prev);
+		}
+
+		$('.project-intro').scroll(function(){
+			if($('.project-intro').scrollTop() == 0){
+				$(window).scrollTop(prev + $('.project-intro').scrollTop())
+				$('body').removeClass('noscroll');
+			}
+		})
+	})
 });
 
 
