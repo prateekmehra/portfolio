@@ -92,6 +92,8 @@ function timeline(){
 	.to('.item-7', 1, {top: '311px'}, 0)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
+	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
+	.to('.scroll-downs-text', 300, {opacity: 0, display: 'none'}, 0)
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
