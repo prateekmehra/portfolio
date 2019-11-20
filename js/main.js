@@ -49,10 +49,10 @@ $(document).ready(function(){
 
 	timeline();
 
-	var prev = window.innerHeight/2 + 700;
+	var prev = window.innerHeight/2 + 800;
 
 	$('.scroll-downs').on('click', function(){
-		$(window).scrollTop(window.innerHeight/2 + 700);
+		$(window).scrollTop(window.innerHeight/2 + 800);
 	});
 
 	$(".arrow").css({"color":"#000"});
@@ -62,7 +62,7 @@ $(document).ready(function(){
 			$('body').addClass('noscroll');
 		}
 
-		if($(window).scrollTop() >= window.innerHeight/2 + 700 && $('.project-intro').scrollTop() < 5 * window.innerHeight){
+		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * window.innerHeight){
 			$('.project-intro').scrollTop($(window).scrollTop() - prev);
 		}
 
@@ -74,6 +74,10 @@ $(document).ready(function(){
 		})
 	})
 });
+
+// $(window).resize(function(){
+// 	timeline();
+// });
 
 
 	
@@ -140,7 +144,7 @@ function timeline(){
 	.set('.panel', {display: 'block', opacity: 1}, 700)
 	.set('.project-intro', {overflowY: 'scroll'}, 700);
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 700, offset: window.innerHeight/2})
+	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 700, offset: window.innerHeight/2 + 100})
 		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
 		.addTo(controller);
