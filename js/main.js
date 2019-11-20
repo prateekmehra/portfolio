@@ -27,35 +27,26 @@ $(document).ready(function(){
 	timeline();
 
 	$('.scroll-downs').on('click', function(){
-		$(window).scrollTop(window.innerHeight/2 + 800);
+		$(window).scrollTop(window.innerHeight/2 + 700);
 	});
 
 	$(".arrow").css({"color":"#000"});
 
-});
-
-
-$(window).resize(function(){
-	timeline();
-});
-	
-var prev = window.innerHeight/2 + 800;
-
-$(window).scroll(function(){
+	$(window).scroll(function(){
 
 	if($(window).scrollTop() == 0){
-		tl2.progress(0);
+		tl2.play(0);
 	}
 
 	if($(window).scrollTop() >= prev){
-		tl2.progress(1);
+		tl2.progress(1).play();
 	}
 
 	if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
 		$('body').addClass('noscroll');
 	}
 
-	if($(window).scrollTop() >= window.innerHeight/2 + 800){
+	if($(window).scrollTop() >= window.innerHeight/2 + 700){
 		$('.project-intro').scrollTop($(window).scrollTop() - prev);
 	}
 
@@ -66,6 +57,17 @@ $(window).scroll(function(){
 		}
 	})
 })
+
+});
+
+
+$(window).resize(function(){
+	timeline();
+});
+	
+var prev = window.innerHeight/2 + 700;
+
+
 
 
 
@@ -114,25 +116,23 @@ function timeline(){
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
+
 	.to('#go-back', 1, {display: 'block'}, 300)
 
-	
+	.to('.item-1', 200, {left:"5vw"}, 400)
+	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 400)
+	.to('.item-3', 200, {top: "100vh", left:"5vw", display: 'none'}, 400)
+	.to('.item-4', 200, {top: "200vh", left:"5vw"}, 400)
+	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 400)
+	.to('.item-6', 200, {top: "400vh", left:"5vw"}, 400)
+	.to('.item-7', 200, {top: "500vh", left:"5vw"}, 400)
+	.to('.project_canvas', 1, {className: "-=before-scroll", opacity: 0}, 400)
+	.to('.project_canvas', 1, {className:"+=after-scroll"}, 400)
+	.to('.screen', 1, {className:"+=after-scroll"}, 400)
+	.to('.hardware', 1, {className:"+=after-scroll"}, 400)
+	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 400)
+	.to('.panel-1', 200, {transformOrigin: 'center', transform: 'scale(1)'}, 400)
 
-	.to('.item-1', 200, {left:"5vw"}, 300)
-	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 300)
-	.to('.item-3', 200, {top: "100vh", left:"5vw", display: 'none'}, 300)
-	.to('.item-4', 200, {top: "200vh", left:"5vw"}, 300)
-	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 300)
-	.to('.item-6', 200, {top: "400vh", left:"5vw"}, 300)
-	.to('.item-7', 200, {top: "500vh", left:"5vw"}, 300)
-
-	.to('.project_canvas', 1, {className: "-=before-scroll", opacity: 0}, 300)
-	
-	.to('.project_canvas', 1, {className:"+=after-scroll"}, 300)
-	.to('.screen', 1, {className:"+=after-scroll"}, 300)
-	.to('.hardware', 1, {className:"+=after-scroll"}, 300)
-	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 300)
-	.to('.panel-1', 200, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
 	.to('.project_canvas', 100, {
 		transformOrigin: 'left',
 		transform: 'scale(1.5)',
@@ -148,7 +148,7 @@ function timeline(){
 	.to('.device-container.ipad', 100, {
 		top: window.innerWidth < 1024 ? window.innerHeight <= 750 ? '60px' : '105px' : '35px',
 		left: window.innerWidth <= 485 ? '-30px' : window.innerWidth <= 750 ? '0px' : window.innerWidth < 1025 ? '-221px' : window.innerWidth < 1441 ? '-364px' : '-291px', 
-		transform: 'scale(0.6)'}, 500)
+		transform: 'scale(0.6)'}, 600)
 	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 500)
 	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 500)
 	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 500)
@@ -160,7 +160,7 @@ function timeline(){
 		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 500);
 	}
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 600, offset: window.innerHeight/2})
+	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 700, offset: window.innerHeight/2})
 		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
 		.addTo(controller);
@@ -172,7 +172,7 @@ function timeline(){
 	.to('.panel', 1, {display: 'block', opacity: 1}, 0)
 	.to('.project-intro', 1, {overflowY: 'scroll'}, 0);
 	
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: window.innerHeight/2 + 600})
+	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 1, offset: window.innerHeight/2 + 700})
 		.setTween(tl3)
 		// .addIndicators({name: "showtext"})
 		.addTo(controller);
