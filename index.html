@@ -2,39 +2,32 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<link rel="stylesheet" href="css/loading-overlay.css">
-		<script type="text/javascript" src="js/loader.js"></script>
-		<script type="text/javascript" src="js/lib/pace.min.js"></script>
-		<link rel="stylesheet" href="css/loading-pace.css">
-
 		<meta charset="utf-8">
 
-		<title>Prateek Mehra - Portfolio</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+		<title>Prateek Mehra Portfolio</title>
 		<meta name="description" content="2019 Portfolio Prateek Mehra">
 		<meta name="viewport" content="width=device-width">
-		
-		<link rel="stylesheet" href="css/about.css">
-		
-		<link rel="stylesheet" href="css/footer.css">
-		<link rel="stylesheet" href="css/navigator.css">
+		<link rel="canonical" href="https://prateekmehra.github.io/">
 		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/animations/logo.css">
+
+		<link rel="stylesheet" href="./css/main.css">
+		<link rel="stylesheet" href="css/main_images.css">
+
+		<link rel="stylesheet" href="css/footer.css">
+		<link rel="stylesheet" href="css/hamburger-index.css">
+		<link rel="stylesheet" href="css/site-intro-new.css">
 		<link rel="stylesheet" href="css/animations/owlcarousel/animate.css">
-		<link rel="stylesheet" href="css/hamburger.css">
-		
 		<link rel="stylesheet" href="css/go-back.css">
 
-		<link rel="stylesheet" href="css/site-intro.css">
-		<link rel="stylesheet" href="css/animated-button.css">
-		<link rel="stylesheet" href="css/flip-cards.css">
-		<link rel="stylesheet" href="css/media-tags-index.css">
-		<link rel="stylesheet" href="css/animations/loading-ripple.css">
-
 		
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-		<link rel="canonical" href="https://prateekmehra.github.io">
+		<link rel="stylesheet" href="css/animated-button-new.css">
+		<!-- <link rel="stylesheet" href="css/animated-button.css"> -->
+
+		<link rel="stylesheet" href="css/media-tags-index.css">
+
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
@@ -46,130 +39,36 @@
 		  gtag('config', 'UA-111513297-1');
 		</script>
 
-
-
-
-		
-		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
-		<script type="text/javascript" src="js/main_old.js"></script>
-		<script type="text/javascript" src="js/lib/jqueryEasing.js"></script>
-		<script src="js/lib/jquery.hover3d.min.js"></script>
-		
-		<script type="text/javascript" src="js/hamburger.js"></script>
-		<script type="text/javascript" src="js/navigator.js"></script>
-		<script type="text/javascript" src="js/index-scroll.js"></script>
-		<script type="text/javascript" src="js/background.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>	
+		<script src="js/animation.gsap.js"></script>	
+		<script src="js/lib/iscroll.js"></script>
+		<script type="text/javascript" src="js/loader.js"></script>
+		<script type="text/javascript" src="js/lib/pace.min.js"></script>
+		<link rel="stylesheet" href="css/loading-pace.css">	
+		<script src="js/lib/iscroll-probe.js"></script>	
+		<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+
+
+		<script type="text/javascript" src="js/hamburger-index.js"></script>
 		<script type="text/javascript" src="js/footer.js"></script>
-		<script type="text/javascript" src="js/flip-cards.js"></script>
 		<script type="text/javascript" src="js/site-nav.js"></script>
-		
-</head>
-<body id="palette">
-	<div id="global-nav">
-		<script>
-			$("#global-nav").load("site-nav.html");
-		</script>
-	</div>
 
-
-	<!-- <div id="music-control" onclick="musicMaker(this)">
-		<img src="/images/home/equinot1.gif" id="no_music" style="width: 40px;height: 52px;position:absolute; cursor: pointer;">
-		<img src="/images/home/equi1.gif" id="yes_music" style="display:none;width: 40px;height: 52px;position:absolute; cursor: pointer;">
-	</div> -->
-
-	<div class="page-content" id="top">
-		<!-- <div id="line-animation-holder">
-			<div class="h-line above scroll-X"></div>
-			<div class="h-line scroll-XR line-hidden-x"></div>
-			<div class="h-line scroll-X line-hidden-x"></div>
-			<div class="h-line scroll-XR line-hidden-x"></div>
-			<div class="h-line scroll-X line-hidden-x"></div>
-			<div class="h-line scroll-XR line-hidden-x"></div>
-			<div class="h-line below scroll-XR"></div>
-			<div class="v-line left scroll-Y"></div>
-			<div class="v-line scroll-YR line-hidden-y"></div>
-			<div class="v-line scroll-Y line-hidden-y"></div>
-			<div class="v-line scroll-YR line-hidden-y"></div>
-			<div class="v-line scroll-Y line-hidden-y"></div>
-			<div class="v-line scroll-YR line-hidden-y"></div>
-			<div class="v-line right scroll-YR"></div>
-		</div> -->
-
-		<div class="loading-overlay" id="overlay">
-			<div class="loading-logo-holder">
-				<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet" id="loading-logo">
-					<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
-						<path d="M0 2486 l0 -2486 55 0 55 0 0 1204 0 1204 513 5 c514 5 579 9 769 48&#10;574 116 950 502 1019 1045 15 119 7 372 -15 470 -32 148 -75 249 -158 372&#10;-204 302 -512 497 -932 589 l-121 26 -592 4 -593 4 0 -2485z m1142 2359 c543&#10;-71 1000 -427 1134 -882 67 -229 32 -560 -86 -798 -125 -254 -353 -444 -662&#10;-553 -210 -74 -398 -92 -984 -92 l-434 0 0 1170 0 1170 459 0 c350 0 487 -4&#10;573 -15z" id="el_tCNPHL2vW7"/>
-						<g id="el_I42O7XnN7o_r0EGpbukH" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_I42O7XnN7o"/></g>
-						<g id="el_RhePzVXa68_D2MshhEiG" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_RhePzVXa68"/></g>
-						<g id="el_h7ndiCniAZ_uQ8qWl-yM" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_h7ndiCniAZ"/></g>
-						<g id="el_pQ7x17ayhW_LzF7Zydbg" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_pQ7x17ayhW"/></g>
-						<g id="el_MpJaHJnBWf_GuH8sCLyy" data-animator-group="true" data-animator-type="0"><path d="M2837 1758 c-19 -38 -51 -94 -155 -273 -66 -115 -194 -335 -242 -420&#10;-9 -16 -42 -73 -72 -125 -30 -52 -99 -171 -153 -265 -123 -214 -119 -207 -200&#10;-348 -37 -65 -71 -115 -76 -110 -4 4 -23 35 -42 68 -44 77 -155 271 -177 310&#10;-53 91 -250 433 -335 580 -203 350 -278 481 -303 525 -42 74 -46 80 -62 80&#10;-13 -1 -144 -219 -304 -504 -28 -51 -256 -446 -326 -566 -21 -36 -88 -152&#10;-149 -258 l-112 -193 3 -117 3 -117 121 210 c194 337 345 600 429 745 211 364&#10;271 469 297 517 16 29 33 55 37 57 4 3 14 -7 22 -22 8 -15 32 -58 55 -97 44&#10;-76 264 -458 297 -515 35 -63 249 -433 297 -515 25 -44 88 -153 140 -243 75&#10;-130 97 -162 114 -162 17 0 37 27 98 133 42 72 126 220 188 327 62 107 124&#10;215 138 240 14 25 71 124 127 220 93 159 144 248 211 367 62 108 157 269 164&#10;276 6 7 25 -21 118 -183 11 -19 61 -107 112 -195 51 -88 102 -176 113 -195 10&#10;-19 52 -91 92 -160 71 -123 171 -296 205 -355 61 -107 255 -443 264 -457 21&#10;-34 26 -17 26 88 0 114 6 96 -82 249 -204 354 -279 484 -326 565 -30 52 -82&#10;142 -115 200 -33 58 -68 119 -78 135 -24 42 -268 464 -288 500 -25 43 -53 44&#10;-74 3z" id="el_MpJaHJnBWf"/></g>
-					</g>
-				</svg>
-			</div>
-			<div id="loading-ripple"></div>
-		</div>
-		
-
-		<div class="site-intro">
-			<div id="intro-box">
-				<div class="tile-wide immersive transparent">
-					<div class="flip-container intro-box-dimensions" ontouchstart="this.classList.toggle('hover');" ontouchend="this.classList.toggle('hover');">
-						<div class="flipper">
-							<div class="front intro-box-dimensions">
-								<!-- <div> -->
-								<!-- <div class="tile" id=""> -->
-									<!-- <div class="intro-header">
-										<span id="ux"> Prateek Mehra</span>
-										<hr>
-										<div id="brand">UX Designer</div>
-									</div> -->
-
-									<img src="/images/home/intro-front.png" id="intro-text" />
-								<!-- </div> -->
-								<!-- </div> -->
-
-							</div>
-						    <div class="back intro-box-dimensions">
-						    	<img src="/images/home/intro-back.png" id="intro-text-back"/>
-								<!-- <div class="tile box-text compressed-centered20" id="intro-text-back">
-									<p><em>
-									I’m a passionate designer in the Pacific Northwest crafting delightful experiences centered in human needs.</em></p>
-									</p>
-									<br>
-									<hr>
-									<br>
-									<div id="brand">Prateek Mehra</div>
-								</div> -->
-							</div>
-					    </div>
-					</div>
-				</div>
-			</div>
-		
-
-			<div class="intro-out-all">
-				<div class="intro-out-box">
-					<div class="intro-out-scroll"></div>
-					<div class="vertical-text intro-out-text">PORTFOLIO</div>
-				</div>	
-
-				<div class="site-intro-out">
-					<a href="#portfolio">
-						<div class="arrow">
-							<svg viewBox="0 0 100 100" preserveAspectRatio="none">
-							<path d="M33 42 L50 58 L66 42" fill="none" stroke="currentColor" vector-effect="non-scaling-stroke"></path>
-							</svg>
-						</div>
-					</a>
-				</div>
-			</div>
+	</head>
+	
+	<body>
+		<div id="global-nav">
+			<script>
+				$("#global-nav").load("site-nav.html");
+			</script>
 		</div>
 
 
-	<div id="portfolio">
+		<div class="page-content" id="top">
 		<div id="go-back">
 			<a href="#top">
 				<div class="arrow">
@@ -180,245 +79,207 @@
 			</a>
 		</div>
 
-		<div id="navigator">
-		    <a id="nav1" class="navLink hi hello" href="#p1">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Recycle</div>
-		    </a>
-		    <a id="nav1" class="navLink hi" href="#p2">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Cascade Bicycle Club</div>
-		    </a>
-		    <a id="nav1" class="navLink hi" href="#p3">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Virtual Auto Expo</div>
-		    </a>
-		    <a id="nav2" class="navLink hi" href="#p4">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Go! Classroom</div>
-		    </a>
-		  </div>
-		  <div id="hidden-navigator">
-		    <a id="nav3" class="navLink hi" href="#p5">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Virtual Trail Room</div>
-		    </a>
-		    <!-- <a id="nav4" class="navLink hi" href="#p5">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">HighOnGraphs</div>
-		    </a>
-		    <a id="nav5" class="navLink hi" href="#p6">
-		        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-		        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-		        <div class="navTag bg sub">Chronos</div>
-		    </a> -->
+			<div class="site-intro scrollContainer" id="hey">
+				<div class="tile-wide immersive">
+					<div class="center-padded">
+						<div class="compressed-centered60 left-align focus-box">
+							<div class="row">
+								<div class="column-left vert-center relative left-align" id="intro-holder">
+									<p class="page-title">Prateek Mehra</p>
+									<p class="head-title">Experience Designer</p>
+									<br>
+									<p class="box-text">
+									I’m a designer with an insatiable desire to push the envelope — learn, improve and shape fluid experiences that spark joy.
+									</p>
+								</div>
+								<div class="column-right relative center-align" id="portfolio-holder"> 
+									<div id="portfolio" class="vert-center">
+										<section class="panel-1">
+											<div class="project-intro">
+												<div id="project-box">
+													<div class="intro-box-dimensions">
+														<a href="/ctrg">						
+															<div class="project_canvas item-1 phone"/>
+																<div class="device-container phone">
+																	<figure class="screen"></figure>
+																	<figure class="hardware hardware-phone"></figure>
+																</div>
+															</div>
+														</a>
+
+														<a href="/cascade-redesign">
+															<div class="project_canvas item-2 ipad"/>
+																<div class="device-container ipad">
+																	<figure class="screen"></figure>
+																	<figure class="hardware hardware-ipad"></figure>
+																</div>
+															</div>
+														</a>
+
+														<a href="/cascade-redesign">
+															<div class="project_canvas item-3 phone"/>
+																<div class="device-container phone">
+																	<figure class="screen"></figure>
+																	<figure class="hardware hardware-phone"></figure>
+																</div>
+															</div>
+														</a>
+
+														<a href="/virtual-auto-expo">
+															<div class="project_canvas item-4 ipad"/>
+																<div class="device-container ipad">
+																	<figure class="screen"></figure>
+																	<figure class="hardware hardware-ipad"></figure>
+																</div>
+															</div>
+														</a>
+
+
+														<div class="project_canvas item-5 ipad"/>
+															<div class="device-container ipad">
+																<figure class="screen"></figure>
+																<figure class="hardware hardware-ipad"></figure>
+															</div>
+														</div>
+
+														<a href="/go-classroom">
+															<div class="project_canvas item-6 phone"/>
+																<div class="device-container phone">
+																	<figure class="screen"></figure>
+																	<figure class="hardware hardware-phone"></figure>
+																</div>
+															</div>
+														</a>
+
+														<!-- <a href="/navar"> -->
+															<div class="project_canvas item-7 ipad"/>
+																<div class="device-container ipad">
+																	<figure class="screen"></figure>
+																</div>
+															</div>
+														<!-- </a> -->
+													</div>
+												</div>
+												<div class="row panel" id="item-1-row">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">Clothing The<br>Recycling Gap</div>
+														<br>
+													
+														<p class="sub-title left-align">User Experience Design</p>
+														<p class="sub-title left-align">Visual Design</p>
+														<p class="sub-title left-align">Interaction Design</p>
+														
+														<br>
+														<p class="box-text left-align">
+														How might we help residents of King County recycle clothes with ease and purspose?
+														</p>										
+													</div>
+												</div>
+												<div class="row panel">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">Cascade<br>Redesign</div>
+														<br>
+
+														<p class="sub-title left-align">Responsive Visual Design</p>
+
+														<br>
+														<p class="box-text left-align">
+														How might we help cascade bicycle club communicate their message effectively and attrach new members?
+														</p>										
+													</div>
+												</div>
+												<div class="row panel">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">Virtual Auto<br>Expo</div>
+														<br>
+
+														<p class="sub-title left-align">Info Viz Design</p>								
+														<p class="sub-title left-align">User Experience Design</p>
+
+														<br>
+														<p class="box-text left-align">
+														How might we help people compare automobiles visually?
+														</p>										
+													</div>
+												</div>
+												<div class="row panel">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">Porter</div>
+														<br>
+
+														<p class="sub-title left-align">User Research</p>
+														<p class="sub-title left-align">User Experience Design</p>
+														<p class="sub-title left-align">Visual Design</p>
+
+														<br>
+														<p class="box-text left-align">
+														How might we help Delta passengers transfers their bags effortlessly?
+														</p>										
+													</div>
+												</div>
+												<div class="row panel">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">Go! Classroom</div>
+														<br>
+
+														<p class="sub-title left-align">User Experience Design</p>
+														<p class="sub-title left-align">Lo-Fi Design</p>
+
+														<br>
+														<p class="box-text left-align">
+														How might we improve classroom management for the students and the administration at IIIT-Delhi?
+														</p>	
+														<br>
+														<p><b>YEAR 2014</b></p>					
+													</div>
+												</div>
+												<div class="row panel">
+													<div class="column-left"></div>	
+													<div class="column-right vert-center relative left-align">
+														<div class="page-title left-align box-constraint-437">NavAR<br>Glasses</div>
+														<br>
+
+														<p class="sub-title left-align">Video Prototyping</p>
+
+														<br>
+														<p class="box-text left-align">
+														How might we help people navigate so they don't have to take their eyes of the road?
+														</p>					
+													</div>
+												</div>
+												<!-- <div class="row"> -->
+													<footer class="site-footer">
+														</footer>
+												<!-- </div> -->
+											</div>	
+										</section>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+		
+				<div class="scroll-downs">
+					<div class="mousey">
+						<div class="scroller"></div>
+					</div>
+				</div>
+
+				<div class="scroll-downs-text">
+					<div class=".animated-button a .text" style="text-transform: uppercase; font-size: 12px; letter-spacing: 2px;">Portfolio</div>
+				</div>
+
+			</div>
+
 		</div>
-
-		<div class="index-grid">
-			<div id="visible-projects">
-				<div id="p1" class="scrollto"></div>
-				<a href="/ctrg">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/ctrg.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/ctrg-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/ctrg">
-										<span class="text">View Project</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<div id="p2" class="scrollto"></div>
-				<a href="/cascade-redesign">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/cbc.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/cbc-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/cascade-redesign">
-										<span class="text">View Project</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<div id="p3" class="scrollto"></div>
-				<a href="/virtual-auto-expo">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/vae.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/vae-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/virtual-auto-expo">
-										<span class="text">View Project</span>
-										<span class="line -right"></span>
-										<span class="line -top"></span>
-										<span class="line -left"></span>
-										<span class="line -bottom"></span>
-									</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<div id="p4" class="scrollto"></div>
-				<a href="/go-classroom">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/go.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/go-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/go-classroom">
-									    <span class="text">View Project</span>
-									    <span class="line -right"></span>
-									    <span class="line -top"></span>
-									    <span class="line -left"></span>
-									    <span class="line -bottom"></span>
-									</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
-			</div>
-
-			<div id="hidden-projects-button" onclick="showHiddenProjects(); $(this).hide();" >
-				<br>
-				<br>
-				<br>
-				<section class="title" style="margin-top:-20px; cursor: pointer; text-transform: capitalize;">
-					<a>
-						<p style="line-height: 1.5">Wanna Peek At More Past Work?</p>
-						<img src="/images/home/down-arrow.png" width="10px">
-					</a>
-				</section>
-				<br>
-				<br>
-				<br>
-			</div>
-			<div id="hidden-projects-loader" class="lds-ripple"><div></div><div></div></div>
-
-			<div id="hidden-projects">
-				<div id="p5" class="scrollto"></div>
-				<a href="/virtual-trial-room">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/vtr.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/vtr-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/virtual-trial-room">
-									    <span class="text">View Project</span>
-									    <span class="line -right"></span>
-									    <span class="line -top"></span>
-									    <span class="line -left"></span>
-									    <span class="line -bottom"></span>
-								  	</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
-
-				<!-- <div id="p5" class="scrollto"></div>
-				<a href="/high-on-graphs">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/hog.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/hog-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/high-on-graphs">
-									    <span class="text">View Project</span>
-									    <span class="line -right"></span>
-									    <span class="line -top"></span>
-									    <span class="line -left"></span>
-									    <span class="line -bottom"></span>
-									</a>
-								</section>
-							</div>
-						</div>
-					</div>
-				</a>
- -->
-				<!-- <div id="p6" class="scrollto"></div>
-				<a href="/chronos">
-					<div class="tile-wide immersive transparent center-padded-little">	
-						<div class="compressed-centered60">
-							<div class="project">
-								<div class="project__card">
-									<img src="/images/home/posts/chronos.png" class="postimg" style="height:100%; object-fit: contain;">
-									<img src="/images/home/posts/chronos-m.png" class="postimgm" style="height:100%; object-fit: contain;">
-								</div>
-							</div>
-							<div class="post-button-holder">
-								<section class="animated-button">
-									<a href="/chronos">
-								    <span class="text">View Project</span>
-								    <span class="line -right"></span>
-								    <span class="line -top"></span>
-								    <span class="line -left"></span>
-								    <span class="line -bottom"></span>	
-								    </a>				
-								</section>
-							</div>
-						</div>
-					</div>
-				</a> -->
-			</div>
-		</div>
-		<footer class="site-footer"></footer>
-		<!-- </div> -->
-	</div>
-</div>
-</body>
+	</body>
 </html>

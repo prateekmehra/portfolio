@@ -21,8 +21,6 @@ SITE INTRO
     width: 100vw;
     height: 100vh;
     position: fixed;
-    touch-action: manipulation !important;
-    -webkit-touch-action:  manipulation !important;
 }
 
 .site-logo {
