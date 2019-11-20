@@ -174,12 +174,12 @@ function timeline(){
 			});
 
 			// add indicators to scrollcontent so they will be moved with it.
-			// scene.addIndicators({parent: ".scrollContent"});
+			scene.addIndicators({parent: ".scrollContent"});
 		} 
-		// else {
-		// 	add indicators (requires plugin)
-		// 	scene.addIndicators();						
-		// }
+		else {
+			add indicators (requires plugin)
+			scene.addIndicators();						
+		}
 }
 
 	
