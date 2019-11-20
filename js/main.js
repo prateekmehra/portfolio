@@ -3,7 +3,16 @@ var tl1, tl2, tl3;
 
 $(document).ready(function(){
 
-	
+	$('a[href^="#"]').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({scrollTop: $(hash).offset().top}, 900, 'easeInOutQuint');
+        } 
+    });
+
 	$('#project-box .intro-box-dimensions').hover(function(){	
 			$('.project_canvas.before-scroll').hover(function(){
 				if(!$('.project_canvas').hasClass("after-scroll")){
