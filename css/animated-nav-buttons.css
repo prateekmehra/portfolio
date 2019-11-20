@@ -22,7 +22,7 @@ ANIMATED BUTTON
 .animated-nav-button a .text {
   font-family: Cera Pro, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
+  font-weight: 500;
   text-transform: uppercase;    
   -webkit-transform: translate3d(0, 0.2em, 0);
           transform: translate3d(0, 0.2em, 0);
@@ -101,14 +101,15 @@ ANIMATED BUTTON
 
 .animated-nav-button a.nav-.active-nav .text{
   color:  #000;
-  /* -webkit-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   transition: -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
-  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s; */
+  transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   
 }
-/* .animated-nav-button a:hover:after,
+
+.animated-nav-button a:hover:after,
 .animated-nav-button a:active:after {
   -webkit-transform: scale3d(0, 1, 1);
           transform: scale3d(0, 1, 1);
@@ -120,8 +121,9 @@ ANIMATED BUTTON
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s;
   transition: transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s, right 0.2s cubic-bezier(1, 0, 0.65, 1.01), left 0s 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.65, 1.01) 0.17s;
   cursor: pointer;
-} */
-/* .animated-nav-button a:hover .line,
+}
+
+.animated-nav-button a:hover .line,
 .animated-nav-button a:active .line {
   -webkit-transform: scale3d(1, 1, 1);
           transform: scale3d(1, 1, 1);
@@ -136,4 +138,4 @@ ANIMATED BUTTON
   -webkit-transform-origin: left;
           transform-origin: left;
   cursor: pointer;
-} */
+}
