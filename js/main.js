@@ -1,16 +1,6 @@
 var firstClick = true;
 var tl1, tl2, tl3; 
 
-// $(document).load(function(){
-// 	// document.getElementById('music').volume = 0;
-
-// 	$(".project").hover3d({
-// 		selector: ".project__card",
-// 		perspective: 2500,
-// 		sensitivity: 30,
-// 	});
-// });
-
 $(document).ready(function(){
 
 	
@@ -36,6 +26,12 @@ $(document).ready(function(){
 
 	timeline();
 
+	$('.scroll-downs').on('click', function(){
+		$(window).scrollTop(window.innerHeight/2 + 800);
+	});
+
+	$(".arrow").css({"color":"#000"});
+
 });
 
 
@@ -43,6 +39,27 @@ $(window).resize(function(){
 	timeline();
 });
 	
+var prev = window.innerHeight/2 + 800;
+
+$(window).scroll(function(){
+
+	if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
+		$('body').addClass('noscroll');
+	}
+
+	if($(window).scrollTop() >= window.innerHeight/2 + 800){
+		$('.project-intro').scrollTop($(window).scrollTop() - prev);
+	}
+
+	$('.project-intro').scroll(function(){
+		if($('.project-intro').scrollTop() == 0){
+			$(window).scrollTop(prev + $('.project-intro').scrollTop())
+			$('body').removeClass('noscroll');
+		}
+	})
+})
+
+
 
 
 	
@@ -87,6 +104,7 @@ function timeline(){
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
+	.to('#go-back', 1, {display: 'block'}, 300)
 
 	.to('.item-7', 1, {top: '311px'}, 0)
 
@@ -97,6 +115,7 @@ function timeline(){
 	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 400)
 	.to('.item-6', 200, {top: "400vh", left:"5vw"}, 400)
 	.to('.item-7', 200, {top: "500vh", left:"5vw"}, 400)
+
 	.to('.project_canvas', 1, {className: "-=before-scroll", opacity: 0}, 400)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('.project_canvas', 1, {className:"+=after-scroll"}, 400)
@@ -124,7 +143,6 @@ function timeline(){
 	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 600)
 	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 600)
 	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 600)
-	// 768px    left: 11px; top: -39px;
 
 	if(window.innerWidth <= 750){
 		tl2

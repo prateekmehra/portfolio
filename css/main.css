@@ -6,6 +6,10 @@ html, body {
     touch-action : manipulation;
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
     background  : #fff;
     font-family : Cera Pro, sans-serif;
@@ -85,7 +89,7 @@ PAGE CONTENT
     margin     : auto;
 
     text-align : center;
-    height     : 300vh;
+    height     : calc(888px + 650vh);
 }
 
 .page-content .tile-wide {

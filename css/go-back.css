@@ -1,8 +1,8 @@
 #go-back {
     display       : none;
     position      : fixed;
-    right         : 4.45rem;
-    bottom        : 10%;
+    right         : 1.45rem;
+    bottom        : 3%;
     z-index       : 40;
 
     height        : 3rem;
