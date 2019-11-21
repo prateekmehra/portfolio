@@ -32,6 +32,9 @@ $(document).ready(function(){
 		$('#project-box .intro-box-dimensions > .project_canvas').removeClass('add-blur');
 		$('#project-box .intro-box-dimensions a > .project_canvas').removeClass('add-blur');
 	});
+});
+
+$(window).on('load', function() {
 
 	tl1 = new TimelineMax();
 
@@ -87,8 +90,6 @@ $(document).ready(function(){
 // $(window).resize(function(){
 // 	timeline();
 // });
-
-
 	
 function timeline(){
 	var controller = new ScrollMagic.Controller({container: "#hey"});
