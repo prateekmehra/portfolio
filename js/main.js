@@ -1,5 +1,4 @@
-var firstClick = true;
-var tl1, tl2, tl3; 
+var tl1, tl2; 
 
 $(document).ready(function(){
 
@@ -38,7 +37,7 @@ $(window).on('load', function() {
 
 	tl1 = new TimelineMax();
 
-	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 503;
+	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 443;
 	
 	tl1
 		.set('#portfolio', {left: '50% +=' + $('.column-right').width()/6})
@@ -196,39 +195,5 @@ function timeline(){
 		// add indicators (requires plugin)
 		// scene.addIndicators();						
 	}
-}
-
-	
-function musicMaker(e){	
-	document.getElementById('music').play();
-	$(e).children('#no_music').toggle();
-	$(e).children('#yes_music').toggle();
-	document.getElementById('music').muted = true;
-	if($(e).children('#no_music').is(':visible')){
-		document.getElementById('music').volume = 0;
-		document.getElementById('music').pause();
-	}
-}
-
-
-
-function showHiddenProjects(){
-	$('#hidden-projects-loader').css('display','inline-block');
-	setTimeout(function(){
-		$('#visible-projects').append($('#hidden-projects').html());
-		$('#navigator').append($('#hidden-navigator').html());
-		$(".project").hover3d({
-			selector: ".project__card",
-			perspective: 2500,
-			sensitivity: 30,
-		});
-		scrollInit();
-		navInit();
-		$('#hidden-projects').remove();
-		$('#hidden-navigator').remove();
-		$('#hidden-projects-button').remove();
-		$('#hidden-projects-loader').css('display','none');
-	}, 1000);
-
 }
 	
