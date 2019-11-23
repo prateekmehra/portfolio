@@ -1,6 +1,9 @@
-var tl1, tl2; 
+var tl1, tl2;
+var initialWidth, initialHeight; 
 
 $(document).ready(function(){
+	initialWidth = window.innerWidth;
+	initialHeight = window.innerHeight;
 
 	$('a[href^="#"]').on('click', function(event) {
         if (this.hash !== "") {
@@ -65,9 +68,12 @@ $(window).on('load', function() {
 });
 
 $(window).resize(function(){
-	tl1.kill();
-	tl2.kill();
-	timeline();
+	if(initialWidth != window.innerWidth || window.innerWidth > 480){
+		tl1.kill();
+		tl2.kill();
+		timeline();
+		initialWidth = window.innerWidth;
+	}
 });
 	
 function timeline(){
