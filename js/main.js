@@ -130,6 +130,8 @@ function timeline(){
 		.set('.item-3', {display: 'block'})
 		.set('.scroll-downs', {display: 'block', opacity: 1})
 		.set('.scroll-downs-text', {display: 'block', opacity: 1})
+		.set('.screen', {clearProps: 'background-image'})
+		
 
 		tl1
 		.set('.project_canvas', {className:"+=before-scroll"})
