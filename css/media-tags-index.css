@@ -475,3 +475,40 @@ MEDIA TAGS
     }
 }
 
+@media screen and (max-height: 550px){
+    .page-title {
+        font-size: 18px !important;
+    }
+
+    .head-title {
+        font-size: 18px;
+    }
+
+    .sub-title {
+        font-size: 12px;
+    }
+
+    .box-text{
+        width: 264px;
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+
+    .scroll-downs{
+        transform: scale(0.5);
+        transform-origin: bottom;
+    }
+
+    .scroll-downs-text{
+        transform: scale(0.5);
+        transform-origin: center;
+    }
+
+    .panel .column-right {
+        margin-top: -50px;
+    }
+}
+
+
+
+
