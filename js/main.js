@@ -13,8 +13,8 @@ $(document).ready(function(){
     });
 
 	$('#project-box .intro-box-dimensions').hover(function(){	
-			$('.project_canvas.before-scroll').hover(function(){
-				if(!$('.project_canvas').hasClass("after-scroll")){
+			$('.project_canvas.before-scroll.hoverable').hover(function(){
+				if($('.project_canvas').hasClass("hoverable")){
 					$(this).addClass('add-effects');
 				}
 			}, function(){
@@ -24,8 +24,8 @@ $(document).ready(function(){
 
 	$('.project_canvas').hover(function(){
 		if(!$('.project_canvas').hasClass("after-scroll")){
-			$('#project-box .intro-box-dimensions a > *:not(:hover).before-scroll').addClass('add-blur');
-			$('#project-box .intro-box-dimensions > *:not(:hover).before-scroll').addClass('add-blur');
+			$('#project-box .intro-box-dimensions a > *:not(:hover).before-scroll.hoverable').addClass('add-blur');
+			$('#project-box .intro-box-dimensions > *:not(:hover).before-scroll.hoverable').addClass('add-blur');
 		}
 	}, function(){
 		$('#project-box .intro-box-dimensions > .project_canvas').removeClass('add-blur');
@@ -40,7 +40,7 @@ $(window).on('load', function() {
 	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 443;
 	
 	tl1
-		.set('#portfolio', {left: '50% +=' + $('.column-right').width()/6})
+		.set('#portfolio', {left: '50% +=' + $('#portfolio-holder').width()/6})
 		.set('.project_canvas', {className:"+=before-scroll"}, 0)
 		.set('.item-1', {width: $('.item-1 .screen').width() + 'px', height: $('.item-1 .screen').height() + 'px', borderRadius: '40px'})
 		.set('.item-2', {width: $('.item-2 .screen').width() + 'px', height: $('.item-2 .screen').height() + 'px', borderRadius: '40px'})
@@ -54,9 +54,7 @@ $(window).on('load', function() {
 		.set('.project_canvas', {transform: 'scale(0.5)'})
 		.set('#project-box', {top: "140px", left: "650px"})
 		.set('.hardware', {display: 'block', opacity: 1})
-		.set('.screen', {display: 'block', opacity: 1})
-
-	tl1.play();
+		.set('.screen', {display: 'block', opacity: 1});
 
 	timeline();
 
@@ -101,6 +99,7 @@ function timeline(){
 	.to('.item-7', 1, {top: '311px'}, 0)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
+	.to('.project_canvas', 1, {className: "+=hoverable"}, 299)
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
 	.to('.scroll-downs-text', 300, {opacity: 0, display: 'none'}, 0)
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
@@ -108,7 +107,6 @@ function timeline(){
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
 
 	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
-
 	.to('.item-1', 200, {left:"5vw"}, 400)
 	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 400)
 	.to('.item-3', 200, {top: "100vh", left:"5vw", display: 'none'}, 400)
@@ -116,7 +114,7 @@ function timeline(){
 	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 400)
 	.to('.item-6', 200, {top: "400vh", left:"5vw"}, 400)
 	.to('.item-7', 200, {top: "500vh", left:"5vw"}, 400)
-	.to('.project_canvas', 1, {className: "-=before-scroll", opacity: 0}, 400)
+	.set('.project_canvas', {className: "-=before-scroll hoverable"}, 400)
 	.to('.project_canvas', 1, {className:"+=after-scroll"}, 400)
 	.to('.screen', 1, {className:"+=after-scroll"}, 400)
 	.to('.hardware', 1, {className:"+=after-scroll"}, 400)
