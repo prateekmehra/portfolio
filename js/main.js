@@ -95,7 +95,7 @@ function timeline(){
 		tl1.set('#portfolio', {top: 'calc(10vh + 192px)', left: '50%', transform: 'scale(0.7) translateX(-50%)'})
 	}
 	else if (window.innerWidth <= 1024){
-		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) scale(0.8) translateY(-50%)', left: window.innerWidth/2 - 50})
+		tl1.set('#portfolio', { top: '44%', transform: 'perspective(1px) scale(0.8) translateY(-50%)', left: window.innerWidth/2 - 50})
 	}
 	else if (window.innerWidth <= 1440){
 		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) translateY(-50%)', left: window.innerWidth/2 + $('#portfolio-holder').width()/8 - 30})
