@@ -263,6 +263,10 @@ PAGE CONTENT
     display: none;
 }
 
+#portfolio-holder-tile{
+    transform: none !important;
+}
+
 
 #portfolio {
     width: 465px;
@@ -272,6 +276,8 @@ PAGE CONTENT
     overflow: hidden;
     box-shadow: inset 0px 0px 20px 0px rgba(0, 0, 0, 0.05);
     position: fixed;
+    /* pre-req support for left */
+    left: auto;
 }
 
 .panel-1 {
@@ -364,8 +370,6 @@ figure {
 #project-box {
     z-index: 1;
     position: absolute;
-    top: 50%;
-    left: 50%;
     width: 100%;
     transform: translate(-50%, -50%);
     display: block;
@@ -387,8 +391,6 @@ figure {
     background: #fff;
     border-radius:15%; 
     box-shadow: 20px 20px 60px 0px rgba(0, 0, 0, 0.11);
-    width: 386px;
-    height: 425px;
     position: absolute;
 }
 

@@ -35,27 +35,6 @@ $(document).ready(function(){
 
 $(window).on('load', function() {
 
-	tl1 = new TimelineMax();
-
-	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 443;
-	
-	tl1
-		.set('#portfolio', {left: '50% +=' + $('#portfolio-holder').width()/6})
-		.set('.project_canvas', {className:"+=before-scroll"}, 0)
-		.set('.item-1', {width: $('.item-1 .screen').width() + 'px', height: $('.item-1 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-2', {width: $('.item-2 .screen').width() + 'px', height: $('.item-2 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-3', {width: $('.item-3 .screen').width() + 'px', height: $('.item-3 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-4', {width: $('.item-4 .screen').width() + 'px', height: $('.item-4 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-5', {width: $('.item-5 .screen').width() + 'px', height: $('.item-5 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-6', {width: $('.item-6 .screen').width() + 'px', height: $('.item-6 .screen').height() + 'px', borderRadius: '40px'})
-		.set('.item-7', {width: $('.item-7 .screen').width()/1.1 + 'px', height: $('.item-7 .screen').height()/2 + 'px', borderRadius: '40px'})
-		.set('.panel-1', {transformOrigin: 'center', transform: 'translateX(' + panel_shift + 'px) scale(0.5)', position:'absolute'})
-		.set('.project-intro', {transformOrigin: 'center', transform: 'scale(0.8)'})
-		.set('.project_canvas', {transform: 'scale(0.5)'})
-		.set('#project-box', {top: "140px", left: "650px"})
-		.set('.hardware', {display: 'block', opacity: 1})
-		.set('.screen', {display: 'block', opacity: 1});
-
 	timeline();
 
 	var prev = window.innerHeight/2 + 800;
@@ -82,24 +61,88 @@ $(window).on('load', function() {
 			}
 		})
 	})
+
 });
 
-// $(window).resize(function(){
-// 	timeline();
-// });
+$(window).resize(function(){
+	tl1.kill();
+	tl2.kill();
+	timeline();
+});
 	
 function timeline(){
 	var controller = new ScrollMagic.Controller({container: "#hey"});
+
+	tl1 = new TimelineMax();
+
+	var panel_shift = -1 * (1680 - window.innerWidth)/5 - 443;
+	
+	tl1
+		.set('#portfolio', {
+			width: '465px', height: '465px',
+			backgroundColor: '#f9f9f9', borderRadius: '15%', overflow: 'hidden', boxShadow: 'inset 0px 0px 20px 0px rgba(0, 0, 0, 0.05)',
+			position: 'fixed'
+		});
+		
+
+	if(window.innerWidth <= 750){
+		tl1.set('#portfolio', {top: 'calc(10vh + 192px)', left: '50%', transform: 'scale(0.7) translateX(-50%)'})
+	}
+	else if (window.innerWidth <= 1024){
+		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) scale(0.8) translateY(-50%)', left: window.innerWidth/2 - 50})
+	}
+	else if (window.innerWidth <= 1440){
+		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) translateY(-50%)', left: window.innerWidth/2 + $('#portfolio-holder').width()/8 - 30})
+	}
+	else {
+		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) translateY(-50%)', left: window.innerWidth/2 + $('#portfolio-holder').width()/5 })
+	}
+			
+		
+		//pre-reqs
+		tl1
+		.set('.panel', {opacity: 0})
+		.set('.panel-1', {top: '0px', display: 'block', width: '1680px', height: '100%', margin: 'auto'})
+		.set('.project-intro', {overflowY: 'visible'})
+		.set('#project-box', {zIndex: 1, position: 'absolute', display: 'block', marginTop: 0})
+		.set('#project-box', {top: '140px', left: '650px'}, 0)
+		.set('.project_canvas', {
+			background: '#fff',
+			borderRadius: '15%',
+			boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)', 
+			position: 'absolute', 
+			overflow: 'visible',
+		})
+		.set('.project_canvas.phone', {height:' 568px', width:'262px',  transformOrigin:' center', borderRadius: '40px'})
+		.set('.project_canvas.ipad', {width:' 862px' , height: '647px', transformOrigin: 'center', borderRadius: '40px'})
+		.set('.project_canvas.ipad.glasses', {width:  '784px', height: '324px', borderRadius: '40px'})
+		.set('.device-container', {position: 'relative', top: '-27px', left: '-29px', transform: 'none', transformOrigin: 'center'})
+		.set('.hardware', {className: "-=after-scroll"})
+		.set('.project_canvas', {className: "-=after-scroll"})
+		.set('.project_canvas', {transformOrigin: 'center'})
+		.set('.screen', {className: "-=after-scroll"})
+		.set('.item-3', {display: 'block'})
+		.set('.scroll-downs', {display: 'block', opacity: 1})
+		.set('.scroll-downs-text', {display: 'block', opacity: 1})
+
+		tl1
+		.set('.project_canvas', {className:"+=before-scroll"})
+		.set('.project_canvas', {transform: 'scale(0.5)'})
+		.set('.panel-1', {transformOrigin: 'center', transform: 'translateX(' + panel_shift + 'px) scale(0.5)', position:'absolute'})
+		.set('.project-intro', {transformOrigin: 'center', transform: 'scale(0.8)', width: '100vw', position: 'fixed'})
+		.set('.hardware', {display: 'block', opacity: 1})
+		.set('.screen', {display: 'block', opacity: 1});
 
 	tl2 = new TimelineMax();
 	var panel_halfway = window.innerWidth / 1680 > 1 ? 1 : window.innerWidth / 1680;
 	var panel_translate = (window.innerWidth - 1680) * 0.5;
 
 	tl2
+	.set('.project_canvas', {className: "+=hoverable"}, 270)
 	.to('.item-7', 1, {top: '311px'}, 0)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
-	.to('.project_canvas', 1, {className: "+=hoverable"}, 299)
+	
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
 	.to('.scroll-downs-text', 300, {opacity: 0, display: 'none'}, 0)
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
@@ -107,6 +150,7 @@ function timeline(){
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
 
 	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
+	.set('.project_canvas', {className: "-=hoverable"}, 390)
 	.to('.item-1', 200, {left:"5vw"}, 400)
 	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 400)
 	.to('.item-3', 200, {top: "100vh", left:"5vw", display: 'none'}, 400)
@@ -114,7 +158,7 @@ function timeline(){
 	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 400)
 	.to('.item-6', 200, {top: "400vh", left:"5vw"}, 400)
 	.to('.item-7', 200, {top: "500vh", left:"5vw"}, 400)
-	.set('.project_canvas', {className: "-=before-scroll hoverable"}, 400)
+	.set('.project_canvas', {className: "-=before-scroll"}, 400)
 	.to('.project_canvas', 1, {className:"+=after-scroll"}, 400)
 	.to('.screen', 1, {className:"+=after-scroll"}, 400)
 	.to('.hardware', 1, {className:"+=after-scroll"}, 400)
@@ -148,12 +192,24 @@ function timeline(){
 		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 500)
 		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 500);
 	}
+	else {
+		tl2
+		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (0)'}, 500)
+		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(0)'}, 500);
+	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1}, 700)
-	.set('.project-intro', {overflowY: 'scroll'}, 700);
+	.set('.panel', {display: 'block', opacity: 1}, 600)
+	.set('.project-intro', {overflowY: 'scroll'}, 600)
+	.set('.item-1', {left:"5vw"}, 600)
+	.set('.item-2', {top: "100vh", left:"5vw"}, 600)
+	.set('.item-3', {top: "100vh", left:"5vw", display: 'none'}, 600)
+	.set('.item-4', {top: "200vh", left:"5vw"}, 600)
+	.set('.item-5', {top: "300vh", left:"5vw"}, 600)
+	.set('.item-6', {top: "400vh", left:"5vw"}, 600)
+	.set('.item-7', {top: "500vh", left:"5vw"}, 600)
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 700, offset: window.innerHeight/2 + 100})
+	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 600, offset: window.innerHeight/2 + 100})
 		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
 		.addTo(controller);

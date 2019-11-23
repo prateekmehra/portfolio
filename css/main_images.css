@@ -1,40 +1,40 @@
 /* Before Scroll */
 .project_canvas.before-scroll.item-1 {
-    top: -30px;
-    left: 20px;
+    top: -30px !important;
+    left: 20px !important;
 }
 
 .project_canvas.before-scroll.item-2 {
-    top: -68px;
-    left: 60px
+    top: -68px !important;
+    left: 60px !important;
 
 }
 
 .project_canvas.before-scroll.item-3 {
-    top: 0px;
-    left: 581px;
+    top: 0px !important;
+    left: 581px !important;
 }
 
 
 .project_canvas.before-scroll.item-4 {
-    top: 136px;
-    left: 620px;
+    top: 136px !important;
+    left: 620px !important;
 }
 
 .project_canvas.before-scroll.item-5 {
-    top: -250px;
-    left: 620px
+    top: -250px !important;
+    left: 620px !important;
 }
 
 .project_canvas.before-scroll.item-6 {
-    top: -30px;
-    left: 1260px;
+    top: -30px !important;
+    left: 1260px !important;
 }
 
 .project_canvas.before-scroll.item-7 {
-    left: 110px;
-    top: 321px;
-    z-index: -1;
+    left: 110px !important;
+    top: 321px !important;
+    z-index: -1 !important;
 }
 
 
