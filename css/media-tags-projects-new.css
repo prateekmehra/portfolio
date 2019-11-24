@@ -4,13 +4,6 @@ MEDIA TAGS
 ------------------------------------------------------------
 */
 
-@media (hover: none) {
-   .navLink:link .navTag, .navLink:link .navTag {
-       max-width: 0;
-       padding: 0;
-   }
-} 
-
 @media (hover:hover) {
     .tint:before {
         content    : "";
