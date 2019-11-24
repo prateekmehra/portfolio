@@ -5,6 +5,8 @@ var colorArr = ["rgb(255,255,255)","rgb(17,17,17)"];
 function updatePalette(h){
 	if(h>=0){
 		$(".navLink").css({"color":colorArr[h%2]});
+		$(".navTag").css({"color": "#d0d0d0"});
+		$(".hello .navTag").css({"color":colorArr[h%2]});
 		$("#el_pDo0vxjT-X").css({"fill":colorArr[h%2], "stroke":colorArr[h%2] });
 		$("#menuToggle span").css({"background":colorArr[h%2]});
 		$(".arrow").css({"color":colorArr[h%2]});
@@ -12,6 +14,8 @@ function updatePalette(h){
 	}
 	else{
 		$(".navLink").css({"color":colorArr[0]});
+		$(".navTag").css({"color": "#d0d0d0"});
+		$(".hello .navTag").css({"color":colorArr[0]});
 		$("#el_pDo0vxjT-X").css({"fill":colorArr[0], "stroke":colorArr[0] });
 		$("#menuToggle span").css({"background":colorArr[0]});
 		$(".arrow").css({"color":colorArr[0]});

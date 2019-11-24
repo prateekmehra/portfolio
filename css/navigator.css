@@ -28,10 +28,10 @@
 }
 
 .navLink:hover .navTag {
+    color:  #ababab;
     max-width: 200px;
     padding: 0 10px 0 10px;
 }
-
 
 
 .navLinkBox {
@@ -63,6 +63,20 @@
     -webkit-transition: max-width 0.35s, padding 0.35s;
     -moz-transition: max-width 0.35s, padding 0.35s;
     transition: max-width 0.35s, padding 0.35s;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    /* text-transform: uppercase; */
+    /* letter-spacing: 2px; */
+    color: #d0d0d0;
+}
+
+.hello .navTag {
+    color: #000;
+}
+
+
+
+@media screen and (min-width: 1440px) {
+    .navTag {
+        max-width: 200px;
+        padding: 0 10px 0 10px;
+    }
 }

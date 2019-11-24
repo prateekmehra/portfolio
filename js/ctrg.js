@@ -431,9 +431,8 @@ $(function(){
 	dots:false,
 	lazyLoad:true,
 	// loop:true,
-	
- //    autoplayTimeout:5000,
- //    autoplayHoverPause:true,
+	// autoplayTimeout:5000,
+	// autoplayHoverPause:true,
     thumbs:true,
     thumbsPrerendered: true
 	});

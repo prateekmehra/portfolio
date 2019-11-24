@@ -218,7 +218,7 @@ PAGE CONTENT
 }
 
 .page-content .tile .page-title, .page-content .tile-wide .page-title {
-    color:  #0f1545;
+    color:  #000000;
     letter-spacing: -0.5px;
 }
 
@@ -294,7 +294,7 @@ PAGE CONTENT
 
 .page-content .dark {
     background-color : #fff;
-    color            : #101646;
+    color            : #000;
     transition:  all 0.5s ease;
 }
 
@@ -305,7 +305,7 @@ PAGE CONTENT
 }
 
 .page-content .dark a {
-    color : #101646;
+    color : #000;
 }
 
 .page-content .light a {
@@ -670,3 +670,58 @@ PAGE CONTENT
     background-repeat: no-repeat;
     background-image: url("/images/ctrg/controls/pause_icon_large1.svg");
 }
+
+.slides-overlay {
+    position: relative;
+    z-index: 2;
+    display:flex;
+    box-shadow: 1px 6px 20px rgba(0,0,0,0.1);
+}
+
+.slides-underlay{
+    position: fixed;
+    bottom:0;
+    height: 70vh;
+    width: 100%;
+    background-color: #f9f9f9;
+}
+
+.reveal-underlay{
+    height: 70vh;
+}
+
+.slides-underlay .title {
+    margin      : 6px 0 4px 0;
+    font-weight : 600;
+    line-height: 1.5;
+}
+
+
+.slides-underlay .page-title {
+    color:  #000000;
+    letter-spacing: -0.5px;
+}
+
+.slides-underlay .compressed-centered60 {
+    display     : block;
+
+    width       : 60%;
+    margin      : auto;
+
+    font-size   : 18px;
+    line-height : 1.75;
+    padding: 40px;
+     box-sizing: border-box;
+}
+
+.site-footer {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}
+
+.scrollto {
+    background: #fff;
+}
+
+

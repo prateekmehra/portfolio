@@ -1,5 +1,7 @@
 .site-footer {
-    background: rgb(27,27,27);
+    background: #f9f9f9;
+    height: 100px;
+    color: #000;
 }
 
 .site-footer .overview {
@@ -35,12 +37,40 @@
 
 .other-project {
     cursor: pointer;
+    border-radius: 5px;
+    transition : all 0.2s ease;
 }
 
 .other-project :hover {
-    box-shadow: 10px 10px 20px 0 rgba(17, 17, 17, 0.28);
+    box-shadow: 10px 10px 20px 0 rgba(0, 0, 0, 0.09);
     transform: scale(1.05);
-    transition : all 0.2s linear;
+    transition : all 0.2s ease;
+}
 
-    
+footer path{
+    fill: #000;
+}
+
+@media screen and (max-width: 768px) {
+    .site-footer .overview{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .site-footer .overview{
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+    }
+
+    .site-footer nav {
+        padding: 10px 50px;
+        margin: auto;
+    }
+
+    .site-footer nav ul li {
+        padding : 0px 7vw;
+    }
 }

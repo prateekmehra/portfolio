@@ -95,7 +95,10 @@ function scrollCalculate() {
 
     if (projectChanged) {
         updateNavLinks();
-        updateProjectNavLinks();
+
+        if(typeof updateProjectNavLinks === 'function'){
+            updateProjectNavLinks();
+        }
 
         updatePalette(projectIndex);
         projectChanged = false;

@@ -41,7 +41,7 @@ function updateHamburgerVisibility() {
 
 function updateNavigatorVisibility() {
     navBar = document.getElementById('navigator');
-    if ($('#portfolio').isInViewport()){
+    if ($('#portfolio').isInViewport() && (!$('.reveal-underlay').length || !$('.reveal-underlay').isIn50Viewport())){
         
         if(portfolio_visibility == false){
             $(navBar).css('display', 'inline-block');

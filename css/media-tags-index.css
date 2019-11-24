@@ -276,15 +276,6 @@ MEDIA TAGS
         display: none;
     }
 
-    .site-footer nav ul li {
-        
-        padding : 0px 7vw;
-    }
-
-    .site-footer .overview {
-        font-size: 18px;
-    }
-
     .tile-wide {
         padding: 0 !important;
         margin: 0 !important;
