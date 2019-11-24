@@ -119,7 +119,7 @@
     pointer-events: none;
     z-index: 1;
     background-repeat: no-repeat;
-    background-image: url("/images/preview/hero_scrim__eb4w2ksdezee_large.png")
+   /*  background-image: url("/images/preview/hero_scrim__eb4w2ksdezee_large.png") */
 }
 
 .section-hero .sticky-container {
@@ -1037,52 +1037,6 @@
     }
 }
 
-/* .section-hero .sticky-container .device-container.dark .item-6 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/ctrg/preview/screen/search_4_.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-6 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-hero .sticky-container .device-container.dark .item-6 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-6 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .section-hero .sticky-container .device-container.dark .item-6 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_small.jpg")
-    }
-} 
-
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-6 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_1__36rmnifwheaa_small_2x.jpg")
-    }
-} */
-
 .section-hero .sticky-container .device-container.dark .item-7 .screen {
     width: 262px;
     height: 568px;
@@ -1314,98 +1268,6 @@
     }
 }
 
-/* .section-hero .sticky-container .device-container.dark .item-13 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-13 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-hero .sticky-container .device-container.dark .item-13 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-13 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .section-hero .sticky-container .device-container.dark .item-13 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-13 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_14__bjruvtg9yx0i_small_2x.jpg")
-    }
-}
-
-.section-hero .sticky-container .device-container.dark .item-14 .screen {
-    width: 630px;
-    height: 292px;
-    background-size: 630px 292px;
-    background-repeat: no-repeat;
-    background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-14 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-hero .sticky-container .device-container.dark .item-14 .screen {
-        width:410px;
-        height: 190px;
-        background-size: 410px 190px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-14 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .section-hero .sticky-container .device-container.dark .item-14 .screen {
-        width:374px;
-        height: 174px;
-        background-size: 374px 174px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-14 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_1__dcje810yjimq_small_2x.jpg")
-    }
-} */
-
 .section-hero .sticky-container .device-container.dark .item-15 .screen {
     width: 262px;
     height: 568px;
@@ -1452,52 +1314,6 @@
     }
 }
 
-/* .section-hero .sticky-container .device-container.dark .item-16 .screen {
-    width: 262px;
-    height: 568px;
-    background-size: 262px 568px;
-    background-repeat: no-repeat;
-    background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-16 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-hero .sticky-container .device-container.dark .item-16 .screen {
-        width:170px;
-        height: 368px;
-        background-size: 170px 368px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-16 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .section-hero .sticky-container .device-container.dark .item-16 .screen {
-        width:156px;
-        height: 338px;
-        background-size: 156px 338px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-16 .screen {
-        background-image:url("/images/preview/hero_vert_dark_screen_2__db627dh6aoya_small_2x.jpg")
-    }
-} */
-
 .section-hero .sticky-container .device-container.dark .item-17 .screen {
     width: 262px;
     height: 568px;
@@ -1543,52 +1359,6 @@
         background-image:url("/images/ctrg/preview/screen/pickup_tracking_small_2x.jpg")
     }
 }
-
-/* .section-hero .sticky-container .device-container.dark .item-18 .screen {
-    width: 630px;
-    height: 292px;
-    background-size: 630px 292px;
-    background-repeat: no-repeat;
-    background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_large.jpg")
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-18 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_large_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) {
-    .section-hero .sticky-container .device-container.dark .item-18 .screen {
-        width:410px;
-        height: 190px;
-        background-size: 410px 190px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_medium.jpg")
-    }
-}
-
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-18 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_medium_2x.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) {
-    .section-hero .sticky-container .device-container.dark .item-18 .screen {
-        width:374px;
-        height: 174px;
-        background-size: 374px 174px;
-        background-repeat: no-repeat;
-        background-image: url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_small.jpg")
-    }
-}
-
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
-    .section-hero .sticky-container .device-container.dark .item-18 .screen {
-        background-image:url("/images/preview/hero_horizontal_dark_screen_3__ckq443s94uz6_small_2x.jpg")
-    }
-} */
 
 .section-hero .sticky-container .device-container.dark .item-19 .screen {
     width: 262px;
@@ -1960,7 +1730,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-dev
     z-index: 99
 }
 
-html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
+/* html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
     width: 262px;
     height: 568px;
     background-size: 262px 568px;
@@ -2004,7 +1774,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-dev
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
         background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_small_2x.jpg")
     }
-}
+} */
 
 
 html.no-hero-animation .section-hero .sticky-container .sticky-content .device-anchor .dark,html.no-hero-animation .section-hero .sticky-container .sticky-content .background-dark {
