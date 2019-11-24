@@ -130,10 +130,6 @@ MEDIA TAGS
         height: 100vh;
     }
 
-    #menu {
-        margin-left: -5vw;
-    }
-
     #menu li:hover {
         font-size: 30px;
     }
@@ -246,10 +242,6 @@ MEDIA TAGS
         height: 100vh;
     }
 
-    #menu {
-        margin-left: -5vw;
-        margin-top: 41vh;
-    }
 
     #menu li:hover {
         font-size: 30px;
@@ -436,11 +428,6 @@ MEDIA TAGS
 /*         width: 25px;
         height: 1.5px; */
         transform-origin: 4px 0px;
-    }
-
-    #menu {
-        margin-left: -10vw;
-        /* margin-top: 100vh; */
     }
 
     #menu li {

@@ -200,11 +200,6 @@ MEDIA TAGS
         letter-spacing: -1px;
     }
 
-    #menu {
-        margin-left: -5vw;
-        margin-top: 41vh;
-    }
-
     #menu li:hover {
         font-size: 30px;
     }
