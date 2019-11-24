@@ -5,8 +5,8 @@
 		<meta charset="utf-8">
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
-		<link rel="stylesheet" href="css/loading-overlay.css">
+		<script src="js/lib/jquery.min.js"></script>
+
 		<script type="text/javascript" src="js/loader.js"></script>
 		<script type="text/javascript" src="js/lib/pace.min.js"></script>
 		<link rel="stylesheet" href="css/loading-pace.css">
@@ -15,30 +15,31 @@
 		<meta name="description" content="2019 Portfolio Prateek Mehra">
 		<meta name="viewport" content="width=device-width">
 		<link rel="canonical" href="https://prateekmehra.github.io/">
+		<link rel="preload" as="video" href="/images/ctrg/preview/large_2x.mp4">
+		<link rel="stylesheet" href="css/fonts.css">
 
-		<link rel="stylesheet" href="./css/ctrg.css">
+		<link rel="stylesheet" href="./css/ctrg-new.css">
+		<link rel="stylesheet" href="./css/ctrg_fx.css">
 
 		<link rel="stylesheet" href="css/footer.css">
 		<link rel="stylesheet" href="css/navigator.css">
-		<link rel="stylesheet" href="css/fonts.css">
-		<link rel="stylesheet" href="css/animations/logo.css">
-		<link rel="stylesheet" href="css/animations/owlcarousel/animate.css">
-		<link rel="stylesheet" href="css/hamburger.css">
-		<link rel="stylesheet" href="css/site-intro.css">
+		<link rel="stylesheet" href="css/hamburger-white.css">
+		<link rel="stylesheet" href="css/site-intro-new.css">
+		<link rel="stylesheet" href="css/project_nav.css">
 		<link rel="stylesheet" href="css/go-back.css">
 
 		
-		<link rel="stylesheet" href="css/animated-button.css">
-		<!-- <link rel="stylesheet" href="css/blurred-box.css"> -->
+		<link rel="stylesheet" href="css/animated-button-new.css">
 		<link rel="stylesheet" href="css/flip-cards.css">
 		
 
 		<link rel="stylesheet" href="css/animations/owlcarousel/animate.css">
-		<link rel="stylesheet" href="css/animations/background-zoom.css">
 		<link rel="stylesheet" href="./css/owlcarousel/owl.carousel.min.css">
 		<link rel="stylesheet" href="./css/owlcarousel/owl.theme.default.min.css">
 
-		<link rel="stylesheet" href="css/media-tags-projects.css">
+		<link rel="stylesheet" href="css/media-tags-projects-new.css">
+		<link rel="stylesheet" href="css/ctrg_images.css">
+
 
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-111513297-1"></script>
@@ -50,22 +51,24 @@
 		  gtag('config', 'UA-111513297-1');
 		</script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 		<script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+		<script src="js/lib/TweenMax.min.js"></script>
+		<script src="js/lib/ScrollMagic.min.js"></script>	
+		<script src="js/animation.gsap.js"></script>
+
 		
 		<script src="js/lib/owlcarousel/owl.carousel.min.js"></script>
 		<script src="js/lib/owlcarousel/owl.carousel2.thumbs.js"></script>
 		<script type="text/javascript" src="js/lib/jqueryEasing.js"></script>
-		<script type="text/javascript" src="js/lib/jquery.paroller.min.js"></script>
 
-		<script src="js/ctrg.js"></script>	
-		<script type="text/javascript" src="js/hamburger.js"></script>
+		<script src="js/ctrg-new.js"></script>	
+		<script type="text/javascript" src="js/hamburger-white.js"></script>
+		<script type="text/javascript" src="js/project-nav.js"></script>
 		<script type="text/javascript" src="js/navigator.js"></script>
 		<script type="text/javascript" src="js/scroll.js"></script>
-		<script type="text/javascript" src="js/palette-projects.js"></script>
-		<script type="text/javascript" src="js/parallax.js"></script>
+		<script type="text/javascript" src="js/palette-projects-ctrg.js"></script>
 		<script type="text/javascript" src="js/footer.js"></script>
 
 	</head>
@@ -79,7 +82,7 @@
 
 
 		<div class="page-content" id="top">
-			<div class="loading-overlay" id="overlay">
+			<!-- <div class="loading-overlay" id="overlay">
 				<div class="loading-logo-holder">
 					<svg viewBox="7 0 38 50" preserveAspectRatio="xMidYMid meet" id="loading-logo">
 						<g transform="translate(7,50) scale(0.01,-0.01)" fill="#F3F5F6" stroke="none" id="el_pDo0vxjT-X">
@@ -93,70 +96,60 @@
 					</svg>
 				</div>
 				<div id="loading-ripple"></div>
-			</div>
+			</div> -->
 			
 			<div id="navigator">
 			    <a id="nav1" class="navLink hi hello" href="#p1">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Overview</div>
+			        <div class="navTag bg sub">Challenges</div>
 			    </a>
 			    <a id="nav2" class="navLink hi" href="#p2">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Design Question</div>
+			        <div class="navTag bg sub">Design Details</div>
 			    </a>
 			    <a id="nav3" class="navLink hi" href="#p3">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Design Process</div>
+			        <div class="navTag bg sub">User Research</div>
 			    </a>
 			    <a id="nav4" class="navLink hi" href="#p4">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">User Research</div>
+			        <div class="navTag bg sub">Research Insights</div>
 			    </a>
 			    <a id="nav5" class="navLink hi" href="#p5">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Research Insights</div>
+			        <div class="navTag bg sub">Personas</div>
 			    </a>
 			    <a id="nav6" class="navLink hi" href="#p6">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Personas</div>
+			        <div class="navTag bg sub">Design Goals</div>
 			    </a>
 			    <a id="nav7" class="navLink hi" href="#p7">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Design Goals</div>
+			        <div class="navTag bg sub">Ideation</div>
 			    </a>
 			    <a id="nav8" class="navLink hi" href="#p8">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Ideation</div>
+			        <div class="navTag bg sub">Prototying and Evaluation</div>
 			    </a>
 			    <a id="nav9" class="navLink hi" href="#p9">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Prototyping</div>
+			        <div class="navTag bg sub">Iterations</div>
 			    </a>
 			    <a id="nav10" class="navLink hi" href="#p10">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Usability Testing</div>
-			    </a>
-			    <a id="nav10" class="navLink hi" href="#p11">
-			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
-			        <div class="navTag bg sub">Final Design</div>
-			    </a>
-			    <a id="nav10" class="navLink hi" href="#p12">
-			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
-			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 			        <div class="navTag bg sub">Impact</div>
 			    </a>
-			     <a id="nav10" class="navLink hi" href="#p13">
+			    <a id="nav10" class="navLink hi" href="#p11">
 			        <svg viewBox="0 0 100 100" preserveAspectRatio="none"><circle cx="50" cy="50" r="2" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></circle></svg>
 			        <svg class="navLinkBox" viewBox="0 0 100 100" preserveAspectRatio="none"><path d="M50 25 L75 50 L50 75 L25 50 z" stroke="currentColor" vector-effect="non-scaling-stroke" stroke-width="1.1" fill="none"></path></svg>
 			        <div class="navTag bg sub">Reflection</div>
@@ -164,8 +157,134 @@
 			</div>
 
 			<div class="index-grid">
-				<div  class="parallax imgzoom" style="width: 100%;height: 0;padding-top: 47.36%; background: url('/images/ctrg/banner/banner1.png') no-repeat; background-size: cover;"></div>
 
+				<div class="tile-wide dark immersive">
+					<section class="section section-hero" style="width: 100%;">
+
+						<div class="content-container">
+							<div class="section-content will-change" style="opacity: 1;">
+								<div class="headline-wrapper">
+									<div class="headline-container">
+										<h1 class="hero-eyebrow large-title">Clothing The Recycling Gap</h1>
+										
+										<div class="left-align">
+											<div class="banner">
+												<div class="center-padded">
+													<div class="compressed-centered60">
+														<p>
+														Clothing recycling is industrially converting clothes into reusable fibers. It is different than donating or reselling clothes.
+
+														In this project, we explored different avenues to educate people about what is recyclable and help them recycle clothes habitually. We designed a one-stop mobile app to make the recycling experience convenient and purposeful. 
+														</p>
+														<br>
+
+														<div class="mini-title title left-align">My Role</div>
+														<p>
+														User Experience Design, Visual Design
+														</p>
+														<br>
+
+														<div class="mini-title title left-align">Timeline</div>
+														<p>
+														8 Weeks (October 2018 - December 2018)
+														</p>
+													
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>					
+							</div>
+						</div>
+
+						<div class="sticky-container">
+							<div class="sticky-content light">
+								<div class="hero">
+									<div class="hero-device vertical device item-1 center-image will-change" style="transform: matrix(6.8215, 0, 0, 6.8215, 0, 0);">
+										<figure class="screen"></figure>
+										<figure class="hardware"></figure>
+									</div>
+									<div class="device-anchor will-change" style="transform: matrix3d(6.8215, 0, 0, 0, 0, 6.8215, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);">
+										<div class="device-container dark will-change show hide">
+											<div class="vertical device item-0">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-1 center-image">
+												<div class="screen video-container waiting-to-start">
+													<video muted playsinline data-component-list="VideoViewportSource" aria-hidden="true" class="ended" src="/images/ctrg/preview/large_2x.mp4" id="preview-video">
+			                						</video>
+													<figure class="start-frame"></figure>
+													<figure class="end-frame"></figure>
+												</div>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-2">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-3">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-4">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-5">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-7">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-8">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-9">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-10">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-12">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-15">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-17">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-19">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-20">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+											<div class="vertical device item-21">
+												<figure class="screen"></figure>
+												<figure class="hardware"></figure>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				
 				<div id="portfolio">
 					<div id="go-back">
 						<a href="#top">
@@ -177,149 +296,278 @@
 						</a>
 					</div>
 
+					<div id="project-nav" class="raise not-sticky">
+						<script>
+							$("#project-nav").load("project-nav.html");
+						</script>
+					</div>
+
 
 					<div class="scrollto" id="p1"></div>
-					<div class="tile-wide tint dark immersive ">
-						<div class="left-align">
-							<div class="banner">
-								<div style="width: 10%"></div>
-								<div style="width: 15%">
-									<div class="center-padded mini-title">
-										<hr>
-										<p>
-										DEFINITION<br> <em>Clothing recycling</em> refers to converting clothes into reusable fibers, which is different than donating or reselling clothes.
-										</p>
-										<hr>
-									</div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Challenge</div>
+									<div class="title page-title">Identifying The Gaps</div>
 								</div>
-								<div style="width: 16%"></div>
-								<div style="width: 49%">
-									<div class="overview-right">
-										<div class="title left-align">OVERVIEW</div>
+								<div class="row">
+									<div class="column-left">
 										<p>
-										Through this project, we wanted to understand why people don’t recycle their clothes more often. We explored ways to educate people about the benefits of clothing recycling and ended up designing a mobile app to facilitate habitual clothing recycling.
+										In the state of Washington, specifically in King County, 95% of clothing disposed of as trash could instead be recycled. From the beginning of this project, there were clear signs of a lack of awareness amongst the residents of King County about clothing recycling. 
 										</p>
 										<br>
-
-										
-										<div class="title left-align">MY ROLE</div>
 										<p>
-										UX Designer
-										</p>
-										<br>
-
-										<div class="title left-align">TEAM</div>
-										<p>
-										Colleen McDevitt, Phecda Louie, Prateek Mehra, and Yeva 
-										</p>
-										<br>
-
-										<div class="title left-align">TIMELINE</div>
-										<p>
-										8 Weeks (October 2018 - December 2018)
+										The local government was ineffective in communicating what clothes could be recycled and where the residents could do it. This motivated us to explore ways of streamlining the slipshod process of clothing recycling.
 										</p>
 									</div>
-								</div>
-								<div style="width: 10%"></div>
-							</div>
-							<div style="width: 100%;height: 0;padding-top: 37.23%; background: url('/images/ctrg/preview/preview1.png') no-repeat; background-size: cover;"></div>
-							<div class="center-padded">
-								<div class="compressed-centered60 left-align">
-									<div class="title">Problem Statement</div>
-									<p>
-									In King County alone about 95% of clothing articles disposed into landfills could instead be recycled. When we started out, we believed there was a lack of awareness and communication between households, the business community, and local governments around recycling clothing. We chose households as our primary target audience and wanted to explore ways to get more people to recycle clothing.
-									</p>
-									<br>
-									<div class="title left-align">Why Households?</div>
-									<ul class="styled-ul">
-										<li>Households are the closest representation of families or group of individuals with typically familiar recycling habits</li>
-										<li>Households did not restrict the age group and background of people we could include in our user base</li>
-									</ul>
+									<div class="column-right">
+										<img class="high-goals focus-border"/>
+									</div>
 								</div>
 							</div>
-							<br><br>
+							
 						</div>
 					</div>
+
+					
 
 					<div class="scrollto" id="p2"></div>
-					<div class="tile-wide tint immersive">
-							<div class="compressed-centered60 left-align">
-								<div class="box-text">
-									<hr>
-									<div class="mini-title">DESIGN QUESTION</div>
-									<p>
-									How might we help households in King County recycle their clothes with ease and purpose?
-									</p>
-									<hr>
-								</div>	
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+										<div class="mini-title title head-title">Design Details</div>
+										<div class="title page-title">The Recycle App</div>
+								</div>
+
+								<div class="row">
+									<div class="column-left">
+										<p>
+										This app is a one-stop solution to the Clothing Recycling quandary. It features curated educational content and helps people locate recycle dropboxes or schedule pickups from the convenience of their homes.
+										</p>
+									</div>
+									<div class="column-left">
+										<p>
+										It inspires recycling habitually by rewarding people who frequently recycle.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #1</div>
+										<div class="title design-title">Onboarding Experience</div>
+										<br>
+										<p>
+										Get introduced to the top features of the app:
+										</p>
+										
+										<p><b>Discover</b></p>
+										<p><b>Dropoff or Pickup </b></p>
+										<p><b>Progress & Rewards</b></p>
+										<br>
+										<p>
+										To make this experience more engaging and fun, I created illustrations (using <a href="https://www.humaaans.com">humaaans</a> library) that represent each of the said features.
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/onboarding.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+								
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #2</div>
+										<div class="title design-title">Discover What's Recyclable</div>
+										<br>
+										<p>
+										Educate yourself about clothing recycling and why you should do it. Understand what can and cannot be recycled by looking at photos of acceptable items or going through a categorized list of clothes, shoes, accessories, bedding, linen and toys.
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/recyclable.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 
-					<div class="scrollto" id="p3"></div>
-					<div class="tile-wide tint dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60">
-								<div class="page-title large-title left-align">Design Process</div>
-								<br>
-								<video width="100%" autoplay muted>
-									<source src="/images/ctrg/designProcess/designProcess.mp4" type="video/mp4">
-									<img src="/images/ctrg/designProcess/DesignProcessT2.gif"/>
-								</video>
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #3</div>
+										<div class="title design-title">Advanced Search</div>
+										<br>
+										<p>
+										Doubtful whether that wine-stained shirt can be recycled? Get details on when to recycle or donate depending on article type, fabric, or wear. Learn about how materials age and how to properly discard them.
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/search.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+									</div>
+								</div>
 							</div>
-							<!-- <br>
-							<div class="compressed-centered60 left-align">
-								
-								
-								<br>
-							</div> -->
+						</div>
+
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #4</div>
+										<div class="title design-title">Dropoff Locations</div>
+										<br>
+										<p>
+										Have your purge pile ready to be dropped off? Pick a partner and get directions to your closest dropoff location in King County.
+										</p>
+										<br>
+										<p>
+										Planning to drop it off while running other errands? Schedule a location-based reminder in the app and check it off your to-do list cause we have got you covered.
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/dropoff.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #5</div>
+										<div class="title design-title">Schedule A Pickup</div>
+										<br>
+										<p>
+										Drawing directly on one of our persona's needs, I created location-based reminders so people can drop off their donations while running other errands.
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/pickup.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box">
+								<div class="row">
+									<div class="column-left left-align">
+										<div class="title mini-title">Feature #6</div>
+										<div class="title design-title">Rewards And Progress</div>
+										<br>
+										<p>
+										Track your past recycling activity and find your latest notifications/updates in your profile feed. Collect and redeem rewards and upgrade your status to unlock benefits with our partners when you recycle frequently. Claim your tax deduction right in the app itself. 
+										</p>
+									</div>
+									<div class="column-right center-align">
+										<br>
+										<div class="vertical figure">
+											<div class="screen video video-container" style="transform: translate(40px, -2px);">
+												<video muted playsinline autoplay loop src="/images/ctrg/finalDesign/profile.mp4" poster="/images/ctrg/finalDesign/loader.gif" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware"></figure>
+											<button class="control pause-icon" onclick="pausevid(this)">&nbsp;</button>
+											<button class="control play-icon" onclick="playvid(this)">&nbsp;</button>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-
-					<div class="scrollto" id="p4"></div>
-					<div class="tile-wide tint immersive">
+<!-- 
+					<div class="scrollto" id="p3"></div>
+					<div class="tile-wide dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">User Research</div>
-								<br>
-								<br>
-								<div class="banner" id="researchBanner">
-									<div>
-										<img id="secondaryResearch" src="/images/ctrg/research/icons/research.png"/>
-										<div class="title center-align">Secondary Research</div>
-									</div>&nbsp;&nbsp;&nbsp;&nbsp;
-									<div>
-										<img id="survey" src="/images/ctrg/research/icons/survey.png"/>
-										<div class="title center-align">Survey</div>
-									</div>&nbsp;&nbsp;&nbsp;&nbsp;
-									<div>
-										<img id="interview" src="/images/ctrg/research/icons/interview.png"/>
-										<div class="title center-align">Interview</div>
-									</div>&nbsp;&nbsp;&nbsp;&nbsp;
-									<div>
-										<img id="contextualInquiry" src="/images/ctrg/research/icons/contextualInquiry.png"/>
-										<div class="title center-align">Contextual Inquiry</div>
-									</div>&nbsp;&nbsp;&nbsp;&nbsp;
-									<div>
-										<img id="empathy" src="/images/ctrg/research/icons/empathy.png"/>
-										<div class="title center-align">Empathy Tools</div>
-									</div>&nbsp;&nbsp;&nbsp;&nbsp;
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row">
+									<div class="title page-title">Process Timeline</div>
+								</div>
+								<div class="row">
+									<img class="process-timeline"/>
+								</div>
+								<div class="row">
+									<p>
+									N.B. I spent the second week of October 2019 (week 9) redesigning this project, incorporating detailed visuals and interaction flow of the app as I imagined it.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div> -->
+
+					<div class="scrollto" id="p3"></div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">User Research</div>
+									<div class="title page-title">Demystifying The Unknown</div>
+								</div>
+
+								<div class="row">
+										<img class="research-methods">
 								</div>
 								<br>
-								<br>
-								
-								<p>We employed 9 different research methods which helped us in trying to understand what keeps people from going ahead and recycling clothing. We used role-playing methods to understand what might be broken in the process that currently exists for clothing recycling. Our research confirmed our assumptions around awareness and convenience of clothing recycling and also brought out a few more issues to light.
-								</p>
-								<br>
-								<div class="title">Key Focus Areas</div>
-								<div class="key-focus">
-										<p>Are people aware of clothing recycling options?</p>
-										<p>How do people dispose their clothes?</p>
-										<p>How frequently do they do it?</p>
-										<p>Do they understand how it's different from donation or reuse?</p>
-										<p>What are the barriers that keep people from recycling clothing?</p>
-										<p>Do people know intimate clothing can be recycled and do they recycle it?</p>
+								<div class="row">
+									<div class="column-left">
+										<p>We used various research methods to understand what keeps people from recycling clothing. The survey told us about people's understanding of the recycling process. Observing and interviewing people donate/buy clothes at Goodwill in Dearborn informed us about their habits. Role-playing methods helped us discover loopholes in the existing process. Deep and extreme interviewing allowed us to focus on user needs. This research not only confirmed our assumptions about awareness and convenience of clothing recycling but also brought out a few more issues to light.
+										</p>
+									</div>
+									<div class="column-right">
+										<img class="research-focus focus-border"/>
+									</div>
 								</div>
-								<br>
+
 								<div class="centered">
 									<section class="animated-button">
 									  <a href="/downloads/ctrg/research_appendix.pdf">
@@ -331,328 +579,260 @@
 									  </a>
 									</section>
 								</div>
-								<br>
-								<br>
-
-								<!-- <div class="title">Secondary Research — Competitive Product Survey & Historical Analysis</div>
-								<p>
-								We did a literature survey on the subject matter and we got in touch with King County officials and their clothing recycling subsidiary <b>Threadcycle</b> to obtain any existing material/research study conducted within King County.
-								</p>
-								<br>
-
-								<div class="title">Online Survey, Interviews and Contextual Inquiries</div>
-								<p>
-								An online survey helped us distinguish the demographic that is aware of the concept of clothing recycling, those who habitually recycle clothes, and those who aren't aware of it at all. Using the 159 responses from various King County neighborhood Facebook groups, Buy Nothing groups et cetera that we gathered from this survey, we prepared focused interview questions.
-								</p>
-								
-								<img src='/images/ctrg/research/research-notes.png'>
 
 								<br>
-								<br>
-								<p>
-								We visited the Dearborn Goodwill Outlet on a busy Saturday morning where we conducted 7 contextual inquiries with Goodwill customers (individuals & families) about their awareness and experience of recycling with Goodwill. These inquiries informed our long haul interview questions as well.
-								</p>
-								<br>
-
-								<div class="title">Extreme Interviews</div>
-								<p>
-								Three in-depth interviews of our fellow <em><b>un-primed</b> (lacking clothing recycling knowledge) international</em> graduate students at the University of Washington; which helped us understand expectations of potential "unaware" consumers of our solution. And another one with an industry insider, at her home.
-								</p>
-								<br>
-
-								<div class="title">Empathy Tools and Still Photo Diary</div>
-								<p>
-								To triangulate our research we explored the <em>Give Back Box</em> recycling process and also got a participant from our survey to do a still photo diary for us while she recycled clothes without any priming about where and how to recycle by us.
-								</p>
-								<div class="centered">
-									<section class="animated-button">
-									  <a href="/downloads/ctrg/still_photo_survey.pdf">
-									    <span class="text">STILL PHOTO SURVEY</span>
-									    <span class="line -right"></span>
-									    <span class="line -top"></span>
-									    <span class="line -left"></span>
-									    <span class="line -bottom"></span>
-									  </a>
-									</section>
-								</div> -->
+								<div class="row">
+									<img class="researchb	">
+								</div>
 							</div>
 						</div>
+					</div>
 
-						<div class="parallax" style="width: 100%;height: 0;padding-top: 56.84%; background: url('/images/ctrg/research/research.png') no-repeat; background-size: cover;"></div>
+
+					<div class="scrollto" id="p4"></div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="mini-title title head-title">Research Insights</div>
+								<div class="title page-title">Making Sense Of It All</div>
+								<br>
+
+								<div class="row dark focus-box focus-border">
+									<br>
+									<div class="row">
+										<div class="focus-title left-align">The Gap</div>
+										<div class="column">
+											<p>
+											We got 159 survey responses. An analysis of these responses revealed that in the last year itself, 93% of households donated unwanted clothing, while only 20% recycled.
+											</p>
+										</div>
+									</div>
+									<div class="row">
+										<div class="column-left center-align">
+											<div id="donateChartParent" class="chart">
+												<canvas id="donateChart"></canvas>
+											</div>
+										</div>
+										<div class="column-right center-align">
+											<div id="recycleChartParent" class="chart">
+												<canvas id="recycleChart"></canvas>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="focus-title">Key Issues</div>
+										<br>
+										<div class="column-left">
+											<canvas id="awarenessChart" class="chart"></canvas>
+											<div class="mini-title center-align">Clothing Recycling Awareness</div>
+											<br>
+										</div>
+										<div class="column-right">
+											<canvas id="awareness2Chart" class="chart"></canvas>	
+											<div class="mini-title center-align">Location: recycling dropboxes</div>
+											<br>
+										</div>
+									</div>
+									<div class="row">
+										<div class="column-left">
+											<canvas id="motivationChart" class="chart"></canvas>	
+											<div class="mini-title center-align">Barriers to recycling</div>
+											<br>
+										</div>
+										<div class="column-right">
+											<canvas id="knowledgeChart" class="chart"></canvas>	
+											<div class="mini-title center-align">Know what clothing to recycle</div>
+											<br>
+										</div>
+									</div>
+								</div>
+								<br>
+								<br>
+								<div class="focus-title">The Discovery</div>
+								<div class="row">
+									<div class="column-left left-align">
+										<p>
+										Most households were donating clothes but were seldom recycling. Many participants of our study didn't know what clothes are recyclable, nor were they aware of a nearby recycling dropbox. The biggest obstacle reported was the convenience of the recycling process. 
+										</p>
+									</div>
+									<div class="column-right left-align">
+										<p>
+										Most people were embarrassed to hand over their tattered intimate clothing to someone else and instead preferred to trash it. The existing process was not friendly for non-native English speaking communities and needed to be more inclusive.
+										</p>
+									</div>
+								</div>
+									
+								<br>
+								<img class="discovery">
+								
+							</div>	
+						</div>
 					</div>
 
 					<div class="scrollto" id="p5"></div>
-					<div class="tile-wide tint dark immersive">
+					<div class="tile-wide dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Research Insights</div>
-								<div class="title">The Gap</div>
-								 <div class="mini-title">
-								 In the last year itself, 93% of households donated unwanted clothing, while only 20% recycled.
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Personas</div>
+									<div class="title page-title">Who's The User</div>
+								</div>
+
+								<div class="row">
+									<div class="column-left left-align">	
+										<p>
+										From our research, three distinct personas emerged based on their past habits of discarding unwanted clothes. Our primary audience were those who had never recycled. 
+										</p>
+									</div>
+									<div class="column-right left-align">
+										<p>
+										Ideating concepts for these users would lead to solutions that also work for those who already recycle clothes and are only looking for more convenient ways of doing it.
+										</p>
+									</div>
 								</div>
 								<br>
 
-								<div style="display: inline-flex; width: 100%;">
-									<div id="donateChartParent" style="width: 50%; height: 300px;">
-										<canvas id="donateChart"></canvas>
-									</div>
-									<div id="recycleChartParent" style="width: 50%; height: 300px;">
-										<canvas id="recycleChart"></canvas>
-									</div>
+								<div id="persona_slides" class="owl-carousel owl-theme" data-slider-id="1" style="width:100%;"></div>
+								<div class="owl-thumbs" data-slider-id="1" style="display: inline-flex; padding-top: 0.5rem;">
+								    <div class="owl-thumb-item"><img class="persona_1"/></div>&nbsp;&nbsp;
+								    <div class="owl-thumb-item"><img class="persona_2"/></div>&nbsp;&nbsp;
+								    <div class="owl-thumb-item"><img class="persona_3"/></div>
 								</div>
-								<br>
-								<br>
-								<br>
-
-								<div class="title">Key Issues</div>
-								<div class="index-grid">
-										<div class="tile dark  padded" style="width: 43%">
-											<div class="title">Clothing Recycling Awareness</div>
-											<br>
-											<canvas id="awarenessChart"></canvas>
-											<br>
-										</div>
-
-										<div class="tile dark  padded" style="width: 43%">
-											<div class="title">Location: recycling dropboxes</div>
-											<br>
-											<canvas id="awareness2Chart"></canvas>	
-											<br>
-										</div>
-										<ul class="styled-ul left-align">
-											<li>50% of households did not know they could recycle clothes.</li>
-											<li>81% of households were unaware of clothing recycling drop boxes within King County.</li>
-										</ul>
-										<br>
-										<div class="tile dark  padded" style="width: 43%">
-											<div class="title">Want more convenient options</div>
-											<br>
-											<canvas id="motivationChart"></canvas>	
-											<br>
-										</div>
-
-										<div class="tile dark  padded" style="width: 43%">
-											<div class="title">Know what clothing to recycle</div>
-											<br>
-											<canvas id="knowledgeChart"></canvas>	
-											<br>
-										</div>
-										<ul class="styled-ul left-align">
-											<li>77% of households wanted more convenient ways of recycling clothing.</li>
-											<li>78% of households struggled to identify the types of clothes that could be recycled.</li>
-										</ul>
-										
-								</div>
-								<br>
-								<br>
-								<br>
-								<div class="title">The Discovery</div>
-								<br>
-
-								<div class="banner" id="insightsBanner">
-									<div style="width:10%"></div>
-									<div style="width:20%">
-										<img id="secondaryResearch" src="/images/ctrg/insights/icons/awareness.png"/>
-										<div class="title center-align">Awareness</div>
-									</div>
-									<div style="width:10%"></div>
-									<div style="width:20%">
-										<img id="survey" src="/images/ctrg/insights/icons/visualAid.png"/>
-										<div class="title center-align">Inclusivity</div>
-									</div>
-									<div style="width:10%"></div>
-									<div style="width:20%">
-										<img id="interview" src="/images/ctrg/insights/icons/embarrassed.png"/>
-										<div class="title center-align">Embarrassment</div>
-									</div>
-									<div style="width:10%"></div>
-								</div>
-								<br><br>
-								<!-- <p>
-								Many had behaviors of donating clothing, but a lack of awareness was a main reason many had not recycled clothes in the past.
-								</p>
-								<br>
-								
-								<p>
-								Another subtle but powerful clue concerned the addition of visual aids to the recycling education
-								materials and the recycling bins themselves to clearly convey the message to a wide audience (e.g.
-								non-English speakers, young children yet to learn to read, new King County residents not familiar with
-								recycling, etc.).
-								</p>
-								<br>
-
-								<p>
-								Another insight uncovered in our research concerned the stigmas associated with donating or recycling
-								personal items like underwear and old bras. “Weird”, “awkward”, and “embarrassed” were some of the
-								sentiments expressed when discussing these frequently replaced pieces that otherwise would make
-								excellent recycling candidates.
-								</p> -->
-								<br>
-							</div>	
+							</div>
 						</div>
 					</div>
 
 					<div class="scrollto" id="p6"></div>
-					<div class="tile-wide tint immersive">
+					<div class="tile-wide dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Personas</div>	
-								<p> Our research led us to three different personas. We decided to narrow down our target audience to those who had never recycled. Designing a solution for this class of people would also work for households that already recycle their unwanted clothing and are only looking for more convenient ways of doing it.
-								</p>
-								<br>
-
-
-								<!-- <p>
-								Our <b>primary target users</b> are those who donate frequently and either do not recycle or recycle selectively. These are households that might be motivated to recycle clothing instead of putting them into the trash.
-								</p>
-								<br>
-
-								<p>
-								Our <b>secondary target users</b> are those who infrequently donate and do not recycle. These households are not motivated to dispose of clothing in more conscious ways and thus need to be informed about the consequences of trashing clothing and its impact on the environment. They are unfamiliar with the different ways to donate and recycle clothing.
-								</p> -->
-
-								<div id="persona_slides" class="owl-carousel owl-theme" data-slider-id="1" style="width:100%;"></div>
-								<div class="owl-thumbs" data-slider-id="1" style="display: inline-flex; padding-top: 0.5rem;">
-								    <div class="owl-thumb-item"><img src="/images/ctrg/personas/persona1.png"/></div>&nbsp;&nbsp;
-								    <div class="owl-thumb-item"><img src="/images/ctrg/personas/persona2.png"/></div>&nbsp;&nbsp;
-								    <div class="owl-thumb-item"><img src="/images/ctrg/personas/persona3.png"/></div>
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Design Goals</div>
+									<div class="title page-title">Focussing On Real Issues</div>
 								</div>
+				
+								<div class="row left-align">
+									<div class="column-3">
+										<div style="width: 90%;height: 0;padding-top: 60%; background: url('/images/ctrg/designPrinciples/dp0.jpg') no-repeat; background-size: cover;"></div>
+									</div>
+
+							    	<div class="column-3">
+								    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										  <div class="flipper">
+										    <div class="front">
+										      <img src="/images/ctrg/designPrinciples/dp1.jpg" class="img-shadow focus-border"/>
+										    </div>
+										    <div class="back">
+										      <img src="/images/ctrg/designPrinciples/dpb1.jpg"  class="img-shadow focus-border"/>
+										    </div>
+										  </div>
+										</div>
+									</div>
+
+									<div class="column-3">
+								    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										  <div class="flipper">
+										    <div class="front">
+										      <img src="/images/ctrg/designPrinciples/dp2.jpg" class="img-shadow focus-border"/>
+										    </div>
+										    <div class="back">
+										      <img src="/images/ctrg/designPrinciples/dpb2.jpg" class="img-shadow focus-border"/>
+										    </div>
+										  </div>
+										</div>
+									</div>
+
+									<div class="column-3">
+								    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										  <div class="flipper">
+										    <div class="front">
+										      <img src="/images/ctrg/designPrinciples/dp3.jpg" class="img-shadow focus-border"/>
+										    </div>
+										    <div class="back">
+										      <img src="/images/ctrg/designPrinciples/dpb3.jpg" class="img-shadow focus-border"/>
+										    </div>
+										  </div>
+										</div>
+									</div>
+								
+									<div class="column-3">
+								    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										  <div class="flipper">
+										    <div class="front">
+										      <img src="/images/ctrg/designPrinciples/dp4.jpg" class="img-shadow focus-border"/>
+										    </div>
+										    <div class="back">
+										      <img src="/images/ctrg/designPrinciples/dpb4.jpg" class="img-shadow focus-border"/>
+										    </div>
+										  </div>
+										</div>
+									</div>
+
+									<div class="column-3">
+								    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+										  <div class="flipper">
+										    <div class="front">
+										      <img src="/images/ctrg/designPrinciples/dp5.jpg" class="img-shadow focus-border"/>
+										    </div>
+										    <div class="back">
+										      <img src="/images/ctrg/designPrinciples/dpb5.jpg" class="img-shadow focus-border"/>
+										    </div>
+										  </div>
+										</div>
+									</div>
+
+								</div>	
 							</div>
-						</div>
-					</div>
-
-					<div class="scrollto" id="p7"></div>
-					<div class="tile-wide tint dark immersive">
-						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Design Goals</div>	
-								<div class="mini-title">
-									We identified five design goals from our research discovery that would help us ideate and prioritize features.
-								</div>
-								<br>
-							</div>
-							<div style="display: inline-flex; width: 100%; margin-bottom: 30%;">
-						    	<div style="width: 20%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp1.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb1.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 0.5%"></div>
-								<div style="width: 20%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp2.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb2.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 0.5%"></div>
-								<div style="width: 20%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp3.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb3.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 0.5%"></div>
-								<div style="width: 20%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp4.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb4.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 0.5%"></div>
-								<div style="width: 20%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp5.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb5.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-							</div>	
-							<!-- <div style="display: inline-flex; margin-bottom: 0.5%; width: 100%"></div>
-							<div style="display: inline-flex; width: 100%; margin-bottom: 33%;">
-						    	<div style="width: 33%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp1.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb1.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 0.5%"></div>
-								<div style="width: 33%">
-							    	<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
-									  <div class="flipper">
-									    <div class="front">
-									      <img src="/images/ctrg/designPrinciples/dp1.png"/>
-									    </div>
-									    <div class="back">
-									      <img src="/images/ctrg/designPrinciples/dpb1.png"/>
-									    </div>
-									  </div>
-									</div>
-								</div>
-								<div style="width: 33%"></div>
-							</div>	 -->
 						</div>
 					</div>	
 
-					<div class="scrollto" id="p8"></div>
-					<div class="tile-wide tint immersive">
-						<div class="center-padded" style="box-shadow: #0000004a 1px 7px 22px 2px;">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Ideation</div>	
+					<div class="scrollto" id="p7"></div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">IDEATION</div>
+									<div class="title page-title">Wild Thoughts Inspire Good Design</div>
+								</div>
+
+								<div class="row">
+									<div class="column-left left-align">	
+										<p>
+										We brainstormed and ideated for 6 hours straight. We asked a myriad of "how might we" questions and encouraged each other to come up with our wildest ideas without thinking about constraints. We then evaluated each of these ideas against our design goals and selected our top three. 
+										</p>
+									 	<br>
+										<p>
+										We decided to move forward with the mobile app since it was befitting all our design requirements and our carefully chosen design goals. It was also the best medium to reach a wider audience and provide more educational content. 
+										</p>
+									</div>
+									<div class="column-right left-align">	
+										<div class="banner">
+											<div style="width:50%; padding: 10px; box-sizing: border-box;">
+												<img class="ideation_focus_1 focus-border">
+											</div>
+											<div style="width:50%; padding: 10px; box-sizing: border-box;">
+												<img class="ideation_focus_2 focus-border">
+											</div>
+										</div>
+										<div class="banner">
+											<div style="width:50%; padding: 10px; box-sizing: border-box;">
+												<img class="ideation_focus_3 focus-border">
+											</div>
+											<div style="width:50%; padding: 10px; box-sizing: border-box;">
+												<img class="ideation_focus_4 focus-border">
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div id="ideation_slides" class="owl-carousel owl-theme" data-slider-id="2" style="width:100%;"></div>
+								<div class="owl-thumbs" data-slider-id="2" style="display: inline-flex; padding-top: 0.5rem;">
+								    <div class="owl-thumb-item"><img class="sketch_1"/></div>&nbsp;&nbsp;
+								    <div class="owl-thumb-item"><img class="sketch_2"/></div>&nbsp;&nbsp;
+								    <div class="owl-thumb-item"><img class="sketch_3"/></div>
+								</div>
 								<br>
-								<img src="/images/ctrg/sketches/brainstormings.gif"/>
-								<br><br>
-								<p>
-								We conducted a <b>6-hour long brainstorming and ideation session</b> where we built an affinity map to try and conquer our problem space. <!-- The map was based on our design principles to identify broad themes and narrow down our scope by sketching solutions that would incorporate as many of our design principles as possible. -->
-								Through the course of the project, we came up with <b>211 ideas</b> all over the range from very feasible (ex: a mobile app for convenience) to extremely wild (ex: a masquerade party to tackle embarrassment when it comes to recycling old intimate clothing) while trying to address different parts of the problem.
-								</p>
-								
-								<br>
-								
-								<p>
-								With a whole bunch of ideas to evaluate, we decided to narrow down to our top 3 ideas using feasibility as one of our criteria. This led us to: 
-								</p>
-								<ul class="styled-ul">
-									<li>A clothing recycling app</li>
-									<li>A purple bin</li>
-									<li>A pamphlet</li>
-								</ul>
-								<br>
+
 								<div class="centered">
 									<section class="animated-button">
 									  <a href="/downloads/ctrg/sketches_all.pdf">
@@ -664,78 +844,41 @@
 									  </a>
 									</section>
 								</div>
-								<br>
-								<br>
-								<!-- <div class="banner">
-									<div id="ideation_slides" class="owl-carousel owl-theme" data-slider-id="2" style="width:78%"></div>
-									<div class="owl-thumbs" data-slider-id="2" style="width:20%; padding-left: 0.5rem;">
-									    <div class="owl-thumb-item"><img src="/images/ctrg/sketches/sketch1.jpeg"/></div>
-									    <div class="owl-thumb-item"><img src="/images/ctrg/sketches/sketch2.jpeg"/></div>
-									    <div class="owl-thumb-item"><img src="/images/ctrg/sketches/sketch3.jpeg"/></div>
-									</div>
-								</div>
-								<hr> -->
 
-							</div>
-						</div>
-
-						<div class="parallax" style="width: 100%; height: 0; padding-top: 56.84%; background: url('/images/ctrg/sketches/sketches1.png') no-repeat; background-size: cover;"></div>
-						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-
-								<p>
-								We decided to go with the mobile app since it was befitting all our design requirements and our carefully selected design goals. It was also the best medium to reach a wider audience and provide more educational content easily. The features we finalized for the app were:
-								</p>
-								<br>
-								<div class="title">Inclusive</div>
-								<ul class="styled-ul">
-									<li>Available in many languages</li>
-									<li>In-built voice features and screen readers for all abilities and preferences</li>
-								</ul>
-								<br>
-
-								<div class="title">Educational and Engaging</div>
-								<ul class="styled-ul">
-									<li>Engaging educational content about recycling</li>
-									<li>Features personal recycling goals and landfill statistics</li>
-								</ul>
-								<br>
-
-								<div class="title">Convenient</div>
-								<ul class="styled-ul">
-									<li>Seamless unwanted clothing pick up and drop-off arrangement</li>
-								</ul>
-								<br>
-
-								<div class="title">Action-Oriented</div>
-								<ul class="styled-ul">
-									<li>Chatbot and guided tour to ensure action by our users</li>
-									<li>Gamification to keep users engaged</li>
-
-								</ul>
 							</div>
 						</div>
 					</div>
 
 
-					<div class="scrollto" id="p9"></div>
-					<div class="tile-wide tint dark immersive">
+					<div class="scrollto" id="p8"></div>
+					<div class="tile-wide dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Prototyping</div>	
-								<p>
-								I mocked up a low fidelity prototype of our application by spending a few hours on InVision to quickly test our high-level design decisions with potential users. This gave us the opportunity to fail fast and rapidly iterate our design choices and brought out a lot of the user expectations and requirements which guided the final design of our application.
-								</p>
-								<!-- <br>
-								<div class="title">Low Fidelity Prototype</div>
-								<img src="/images/ctrg/lo-fi/lo-fi2.png"/>
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Prototyping And Evaluation</div>
+									<div class="title page-title">Testing The Waters</div>
+								</div>
+								<div class="row">
+									<div class="column-left">
+										<p>
+										We wanted to create a concept prototype that could invite critique and open up a dialogue with our users. So, I designed a quick and dirty prototype in InVision FreeHand that allowed us to test alternatives and even scrap entire user flows early on in the design phase. 
+										</p>
+										<br>
+										<p>
+										Given how little people knew about clothing recycling, we hypothesized that they would want to be hand-held through the recycling process. We designed a guided experience with the possibility for users to jump ahead, depending on their previous recycling experience and knowledge.
+										</p>
+									</div>
+									<div class="column-right">
+										<img class="testing_focus focus-border">
+									</div>
+								</div>
 								<br>
-								<hr>
-								<br> -->
-								<br>
-								<div class="center-align">
-									<div class="title"></div>
-									<div class="centered">
+
+								<div class="row">
+									<img class="lo-fi-all">
+								</div>
+
+								<div class="centered">
 									<section class="animated-button">
 									  <a href="//invis.io/68PC02YBJ4P">
 									    <span class="text">Interactive Lo-Fi Prototype</span>
@@ -746,132 +889,234 @@
 									  </a>
 									</section>
 								</div>
-									<!-- <iframe width="442" height="935" src="//invis.io/68PC02YBJ4P" frameborder="0" allowfullscreen></iframe> -->
-								</div>
-							</div>
-						</div>
-						<div style="width: 100%;height: 0;padding-top: 56.84%; background: url('/images/ctrg/lo-fi/lo-fi-all.png') no-repeat; background-size: cover;"></div>
-					</div>
+								<br>
 
-					<div class="scrollto" id="p10"></div>
-					<div class="tile-wide tint immersive">
-						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Usability Testing</div>	
-								<p>
-								7 users tested our lo-fi prototype. Based on these testing sessions, we made 6 major design changes and conducted another 5 usability tests on our next iteration, built with slightly higher fidelity and incorporating images through InVision Studio. 
-								</p>
+								<div class="row">
+									<div class="column-left">
+										<p>
+										The experience included a phase where people had to select what clothing they wanted to recycle by adding it to a Recycle Cart.
+										</p>
+										<br>
+										<p>
+										On testing this concept with seven users, we realized people wanted guidance but also looked for flexibility in the experience. 
+										</p>
+									</div>
+									<div class="column-right">
+										<p>
+										They desired the freedom to start wherever they felt comfortable and skip entire phases (like adding to a recycle cart.) Most users wanted to "get done with it ASAP." Many couldn't make sense of our "tour" terminologies. Some felt uncomfortable about receiving points at each stage. A lot of changes were coming.
+										</p>
+									</div>
+								</div>
 								<br>
 								<div class="banner">
 									<div style="width: 50%">
-										<img src="/images/ctrg/testing/usabilityTesting1.png"/>
+										<img src="/images/ctrg/testing/usabilityTesting1.png" style="border: 10px solid #fff; box-sizing: border-box;"/>
 									</div>
 									<div style="width: 50%">
-										<img src="/images/ctrg/testing/usabilityTesting2.png" />
+										<img src="/images/ctrg/testing/usabilityTesting2.png" style="border: 10px solid #fff; box-sizing: border-box;"/>
 									</div>
 								</div>
-								<br>
-								<br>
 
-								<div class="title">Key Findings</div>
-								<div class="key-focus">
-									<p>App tour confusing for users</p>
-									<p>Recycle Cart found to be unnecessary</p>
-									<p>Gamification points purpose unclear</p>
-									<p>The desire to know what happens to recycled items</p>
-									<p>The prototype did not cater to international users</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="scrollto" id="p9"></div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Design Iteration I</div>
+									<div class="title page-title">Designing For Convenience</div>
 								</div>
-								<br>
+
+								<div class="row">
+									<div class="column-left">
+										<p>
+										We stripped back the gamification and hand-holding built into the experience, completely doing away with the recycle cart experience. A new onboarding experience introduced people to the capabilities of the app and then let them configure their recycling journey.  Following their first act of recycling clothes, people wanted to know what ensued. It was an opportunity to build better user engagement and promote recycling habitually. 
+										</p>
+										<br>
+										<p>
+										We closed the loop by showing each user's landfill statistics and neighborhood ranking in their profile tab. Better rankings and statistics earned users rewards with our partners and presented the motivation for them to keep coming back. In our bid to be inclusive, we translated the app's content into Spanish and Mandarin
+										</p>
+									</div>
+									<div class="column-right">
+										<img class="iteration_focus focus-border">
+										<p>
+										<br>
+										 [commonly spoken languages within King County].
+										 With this, the design was wrapped in higher fidelity, adding supporting visuals and interactions. 
+										</p>
+									</div>
+								</div>
+							</div>
+								
+							<div class="center-align">
+								<img class="design_iteration">
+							</div>
+						</div>
+
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+										<div class="mini-title title head-title">Design Iteration II</div>
+										<div class="title page-title">Iterate, Iterate, Iterate</div>
+								</div>
+
+								<div class="row">
+									<div class="column-left">
+										<p>
+										Due to time constraints, we had left the app in medium fidelity without completely fleshing out the main user flows. In October 2019, I decided to redesign the app. 
+										</p>									
+									</div>
+									<div class="column-right">
+										<p>
+										I composed elaborate flows, visuals, and micro-interactions which breathed life into our designs. I looked through our research and ideated solutions for specific problems. 
+										</p>
+									</div>
+								</div>
+							</div>
+						
+							<div class="compressed-centered60 grey-box left-align focus-border focus-box" style="overflow: hidden; min-height: 610px; max-height: 668px;">
+								<div class="row">
+									<div class="column-left left-align" style="height: 0px;">
+										<div class="vertical figure" style="transform: scale(1.5) translate(24px, 0px); z-index: 100;">
+											<div class="screen video video-container feature-nav">
+												<video muted playsinline autoplay loop src="/images/ctrg/features/nav.mp4" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware feature-nav"></figure>
+										</div>
+									</div>
+									<div class="column-right" style="padding-left:48px;height: 0px;">
+										<br>
+										<p><b>Design Changes</b></p>
+										
+										<p>
+										I re-introduced a points system to the rewards experience as a currency to upgrade status and redeem possible discounts/coupons with our partners. Now, points have a clear purpose.
+										</p>
+										<br>
+										<p>
+										Drawing on one of our persona's needs, I created location-based reminders so people can drop off their donations when running other errands.
+										</p>
+										<br>
+										<p>
+										I also designed an advanced search for the occasional uncertainty that the users might experience about the recyclability of specific articles, fabrics, and their conditions. 
+										</p>
+									</div>
+								</div>
+								
+								<div class="row">
+									<div class="column-left center-align">
+										<div class="vertical figure" style="transform: scale(1.5) translate(24px, 336px);">
+											<div class="screen video video-container feature-search">
+												<video muted playsinline autoplay loop src="/images/ctrg/features/search.mp4" width="100%" height="100%"></video>
+											</div>
+											<figure class="hardware feature-search"></figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					
+
+					<div class="scrollto" id="p10"></div>
+					<div class="tile-wide dark immersive">
+						<div class="center-padded">
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Impact</div>
+									<div class="title page-title">Ripples In The Recycle Space</div>
+								</div>
+								
+								<div class="row">
+									<div class="column-left">
+										<p>
+										We got in touch with clothing recycling advocates in King County through an email discussing our insights and solutions. We met with officials from King County and the City of Seattle to discuss our ideas and how they could have an impact in the real world. 
+										</p>
+										<br>
+										<p>
+										Our work was celebrated in the "Design in the Wild" contest by Facebook as it received one of the top three spots. 
+										</p>
+									</div>
+									<div class="column-right">
+										<p>
+										It was further publicized by Facebook in the IxDA Interaction 2019 Conference, in Seattle.
+										</p>
+										<br>
+										<p>
+										In a small yet significant way, we created a ripple in the recycling space by educating a lot of people about clothing recycling and shining a light on the topic, in that regard.  
+										</p>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
 
 					<div class="scrollto" id="p11"></div>
-					<div class="tile-wide tint dark immersive">
+					<div class="tile-wide dark immersive">
 						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Final Design</div>
-								<div class="title">Improvements from Low Fidelity Prototype</div>
-								<ul class="styled-ul">
-									<li>Added an onboarding experience that articulates what “clothing recycling” is as well as the process</li>
-									<li>Replaced the “trip” and “cart” verbiage with more appropriate terminology to avoid misuses of common terms</li>
-									<li>Removed the Recycle Cart experience</li>
-									<li>Altered gamification from earning points to tracking how many pounds of clothing users are diverting from the landfill</li>
-									<li>Introduced localized options that match King County’s most commonly spoken languages</li>
-								</ul>	
-								<br>
-								<div class="center-align">
-									<div class="title">Interactive High Fidelity Prototype</div>
-									<br>
-									<iframe width="375" height="736" id="iframe_hifi" src="https://projects.invisionapp.com/prototype/Recycle-Final-cjr4rq2hi00tpzo01j0merb2n/play/16b8f976" frameborder="0" allowfullscreen></iframe>
+							<div class="compressed-centered60 grey-box left-align">
+								<div class="row row-left-padded">
+									<div class="mini-title title head-title">Reflection & Takeaway</div>
+									<div class="title page-title">Design For <s>Engagement</s> Purpose</div>
 								</div>
-							</div>
-						</div>
-      					<div class="parallax" style="width: 100%;height: 0;padding-top: 56.84%; background: url('/images/ctrg/finalDesign/finalDesignSmall.png') no-repeat; background-size: cover;"></div>
-						
-					</div>
-
-					<div class="scrollto" id="p12"></div>
-					<div class="tile-wide tint immersive">
-						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Impact</div>
-								<!-- <ul class="styled-ul">
-									<li>We got in touch with the clothing recycling advocates in King County and shared our insights and solutions.</li>
-									<li>We also had a meeting with King County and City of Seattle officials to discuss the project details.</li> -->
-								<!-- 	<li>We further publicized the project through Facebook's <b>Design in the Wild</b> contest.</li>
-									<li>The project was also display at Facebook's booth in the IxDA interaction 19 Conference in Seattle.</li>
-								</ul>
-								<br> -->
-								<p>
-									We got in touch with the clothing recycling advocates in King County and shared our insights and solutions. We also had a meeting with King County and the City of Seattle officials to discuss the project details.</p>
-									<img src="/images/ctrg/impact/partners1.png" />
+								<div class="row center-align" style="height: 300px;">
+									<video id="rewards_reflection" muted playsinline src="/images/ctrg/features/rewards.mp4"></video>
+									<div style="position: relative; z-index: 10; top: -210px;">
+										<span class="count" style="font-size: 45px; font-weight: 500; font-family: futura;">0</span><br>
+										<span style="font-family: futura; top: -17px; position: relative; font-size: 17px;">of 500 pts</span>
+									</div>
+								</div>
+								<div class="row row-left-padded" id="load-in-viewport">
+									<b>
 									<p>
-									 We further publicized the project through Facebook's <b>Design in the Wild</b> contest. The project was also displayed at Facebook's booth at the IxDA interaction 19 Conference in Seattle.
-								</p>
+									How to engage people in a process like clothing recycling?
+									</p> 
+									<p>
+									How to motivate them to come back and do it again and... one more time? 
+									</p>
+									</b>
+								</div>
+
+								<div class="row">
+									<div class="column-left">
+										<p>
+										In a world full of apps that hog users' attention using dark patterns, building engagement was treading tricky waters. It required a lot of fine-tuning and a shift in perspective. A straightforward approach at gamification did not hold water and instantly collapsed. Users saw through it and felt uncomfortable about it — "Why am I getting points to recycle? What do I do with them?" 
+
+										Our design was missing a clear purpose. To motivate people to keep coming back, applauding them for being environment-friendly was not enough.
+										</p>
+									</div>
 									
-							</div>
-						</div>
-					</div>
-
-					<div class="scrollto" id="p13"></div>
-					<div class="tile-wide tint  dark immersive">
-						<div class="center-padded">
-							<div class="compressed-centered60 left-align">
-								<div class="page-title large-title">Reflection</div>
 								
-								<p>
-								Our belief is that technology can be harnessed for social good, and we want to advocate the use of Human Centered Design principles in government and the public sector. This is where we believe the next UX frontier is, it’s where we were inspired to serve, and it’s where this approach could be truly transformational.
-								</p>
-								<br>
+									
+									<div class="column-right">
+										<p>
+										We stopped giving away points and started showing how much waste they had diverted from the landfill. This change in strategy was well-received as it gave users something to take away and wear as a badge of honor.
 
-								<p>
-								If I had more time, I would spend time designing the chat-bot feature and refining the educational experience of our app, make it more engaging and help bring this much-needed application to fill the gap of a stop curated solution for clothing recycling.
-								</p>
-								<br>
+										In the final iteration, I brought back points, this time with a clear purpose — to act as cheerleaders and progress indicators for users to earn rewards and status upgrades. Points catalyze people to keep recycling until they have done enough to be rewarded.
+										</p>
+									</div>
+								</div>
 
-								<div class="title">Challenges and Learnings</div>
-								<p>
-								<em><b>Designing for a wide audience</b></em> (an entire county in our case) with people from diverse socio-economic backgrounds and age groups was challenging. Different users had different needs from the system — to make the bargain and to come up with a <em>one size fits all</em> solution was definitely challenging. This particularly jogged our brains when we tried to design a solution which was easily accessible and helped our users accomplish their goal of recycling swiftly while also being educational.
-								</p>	
-								<br>
+								<div class="row row-left-padded center-align">
 
-								<p>
-								Another challenge was <em><b>making the experience engaging for the users</b></em> to build habitual recycling behaviors. Most people need some form of external motivation to go through a process like clothing recycling. We approached this piece of the problem by applying gamification in its most literal sense but quickly realized that it wasn't working. That's when we tried a more subtle way of gamifying the process by telling our users "the amount of waste they diverted from landfill" and that brought it home for most of the users we tested our final design with.
-								</p>
-								<br>
-								<br>
-								<br>
-								<br>
-								<br><br><br><br>
-								<p><em>That's all folks! Thank you for reading.</em></p>
-								<p><em>PM</em></p>
+									<p>
+									<b>—
+									<br>
+									"Purpose begets user engagement." </b>
+									</p>
+								</div>
+								
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="tile-wide tint immersive">
+				<div class="tile-wide dark immersive">
 					<div class="center-padded">
 						<div class="compressed-centered80 left-align">
 							<div class="mini-title large-title">Other Projects</div>
