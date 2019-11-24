@@ -33,6 +33,9 @@
     padding: 0 10px 0 10px;
 }
 
+.hello.navLink:hover .navTag {
+    color:  #000;
+}
 
 .navLinkBox {
     position: absolute;
