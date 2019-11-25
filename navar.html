@@ -3,9 +3,9 @@
         <style>
         .codegena{
             position: relative;
-            width: 100%;
-            height: 0;
-            padding-bottom: 56.27198%;
+            /* width: 100%; */
+            height: 100%;
+            padding-left: 56.25%;
         }
         .codegena iframe{
             position: absolute;
@@ -17,19 +17,11 @@
             border: 0;
         }
         </style>
-
-        <script src="js/lib/jquery-1.11.1.min.js"></script>
-        <script>
-            $(window).load(function(){
-                $("#player").contents().find(".logo").hide();
-                $("#player").contents().find(".vp-portrait").hide();
-        });
-        </script>
     </head>
 
     <body style="margin: 0;">
         <div class="codegena">
-            <iframe width='1920px' height='1080px' src='http://player.vimeo.com/video/375350972?autoplay=1&title=0&color=ffffff&byline=0&vp-logo=0' id="player"></iframe>
+            <iframe width='1920px' height='1080px' src='https://player.vimeo.com/video/375350972?title=0&color=ffffff&byline=0' id="player" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
         </div>
     </body>
 </html>
