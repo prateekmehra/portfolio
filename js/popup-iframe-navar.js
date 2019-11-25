@@ -17,6 +17,7 @@ $(window).load(function(){
         var src = 'https://player.vimeo.com/video/375350972?title=0&color=ffffff&byline=0&autoplay=1&playsinline=0';
         // update overlay with iframe
         $iframe.attr('src', src);
+        $('.site-nav').hide();
         // show overlay
         $overlay.show();
     });
@@ -25,8 +26,10 @@ $(window).load(function(){
          // hide overlay
         $('html').removeClass('noscroll');
         $('body').removeClass('noscroll');
+        $('.site-nav').show();
         $overlay.hide();
         $iframe.attr('src', '');
+
     })
 
     // when overlay is clicked
@@ -34,6 +37,7 @@ $(window).load(function(){
         // hide overlay
         $('html').removeClass('noscroll');
         $('body').removeClass('noscroll');
+        $('.site-nav').show();
         $overlay.hide();
         $iframe.attr('src', '');
     });
