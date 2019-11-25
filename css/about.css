@@ -134,7 +134,9 @@ SITE INDEX HEAD
     z-index: 100;
 }
 
-
+.animated-nav-button a.active-nav:after {
+    display: none;
+}
 
 /*
 ------------------------------------------------------------
