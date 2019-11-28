@@ -159,19 +159,19 @@ function timeline(){
 
 	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
 	.set('.project_canvas', {className: "-=hoverable"}, 390)
-	.to('.item-1', 200, {left:"5vw"}, 400)
-	.to('.item-2', 200, {top: "100vh", left:"5vw"}, 400)
-	.to('.item-3', 200, {top: "100vh", left:"5vw", display: 'none'}, 400)
-	.to('.item-4', 200, {top: "200vh", left:"5vw"}, 400)
-	.to('.item-5', 200, {top: "300vh", left:"5vw"}, 400)
-	.to('.item-6', 200, {top: "500vh", left:"5vw"}, 400)
-	.to('.item-7', 200, {top: "400vh", left:"5vw"}, 400)
-	.set('.project_canvas', {className: "-=before-scroll"}, 400)
-	.to('.project_canvas', 1, {className:"+=after-scroll"}, 400)
-	.to('.screen', 1, {className:"+=after-scroll"}, 400)
-	.to('.hardware', 1, {className:"+=after-scroll"}, 400)
-	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 400)
-	.to('.panel-1', 200, {transformOrigin: 'center', transform: 'scale(1)'}, 400)
+	.to('.item-1', 100, {left:"5vw"}, 300)
+	.to('.item-2', 100, {top: "100vh", left:"5vw"}, 300)
+	.to('.item-3', 100, {top: "100vh", left:"5vw", display: 'none'}, 300)
+	.to('.item-4', 100, {top: "200vh", left:"5vw"}, 300)
+	.to('.item-5', 100, {top: "300vh", left:"5vw"}, 300)
+	.to('.item-6', 100, {top: "500vh", left:"5vw"}, 300)
+	.to('.item-7', 100, {top: "400vh", left:"5vw"}, 300)
+	.set('.project_canvas', {className: "-=before-scroll"}, 300)
+	.to('.project_canvas', 1, {className:"+=after-scroll"}, 300)
+	.to('.screen', 1, {className:"+=after-scroll"}, 300)
+	.to('.hardware', 1, {className:"+=after-scroll"}, 300)
+	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 300)
+	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
 
 	.to('.project_canvas', 100, {
 		transformOrigin: 'left',
@@ -181,41 +181,41 @@ function timeline(){
 		overflow: 'hidden',
 		opacity: 1,
 		borderRadius: '20px',
-		boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)'}, 500)
+		boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)'}, 400)
 	.to('.device-container.phone', 100, {
 		top: window.innerWidth <= 750 ? window.innerHeight <= 750 ? '-140px' : '-50px' : '63px',
-		left: window.innerWidth <= 750 ? '-101px' : window.innerWidth < 1025 ? '40px' : window.innerWidth < 1441 ? '-23px' : '86px'}, 500)
+		left: window.innerWidth <= 750 ? '-101px' : window.innerWidth < 1025 ? '40px' : window.innerWidth < 1441 ? '-23px' : '86px'}, 400)
 	.to('.device-container.ipad', 100, {
 		top: window.innerWidth < 1024 ? window.innerHeight <= 750 ? '60px' : '105px' : '35px',
 		left: window.innerWidth <= 485 ? '-30px' : window.innerWidth <= 750 ? '0px' : window.innerWidth < 1025 ? '-221px' : window.innerWidth < 1441 ? '-364px' : '-291px', 
-		transform: 'scale(0.6)'}, 600)
-	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 500)
-	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 500)
-	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 500)
-	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 500)
+		transform: 'scale(0.6)'}, 400)
+	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 400)
+	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 400)
+	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 400)
+	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 400)
 	
 
 	if(window.innerWidth <= 750){
 		tl2
-		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 500)
-		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 500);
+		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 400)
+		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 400);
 	}
 	else {
 		tl2
-		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (0)'}, 500)
-		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(0)'}, 500);
+		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (0)'}, 400)
+		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(0)'}, 400);
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1}, 600)
-	.set('.project-intro', {overflowY: 'scroll'}, 600)
-	.set('.item-1', {left:"5vw"}, 600)
-	.set('.item-2', {top: "100vh", left:"5vw"}, 600)
-	.set('.item-3', {top: "100vh", left:"5vw", display: 'none'}, 600)
-	.set('.item-4', {top: "200vh", left:"5vw"}, 600)
-	.set('.item-5', {top: "300vh", left:"5vw"}, 600)
-	.set('.item-6', {top: "500vh", left:"5vw"}, 600)
-	.set('.item-7', {top: "400vh", left:"5vw"}, 600)
+	.set('.panel', {display: 'block', opacity: 1}, 500)
+	.set('.project-intro', {overflowY: 'scroll'}, 500)
+	.set('.item-1', {left:"5vw"}, 500)
+	.set('.item-2', {top: "100vh", left:"5vw"}, 500)
+	.set('.item-3', {top: "100vh", left:"5vw", display: 'none'}, 500)
+	.set('.item-4', {top: "200vh", left:"5vw"}, 500)
+	.set('.item-5', {top: "300vh", left:"5vw"}, 500)
+	.set('.item-6', {top: "500vh", left:"5vw"}, 500)
+	.set('.item-7', {top: "400vh", left:"5vw"}, 500)
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 600, offset: window.innerHeight/2 + 100})
 		.setTween(tl2)
