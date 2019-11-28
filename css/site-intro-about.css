@@ -1,0 +1,116 @@
+/*
+------------------------------------------------------------
+SITE INTRO
+------------------------------------------------------------
+*/
+.site-nav {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    background: none;
+    z-index: 100000;
+    text-align: center;
+    pointer-events: none;
+}
+
+
+.site-intro {
+    width: 100%;
+    height: 100%;
+}
+
+.site-logo {
+    /*  width: 60px;
+     margin-top: 20px;
+     margin-left: 38%; */
+    width: 20px;
+    margin-top: -8px;
+    margin-left: 11px;
+}
+
+.site-logo-holder{
+    position: absolute;
+    width: 17%;
+    text-align: left;
+}
+
+
+.site-logo-background{
+    /* background: rgb(17, 17, 17); */
+    width: 60px;
+    margin: 40px;
+    height: 60px;
+    padding: 10px;
+    pointer-events: all;
+    /* box-shadow: 0px -1px 20px 4px rgba(0, 0, 0, 0.33); */
+}
+
+#intro-box {
+    margin-top: 24vh;
+    margin-bottom: 10%;
+
+    display: block;
+    
+}
+
+#intro-logo {
+
+    margin-left: 37%;
+    
+}
+
+#intro-description {
+    float: right;
+    display:  inline-block;
+
+}
+
+.intro-header {
+
+    display:  inline-block;
+    font-weight: 100;
+    font-size: 50px;
+    letter-spacing: 2px;
+    font-family: Cera pro;
+    line-height: 1;
+    text-transform: uppercase;
+    
+    
+}
+
+#intro-big {
+    font-size       : 44px;
+    font-weight     : 100;
+    display: inline-block;
+    float: left;
+}
+
+.intro-text { 
+    font-weight: 100;
+    font-size: 20px;
+    line-height: 1;
+    font-family     : Cera pro, sans-serif;
+    text-align: left;
+}
+
+
+.arrow > svg {
+    position     : relative;
+
+    height       : 100%;
+    width        : 100%;
+
+    stroke-width : 2.5px;
+}
+
+#ux {
+    opacity: 0;
+    font-family: Cera pro;
+    font-weight: 600;
+    font-size: 31px;
+    letter-spacing: 1px;
+    text-align: left;
+    -webkit-animation : 2s fadein 4s forwards;
+    animation         : 2s fadein 4s forwards;
+}
+
