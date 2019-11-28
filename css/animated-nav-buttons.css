@@ -99,8 +99,14 @@ ANIMATED BUTTON
   cursor: pointer;
 }
 
+.animated-nav-button a.active-nav{
+  pointer-events: none;
+}
+
 .animated-nav-button a.active-nav .text{
   color:  #2055df;
+
+
   /* -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
   transition: -webkit-transform 0.3s cubic-bezier(0.2, 0, 0, 1) 0.2s;
