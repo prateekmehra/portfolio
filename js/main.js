@@ -224,7 +224,7 @@ function timeline(){
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1, zIndex: 100, position: 'relative'}, 500)
+	.set('.panel', {display: 'block', opacity: 1, zIndex: 1, position: 'relative'}, 500)
 	.set('.site-footer', {display: 'block', opacity: 1}, 500)
 	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
 	.set('.item-1', {left:"5vw"}, 500)
