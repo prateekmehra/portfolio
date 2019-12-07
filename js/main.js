@@ -130,7 +130,7 @@ function timeline(){
 			borderRadius: '15%',
 			boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)', 
 			position: 'absolute', 
-			overflow: 'visible',
+			// overflow: 'visible',
 			pointerEvents: 'none'
 		})
 		.set('.project_canvas.phone', {height:' 568px', width:'262px',  transformOrigin:' center', borderRadius: '40px'})
