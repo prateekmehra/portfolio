@@ -174,7 +174,7 @@ function timeline(){
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
 
 	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
-	.set('.project_canvas', {className: "-=hoverable"}, 390)
+	.set('.project_canvas', {className: "-=hoverable"}, 391)
 	.to('.item-1', 100, {left:"5vw"}, 300)
 	.to('.item-2', 100, {top: "100vh", left:"5vw"}, 300)
 	.to('.item-3', 100, {top: "100vh", left:"5vw", display: 'none'}, 300)
