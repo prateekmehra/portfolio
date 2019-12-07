@@ -164,7 +164,7 @@ function timeline(){
 	.set('#portfolio', {cursor: 'unset'}, 10)
 	.set('.project_canvas', {className: "+=hoverable", pointerEvents: 'all', cursor: 'pointer'}, 270)
 	.to('.item-7', 1, {top: '311px'}, 0)
-	.to('.project_canvas', 1, {background: "rgba(255, 255, 255)", boxShadow: 'none'}, 0)
+	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
 	.to('#scroll-for-portfolio', 300, {opacity: 0, display: 'none'}, 0)
@@ -188,6 +188,7 @@ function timeline(){
 	.to('.hardware', 1, {className:"+=after-scroll"}, 300)
 	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 300)
 	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
+	.to('#portfolio', 100, {backgroundColor: '#FFFFFF'}, 300)
 
 	.to('#scroll-for-details', 1, {opacity: 0}, 400)
 	.to('.project_canvas', 100, {
@@ -198,7 +199,7 @@ function timeline(){
 		overflow: 'hidden',
 		opacity: 1,
 		borderRadius: '8px',
-		boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.2)'}, 400)
+		boxShadow: '10px 10px 60px 0px rgba(0, 0, 0, 0.3)'}, 400)
 	.to('.device-container.phone', 100, {
 		top: window.innerWidth <= 750 ? window.innerHeight <= 750 ? '-140px' : '-50px' : '63px',
 		left: window.innerWidth <= 750 ? '-101px' : window.innerWidth < 1025 ? '40px' : window.innerWidth < 1441 ? '-23px' : '86px'}, 400)
@@ -224,7 +225,7 @@ function timeline(){
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1, zIndex: 100, position: 'sticky', overflow: 'hidden'}, 500)
+	.set('.panel', {display: 'block', opacity: 1}, 500)
 	.set('.site-footer', {display: 'block', opacity: 1}, 500)
 	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
 	.set('.item-1', {left:"5vw"}, 500)
