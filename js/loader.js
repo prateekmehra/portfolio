@@ -5,7 +5,7 @@ $(function(){
        		},2000);
 				
 			$('body').queue(function (next) { 
-				$(this).css({'overflow-y':'visible'});	
+				$(this).css({'overflow':'visible'});	
 				next();
 			});
 			$("#menuToggle input").prop('checked', false);

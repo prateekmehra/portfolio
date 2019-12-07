@@ -6,7 +6,7 @@
 	right: 0;
 	margin: auto;
 	display: block;
-	line-height: 43px;
+	line-height: 60px;
 	text-align: center;
 	transition: top .3s linear;
 	transition-delay: .5s;
@@ -144,7 +144,7 @@ ANIMATED BUTTON
 
 
 #project-nav .text{
-	color: #d0d0d0 !important;
+	color: #a7a5a5 !important;
 	font-size: 16px;
     font-weight: 500;
 }

@@ -12,7 +12,9 @@ LOADING OVERLAY
     height      : 100%;
     width       : 100%;
 
-    background  : rgba(17, 17, 17, 0.99);
+    background  : rgba(67, 67, 67, 0.7);
+     backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
 
     align-items : center;
 }
@@ -343,3 +345,5 @@ LOADING OVERLAY
     animation-delay                   : 1s;
     animation-iteration-count         : infinite;
 }
+
+

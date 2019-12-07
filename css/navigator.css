@@ -53,7 +53,7 @@
     box-sizing: border-box;
     position: absolute;
     top: 0;
-    right: 100%;
+    right: 60%;
     overflow: hidden;
     padding: 0;
     line-height: 30px;
@@ -68,7 +68,7 @@
     transition: max-width 0.35s, padding 0.35s;
     /* text-transform: uppercase; */
     /* letter-spacing: 2px; */
-    color: #d0d0d0;
+    color: #a7a5a5;
 }
 
 .hello .navTag {

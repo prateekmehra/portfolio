@@ -33,6 +33,7 @@ $(document).ready(function(){
 	}, function(){
 		$('#project-box .intro-box-dimensions > .project_canvas').removeClass('add-blur');
 		$('#project-box .intro-box-dimensions a > .project_canvas').removeClass('add-blur');
+		$('.project_canvas').removeClass('add-blur');
 	});
 });
 
@@ -43,7 +44,9 @@ $(window).on('load', function() {
 	var prev = window.innerHeight/2 + 800;
 
 	$('.scroll-downs').on('click', function(){
-		$(window).scrollTop(window.innerHeight/2 + 800);
+		if($(window).scrollTop() <= 400){
+			$(window).scrollTop(440);
+		}
 	});
 
 	$(".arrow").css({"color":"#000"});
@@ -59,11 +62,19 @@ $(window).on('load', function() {
 
 		$('.project-intro').scroll(function(){
 			if($('.project-intro').scrollTop() == 0){
+				$('html').css({'scroll-behavior': 'inherit'})
 				$(window).scrollTop(prev + $('.project-intro').scrollTop())
+				$('html').css({'scroll-behavior': 'smooth'})
 				$('body').removeClass('noscroll');
 			}
 		})
 	})
+
+	$('#portfolio').click(function(){
+		if($(window).scrollTop() <= 400){
+			$(window).scrollTop(440);
+		}
+	});
 
 });
 
@@ -107,7 +118,9 @@ function timeline(){
 		
 		//pre-reqs
 		tl1
-		.set('.panel', {opacity: 0})
+		.set('#portfolio', {cursor: 'pointer'})
+		.set('.panel', {opacity: 0, display: 'none'})
+		.set('.site-footer', {opacity: 0, display: 'none'})
 		.set('.panel-1', {top: '0px', display: 'block', width: '1680px', height: '100%', margin: 'auto'})
 		.set('.project-intro', {overflowY: 'visible'})
 		.set('#project-box', {zIndex: 1, position: 'absolute', display: 'block', marginTop: 0})
@@ -118,6 +131,7 @@ function timeline(){
 			boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)', 
 			position: 'absolute', 
 			overflow: 'visible',
+			pointerEvents: 'none'
 		})
 		.set('.project_canvas.phone', {height:' 568px', width:'262px',  transformOrigin:' center', borderRadius: '40px'})
 		.set('.project_canvas.ipad', {width:' 862px' , height: '647px', transformOrigin: 'center', borderRadius: '40px'})
@@ -128,8 +142,9 @@ function timeline(){
 		.set('.project_canvas', {transformOrigin: 'center'})
 		.set('.screen', {className: "-=after-scroll"})
 		.set('.item-3', {display: 'block'})
-		.set('.scroll-downs', {display: 'block', opacity: 1})
-		.set('.scroll-downs-text', {display: 'block', opacity: 1})
+		.set('.scroll-downs', {display: 'block', opacity: 1, cursor: 'pointer'})
+		.set('#scroll-for-portfolio', {display: 'block', opacity: 1})
+		.set('#scroll-for-details', {display: 'none', opacity: 0})
 		.set('.screen', {clearProps: 'background-image'})
 		
 
@@ -146,13 +161,14 @@ function timeline(){
 	var panel_translate = (window.innerWidth - 1680) * 0.5;
 
 	tl2
-	.set('.project_canvas', {className: "+=hoverable"}, 270)
+	.set('#portfolio', {cursor: 'unset'}, 10)
+	.set('.project_canvas', {className: "+=hoverable", pointerEvents: 'all', cursor: 'pointer'}, 270)
 	.to('.item-7', 1, {top: '311px'}, 0)
-	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
+	.to('.project_canvas', 1, {background: "rgba(255, 255, 255)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
-	
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
-	.to('.scroll-downs-text', 300, {opacity: 0, display: 'none'}, 0)
+	.to('#scroll-for-portfolio', 300, {opacity: 0, display: 'none'}, 0)
+	.to('#scroll-for-details', 230, {opacity: 1, zIndex: 2, display: 'block'}, 200)
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
@@ -173,6 +189,7 @@ function timeline(){
 	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 300)
 	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
 
+	.to('#scroll-for-details', 1, {opacity: 0}, 400)
 	.to('.project_canvas', 100, {
 		transformOrigin: 'left',
 		transform: 'scale(1.5)',
@@ -180,8 +197,8 @@ function timeline(){
 		height: window.innerHeight <= 841 ? 0.6 * window.innerHeight : 504,
 		overflow: 'hidden',
 		opacity: 1,
-		borderRadius: '20px',
-		boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)'}, 400)
+		borderRadius: '8px',
+		boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.2)'}, 400)
 	.to('.device-container.phone', 100, {
 		top: window.innerWidth <= 750 ? window.innerHeight <= 750 ? '-140px' : '-50px' : '63px',
 		left: window.innerWidth <= 750 ? '-101px' : window.innerWidth < 1025 ? '40px' : window.innerWidth < 1441 ? '-23px' : '86px'}, 400)
@@ -207,8 +224,9 @@ function timeline(){
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1}, 500)
-	.set('.project-intro', {overflowY: 'scroll'}, 500)
+	.set('.panel', {display: 'block', opacity: 1, zIndex: 100, position: 'relative'}, 500)
+	.set('.site-footer', {display: 'block', opacity: 1}, 500)
+	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
 	.set('.item-1', {left:"5vw"}, 500)
 	.set('.item-2', {top: "100vh", left:"5vw"}, 500)
 	.set('.item-3', {top: "100vh", left:"5vw", display: 'none'}, 500)

@@ -8,7 +8,7 @@ html, body {
 
 body {
     background  : #fff;
-    font-family : Cera Pro, sans-serif;
+    font-family : EuclidSquare, sans-serif;
     /* font-size   : 1.17rem; */
     font-weight : 400;
     color: #FFFFFF;
@@ -25,7 +25,7 @@ img {
 }
 
 a {
-    font-family     : Cera Pro, sans-serif;
+    font-family     : EuclidSquare, sans-serif;
     font-weight     : normal;
     color           : #FFFFFF;
     text-decoration : none;
@@ -59,7 +59,7 @@ SITE INDEX HEAD
     width          : 100%;
     margin         : 50px 10px 50px 0px;
 
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 50px;
     font-weight    : 400;
     letter-spacing : 1px;
@@ -76,12 +76,12 @@ SITE INDEX HEAD
 } */
 
 .category, .title {
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 48px;
 }
 
 .category, .large-title {
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 64px;    
     /* text-transform : uppercase; */
 }
@@ -399,7 +399,7 @@ PAGE CONTENT
 }
 
 .page-content .focus-title{
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 24px;
     font-weight    : 700;
     margin-left    :  20px;
@@ -410,7 +410,7 @@ PAGE CONTENT
 }
 
 .page-content .mini-title {
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 14px;
     font-weight    : 500;
     text-transform : uppercase;

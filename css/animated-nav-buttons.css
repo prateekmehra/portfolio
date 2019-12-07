@@ -21,16 +21,20 @@ ANIMATED BUTTON
 }
 .animated-nav-button a .text {
   font-family: Cera Pro, sans-serif;
-  font-size: 1rem;
   font-weight: 500;
-  text-transform: uppercase;    
+   
   -webkit-transform: translate3d(0, 0.2em, 0);
           transform: translate3d(0, 0.2em, 0);
   display: block;
   transition: -webkit-transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
   transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s, -webkit-transform 0.2s cubic-bezier(0.2, 0, 0, 1) 0.2s;
-  color: #777;
+  color: #aaa;
+
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-transform: uppercase;
 }
 .animated-nav-button a .text:hover{
     color: #222;

@@ -1,14 +1,21 @@
 
 /* Type weight 100-900 in 100 increments; Medium is 500: http://www.webtype.com/info/articles/fonts-weights/ */
-html { min-width: 300px; max-width: 2628px;}
+html { min-width: 300px; max-width: 1680px;}
 
 html, body {
     touch-action : manipulation;
 }
 
-/* html {
+html {
   scroll-behavior: smooth;
-} */
+  --scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
 
 body {
     background  : #fff;
@@ -149,7 +156,7 @@ PAGE CONTENT
 
 
 .mini-title {
-    font-family    : Cera Pro, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 14px;
     font-weight    : 500;
     text-transform : uppercase;
@@ -488,4 +495,13 @@ figure {
     position: fixed;
     right: 1.45rem;
     top: 1.45rem;
+}
+
+#scroll-for-details {
+    opacity: 0;
+}
+
+#scroll-for-details > .text{
+    float: right; 
+    margin-right: 3.45rem;
 }

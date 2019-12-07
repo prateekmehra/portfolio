@@ -10,7 +10,7 @@
  */
 
  html.noscroll, body.noscroll {
-    overflow:  hidden;
+    overflow:  hidden !important;
 }
 
 
@@ -180,19 +180,21 @@
 #horizontal-menu {
     display: block;
     position: absolute;
-    top: 16px;
     right: 3.45rem;
     z-index: 2;
     pointer-events: all;
+    top: 50%;
+    transform: translate(0, -50%);
 }
 
 #horizontal-menu-left{
   display: block;
   position: absolute;
-  top: 16px;
   z-index: 2;
   pointer-events: all;
   left: 3.45rem;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 #horizontal-menu a {

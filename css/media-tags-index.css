@@ -39,7 +39,7 @@ MEDIA TAGS
 
 @media only screen and  (min-width: 2000px) and  (orientation:landscape){
     .page-content .compressed-centered60 {
-        width: 1008px;
+        width: 1467px;
     }
 
     .panel .column-right {
@@ -406,6 +406,11 @@ MEDIA TAGS
     #menuToggle {
         display: block !important;
         right: 1.45rem;
+    }
+
+    #scroll-for-details > .text{
+        float: none;
+        margin:  auto;
     }
 
 }
