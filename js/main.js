@@ -130,7 +130,7 @@ function timeline(){
 			borderRadius: '15%',
 			boxShadow: '20px 20px 60px 0px rgba(0, 0, 0, 0.11)', 
 			position: 'absolute', 
-			// overflow: 'visible',
+			overflow: 'visible',
 			pointerEvents: 'none'
 		})
 		.set('.project_canvas.phone', {height:' 568px', width:'262px',  transformOrigin:' center', borderRadius: '40px'})
@@ -224,7 +224,7 @@ function timeline(){
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1, zIndex: 100, position: 'relative'}, 500)
+	.set('.panel', {display: 'block', opacity: 1, zIndex: 100, position: 'sticky', overflow: 'hidden'}, 500)
 	.set('.site-footer', {display: 'block', opacity: 1}, 500)
 	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
 	.set('.item-1', {left:"5vw"}, 500)
