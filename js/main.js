@@ -26,6 +26,7 @@ $(document).ready(function(){
 	});
 
 	$('.project_canvas').hover(function(){
+		$('.project_canvas').removeClass('add-blur');
 		if(!$('.project_canvas').hasClass("after-scroll")){
 			$('#project-box .intro-box-dimensions a > *:not(:hover).before-scroll.hoverable').addClass('add-blur');
 			$('#project-box .intro-box-dimensions > *:not(:hover).before-scroll.hoverable').addClass('add-blur');
