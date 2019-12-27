@@ -119,6 +119,7 @@ function timeline(){
 		
 		//pre-reqs
 		tl1
+		.set('.site-nav', {backdropFilter: 'saturate(180%) blur(20px)',  webkitBackdropFilter: 'saturate(180%) blur(20px)', backgroundColor: 'rgba(253, 253, 253, 0.08)'})
 		.set('#portfolio', {cursor: 'pointer'})
 		.set('.panel', {opacity: 0, display: 'none'})
 		.set('.site-footer', {opacity: 0, display: 'none'})
@@ -145,7 +146,7 @@ function timeline(){
 		.set('.item-3', {display: 'block'})
 		.set('.scroll-downs', {display: 'block', opacity: 1, cursor: 'pointer'})
 		.set('#scroll-for-portfolio', {display: 'block', opacity: 1})
-		.set('#scroll-for-details', {display: 'none', opacity: 0})
+		.set('#scroll-for-details', {display: 'none', opacity: 0, zIndex: 1})
 		.set('.screen', {clearProps: 'background-image'})
 		
 
