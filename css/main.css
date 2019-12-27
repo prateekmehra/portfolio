@@ -499,6 +499,7 @@ figure {
 
 #scroll-for-details {
     opacity: 0;
+    z-index: 2;
 }
 
 #scroll-for-details > .text{

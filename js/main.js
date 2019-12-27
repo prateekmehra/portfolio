@@ -146,7 +146,6 @@ function timeline(){
 		.set('.item-3', {display: 'block'})
 		.set('.scroll-downs', {display: 'block', opacity: 1, cursor: 'pointer'})
 		.set('#scroll-for-portfolio', {display: 'block', opacity: 1})
-		.set('#scroll-for-details', {display: 'none', opacity: 0, zIndex: 1})
 		.set('.screen', {clearProps: 'background-image'})
 		
 
@@ -163,6 +162,7 @@ function timeline(){
 	var panel_translate = (window.innerWidth - 1680) * 0.5;
 
 	tl2
+	.set('#scroll-for-details', {clearProps:'all'}, 100)
 	.set('#portfolio', {cursor: 'unset'}, 10)
 	.set('.project_canvas', {className: "+=hoverable", pointerEvents: 'all', cursor: 'pointer'}, 270)
 	.to('.item-7', 1, {top: '311px'}, 0)
@@ -170,7 +170,7 @@ function timeline(){
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
 	.to('#scroll-for-portfolio', 300, {opacity: 0, display: 'none'}, 0)
-	.to('#scroll-for-details', 230, {opacity: 1, zIndex: 2, display: 'block'}, 200)
+	.to('#scroll-for-details', 230, {opacity: 1, display: 'block'}, 100)
 	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
 	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
 	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
