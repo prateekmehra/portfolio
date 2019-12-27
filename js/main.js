@@ -191,7 +191,7 @@ function timeline(){
 	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
 	.to('#portfolio', 100, {backgroundColor: '#FFFFFF'}, 300)
 
-	.to('#scroll-for-details', 1, {opacity: 0}, 400)
+	.to('#scroll-for-details', 1, {opacity: 0, display: 'none'}, 400)
 	.to('.project_canvas', 100, {
 		transformOrigin: 'left',
 		transform: 'scale(1.5)',
