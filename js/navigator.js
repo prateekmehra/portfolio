@@ -47,14 +47,16 @@ function updateNavigatorVisibility() {
             $(navBar).css('display', 'inline-block');
             $("#go-back").addClass("transform-go-back");
             $("#go-back").css({display: 'block'});
+            $(".slides-underlay").css({opacity: 0});
             // $("#line-animation-holder").css({display: 'none'});
         }
 
         portfolio_visibility = true;
-    }else{
+    } else{
         if(portfolio_visibility == true){
             $(navBar).css('display', 'none');
             $("#go-back").css({display: 'none'});
+            $(".slides-underlay").css({opacity: 1});
             // $("#line-animation-holder").css({display: 'block'});
         }
         portfolio_visibility = false;
