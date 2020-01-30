@@ -792,7 +792,7 @@ PAGE CONTENT
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .passcode {
         top: 161px;
         position: absolute;
@@ -800,6 +800,24 @@ PAGE CONTENT
         z-index: 1000;
         width: 192px;
         height: 23px;
+        background: #0000;
+        border-radius: 2px;
+        border-style: solid;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.53);
+        color: #FFFFFF;
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .passcode {
+        top: 100px;
+        position: absolute;
+        left: 150px;
+        z-index: 1000;
+        width: 104px;
+        height: 11px;
         background: #0000;
         border-radius: 2px;
         border-style: solid;

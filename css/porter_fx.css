@@ -25,7 +25,7 @@
     margin-top: 0.8em
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .content-container {
         height:auto;
         min-height: initial
@@ -54,20 +54,20 @@
     margin-top: 16px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .content-container .hero-headline {
         margin-top:11px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .content-container .hero-headline {
         margin-top:7px;
         max-width: 70%
     }
 }
 
-@media only screen and (orientation: landscape) and (max-width: 735px) {
+@media only screen and (orientation: landscape) and (max-width: 768px) {
     .section-hero .content-container .hero-headline {
         max-width:none
     }
@@ -81,13 +81,13 @@
     max-width: 640px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .content-container .typography-intro-elevated {
         max-width:470px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .content-container .typography-intro-elevated {
         max-width:90%
     }
@@ -99,13 +99,13 @@
     margin-top: 55px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .content-container .violator {
         margin-top:52px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .content-container .violator {
         margin-top:39px
     }
@@ -129,13 +129,13 @@
     
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container {
         height:calc(1430px + 100vh)
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container {
         height:calc(1010px + 150vh)
     }
@@ -151,14 +151,14 @@
 
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .sticky-content {
         height:1830px;
     /*     margin-left: -399px; */
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .sticky-content {
         height:1410px;
        /*  margin-left: -134px; */
@@ -204,13 +204,13 @@
     margin-left: -32vw;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .hero {
         margin-left: -43vw;
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .hero {
         margin-left: -24vw;
     }
@@ -223,14 +223,14 @@
     left: 0;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-anchor {
         width:199px;
         height: 390px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-anchor {
         width:181px;
         height: 357px
@@ -259,13 +259,13 @@
     transform: translate(40px, 20px);
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .screen.video-container.waiting-to-start {
         transform: translate(40px, 34px);
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .screen.video-container.waiting-to-start {
         transform: translate(40px, 18px);
     }
@@ -278,19 +278,19 @@
     top: -2px;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device video {
-        width:170px;
-        height: 368px;
+        width: 556px !important;
+        height: 421px !important;
         position: absolute;
         top: -20px;
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device video {
-        width:156px;
-        height: 338px;
+        width: 300px !important;
+        height: 225px !important;
         position: absolute;
         top: -4px;
 
@@ -302,14 +302,14 @@
     left: 22px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.horizontal .screen {
         top:15px;
         left: 13px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.horizontal .screen {
         top:14px;
         left: 14px;
@@ -321,17 +321,17 @@
     left: 22px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.vertical .screen {
-        top:13px;
-        left: 15px
+        top: 20px;
+        left: 20px;
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.vertical .screen {
-        top:12px;
-        left: 12px
+        top:14px;
+        left: 14px
     }
 }
 
@@ -340,14 +340,14 @@
     left: 0
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-0 {
-        top:-438px;
+        top: -508px;
         left: 0
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-0 {
         top:-399px;
         left: 0
@@ -364,14 +364,14 @@
     left: 0
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-2 {
-        top:438px;
+        top: 508px;
         left: 0
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-2 {
         top:399px;
         left: 0
@@ -383,17 +383,17 @@
     left: 980px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-3 {
-        top:-255px;
-        left: 243px
+        top:-325px;
+        left: 643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-3 {
         top:-249px;
-        left: 216px
+        left: 366px
     }
 }
 
@@ -402,17 +402,17 @@
     left: 980px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-4 {
         top:183px;
-        left: 243px
+        left: 643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-4 {
         top:150px;
-        left: 216px
+        left: 366px
     }
 }
 
@@ -421,17 +421,17 @@
     left: 0px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-5 {
-        top:621px;
-        left: 243px
+        top:691px;
+        left: 643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-5 {
         top:548px;
-        left: 216px
+        left: 366px
     }
 }
 
@@ -440,33 +440,33 @@
     left: -1107px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-6 {
         top:-692px;
         left: 239px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-6 {
         top:-648px;
-        left: 216px
+        left: 366px
     }
 }
 
 .section-hero .sticky-container .device.item-7 {
-    top: -250px;
+    top: -320px;
     left: 1960px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-7 {
-        top:-178px;
-        left: 485px
+        top:-248px;
+        left: 1285px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-7 {
         display:none
     }
@@ -477,14 +477,14 @@
     left: 1960px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-8 {
         top: 260px;
-        left: 485px
+        left: 1285px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-8 {
         display:none
     }
@@ -495,14 +495,14 @@
     left: 980px;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-12 {
-        top:698px;
-        left: 485px
+        top:768px;
+        left: 1285px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-12 {
         display:none
     }
@@ -513,14 +513,14 @@
     left: 1112px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-13 {
-        top:698px;
+        top:768px;
         left: 719px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-13 {
         top:625px;
         left: 647px
@@ -532,14 +532,14 @@
     left: -737px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-14 {
         top:-77px;
         left: -479px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-14 {
         top:-86px;
         left: -435px
@@ -551,17 +551,17 @@
     left: -980px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-15 {
-        top:-250px;
-        left: -242px
+        top: -320px;
+        left: -643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-15 {
-        top:-250px;
-        left: -214px
+        top: -320px;
+        left: -364px
     }
 }
 
@@ -570,14 +570,14 @@
     left: -737px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-16 {
-        top:-438px;
+        top: -508px;
         left: -484px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-16 {
         display:none
     }
@@ -588,17 +588,17 @@
     left: -980px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-17 {
         top:183px;
-        left: -242px
+        left: -643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-17 {
         top:150px;
-        left: -214px
+        left: -364px
     }
 }
 
@@ -607,14 +607,14 @@
     left: -1105px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-18 {
         top:182px;
         left: -723px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-18 {
         display:none
     }
@@ -625,17 +625,17 @@
     left: -980px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device.item-20 {
-        top:622px;
-        left: -242px
+        top: 692px;
+        left: -643px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device.item-20 {
         top:548px;
-        left: -214px
+        left: -364px
     }
 }
 
@@ -657,7 +657,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
      .section-hero .sticky-container .device-container.dark .horizontal .hardware {
         width:506px;
         height: 300px;
@@ -667,13 +667,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
      .section-hero .sticky-container .device-container.dark .horizontal .hardware {
         background-image:url("/images/porter/preview/hardware/hero_horizontal_medium_2x.png")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
      .section-hero .sticky-container .device-container.dark .horizontal .hardware {
         width:464px;
         height: 276px;
@@ -683,7 +683,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
      .section-hero .sticky-container .device-container.dark .horizontal .hardware {
         background-image:url("/images/porter/preview/hardware/hero_horizontal_small_2x.png")
     }
@@ -703,7 +703,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .vertical .hardware {
         width:272px;
         height: 460px;
@@ -713,13 +713,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .vertical .hardware {
         background-image:url("/images/porter/preview/hardware/hero_vert_medium_2x.png")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .vertical .hardware {
         width:248px;
         height: 420px;
@@ -729,7 +729,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .vertical .hardware {
         background-image:url("/images/porter/preview/hardware/hero_vert_small_2x.png")
     }
@@ -749,7 +749,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-0 .screen {
         width:170px;
         height: 368px;
@@ -759,13 +759,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-0 .screen {
         background-image:url("/images/porter/preview/screen/leg1.1_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-0 .screen {
         width:156px;
         height: 338px;
@@ -775,7 +775,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-0 .screen {
         background-image:url("/images/porter/preview/screen/leg1.1_small_2x.jpg")
     }
@@ -795,7 +795,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-2 .screen {
         width:170px;
         height: 368px;
@@ -805,13 +805,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-2 .screen {
         background-image:url("/images/porter/preview/screen/pd1_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-2 .screen {
         width:156px;
         height: 338px;
@@ -821,7 +821,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-2 .screen {
         background-image:url("/images/porter/preview/screen/pd1_small_2x.jpg")
     }
@@ -841,7 +841,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-3 .screen {
         width:170px;
         height: 368px;
@@ -851,13 +851,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-3 .screen {
         background-image:url("/images/porter/preview/screen/leg2_summary_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-3 .screen {
         width:156px;
         height: 338px;
@@ -867,7 +867,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-3 .screen {
         background-image:url("/images/porter/preview/screen/leg2_summary_small_2x.jpg")
     }
@@ -887,7 +887,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-4 .screen {
         width:170px;
         height: 368px;
@@ -897,13 +897,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-4 .screen {
         background-image:url("/images/porter/preview/screen/leg1_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-4 .screen {
         width:156px;
         height: 338px;
@@ -913,7 +913,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-4 .screen {
         background-image:url("/images/porter/preview/screen/leg1_small_2x.jpg")
     }
@@ -933,7 +933,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-5 .screen {
         width:170px;
         height: 368px;
@@ -943,13 +943,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-5 .screen {
         background-image:url("/images/porter/preview/screen/order_summary_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-5 .screen {
         width:156px;
         height: 338px;
@@ -959,7 +959,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-5 .screen {
         background-image:url("/images/porter/preview/screen/order_summary_small_2x.jpg")
     }
@@ -979,7 +979,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-7 .screen {
         width:170px;
         height: 368px;
@@ -989,13 +989,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-7 .screen {
         background-image:url("/images/porter/preview/screen/plan_selected_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-7 .screen {
         width:156px;
         height: 338px;
@@ -1005,7 +1005,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-7 .screen {
         background-image:url("/images/porter/preview/screen/plan_selected_small_2x.jpg")
     }
@@ -1025,7 +1025,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-8 .screen {
         width:170px;
         height: 368px;
@@ -1035,13 +1035,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-8 .screen {
         background-image:url("/images/porter/preview/screen/payment_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-8 .screen {
         width:156px;
         height: 338px;
@@ -1051,7 +1051,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-8 .screen {
         background-image:url("/images/porter/preview/screen/payment_small_2x.jpg")
     }
@@ -1071,7 +1071,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-12 .screen {
         width:170px;
         height: 368px;
@@ -1081,13 +1081,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-12 .screen {
         background-image:url("/images/porter/preview/screen/plan_general_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-12 .screen {
         width:156px;
         height: 338px;
@@ -1097,7 +1097,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-12 .screen {
         background-image:url("/images/porter/preview/screen/plan_general_small_2x.jpg")
     }
@@ -1117,7 +1117,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-15 .screen {
         width:170px;
         height: 368px;
@@ -1127,13 +1127,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-15 .screen {
         background-image:url("/images/porter/preview/screen/plan_logged_in_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-15 .screen {
         width:156px;
         height: 338px;
@@ -1143,7 +1143,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-15 .screen {
         background-image:url("/images/porter/preview/screen/plan_logged_in_small_2x.jpg")
     }
@@ -1163,7 +1163,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-17 .screen {
         width:170px;
         height: 368px;
@@ -1173,13 +1173,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-17 .screen {
         background-image:url("/images/porter/preview/screen/flexi_payment_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-17 .screen {
         width:156px;
         height: 338px;
@@ -1189,7 +1189,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-17 .screen {
         background-image:url("/images/porter/preview/screen/flexi_payment_small_2x.jpg")
     }
@@ -1209,7 +1209,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .device-container.dark .item-20 .screen {
         width:170px;
         height: 368px;
@@ -1219,13 +1219,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-20 .screen {
         background-image:url("/images/porter/preview/screen/order_summary_1_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .device-container.dark .item-20 .screen {
         width:156px;
         height: 338px;
@@ -1235,7 +1235,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .device-container.dark .item-20 .screen {
         background-image:url("/images/porter/preview/screen/order_summary_1_small_2x.jpg")
     }
@@ -1251,7 +1251,7 @@
     position: relative;
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .hero-device.item-1 {
         width:199px;
         margin-right: -199px;
@@ -1259,7 +1259,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .hero-device.item-1 {
         width:181px;
         margin-right: -181px;
@@ -1281,7 +1281,7 @@
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .hero-device.item-1 .hardware {
         width:272px;
         height: 460px;
@@ -1291,13 +1291,13 @@
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .hero-device.item-1 .hardware {
         background-image:url("/images/porter/preview/hardware/hero_vert_medium_2x.png")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .hero-device.item-1 .hardware {
         width:248px;
         height: 420px;
@@ -1307,7 +1307,7 @@
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     .section-hero .sticky-container .hero-device.item-1 .hardware {
         background-image:url("/images/porter/preview/hardware/hero_vert_small_2x.png")
     }
@@ -1321,28 +1321,28 @@
     background-size: 100% 100%
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .hero-device.item-1 .screen {
         background-repeat:no-repeat;
         background-image: url("/images/porter/preview/background_medium.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .hero-device.item-1 .screen {
         background-repeat:no-repeat;
         background-image: url("/images/porter/preview/background_small.jpg")
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .hero-device.item-1 .screen {
         width: 556px;
         height: 421px;
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .hero-device.item-1 .screen {
         width: 300px;
         height: 225px;
@@ -1375,39 +1375,39 @@ html.no-hero-animation .section-hero .content-container {
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     html.no-hero-animation .section-hero .content-container {
         background-repeat:no-repeat;
         background-image: url("/images/porter/preview/background_medium.jpg")
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     html.no-hero-animation .section-hero .content-container {
         background-image:url("/images/porter/preview/background_medium.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     html.no-hero-animation .section-hero .content-container {
         background-repeat:no-repeat;
         background-image: url("/images/porter/preview/background_small.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     html.no-hero-animation .section-hero .content-container {
         background-image:url("/images/porter/preview/background_small.jpg")
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     html.no-hero-animation .section-hero .content-container {
         background-position:25% center
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     html.no-hero-animation .section-hero .content-container {
         background-position:center
     }
@@ -1431,13 +1431,13 @@ html.no-hero-animation .section-hero .sticky-container {
     margin-top: -949.75px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     html.no-hero-animation .section-hero .sticky-container {
         margin-top:-624px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     html.no-hero-animation .section-hero .sticky-container {
         margin-top:-483px
     }
@@ -1456,13 +1456,13 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
     min-height: 2800px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
         min-height:1830px
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero {
         min-height:1520px
     }
@@ -1486,7 +1486,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-dev
     }
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
         width:170px;
         height: 368px;
@@ -1496,13 +1496,13 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-dev
     }
 }
 
-@media only screen and (max-width: 1068px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1068px) and (min-resolution: 1.5dppx), only screen and (max-width: 1068px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
         background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_medium_2x.jpg")
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
         width:156px;
         height: 338px;
@@ -1512,7 +1512,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-dev
     }
 }
 
-@media only screen and (max-width: 735px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 735px) and (min-resolution: 1.5dppx), only screen and (max-width: 735px) and (min-resolution: 144dpi) {
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
     html.no-hero-animation .section-hero .sticky-container .sticky-content .hero-device.item-1 .screen {
         background-image:url("/images/preview/hero_vert_dark_screen_7__dfdgq2jpqoeq_small_2x.jpg")
     }
@@ -1545,7 +1545,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .backgrou
     margin-left: 50px
 }
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .page-overview .section-dark-mode .section-headline {
         margin-bottom:27px;
         margin-right: 335px;
@@ -1553,7 +1553,7 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .backgrou
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .page-overview .section-dark-mode .section-headline {
         margin-bottom:24px;
         margin-right: 30px;
@@ -1568,14 +1568,14 @@ html.no-hero-animation .section-hero .sticky-container .sticky-content .backgrou
 }
 
 
-@media only screen and (max-width: 1068px) {
+@media only screen and (max-width: 1024px) {
     .section-hero .sticky-container .screen {
         width: 556px !important;
         height: 421px !important;
     }
 }
 
-@media only screen and (max-width: 735px) {
+@media only screen and (max-width: 768px) {
     .section-hero .sticky-container .screen {
         width: 300px !important;
         height: 225px !important;

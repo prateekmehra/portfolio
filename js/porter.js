@@ -103,14 +103,17 @@ $(document).ready(function(){
 
 	$(window).bind('mousewheel', function(event) {
 			    if (event.originalEvent.wheelDelta >= 0) {
+			    	$('.content-container').show();
 			        $('body').removeClass('noscroll');
 			    }
 			    else if (window.innerWidth <= 1800 && $(window).scrollTop() >= 660 && $( "#passcode" ).val() != "correctpassword"){
 			    	$(window).scrollTop(660);
+			    	$('.content-container').hide();
 			        $('body').addClass('noscroll')
 			    }
 			    else if(window.innerWidth > 1800 && $(window).scrollTop() >= 800 && $( "#passcode" ).val() != "correctpassword"){
 			    	$(window).scrollTop(800);
+			    	$('.content-container').hide();
 			        $('body').addClass('noscroll')
 			    }
 			});
@@ -126,6 +129,20 @@ $(document).ready(function(){
 	});
 		
 	$(window).scroll(function(){
+		if (window.innerWidth <= 1800 && $(window).scrollTop() >= 660 && $( "#passcode" ).val() != "correctpassword"){
+	    	$(window).scrollTop(660);
+	        $('body').addClass('noscroll')
+	        $('.content-container').hide();
+	    }
+	    else if(window.innerWidth > 1800 && $(window).scrollTop() >= 800 && $( "#passcode" ).val() != "correctpassword"){
+	    	$(window).scrollTop(800);
+	        $('body').addClass('noscroll')
+	        $('.content-container').hide();
+	    }
+	    else{
+	    	$('body').removeClass('noscroll');
+	    	$('.content-container').show();
+	    }
 
 		// //only the class elements in view
 		// $('.focus-border').filter(function(){
