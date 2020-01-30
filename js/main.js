@@ -81,8 +81,10 @@ $(window).on('load', function() {
 
 $(window).resize(function(){
 	if(initialWidth != window.innerWidth || window.innerWidth > 480){
+		if(typeof(t1) !== 'undefined' && typeof(t2) !== 'undefined'){
 		tl1.kill();
 		tl2.kill();
+		}
 		timeline();
 		initialWidth = window.innerWidth;
 	}
