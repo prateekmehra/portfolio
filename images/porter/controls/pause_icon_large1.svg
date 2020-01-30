@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="85px" height="85px" viewBox="0 0 85 85" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>pause_icon_large</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pause_icon_large">
+            <polygon id="Path" points="0 0 85 0 85 85 0 85"></polygon>
+            <polygon id="Path" points="0 0 85 0 85 85 0 85"></polygon>
+            <path d="M42.5,2.5 C64.59139,2.5 82.5,20.40861 82.5,42.5 C82.5,64.59139 64.59139,82.5 42.5,82.5 C20.40861,82.5 2.5,64.59139 2.5,42.5 C2.5,20.40861 20.40861,2.5 42.5,2.5 Z" id="Path" stroke="#101646" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path>
+            <path d="M50,28.25 C51.1045695,28.25 52,29.1454305 52,30.25 L52,54.25 C52,55.3545695 51.1045695,56.25 50,56.25 C48.8954305,56.25 48,55.3545695 48,54.25 L48,30.25 C48,29.1454305 48.8954305,28.25 50,28.25 Z" id="Path" fill="#101646"></path>
+            <path d="M35,28.25 C36.1045695,28.25 37,29.1454305 37,30.25 L37,54.25 C37,55.3545695 36.1045695,56.25 35,56.25 C33.8954305,56.25 33,55.3545695 33,54.25 L33,30.25 C33,29.1454305 33.8954305,28.25 35,28.25 Z" id="Path" fill="#101646"></path>
+        </g>
+    </g>
+</svg>

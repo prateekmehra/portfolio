@@ -767,4 +767,8 @@ PAGE CONTENT
   100% { transform: translateY(15px); opacity: 0;}
 }
 
+#project-nav .active-nav .text {
+    color: #5A72CF !important;
+    padding: 0.2em calc(0.5em * 1.2);
+}
 

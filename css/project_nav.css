@@ -157,11 +157,6 @@ ANIMATED BUTTON
 	pointer-events: none;
 }
 
-#project-nav .active-nav .text {
-	color: #5A72CF !important;
-	padding: 0.2em calc(0.5em * 1.2);
-}
-
 .svg-inline--fa {
 	height: 0.9em;
 }

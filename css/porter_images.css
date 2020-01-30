@@ -1,0 +1,354 @@
+/* Challenges */
+.high-goals {
+    content: url("/images/porter/challenge/high_goals_large.jpg")
+}
+
+@media only screen and (max-width: 1024px) {
+    .high-goals {
+        content: url("/images/porter/challenge/high_goals_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .high-goals {
+        content: url("/images/porter/challenge/high_goals_small.jpg")
+    }
+}
+
+
+/* Research Methods */
+.research-methods {
+    content: url("/images/porter/research/research_methods_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .research-methods {
+        content: url("/images/porter/research/research_methods_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .research-methods {
+        content: url("/images/porter/research/research_methods_small.jpg")
+    }
+}
+
+
+/* Research Focus */
+.research-focus {
+    content: url("/images/porter/research/research_focus_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .research-focus {
+        content: url("/images/porter/research/research_focus_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .research-focus {
+        content: url("/images/porter/research/research_focus_small.jpg")
+    }
+}
+
+
+/* Research Photos */
+/* .researchb {
+    content: url("/images/porter/research/researchb_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .researchb {
+        content: url("/images/porter/research/researchb_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .researchb {
+        content: url("/images/porter/research/researchb_small.jpg")
+    }
+} */
+
+
+/* Insights Discovery */
+.competitorAnalysis {
+    content: url("/images/porter/insights/competitorAnalysis_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .competitorAnalysis {
+        content: url("/images/porter/insights/competitorAnalysis_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .competitorAnalysis {
+        content: url("/images/porter/insights/competitorAnalysis_small.jpg")
+    }
+}
+
+.discovery {
+    content: url("/images/porter/insights/discovery_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .discovery {
+        content: url("/images/porter/insights/discovery_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .discovery {
+        content: url("/images/porter/insights/discovery_small.jpg")
+    }
+}
+
+
+
+
+/* Iteration */
+
+
+.visual_design {
+    content: url("/images/porter/iteration/visual_design_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .visual_design {
+        content: url("/images/porter/iteration/visual_design_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .visual_design {
+        content: url("/images/porter/iteration/visual_design_small.jpg")
+    }
+}
+
+
+/* Final Design */
+
+/* Hardware */
+.row .vertical .hardware {
+    position:  relative;
+    top: -605px;
+    left: -22px;
+    width: 416px;
+    height: 704px;
+    background-size: 416px 704px;
+    background-repeat: no-repeat;
+    background-image: url("/images/ctrg/preview/hardware/hero_vert_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .row .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .row .vertical .hardware {
+        top: -400px;
+        left: -17px;
+        width:272px;
+        height: 460px;
+        background-size: 272px 460px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
+    .row .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row .vertical .hardware {
+        top: -365px;
+        left: -12px;
+        width:248px;
+        height: 420px;
+        background-size: 248px 420px;
+        background-repeat: no-repeat;
+        background-image: url("/images/ctrg/preview/hardware/hero_vert_small.png")
+    }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
+    .row .vertical .hardware {
+        background-image:url("/images/ctrg/preview/hardware/hero_vert_small_2x.png")
+    }
+}
+
+.hardware-ipad {
+    position: absolute;
+    top: -15px !important;
+    left: -10px !important;
+    width: 1052px;
+    height: 836px;
+    background-size: 1052px 836px;
+    background-repeat: no-repeat;
+    background-image: url("/images/home/hardware/hardware_ipad_large.png")
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min-resolution: 1.5dppx), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi) {
+    .hardware-ipad {
+        background-image:url("/images/home/hardware/hardware_ipad_large_2x.png")
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hardware-ipad {
+        top: 1px !important;
+        left: 1px !important;
+        width:678px;
+        height: 540px;
+        background-size: 678px 540px;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/hardware/hardware_ipad_medium.png")
+    }
+}
+
+@media only screen and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 1024px) and (min-resolution: 1.5dppx), only screen and (max-width: 1024px) and (min-resolution: 144dpi) {
+    .hardware-ipad {
+        background-image:url("/images/home/hardware/hardware_ipad_medium_2x.png")
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .hardware-ipad {
+        width:368px;
+        height: 294px;
+        background-size: 368px 294px;
+        background-repeat: no-repeat;
+        background-image: url("/images/home/hardware/hardware_ipad_small.png")
+    }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 1.5), only screen and (max-width: 768px) and (min-resolution: 1.5dppx), only screen and (max-width: 768px) and (min-resolution: 144dpi) {
+    .hardware-ipad {
+        background-image:url("/images/home/hardware/hardware_ipad_small_2x.png")
+    }
+}
+
+/* Figure Setting */
+.row .figure {
+    /* left: -59%;
+    transform: translateX(50%);
+ */
+    margin: auto;
+    left: -8%; 
+    position: relative;
+    height:604px;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1024px) {
+    .row .figure {
+        left: -23%;
+        height: 400px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .row .figure {
+        left: -24%;
+        height: 340px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .row .figure {
+        left: -44%;
+        height: 340px;
+    }
+}
+
+.row .screen.video {
+    width: 862px;
+    height: 647px;
+    background-size: 862px 647px;
+    background-repeat: no-repeat;
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .row .screen.video{
+        width: 556px;
+        height: 421px;
+        background-size: 556px 421px;
+        background-repeat: no-repeat;
+    
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .row .screen.video{
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
+        background-repeat: no-repeat;
+        transform: translate(54px, 28px) !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .row .screen.video{
+        width: 300px;
+        height: 225px;
+        background-size: 300px 225px;
+        background-repeat: no-repeat;
+        transform: translate(54px, 26px) !important;
+    }
+}
+
+
+.row .screen.video.phone {
+    width: 262px;
+    height: 568px;
+    background-size: 262px 568px;
+    background-repeat: no-repeat;
+
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .row .screen.video.phone {
+        width:170px;
+        height: 368px;
+        background-size: 170px 368px;
+        background-repeat: no-repeat;
+    
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .row .screen.video.phone {
+        width:156px;
+        height: 338px;
+        background-size: 156px 338px;
+        background-repeat: no-repeat;
+        
+    }
+}
+
+
+
+
