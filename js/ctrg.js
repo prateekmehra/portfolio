@@ -294,7 +294,7 @@ $(document).ready(function(){
 				var options_motivation = JSON.parse(JSON.stringify(options_light));
 				var ctx = $('#motivationChart')[0].getContext('2d');
 				var motivation_data = {
-						labels: ["Convience", "Other"],
+						labels: ["Convenience", "Other"],
 						datasets: [{
 							backgroundColor: ['#5F72C9', '#A8B4E7'],
 							borderColor: ['#5F72C9', '#A8B4E7'] ,
