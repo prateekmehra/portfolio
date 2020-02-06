@@ -61,9 +61,20 @@ function playvid(b){
 
 
 var prevScrollpos;
+var resolution;
 
 $(window).load(function(){
 	prevScrollpos = window.pageYOffset;
+});
+
+$(window).resize(function(){
+	$(".sticky-container").css({'width': window.innerWidth});
+
+	resolution = window.innerWidth / 1650 * 6.8215;
+	resolution = resolution > 6.8215 ? resolution : 6.8215;
+
+	$(".hero-device").css({'transform': 'matrix(' + resolution + ', 0, 0,' + resolution + ', 0, 0)'});
+	$(".device-anchor").css({'transform': 'matrix(' + resolution + ', 0, 0,' + resolution + ', 0, 0)'});
 });
 
 
@@ -98,6 +109,12 @@ $(document).ready(function(){
 
 	document.fonts.add(ceraProRegular);
 	ceraProRegular.load();
+
+	resolution = window.innerWidth / 1650 * 6.8215;
+	resolution = resolution > 6.8215 ? resolution : 6.8215;
+
+	$(".hero-device").css({'transform': 'matrix(' + resolution + ', 0, 0,' + resolution + ', 0, 0)'});
+	$(".device-anchor").css({'transform': 'matrix(' + resolution + ', 0, 0,' + resolution + ', 0, 0)'});
 		
 	$(window).scroll(function(){
 
