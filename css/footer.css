@@ -48,7 +48,7 @@
 }
 
 footer path{
-    fill: #000;
+    fill: #333;
 }
 
 @media screen and (max-width: 768px) {
