@@ -68,6 +68,8 @@ footer path{
     .site-footer nav {
         padding: 10px 50px;
         margin: auto;
+        float: none;
+        text-align: center;
     }
 
     .site-footer nav ul li {
