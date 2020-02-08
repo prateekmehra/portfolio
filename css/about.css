@@ -788,7 +788,7 @@ PAGE CONTENT
 .photo {
     content: url("/images/about/me_large.jpg");
     border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.3) 10px 10px 60px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 10px 10px 60px 0px;
     width: 100%;
     /* height: 465px;
     width: 465px;
