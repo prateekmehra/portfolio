@@ -1,17 +1,17 @@
 /* Challenges */
 .high-goals {
-    content: url("/images/ctrg/challenge/high_goals_large.png")
+    content: url("/images/ctrg/challenge/high_goals_large.jpg")
 }
 
 @media only screen and (max-width: 1024px) {
     .high-goals {
-        content: url("/images/ctrg/challenge/high_goals_medium.png")
+        content: url("/images/ctrg/challenge/high_goals_medium.jpg")
     }
 }
 
 @media only screen and (max-width: 768px) {
     .high-goals {
-        content: url("/images/ctrg/challenge/high_goals_small.png")
+        content: url("/images/ctrg/challenge/high_goals_small.jpg")
     }
 }
 
@@ -117,6 +117,19 @@
 
 
 /* Personas */
+.persona_1_icon {
+    content: url("/images/ctrg/personas/persona_1_icon.jpg")
+}
+
+.persona_2_icon {
+    content: url("/images/ctrg/personas/persona_2_icon.jpg")
+}
+
+.persona_3_icon {
+    content: url("/images/ctrg/personas/persona_3_icon.jpg")
+}
+
+
 .persona_1 {
     content: url("/images/ctrg/personas/persona_1_large.jpg")
 }
@@ -134,6 +147,9 @@
         content: url("/images/ctrg/personas/persona_1_small.jpg")
     }
 }
+
+
+
 
 .persona_2 {
     content: url("/images/ctrg/personas/persona_2_large.jpg")
