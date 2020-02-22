@@ -60,7 +60,9 @@ $(window).on('load', function() {
 		}
 
 		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * window.innerHeight){
+			$('.project-intro').css({'scroll-behavior': 'inherit'})
 			$('.project-intro').scrollTop($(window).scrollTop() - prev);
+			$('.project-intro').css({'scroll-behavior': 'smooth'})
 		}
 
 		$('.project-intro').scroll(function(){
