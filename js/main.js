@@ -208,11 +208,11 @@ function timeline(){
 		boxShadow: '10px 10px 60px 0px rgba(0, 0, 0, 0.3)'}, 400)
 	.to('.device-container.phone', 100, {
 		top: window.innerWidth <= 750 ? window.innerHeight <= 750 ? '-140px' : '-50px' : '63px',
-		left: window.innerWidth <= 750 ? '-101px' : window.innerWidth < 1025 ? '40px' : window.innerWidth < 1441 ? '-23px' : '86px'}, 400)
+		left: window.innerWidth <= 750 ? '-92px' : window.innerWidth < 1025 ? '20px' : window.innerWidth < 1441 ? '20px' : '86px'}, 400)
 	.to('.device-container.ipad', 100, {
-		top: window.innerWidth < 1024 ? window.innerHeight <= 750 ? '60px' : '105px' : '35px',
-		left: window.innerWidth <= 485 ? '-30px' : window.innerWidth <= 750 ? '0px' : window.innerWidth < 1025 ? '-221px' : window.innerWidth < 1441 ? '-364px' : '-291px', 
-		transform: 'scale(0.6)'}, 400)
+		top: window.innerWidth < 1024 ? window.innerHeight <= 750 ? '60px' : '105px' : window.innerWidth < 1441 ? '80px' : '50px',
+		left: window.innerWidth <= 485 ? '-30px' : window.innerWidth <= 750 ? '-10px' : window.innerWidth < 1025 ? '-200px' : window.innerWidth < 1441 ? '-284px' : '-291px', 
+		transform: window.innerWidth > 1441 ? 'scale(0.6)' : window.innerWidth > 1025 ? 'scale(0.5)' : window.innerWidth <= 485 ? 'scale(0.6)' : 'scale(0.6)'}, 400)
 	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 400)
 	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 400)
 	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 400)

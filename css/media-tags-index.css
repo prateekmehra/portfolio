@@ -63,17 +63,17 @@ MEDIA TAGS
     }
 }
 
-@media only screen and (max-width: 1440px) and (min-width: 1024px) and  (orientation:landscape){
+@media only screen and (max-width: 1440px) and (min-width: 1024px) and (orientation:landscape){
     .panel .column-right {
-        left: 20px;
+        left: 60px;
     }
 
     .page-title {
-        font-size: 56px;
+        font-size: 46px;
     }
 
     .head-title {
-        font-size: 56px;
+        font-size: 46px;
     }
 
     .sub-title {
@@ -90,6 +90,10 @@ MEDIA TAGS
 
 @media only screen and (max-width: 1440px) and (min-width: 1024px) and (orientation:portrait){
         /* styles for browsers larger than 1440px; */
+
+    .panel .column-right {
+        left: 60px;
+    }
 
     .page-title {
         font-size: 36px;
@@ -126,13 +130,16 @@ MEDIA TAGS
 /* different techniques for iPad screening */
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape){
+    .panel .column-right {
+        left: 35px;
+    }
 
-     .page-title {
-        font-size: 36px;
+    .page-title {
+        font-size: 32px;
     }
 
     .head-title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .sub-title {
@@ -141,7 +148,7 @@ MEDIA TAGS
 
     .box-text{
         width: 254px;
-        font-size: 24px;
+        font-size: 18px;
         letter-spacing: -1px;
     }
 
@@ -182,12 +189,16 @@ MEDIA TAGS
 
 @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:portrait){
 
+    .panel .column-right {
+        left: 35px;
+    }
+
     .page-title {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .head-title {
-        font-size: 36px;
+        font-size: 28px;
     }
 
     .sub-title {
