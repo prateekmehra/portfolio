@@ -53,6 +53,8 @@ $(window).on('load', function() {
 	$(".arrow").css({"color":"#000"});
 
 	$(window).scroll(function(){
+
+
 		if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
 			$('body').addClass('noscroll');
 		}
@@ -81,10 +83,10 @@ $(window).on('load', function() {
 
 $(window).resize(function(){
 	if(initialWidth != window.innerWidth || window.innerWidth > 480){
-		if(typeof(t1) !== 'undefined' && typeof(t2) !== 'undefined'){
+		// if(typeof(t1) !== 'undefined' && typeof(t2) !== 'undefined'){
 		tl1.kill();
 		tl2.kill();
-		}
+		// }
 		timeline();
 		initialWidth = window.innerWidth;
 	}
