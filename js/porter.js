@@ -131,10 +131,15 @@ $(document).ready(function(){
 	$( "#secure" ).submit(function( event ) {
 		event.preventDefault();
 	  if ( $( "#passcode" ).val() === "correctpassword" ) {
+	  		$("#wrong-passcode").css('display','none');
 	  		$('.vertical.device').css('display','block');
 		    $('body').removeClass('noscroll');
 		    $('html, body').animate({scrollTop: 1000}, 1000, 'easeInOutQuint');
 		}
+
+	  else{
+	  	$("#wrong-passcode").css('display','block');
+	  }
 	  
 	});
 

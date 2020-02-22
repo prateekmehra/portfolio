@@ -634,7 +634,7 @@ PAGE CONTENT
 }
 
 .content-container {
-    color : #11172C;
+    color : #FFFFFF;
 }
 
 .flipper {
@@ -745,7 +745,7 @@ PAGE CONTENT
     width: 3px;
     padding: 10px 15px;
     height: 35px;
-    border: 2px solid #11172C;
+    border: 2px solid #FFFFFF;
     border-radius: 25px;
     opacity: 0.75;
     box-sizing: content-box;
@@ -754,7 +754,7 @@ PAGE CONTENT
     width: 3px;
     height: 10px;
     border-radius: 25%;
-    background-color: #11172C;
+    background-color: #FFFFFF;
     animation-name: scroll;
     animation-duration: 2.2s;
     animation-timing-function: cubic-bezier(.15,.41,.69,.94);
@@ -825,6 +825,38 @@ PAGE CONTENT
         border-color: rgba(255, 255, 255, 0.53);
         color: #FFFFFF;
         font-size: 14px;
+    }
+}
+
+#wrong-passcode {
+    top: 287px;
+    position: absolute;
+    left: 340px;
+    z-index: 1000;
+    width: 303px;
+    height: 35px;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    #wrong-passcode {
+        top: 201px;
+        position: absolute;
+        left: 183px;
+       
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #wrong-passcode {
+        top: 120px;
+        position: absolute;
+        left: 60px;
+        font-size: 10px;
     }
 }
 
