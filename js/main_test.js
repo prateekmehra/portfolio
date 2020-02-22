@@ -42,45 +42,77 @@ $(window).on('load', function() {
 
 	timeline();
 
-	var prev = window.innerHeight/2 + 800;
+	var prev = window.innerHeight/2 + 1000;
 
 	$('.scroll-downs').on('click', function(){
-		if($(window).scrollTop() <= 400){
-			$(window).scrollTop(440);
+		if($(window).scrollTop() <= 600){
+			$(window).scrollTop(640);
 		}
 	});
 
 	$(".arrow").css({"color":"#000"});
 
-	$(window).scroll(function(e){
-		e.preventDefault();
+	$(window).bind('mousewheel', function(event) {
+		var scrollDelta = event.originalEvent.wheelDelta/2;
 
-		if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
-			$('body').addClass('noscroll');
-		}
+	    if (event.originalEvent.wheelDelta >= 0) {
+	        
+	        var windowPos = $(window).scrollTop();
+	    	var piPos = $('.project-intro').scrollTop();
 
-		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * window.innerHeight){
-			$('.project-intro').css({'scroll-behavior': 'inherit'})
-			$('.project-intro').scrollTop($(window).scrollTop() - prev);
-			$('.project-intro').css({'scroll-behavior': 'smooth'})
-		}
+	    	console.log('Scroll up', windowPos, piPos);
 
-		
-	})
+	        $('html').css({'scroll-behavior': 'inherit'})
+	        $('.project-intro').css({'scroll-behavior': 'inherit'})
 
-	$('.project-intro').scroll(function(e){
-		e.preventDefault();
-		if($('.project-intro').scrollTop() == 0){
-			$('body').removeClass('noscroll');
-			$('html').css({'scroll-behavior': 'inherit'})
-			$(window).scrollTop(prev + $('.project-intro').scrollTop())
+	        if (piPos >= scrollDelta){
+	    		$('.project-intro').scrollTop(piPos - scrollDelta);
+	    	}
+
+	    	else if (scrollDelta > piPos) {
+	    		$('.project-intro').scrollTop(0);
+	    		$('body').removeClass('noscroll');
+	    		$(window).scrollTop(windowPos - (scrollDelta - piPos));
+	    	}
+
+	        $('.project-intro').css({'scroll-behavior': 'smooth'})
 			$('html').css({'scroll-behavior': 'smooth'})
-		}
-	})
+	       
+	    }
+	    else {
+	    	scrollDelta *= -1;
+	    	var windowPos = $(window).scrollTop();
+	    	var piPos = $('.project-intro').scrollTop();
+
+
+
+	        console.log('Scroll down', windowPos, piPos);
+	        $('html').css({'scroll-behavior': 'inherit'})
+	        $('.project-intro').css({'scroll-behavior': 'inherit'})
+
+	        if(windowPos < prev){
+	    		if(scrollDelta > prev - windowPos){
+	    			$(window).scrollTop(prev);
+	    			$('.project-intro').scrollTop(piPos + scrollDelta - (prev - windowPos));
+	    		}
+	    		else $(window).scrollTop(windowPos + scrollDelta);
+	    	}
+
+	    	else{
+	    		$('body').addClass('noscroll');
+	    		$(window).scrollTop(prev);
+	    	 	$('.project-intro').scrollTop(piPos + scrollDelta);
+	    	}
+	        
+	        $('.project-intro').css({'scroll-behavior': 'smooth'})
+			$('html').css({'scroll-behavior': 'smooth'})
+
+			}
+	});
 
 	$('#portfolio').click(function(){
-		if($(window).scrollTop() <= 400){
-			$(window).scrollTop(440);
+		if($(window).scrollTop() <= 600){
+			$(window).scrollTop(640);
 		}
 	});
 
@@ -118,7 +150,7 @@ function timeline(){
 	else if (window.innerWidth <= 1024){
 		tl1.set('#portfolio', { top: '44%', transform: 'perspective(1px) scale(0.8) translateY(-50%)', left: window.innerWidth/2 - 50})
 	}
-	else if (window.innerWidth <= 1440){
+	else if (window.innerWidth <= 1640){
 		tl1.set('#portfolio', { top: '50%', transform: 'perspective(1px) translateY(-50%)', left: window.innerWidth/2 + $('#portfolio-holder').width()/8 - 30})
 	}
 	else {
@@ -173,35 +205,35 @@ function timeline(){
 	tl2
 	.set('#scroll-for-details', {clearProps:'all'}, 100)
 	.set('#portfolio', {cursor: 'unset'}, 10)
-	.set('.project_canvas', {className: "+=hoverable", pointerEvents: 'all', cursor: 'pointer'}, 270)
+	.set('.project_canvas', {className: "+=hoverable", pointerEvents: 'all', cursor: 'pointer'}, 470)
 	.to('.item-7', 1, {top: '311px'}, 0)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
-	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
-	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
-	.to('#scroll-for-portfolio', 300, {opacity: 0, display: 'none'}, 0)
+	.to('#portfolio', 500, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
+	.to('.scroll-downs', 500, {opacity: 0, display: 'none'}, 0)
+	.to('#scroll-for-portfolio', 500, {opacity: 0, display: 'none'}, 0)
 	.to('#scroll-for-details', 230, {opacity: 1, display: 'block'}, 100)
-	.to('.panel-1', 300, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
-	.to('.project-intro', 300, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
-	.to('#project-box', 300, {top: "50%", left: "50%", marginTop: -30}, 0)
+	.to('.panel-1', 500, {transformOrigin: 'center', transform: 'translateX(' + panel_translate + 'px) scale(' + panel_halfway + ')'}, 0)
+	.to('.project-intro', 500, {transformOrigin: 'center', transform: 'scale(1)'}, 0)
+	.to('#project-box', 500, {top: "50%", left: "50%", marginTop: -30}, 0)
 
-	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
-	.set('.project_canvas', {className: "-=hoverable"}, 391)
-	.to('.item-1', 100, {left:"5vw"}, 300)
-	.to('.item-2', 100, {top: "200vh", left:"5vw"}, 300)
-	.to('.item-3', 100, {top: "200vh", left:"5vw", display: 'none'}, 300)
-	.to('.item-4', 100, {top: "300vh", left:"5vw"}, 300)
-	.to('.item-5', 100, {top: "100vh", left:"5vw"}, 300)
-	.to('.item-6', 100, {top: "500vh", left:"5vw"}, 300)
-	.to('.item-7', 100, {top: "400vh", left:"5vw"}, 300)
-	.set('.project_canvas', {className: "-=before-scroll"}, 300)
-	.to('.project_canvas', 1, {className:"+=after-scroll"}, 300)
-	.to('.screen', 1, {className:"+=after-scroll"}, 300)
-	.to('.hardware', 1, {className:"+=after-scroll"}, 300)
-	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 300)
-	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 300)
-	.to('#portfolio', 100, {backgroundColor: '#FFFFFF'}, 300)
+	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 500)
+	.set('.project_canvas', {className: "-=hoverable"}, 591)
+	.to('.item-1', 100, {left:"5vw"}, 500)
+	.to('.item-2', 100, {top: "200vh", left:"5vw"}, 500)
+	.to('.item-3', 100, {top: "200vh", left:"5vw", display: 'none'}, 500)
+	.to('.item-4', 100, {top: "300vh", left:"5vw"}, 500)
+	.to('.item-5', 100, {top: "100vh", left:"5vw"}, 500)
+	.to('.item-6', 100, {top: "500vh", left:"5vw"}, 500)
+	.to('.item-7', 100, {top: "400vh", left:"5vw"}, 500)
+	.set('.project_canvas', {className: "-=before-scroll"}, 500)
+	.to('.project_canvas', 1, {className:"+=after-scroll"}, 500)
+	.to('.screen', 1, {className:"+=after-scroll"}, 500)
+	.to('.hardware', 1, {className:"+=after-scroll"}, 500)
+	.to('.hardware-ipad', 1, {className:"+=after-scroll"}, 500)
+	.to('.panel-1', 100, {transformOrigin: 'center', transform: 'scale(1)'}, 500)
+	.to('#portfolio', 100, {backgroundColor: '#FFFFFF'}, 500)
 
-	.to('#scroll-for-details', 1, {opacity: 0, display: 'none'}, 400)
+	.to('#scroll-for-details', 1, {opacity: 0, display: 'none'}, 600)
 	.to('.project_canvas', 100, {
 		transformOrigin: 'left',
 		transform: 'scale(1.5)',
@@ -210,44 +242,44 @@ function timeline(){
 		overflow: 'hidden',
 		opacity: 1,
 		borderRadius: '8px',
-		boxShadow: '10px 10px 60px 0px rgba(0, 0, 0, 0.3)'}, 400)
+		boxShadow: '10px 10px 60px 0px rgba(0, 0, 0, 0.3)'}, 600)
 	.to('.device-container.phone', 100, {
 		top: window.innerWidth <= 750 ? window.innerHeight <= 750 ? '-140px' : '-50px' : '63px',
-		left: window.innerWidth <= 750 ? '-92px' : window.innerWidth < 1025 ? '20px' : window.innerWidth < 1441 ? '20px' : '86px'}, 400)
+		left: window.innerWidth <= 750 ? '-92px' : window.innerWidth < 1025 ? '20px' : window.innerWidth < 1441 ? '20px' : '86px'}, 600)
 	.to('.device-container.ipad', 100, {
 		top: window.innerWidth < 1024 ? window.innerHeight <= 750 ? '60px' : '105px' : window.innerWidth < 1441 ? '80px' : '50px',
 		left: window.innerWidth <= 485 ? '-30px' : window.innerWidth <= 750 ? '-10px' : window.innerWidth < 1025 ? '-200px' : window.innerWidth < 1441 ? '-284px' : '-291px', 
-		transform: window.innerWidth > 1441 ? 'scale(0.6)' : window.innerWidth > 1025 ? 'scale(0.5)' : window.innerWidth <= 485 ? 'scale(0.6)' : 'scale(0.6)'}, 400)
-	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 400)
-	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 400)
-	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 400)
-	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 400)
+		transform: window.innerWidth > 1441 ? 'scale(0.6)' : window.innerWidth > 1025 ? 'scale(0.5)' : window.innerWidth <= 485 ? 'scale(0.6)' : 'scale(0.6)'}, 600)
+	.to('.item-1 .screen', 100, {'background-image': 'url("/images/home/posts/ctrg/ctrg.gif")'}, 600)
+	.to('.item-2 .screen', 100, {'background-image': 'url("/images/home/posts/cbc/cbc.gif")'}, 600)
+	.to('.item-4 .screen', 100, {'background-image': 'url("/images/home/posts/vae/vae.gif")'}, 600)
+	.to('.item-7 .screen', 100, {'background-image': 'url("/images/home/posts/navar/navar.gif")'}, 600)
 	
 
 	if(window.innerWidth <= 750){
 		tl2
-		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 400)
-		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 400);
+		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (-50%)'}, 600)
+		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(50%)'}, 600);
 	}
 	else {
 		tl2
-		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (0)'}, 400)
-		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(0)'}, 400);
+		.to('.device-container.ipad', 100, {transformOrigin: 'center', transform: 'translateX (0)'}, 600)
+		.to('.device-container.phone', 100, {transformOrigin: 'center', transform: 'scale(1) translateX(0)'}, 600);
 	}
 
 	tl2
-	.set('.panel', {display: 'block', opacity: 1}, 500)
-	.set('.site-footer', {display: 'block', opacity: 1}, 500)
-	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
-	.set('.item-1', {left:"5vw"}, 500)
-	.set('.item-2', {top: "200vh", left:"5vw"}, 500)
-	.set('.item-3', {top: "200vh", left:"5vw", display: 'none'}, 500)
-	.set('.item-4', {top: "300vh", left:"5vw"}, 500)
-	.set('.item-5', {top: "100vh", left:"5vw"}, 500)
-	.set('.item-6', {top: "500vh", left:"5vw"}, 500)
-	.set('.item-7', {top: "400vh", left:"5vw"}, 500)
+	.set('.panel', {display: 'block', opacity: 1}, 700)
+	.set('.site-footer', {display: 'block', opacity: 1}, 700)
+	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 700)
+	.set('.item-1', {left:"5vw"}, 700)
+	.set('.item-2', {top: "200vh", left:"5vw"}, 700)
+	.set('.item-3', {top: "200vh", left:"5vw", display: 'none'}, 700)
+	.set('.item-4', {top: "300vh", left:"5vw"}, 700)
+	.set('.item-5', {top: "100vh", left:"5vw"}, 700)
+	.set('.item-6', {top: "500vh", left:"5vw"}, 700)
+	.set('.item-7', {top: "400vh", left:"5vw"}, 700)
 
-	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 600, offset: window.innerHeight/2 + 100})
+	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 800, offset: window.innerHeight/2 + 100})
 		.setTween(tl2)
 		// .addIndicators({name: "after-scroll"})
 		.addTo(controller);
