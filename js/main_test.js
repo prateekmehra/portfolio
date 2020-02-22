@@ -68,12 +68,13 @@ $(window).on('load', function() {
 		
 	})
 
-	$('.project-intro').scroll(function(){
+	$('.project-intro').scroll(function(e){
+		e.preventDefault();
 		if($('.project-intro').scrollTop() == 0){
+			$('body').removeClass('noscroll');
 			$('html').css({'scroll-behavior': 'inherit'})
 			$(window).scrollTop(prev + $('.project-intro').scrollTop())
 			$('html').css({'scroll-behavior': 'smooth'})
-			$('body').removeClass('noscroll');
 		}
 	})
 
