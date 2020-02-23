@@ -8,7 +8,7 @@ html, body {
 
 body {
     background  : #111111;
-    font-family : Euclid Square, sans-serif;
+    font-family : EuclidSquare, sans-serif;
     font-size   : 1.17rem;
     font-weight : 400;
     color: #FFFFFF;
@@ -25,7 +25,7 @@ img {
 }
 
 a {
-    font-family     : Euclid Square, sans-serif;
+    font-family     : EuclidSquare, sans-serif;
     font-weight     : normal;
     color           : #FFFFFF;
     text-decoration : none;
@@ -49,7 +49,7 @@ SITE INDEX HEAD
     width          : 100%;
     margin         : 50px 10px 50px 0px;
 
-    font-family    : Euclid Square, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 50px;
     font-weight    : 400;
     letter-spacing : 1px;
@@ -66,14 +66,14 @@ SITE INDEX HEAD
 } */
 
 .category, .title {
-    font-family    : Euclid Square, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 1rem;
     text-transform : uppercase;
     color: #E2936C;
 }
 
 .category, .large-title {
-    font-family    : Euclid Square, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 1.5rem;
     /* text-transform : uppercase; */
 }
@@ -382,7 +382,7 @@ PAGE CONTENT
 }
 
 .medium-title {
-    font-family    : Euclid Square, sans-serif;
+    font-family    : EuclidSquare, sans-serif;
     font-size      : 1.4rem;
     font-weight    : 100;
     text-transform : uppercase;
