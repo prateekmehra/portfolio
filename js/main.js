@@ -153,6 +153,7 @@ function timeline(){
 		.set('.scroll-downs', {display: 'block', opacity: 1, cursor: 'pointer'})
 		.set('#scroll-for-portfolio', {display: 'block', opacity: 1})
 		.set('.screen', {clearProps: 'background-image'})
+		.set('.num-tag', {opacity: 0})
 		
 
 		tl1
@@ -174,6 +175,7 @@ function timeline(){
 	.to('.item-7', 1, {top: '311px'}, 0)
 	.to('.project_canvas', 1, {background: "rgba(255, 255, 255, 0)", boxShadow: 'none'}, 0)
 	.to('#portfolio', 300, {width: window.innerWidth, height: window.innerHeight, borderRadius: 0, top: 0, left: 0, zIndex: 1, transform: 'scale(1)' , transformOrigin: 'top'}, 0)
+	.to('.num-tag', 300, {opacity: 1}, 0)
 	.to('.scroll-downs', 300, {opacity: 0, display: 'none'}, 0)
 	.to('#scroll-for-portfolio', 300, {opacity: 0, display: 'none'}, 0)
 	.to('#scroll-for-details', 230, {opacity: 1, display: 'block'}, 100)

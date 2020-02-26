@@ -506,3 +506,35 @@ figure {
     float: right; 
     margin-right: 3.45rem;
 }
+
+.num-tag {
+    margin-top: -150px;
+    color: #aaaaaa;
+    font-size: 100px;
+    text-align: left;
+    opacity: 0;
+}
+
+.num-tag.tr {
+    margin-top: -150px;
+    text-align: right;
+}
+
+.num-tag.stl {
+    margin-left: -170px;
+    margin-top: -40px;
+    text-align: left;
+}
+
+.num-tag.sbl {
+    margin-left: -170px;
+    margin-top: 530px;
+    text-align: left;
+}
+
+.num-tag.sblg {
+    margin-left: -140px;
+    margin-top: 160px;
+    text-align: left;
+}
+
