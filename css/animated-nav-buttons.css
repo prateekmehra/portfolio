@@ -63,7 +63,7 @@ ANIMATED BUTTON
           transform-origin: left;
 }
 
-.animated-nav-button a.active-nav:after {
+/* .animated-nav-button a.active-nav:after {
   position: absolute;
   content: '';
   bottom: -2px;
@@ -76,7 +76,7 @@ ANIMATED BUTTON
   transition: transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s, right 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, left 0.2s cubic-bezier(0.04, 0.48, 0, 1) 0.3s, -webkit-transform 0.2s cubic-bezier(1, 0, 0.37, 1) 0.2s;
   -webkit-transform-origin: left;
           transform-origin: left;
-}
+} */
 
 .animated-nav-button .line {
   position: absolute;

@@ -44,7 +44,7 @@ $(window).on('load', function() {
 
 	var prev = window.innerHeight/2 + 800;
 
-	$('.scroll-downs').on('click', function(){
+	$('.scroll-downs, .scroll-downs-text').on('click', function(){
 		if($(window).scrollTop() <= 400){
 			$(window).scrollTop(440);
 		}

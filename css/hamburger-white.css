@@ -125,7 +125,7 @@
     
 }
 
-#menu-overlay{
+#menu-overlay {
     position: fixed; /* Sit on top of the page content */
     display: none; /* Hidden by default */
     width: 100%; /* Full width (cover the whole page) */
@@ -140,7 +140,15 @@
     backdrop-filter: saturate(180%) blur(20px);
     -webkit-backdrop-filter: saturate(180%) blur(20px);
     background-color: rgba(255,255,255,0.7);
+    box-shadow: -10px 0px 20px 0px #00000005;
     
+}
+
+@media screen and (min-width: 750px) {
+  #menu-overlay {
+      width: 385px;
+      left: unset;
+  }
 }
 
 .visible {
@@ -158,10 +166,15 @@
 {
   padding: 10px;
   font-size: 20px;
-  color: #FFF;
+  color: #000;
   text-transform: uppercase;
-  font-weight: normal;
-  letter-spacing: 5px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+#menu li.projects {
+  padding: 0px !important;
+
 }
 
 /* #menu > .text:hover { 
