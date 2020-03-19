@@ -275,7 +275,7 @@ MEDIA TAGS
 
     #menu {
         margin-left: -5vw;
-        margin-top: 50vh;
+        /* margin-top: 50vh; */
     }
 
     #menu li:hover {
