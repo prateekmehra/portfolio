@@ -4,15 +4,15 @@
     left: 20px !important;
 }
 
-.project_canvas.before-scroll.item-2 {
+.project_canvas.before-scroll.item-5 {
     top: -68px !important;
     left: 60px !important;
 
 }
 
 .project_canvas.before-scroll.item-3 {
-    top: 0px !important;
-    left: 581px !important;
+    top: -180px !important;
+    left: 700px !important;
 }
 
 
@@ -21,7 +21,7 @@
     left: 620px !important;
 }
 
-.project_canvas.before-scroll.item-5 {
+.project_canvas.before-scroll.item-2 {
     top: -250px !important;
     left: 620px !important;
 }
