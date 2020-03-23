@@ -62,6 +62,8 @@ function playvid(b){
 
 var prevScrollpos;
 var resolution;
+var scrollLock; 
+var scene;
 
 $(window).load(function(){
 	prevScrollpos = window.pageYOffset;
@@ -70,6 +72,8 @@ $(window).load(function(){
 });
 
 $(window).resize(function(){
+	scrollLock = Math.floor(0.8 * window.innerHeight);
+
 	$(".sticky-container").css({'width': window.innerWidth});
 
 	resolution = window.innerWidth / 1650 * 6.8215;
@@ -103,6 +107,8 @@ $.fn.inView = function(){
 };
 
 $(document).ready(function(){
+	scrollLock = Math.floor(0.8 * window.innerHeight);
+
 	var ceraProRegular = new FontFace('CeraPro-Thin', 'url(/css/webfonts/CeraPro-Thin.woff2)', {
 	    style: 'normal',
 	    weight: 'normal'
@@ -112,20 +118,23 @@ $(document).ready(function(){
 	ceraProRegular.load();
 
 	$(window).bind('mousewheel', function(event) {
+				
+				
 			    if (event.originalEvent.wheelDelta >= 0) {
 			    	$('.content-container').show();
 			        $('body').removeClass('noscroll');
 			    }
-			    else if (window.innerWidth <= 1800 && $(window).scrollTop() >= 660 && $( "#passcode" ).val() != "correctpassword"){
-			    	$(window).scrollTop(660);
+			    else if ($(window).scrollTop() >= scrollLock && $( "#passcode" ).val() != "correctpassword"){
+			    	$(window).scrollTop(scrollLock);
+			    	
 			    	$('.content-container').hide();
 			        $('body').addClass('noscroll')
 			    }
-			    else if(window.innerWidth > 1800 && $(window).scrollTop() >= 800 && $( "#passcode" ).val() != "correctpassword"){
-			    	$(window).scrollTop(800);
-			    	$('.content-container').hide();
-			        $('body').addClass('noscroll')
-			    }
+			    // else if(window.innerWidth > 1800 && $(window).scrollTop() >= 800 && $( "#passcode" ).val() != "correctpassword"){
+			    // 	$(window).scrollTop(800);
+			    // 	$('.content-container').hide();
+			    //     $('body').addClass('noscroll')
+			    // }
 			});
 
 	$( "#secure" ).submit(function( event ) {
@@ -134,7 +143,7 @@ $(document).ready(function(){
 	  		$("#wrong-passcode").css('display','none');
 	  		$('.vertical.device').css('display','block');
 		    $('body').removeClass('noscroll');
-		    $('html, body').animate({scrollTop: 1000}, 1000, 'easeInOutQuint');
+		    $('html, body').animate({scrollTop:0.9* window.innerHeight}, 1000, 'easeInOutQuint');
 		}
 
 	  else{
@@ -150,13 +159,19 @@ $(document).ready(function(){
 	$(".device-anchor").css({'transform': 'matrix(' + resolution + ', 0, 0,' + resolution + ', 0, 0)'});
 		
 	$(window).scroll(function(){
-		if (window.innerWidth <= 1800 && $(window).scrollTop() >= 660 && $( "#passcode" ).val() != "correctpassword"){
-	    	$(window).scrollTop(660);
-	        $('body').addClass('noscroll')
-	        $('.content-container').hide();
-	    }
-	    else if(window.innerWidth > 1800 && $(window).scrollTop() >= 800 && $( "#passcode" ).val() != "correctpassword"){
-	    	$(window).scrollTop(800);
+
+		$('video').each(function(){
+			if($(this)[0].id != 'preview-video'){
+			    if ($(this).inView()) {
+			        $(this)[0].play();
+			    } else {
+			        $(this)[0].pause();
+			    }
+			}
+		})
+
+		if ($(window).scrollTop() >= scrollLock && $( "#passcode" ).val() != "correctpassword"){
+	    	$(window).scrollTop(scrollLock);
 	        $('body').addClass('noscroll')
 	        $('.content-container').hide();
 	    }
@@ -267,7 +282,6 @@ $(document).ready(function(){
 
 						if(window.innerWidth > 480 && window.innerWidth > window.innerHeight){
 							document.fonts.load('100pt "Cera Pro"').then(function(){
-								console.log('hey');
 								ctx = $('#categoryChart')[0].getContext('2d');
 							    ctx.font = getFont(category_canvas, fontSizeBig);
 							    ctx.fillStyle = "#101646";
@@ -305,14 +319,13 @@ $(function(){
 
 	/* Responsive Video Source */
 
-	// var video_size = window.innerWidth > 768 ? "_large.mp4" : window.innerWidth > 480 ? "_medium.mp4" : "_medium.mp4";
-	// console.log($('.video > video').toArray());
-	// $('.video > video').toArray().forEach(modify_video_source);
+	var video_size = window.innerWidth > 768 ? "_large.mp4" : window.innerWidth > 480 ? "_medium.mp4" : "_medium.mp4";
+	console.log($('.video > video').toArray());
+	$('.video > video').toArray().forEach(modify_video_source);
 
-	// function modify_video_source(vid){
-	// 	vid.src += video_size; 
-	// }
-
+	function modify_video_source(vid){
+		vid.src += video_size; 
+	}
 	
 
 
@@ -453,7 +466,7 @@ $(function(){
 	        tl3.play();
 	    }
 
-	    if (st > 900){
+	    if (st > 0.8 * window.innerHeight){
 	    	$(".sticky-content.light").removeClass("light").stop(true,true).addClass("dark", 1000);
 	    	$(".screen.video-container.waiting-to-start").show();
 	    	
@@ -496,12 +509,13 @@ $(function(){
 
 	var controller = new ScrollMagic.Controller();
 
-	var scene = new ScrollMagic.Scene({triggerElement: ".pace-done", duration: (window.innerHeight < 2000) ? ((window.innerHeight < 1000) ? 1000 : 1200) : 2000 })
+	scene = new ScrollMagic.Scene({triggerElement: ".pace-done", duration: (window.innerHeight < 2000) ? ((window.innerHeight < 1000) ? 1000 : 1200) : 2000 })
 						.setPin(".sticky-container", {pushFollowers: false})
 						.addTo(controller);
 
 	});	
 
+	
 
 
 

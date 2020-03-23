@@ -864,3 +864,7 @@ PAGE CONTENT
     color: #7799CC !important;
     padding: 0.2em calc(0.5em * 1.2);
 }
+
+#project-nav .dropdown .dropbtn {
+    color: #7799CC !important;
+}

@@ -17,24 +17,15 @@ $(window).load(function(){
 	
 	updateProjectNavLinks();
 
-	$(".nav-tldr").click(function(){
-		$(".nav-tldr").parent().addClass("active-nav");
-		$(".nav-process").parent().removeClass("active-nav");
-		$(".nav-details").parent().removeClass("active-nav");
-		$('.dropbtn').html('Tl;dr <i class="fa fa-caret-down"></i>');
-	});
-
 	$(".nav-process").click(function(){
 		$(".nav-process").parent().addClass("active-nav");
 		$(".nav-details").parent().removeClass("active-nav");
-		$(".nav-tldr").parent().removeClass("active-nav");
 		$('.dropbtn').html('Design Process <i class="fa fa-caret-down"></i>');
 	});
 
 	$(".nav-details").click(function(){
 		$(".nav-details").parent().addClass("active-nav");
 		$(".nav-process").parent().removeClass("active-nav");
-		$(".nav-tldr").parent().removeClass("active-nav");
 		$('.dropbtn').html('Design Details <i class="fa fa-caret-down"></i>');
 	});
 
@@ -89,12 +80,5 @@ function updateProjectNavLinks() {
 		$(".nav-process").parent().removeClass("active-nav");
 		$(".nav-tldr").parent().removeClass("active-nav");
 		$('.dropbtn').html('Design Details <i class="fa fa-caret-down"></i>');
-	}
-
-	else {
-		$(".nav-tldr").parent().addClass("active-nav");
-		$(".nav-process").parent().removeClass("active-nav");
-		$(".nav-details").parent().removeClass("active-nav");
-		$('.dropbtn').html('Tl;dr <i class="fa fa-caret-down"></i>');
 	}
 }

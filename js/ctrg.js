@@ -118,6 +118,16 @@ $(document).ready(function(){
 		
 	$(window).scroll(function(){
 
+		$('video').each(function(){
+			if($(this)[0].id != 'preview-video'){
+			    if ($(this).inView()) {
+			        $(this)[0].play();
+			    } else {
+			        $(this)[0].pause();
+			    }
+			}
+		})
+
 		// //only the class elements in view
 		// $('.focus-border').filter(function(){
 		//     return $(this).inView();
