@@ -118,6 +118,63 @@
 
 /* Iteration */
 
+.user_scenario1 {
+    content: url("/images/porter/iteration/user_scenario1_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .user_scenario1 {
+        content: url("/images/porter/iteration/user_scenario1_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .user_scenario1 {
+        content: url("/images/porter/iteration/user_scenario1_small.jpg")
+    }
+}
+
+
+
+.user_scenario2 {
+    content: url("/images/porter/iteration/user_scenario2_large.jpg")
+}
+
+@media only screen and (max-width: 1024px) {
+    .user_scenario2 {
+        content: url("/images/porter/iteration/user_scenario2_medium.jpg")
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .user_scenario2 {
+        content: url("/images/porter/iteration/user_scenario2_small.jpg")
+    }
+}
+
+
+
+.user_scenario3 {
+    content: url("/images/porter/iteration/user_scenario3_large.jpg")
+}
+
+
+@media only screen and (max-width: 1024px) {
+    .user_scenario3 {
+        content: url("/images/porter/iteration/user_scenario3_medium.jpg")
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .user_scenario3 {
+        content: url("/images/porter/iteration/user_scenario3_small.jpg")
+    }
+}
+
+
 
 .visual_design {
     content: url("/images/porter/iteration/visual_design_large.jpg")
@@ -304,7 +361,7 @@
         height: 225px;
         background-size: 300px 225px;
         background-repeat: no-repeat;
-        transform: translate(54px, 30px) !important;
+        transform: translate(54px, 28px) !important;
     }
 }
 
