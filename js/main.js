@@ -260,7 +260,7 @@ function timeline(){
 					
 						scrollX: false,
 						scrollY: true,
-						scrollbars: true,
+						scrollbars: false,
 						// deactivating -webkit-transform because pin wouldn't work because of a webkit bug: https://code.google.com/p/chromium/issues/detail?id=20574
 						// if you dont use pinning, keep "useTransform" set to true, as it is far better in terms of performance.
 						useTransform: true,
