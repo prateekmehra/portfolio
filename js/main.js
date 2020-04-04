@@ -95,7 +95,7 @@ $(window).resize(function(){
 });
 	
 function timeline(){
-	var controller = new ScrollMagic.Controller({container: "#hey"});
+	var controller = new ScrollMagic.Controller({container: "#hey", refreshInterval: 1});
 
 	tl1 = new TimelineMax();
 
