@@ -316,22 +316,27 @@ $(function(){
 	
 
 	$(".screen.video-container.waiting-to-start").hide();
+	
 
 	/* Responsive Video Source */
-	if (window.innerWidth < 1024){
-		if(window.innerWidth < 1024 && window.innerWidth > 480){
-			var video_size = "_medium.mp4";
-			
-		}
-		else if (
-			window.innerWidth <= 480){ var video_size = "_small.mp4";
-		}
+	var video_size; 
 
-		$('.video > video').toArray().forEach(modify_video_source);
+	if(window.innerWidth >= 1024){
+		video_size = "_large.mp4";
 	}
 
+	else if(window.innerWidth < 1024 && window.innerWidth > 480){
+		video_size = "_medium.mp4";
+		
+	}
+	else if (window.innerWidth <= 480){ 
+		video_size = "_small.mp4";
+	}
+
+	$('.video > video').toArray().forEach(modify_video_source);
+
 	function modify_video_source(vid){
-		vid.src = vid.src.split("_large")[0] + video_size; 
+		vid.src = vid.src.split("_")[0] + video_size; 
 	}
 	
 
