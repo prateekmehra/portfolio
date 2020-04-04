@@ -160,15 +160,15 @@ $(document).ready(function(){
 		
 	$(window).scroll(function(){
 
-		$('video').each(function(){
-			if($(this)[0].id != 'preview-video'){
-			    if ($(this).inView()) {
-			        $(this)[0].play();
-			    } else {
-			        $(this)[0].pause();
-			    }
-			}
-		})
+		// $('video').each(function(){
+		// 	if($(this)[0].id != 'preview-video'){
+		// 	    if ($(this).inView()) {
+		// 	        $(this)[0].play();
+		// 	    } else {
+		// 	        $(this)[0].pause();
+		// 	    }
+		// 	}
+		// })
 
 		if ($(window).scrollTop() >= scrollLock && $( "#passcode" ).val() != "correctpassword"){
 	    	$(window).scrollTop(scrollLock);
@@ -320,20 +320,18 @@ $(function(){
 
 	/* Responsive Video Source */
 	var video_size; 
+	if (window.innerWidth > 480){
 
-	if(window.innerWidth >= 1024){
-		video_size = "_large.mp4";
-	}
+		if(window.innerWidth >= 1024){
+			video_size = "_large.mp4";
+		}
 
-	else if(window.innerWidth < 1024 && window.innerWidth > 480){
-		video_size = "_medium.mp4";
-		
-	}
-	else if (window.innerWidth <= 480){ 
-		video_size = "_small.mp4";
-	}
+		else{
+			video_size = "_medium.mp4";
+		}
 
-	$('.video > video').toArray().forEach(modify_video_source);
+		$('.video > video').toArray().forEach(modify_video_source);
+	}
 
 	function modify_video_source(vid){
 		vid.src = vid.src.split("_")[0] + video_size; 
@@ -417,33 +415,6 @@ $(function(){
 		owl.trigger('stop.owl.autoplay')
 	});
 
-	$(window).scroll(function(){
-
-	 	$('#load-in-viewport').each(function(){
-		    if ($(this).inView() && play_rewards_vid==0) {
-		        $("#rewards_reflection")[0].play();
-		        play_rewards_vid = 1;
-
-		        $('.count').each(function () {
-		            $(this).prop('Counter',0).animate({
-		                Counter: 410
-		            }, {
-
-		                duration: 1000,
-		                easing: 'easeOutQuart',
-		                step: function (now) {
-		                    $(this).text(Math.ceil(now));
-		                }
-		            });
-		        });
-		     }
-		    else if (!$(this).inView()){
-				play_rewards_vid = 0;
-				$("#rewards_reflection")[0].pause();
-				$("#rewards_reflection")[0].currentTime = 0;
-		    	}
-			})
-	 });
 
 	var tl1 = new TimelineLite( {paused: true, onReverseComplete: pause_tl1, onComplete: pause_tl1} ),
 	tl2 = new TimelineLite( {paused: true, onReverseComplete: pause_tl2, onComplete: pause_tl2} ),
