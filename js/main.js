@@ -45,8 +45,12 @@ $(window).on('load', function() {
 	var prev = window.innerHeight/2 + 800;
 
 	$('.scroll-downs, .scroll-downs-text').on('click', function(){
-		if($(window).scrollTop() <= 400){
-			$(window).scrollTop(440);
+		if(window.innerWidth > 480 && $(window).scrollTop() < 440){
+			$('html, body').animate({scrollTop: 440}, 900, 'easeInOutQuint');
+		}
+
+		else if(window.innerWidth <= 480 && $(window).scrollTop() < 400){
+			$('html, body').animate({scrollTop: 400}, 900, 'easeInOutQuint');
 		}
 	});
 
@@ -76,9 +80,14 @@ $(window).on('load', function() {
 	})
 
 	$('#portfolio').click(function(){
-		if($(window).scrollTop() <= 400){
-			$(window).scrollTop(440);
+		if(window.innerWidth > 480 && $(window).scrollTop() < 440){
+			$('html, body').animate({scrollTop: 440}, 900, 'easeInOutQuint');
 		}
+
+		else if(window.innerWidth <= 480 && $(window).scrollTop() < 400){
+			$('html, body').animate({scrollTop: 400}, 900, 'easeInOutQuint');
+		}
+
 	});
 
 });
