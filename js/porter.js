@@ -143,7 +143,7 @@ $(document).ready(function(){
 	  		$("#wrong-passcode").css('display','none');
 	  		$('.vertical.device').css('display','block');
 		    $('body').removeClass('noscroll');
-		    $('html, body').animate({scrollTop:0.9* window.innerHeight}, 1000, 'easeInOutQuint');
+		    $('html, body').animate({scrollTop: window.innerHeight}, 1000, 'easeInOutQuint');
 		}
 
 	  else{
