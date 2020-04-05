@@ -490,7 +490,7 @@ $(function(){
 	tl2.to(".device-anchor", 1, {"transform": "matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 0.5)"});
 	tl3.to(".content-container", 1, { "opacity": 0, display: 'none'});
 
-	var controller = new ScrollMagic.Controller();
+	var controller = new ScrollMagic.Controller({refreshInterval: 1});
 
 	scene = new ScrollMagic.Scene({triggerElement: ".pace-done", duration: (window.innerHeight < 2000) ? ((window.innerHeight < 1000) ? 1000 : 1200) : 2000 })
 						.setPin(".sticky-container", {pushFollowers: false})
