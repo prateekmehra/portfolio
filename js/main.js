@@ -39,6 +39,16 @@ $(document).ready(function(){
 });
 
 $(window).on('load', function() {
+	if(window.innerHeight > 1080){
+		$("#item-1-row").css({'padding-top':'calc((100vh - 1008px)/2)'});
+		$(".panel").css({'height': '1000px'});
+		$(".page-content").css({'height': 'calc(888px + 2000px)'})
+	}
+	else {
+		$("#item-1-row").css({'padding-top':'0'});
+		$(".panel").css({'height': '100vh'});
+		$(".page-content").css({'height': 'calc(888px + 650vh)'})
+	}
 
 	timeline();
 
@@ -59,11 +69,11 @@ $(window).on('load', function() {
 	$(window).scroll(function(){
 
 
-		if($('.project-intro').scrollTop() >= 5 * window.innerHeight){
+		if($('.project-intro').scrollTop() >= 5 * $(".panel").height()){
 			$('body').addClass('noscroll');
 		}
 
-		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * window.innerHeight){
+		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * $(".panel").height()){
 			$('.project-intro').css({'scroll-behavior': 'inherit'})
 			$('.project-intro').scrollTop($(window).scrollTop() - prev);
 			$('.project-intro').css({'scroll-behavior': 'smooth'})
@@ -100,6 +110,17 @@ $(window).resize(function(){
 		// }
 		timeline();
 		initialWidth = window.innerWidth;
+	}
+
+	if(window.innerHeight > 1080){
+		$("#item-1-row").css({'padding-top':'calc((100vh - 1008px)/2)'});
+		$(".panel").css({'height': '1000px'});
+		$(".page-content").css({'height': 'calc(888px + 2000px)'})
+	}
+	else {
+		$("#item-1-row").css({'padding-top':'0'});
+		$(".panel").css({'height': '100vh'});
+		$(".page-content").css({'height': 'calc(888px + 650vh)'})
 	}
 });
 	
@@ -194,13 +215,13 @@ function timeline(){
 
 	.to('#go-back', 1, {display: window.innerWidth < 481 ? 'block': 'none'}, 300)
 	.set('.project_canvas', {className: "-=hoverable"}, 391)
-	.to('.item-1', 100, {left:"5vw"}, 300)
-	.to('.item-2', 100, {top: "200vh", left:"5vw"}, 300)
-	.to('.item-3', 100, {top: "200vh", left:"5vw", display: 'none'}, 300)
-	.to('.item-4', 100, {top: "300vh", left:"5vw"}, 300)
-	.to('.item-5', 100, {top: "100vh", left:"5vw"}, 300)
-	.to('.item-6', 100, {top: "500vh", left:"5vw"}, 300)
-	.to('.item-7', 100, {top: "400vh", left:"5vw"}, 300)
+	.to('.item-1', 100, {left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
+	.to('.item-2', 100, {top: "200vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
+	.to('.item-3', 100, {top: "200vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw", display: 'none'}, 300)
+	.to('.item-4', 100, {top: "300vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
+	.to('.item-5', 100, {top: "100vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
+	.to('.item-6', 100, {top: "500vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
+	.to('.item-7', 100, {top: "400vh", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 300)
 	.set('.project_canvas', {className: "-=before-scroll"}, 300)
 	.to('.project_canvas', 1, {className:"+=after-scroll"}, 300)
 	.to('.screen', 1, {className:"+=after-scroll"}, 300)
@@ -247,13 +268,13 @@ function timeline(){
 	.set('.panel', {display: 'block', opacity: 1}, 500)
 	.set('.site-footer', {display: 'block', opacity: 1}, 500)
 	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
-	.set('.item-1', {left:"5vw"}, 500)
-	.set('.item-2', {top: "200vh", left:"5vw"}, 500)
-	.set('.item-3', {top: "200vh", left:"5vw", display: 'none'}, 500)
-	.set('.item-4', {top: "300vh", left:"5vw"}, 500)
-	.set('.item-5', {top: "100vh", left:"5vw"}, 500)
-	.set('.item-6', {top: "500vh", left:"5vw"}, 500)
-	.set('.item-7', {top: "400vh", left:"5vw"}, 500)
+	.set('.item-1', {left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
+	.set('.item-2', {top: window.innerHeight <= 1080 ? "200vh" : "2000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
+	.set('.item-3', {top: window.innerHeight <= 1080 ? "200vh" : "2000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw", display: 'none'}, 500)
+	.set('.item-4', {top: window.innerHeight <= 1080 ? "300vh" : "3000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
+	.set('.item-5', {top: window.innerHeight <= 1080 ? "100vh" : "1000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
+	.set('.item-6', {top: window.innerHeight <= 1080 ? "500vh" : "5000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
+	.set('.item-7', {top: window.innerHeight <= 1080 ? "400vh" : "4000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
 
 	var scene = new ScrollMagic.Scene({triggerElement: "#top", duration: 600, offset: window.innerHeight/2 + 100})
 		.setTween(tl2)
