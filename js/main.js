@@ -42,7 +42,7 @@ $(window).on('load', function() {
 	if(window.innerHeight > 1080){
 		$("#item-1-row").css({'padding-top':'calc((100vh - 1008px)/2)'});
 		$(".panel").css({'height': '1000px'});
-		$(".page-content").css({'height': 'calc(888px + 2000px)'})
+		$(".page-content").css({'height': 'calc(888px + 100vh)'})
 	}
 	else {
 		$("#item-1-row").css({'padding-top':'0'});
@@ -115,7 +115,7 @@ $(window).resize(function(){
 	if(window.innerHeight > 1080){
 		$("#item-1-row").css({'padding-top':'calc((100vh - 1008px)/2)'});
 		$(".panel").css({'height': '1000px'});
-		$(".page-content").css({'height': 'calc(888px + 2000px)'})
+		$(".page-content").css({'height': 'calc(888px + 100vh)'})
 	}
 	else {
 		$("#item-1-row").css({'padding-top':'0'});
