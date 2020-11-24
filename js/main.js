@@ -76,13 +76,13 @@ $(window).on('load', function() {
 		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * $(".panel").height()){
 			if(navigator.userAgent.indexOf("Safari") == -1){
 				$('.project-intro').css({'scroll-behavior': 'inherit'})
-			}
-			$('.project-intro').scrollTop($(window).scrollTop() - prev);
-			if(navigator.userAgent.indexOf("Safari") == -1){
+				$('.project-intro').scrollTop($(window).scrollTop() - prev);
 				$('.project-intro').css({'scroll-behavior': 'smooth'})
 			}
+			
 			else{
-					$('.project-intro').css({overflowY: 'visible'})
+				$(window).css({overflowY: 'visible'})
+				$('.project-intro').scrollTop($(window).scrollTop() - prev);
 			}
 			
 		}
@@ -92,15 +92,13 @@ $(window).on('load', function() {
 
 				if(navigator.userAgent.indexOf("Safari") == -1){
 					$('html').css({'scroll-behavior': 'inherit'})
-				}
-
-				$(window).scrollTop(prev + $('.project-intro').scrollTop())
-
-				if(navigator.userAgent.indexOf("Safari") == -1){
+					$(window).scrollTop(prev + $('.project-intro').scrollTop())
 					$('.project-intro').css({'scroll-behavior': 'smooth'})
 				}
+				
 				else{
 					$('.project-intro').css({overflowY: 'visible'})
+					$(window).scrollTop(prev + $('.project-intro').scrollTop())
 				}
 				
 				$('body').removeClass('noscroll');
