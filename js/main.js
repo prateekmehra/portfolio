@@ -286,7 +286,7 @@ function timeline(){
 	tl2
 	.set('.panel', {display: 'block', opacity: 1}, 500)
 	.set('.site-footer', {display: 'block', opacity: 1}, 500)
-	.set('.project-intro', {overflowY: 'scroll'}, 500)
+	.set('.project-intro', {overflowY: 'scroll', scrollBehavior: 'smooth'}, 500)
 	.set('.item-1', {left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
 	.set('.item-2', {top: window.innerHeight <= 1080 ? "200vh" : "2000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw"}, 500)
 	.set('.item-3', {top: window.innerHeight <= 1080 ? "200vh" : "2000px", left: window.innerWidth <= 2200 ? "5vw" : "15vw", display: 'none'}, 500)
