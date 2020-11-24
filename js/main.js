@@ -74,11 +74,11 @@ $(window).on('load', function() {
 		}
 
 		if($(window).scrollTop() >= window.innerHeight/2 + 800 && $('.project-intro').scrollTop() < 5 * $(".panel").height()){
-			if(navigator.userAgent.indexOf("Chrome") != -1){
+			if(navigator.userAgent.indexOf("Safari") == -1){
 				$('.project-intro').css({'scroll-behavior': 'inherit'})
 			}
 			$('.project-intro').scrollTop($(window).scrollTop() - prev);
-			if(navigator.userAgent.indexOf("Chrome") != -1){
+			if(navigator.userAgent.indexOf("Safari") == -1){
 				$('.project-intro').css({'scroll-behavior': 'smooth'})
 			}
 			else{
@@ -90,13 +90,13 @@ $(window).on('load', function() {
 		$('.project-intro').scroll(function(){
 			if($('.project-intro').scrollTop() == 0){
 
-				if(navigator.userAgent.indexOf("Chrome") != -1){
+				if(navigator.userAgent.indexOf("Safari") == -1){
 					$('html').css({'scroll-behavior': 'inherit'})
 				}
 
 				$(window).scrollTop(prev + $('.project-intro').scrollTop())
 
-				if(navigator.userAgent.indexOf("Chrome") != -1){
+				if(navigator.userAgent.indexOf("Safari") == -1){
 					$('.project-intro').css({'scroll-behavior': 'smooth'})
 				}
 				else{
